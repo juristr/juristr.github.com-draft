@@ -1,14 +1,12 @@
 ---
-title: "Article Design Demo"
-lead: "Lead bla bla"
-date: 2017-08-14T16:50:20+02:00
-tags: [ "Angular" ]
-draft: true
+title: 'Article Design Demo'
+lead: 'Learn how to properly redirect in an Angular route guard'
+image: '/blog/assets/imgs/better-route-guards/route-guard-sketch.png'
+tags: ['Angular']
+date: 2018-11-29T00:00:00Z
 ---
 
-{{% article-intro %}}Demo article showcasing the various things you can use on this blog here.{{% /article-intro %}}
-
-{{< postads >}}
+Demo article showcasing the various things you can use on this blog here
 
 Intros as seen above, are wrapped with the `.article-intro` class.
 
@@ -25,8 +23,8 @@ Images can be added in a variety of ways.
 
 ```html
 <figure class="image--wide">
-    <img src="..." >
-    <figcaption>Sample img</figcaption>
+  <img src="..." />
+  <figcaption>Sample img</figcaption>
 </figure>
 ```
 
@@ -39,8 +37,8 @@ Images can also be **full-sized**
 
 ```html
 <figure class="image--full">
-    <img src="..." >
-    <figcaption>Full sample img</figcaption>
+  <img src="..." />
+  <figcaption>Full sample img</figcaption>
 </figure>
 ```
 
@@ -52,7 +50,7 @@ Note, add zooming like this:
 
 ```html
 <a href="/blog/assets/imgs/us2015/jump.jpg" class="image--zoom">
-    <img src="/blog/assets/imgs/us2015/jump.jpg">
+  <img src="/blog/assets/imgs/us2015/jump.jpg" />
 </a>
 ```
 
@@ -66,10 +64,10 @@ Example
 
 ```html
 <figure class="image--medium">
-    <a href="/blog/assets/imgs/us2015/ourcar.jpg" class="image--zoom">
-        <img src="/blog/assets/imgs/us2015/ourcar.jpg">
-    </a>
-    <figcaption>Our massive car!</figcaption>
+  <a href="/blog/assets/imgs/us2015/ourcar.jpg" class="image--zoom">
+    <img src="/blog/assets/imgs/us2015/ourcar.jpg" />
+  </a>
+  <figcaption>Our massive car!</figcaption>
 </figure>
 ```
 
@@ -109,7 +107,7 @@ Simply us the standard approach using in Markdown docs.
 
 ```javascript
 function someJSFunction() {
-    var x = 'Hi there';
+  var x = 'Hi there';
 }
 ```
 

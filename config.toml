@@ -5,12 +5,13 @@ theme = "mediumish-gohugo-theme"
 summaryLength = 25
 copyright = "Juri Strumpflohner - All rights reserved"
 enableEmoji = true
+PygmentsCodeFences = true
 publishDir = "docs"
 #disqusShortname = "your-shortname-here"
 #googleAnalytics = "UA-1XXXXXXX1-1"
 
 [permalinks]
-  post = "/blog/:year/:month/:title/"
+  blog = "/blog/:year/:month/:title/"
 
 [params]
   logo = "/images/logo.png"
