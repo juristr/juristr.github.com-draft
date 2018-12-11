@@ -1,12 +1,13 @@
 baseURL = "https://juristr.com"
 languageCode = "en-us"
 title = "juri.strumpflohner"
-theme = "mediumish-gohugo-theme"
+#theme = "mediumish-gohugo-theme"
+theme = "mediuma"
 summaryLength = 25
 copyright = "Juri Strumpflohner - All rights reserved"
 enableEmoji = true
 PygmentsCodeFences = true
-publishDir = "docs"
+#publishDir = "docs"
 #disqusShortname = "your-shortname-here"
 #googleAnalytics = "UA-1XXXXXXX1-1"
 
@@ -19,9 +20,9 @@ publishDir = "docs"
   #mailchimp = "you can provide a mailchimp-link here"
 
 [params.author]
-  name = "John Doe"
+  name = "Juri Strumpflohner"
   thumbnail = "/images/author.png"
-  description = "Creator of this blog."
+  description = "Creator of this blog. bla bla bla ddd "
 
 [params.index]
   picture = "/images/author.png"
@@ -32,7 +33,8 @@ Currently trying to get this blog running, still don't know what the blog will b
 **This textblock is a demonstration of the mdtext-param.**\
 ### This is a markdown heading
 '''
-  alertbar = false
+
+alertbar = false
 
 [params.social]
   github = "juristr"

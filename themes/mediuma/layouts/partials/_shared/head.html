@@ -1,0 +1,24 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	{{ .Hugo.Generator }}
+	{{ with .Site.Params.logo }}
+	<link rel="icon" href="{{ . | urlize | relURL }}">
+	{{ end }}
+	<title>{{ .Page.Title }} | {{ .Site.Title }}</title>
+	{{ with .Site.Params.meta.description }}
+	<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.meta.keywords }}
+	<meta name="keywords" content="{{ . }}">{{ end }}
+
+	<!-- Bootstrap core CSS -->
+	<link href="{{ "/css/bootstrap.min.css" | urlize | relURL }}" rel="stylesheet">
+
+	<!-- Fonts -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="{{ "/css/mediumish.css" | urlize | relURL }}" rel="stylesheet">
+	<link href="{{ "/css/additional.css" | urlize | relURL }}" rel="stylesheet">
+</head>
