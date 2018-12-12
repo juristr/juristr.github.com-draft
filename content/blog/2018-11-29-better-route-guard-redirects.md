@@ -36,7 +36,7 @@ Here is the release changelog of the features added in **Angular version 7.1.0**
 
 What are [route guards](https://angular.io/guide/router#milestone-5-route-guards)? As the name suggests, they allow you to guard access to a certain route. The usual example is the one of an authenticated area of your app, or an admin section that requires special permissions to be accessed. In the following code sample you see a very veeeery simple implementation of a possible guard.
 
-```javascript
+```typescript
 @Injectable({
   providedIn: 'root'
 })
@@ -55,7 +55,7 @@ export class AuthGuard implements CanActivate {
 
 You can then register them on the Angular route definition, like this:
 
-```javascript
+```typescript
 const routes: Routes = [
   {
     path: 'admin',
@@ -73,7 +73,7 @@ Just returning `true` or `false` is actually not enough. We need to tell the use
 
 To implement such use we can simply inject the router into the `AuthGuard` and redirect accordingly.
 
-```javascript
+```typescript
 @Injectable({
   providedIn: 'root'
 })
@@ -92,11 +92,12 @@ export class AuthGuard implements CanActivate {
 }
 ```
 
+
 ## NEW: Returning an UrlTree
 
 Until Angular <= 7.1 the only options to return from an AuthGuard were boolean expressions:
 
-```javascript
+```typescript
 export interface CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
@@ -111,14 +112,14 @@ Starting with version 7.1 we can **now also return an** `**UrlTree**` object.
 
 The easiest way to create such an `UrlTree` is by using the `parseUrl(…)` or `createUrlTree(…)` functions of the `Router` object.
 
-```javascript
+```typescript
 router.parseUrl('/notauth');
 this.router.createUrlTree(['/notauth']);
 ```
 
 Knowing this, we can change our original implementation of the guard to the following:
 
-```javascript
+```typescript
 @Injectable({
   providedIn: 'root'
 })

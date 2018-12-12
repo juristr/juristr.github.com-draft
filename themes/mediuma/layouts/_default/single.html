@@ -14,7 +14,7 @@
             {{- partial "single-partials/share.html" . -}}
         </div>
         <!-- Post -->
-        <div class="col-md-8 col-md-offset-2 col-xs-12">
+        <div class="col-md-9 col-md-offset-2 col-xs-12">
             <div class="mainheading">
 
                 {{if isset .Site.Params.author "name"}}
@@ -46,13 +46,12 @@
                     <span class="dot"></span>
                     <span class="post-read">2 min read</span>
                 </p>
-
             </div>
 
             <!-- Post Featured Image -->
-            {{with .Params.image}}
+            <!-- {{with .Params.image}}
             <img class="featured-image img-fluid" src="{{ . | urlize | relURL }}" alt="thumbnail for this post">
-            {{end}}
+            {{end}} -->
             <!-- End Featured Image -->
 
             <!-- Post Content -->
@@ -99,7 +98,7 @@
 {{- partial "single-partials/comments.html" . -}}
 {{ end }}
 <!-- </div> -->
-{{- partial "_shared/alertbar.html" . -}}
+<!-- {{- partial "_shared/alertbar.html" . -}} -->
 {{ end }}
 
 {{ define "footer"}}

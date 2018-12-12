@@ -11,14 +11,20 @@
 	{{ with .Site.Params.meta.keywords }}
 	<meta name="keywords" content="{{ . }}">{{ end }}
 
+
 	<!-- Bootstrap core CSS -->
 	<link href="{{ "/css/bootstrap.min.css" | urlize | relURL }}" rel="stylesheet">
 
 	<!-- Fonts -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link href='//fonts.googleapis.com/css?family=Source+Code+Pro|Lora:400,700,400italic' rel='stylesheet' type='text/css'>
+
+	<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/github.min.css"> -->
 
 	<!-- Custom styles for this template -->
 	<link href="{{ "/css/mediumish.css" | urlize | relURL }}" rel="stylesheet">
 	<link href="{{ "/css/additional.css" | urlize | relURL }}" rel="stylesheet">
+	<link href="{{ "/css/tango_syntax.css" | urlize | relURL }}" rel="stylesheet">
+	<link href="{{ "/css/article.css" | urlize | relURL }}" rel="stylesheet">
 </head>
