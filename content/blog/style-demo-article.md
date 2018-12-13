@@ -80,6 +80,8 @@ Example
 
 Library used: [Fluidbox](http://www.jqueryscript.net/demo/Medium-Style-jQuery-Image-Enlargement-Plugin-Fluidbox/)
 
+---
+
 ## Blockquotes
 
 A plain normal blockquote looks like this.

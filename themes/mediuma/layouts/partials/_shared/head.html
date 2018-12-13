@@ -23,8 +23,16 @@
 	<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/github.min.css"> -->
 
 	<!-- Custom styles for this template -->
-	<link href="{{ "/css/mediumish.css" | urlize | relURL }}" rel="stylesheet">
-	<link href="{{ "/css/additional.css" | urlize | relURL }}" rel="stylesheet">
+	<!-- <link href="{{ "/css/mediumish.css" | urlize | relURL }}" rel="stylesheet"> -->
+	{{ $main := resources.Get "/scss/main.scss" | toCSS | minify | fingerprint }}
+	<link rel="stylesheet" href="{{ $main.Permalink }}" integrity="{{ $main.Data.Integrity }}" media="screen">
+
+	<!-- <link href="{{ "/css/additional.css" | urlize | relURL }}" rel="stylesheet">
 	<link href="{{ "/css/tango_syntax.css" | urlize | relURL }}" rel="stylesheet">
-	<link href="{{ "/css/article.css" | urlize | relURL }}" rel="stylesheet">
+	<link href="{{ "/css/fluidbox.min.css" | urlize | relURL }}" rel="stylesheet"> -->
+
+	{{ $styles := resources.Get "/scss/article.scss" | toCSS | minify | fingerprint }}
+	<link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+
+	<!-- <link href="{{ "/css/article.css" | urlize | relURL }}" rel="stylesheet"> -->
 </head>
