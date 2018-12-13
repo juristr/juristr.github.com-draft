@@ -10,6 +10,13 @@ Demo article showcasing the various things you can use on this blog here
 
 Intros as seen above, are wrapped with the `.article-intro` class.
 
+## Some text
+
+The information corresponding to the source of the quote is a separate text field, similar to captions under images, so the structure of the quote is protected even if you select, modify, or remove the source. It’s always easy to add it back.
+
+Blocks can be anything you need. For instance, you may want to add a subdued quote as part of the composition of your text, or you may prefer to display a giant stylized one. All of these options are available in the inserter.
+
+
 ## Images
 
 Images can be added in a variety of ways.
@@ -91,15 +98,18 @@ and looks like
 
 <blockquote class="emphasized">I'm super emphasized!</blockquote>
 
+### Source cites
+
+It's also possible to add `cites`:
+
+> The editor will endeavor to create a new page and post building experience that makes writing rich posts effortless, and has “blocks” to make it easy what today might take shortcodes, custom HTML, or “mystery meat” embed discovery. <cite>Matt Mullenweg, 2017</cite>
+
 ## Emphasizing
 
 Simple use the `em` tag:
 
 <em>This is an emphasized part of the text</em>
 
-## Notes
-
-...
 
 ## Code
 

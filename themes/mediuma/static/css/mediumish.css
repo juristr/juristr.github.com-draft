@@ -217,13 +217,15 @@ span.post-name a,span.post-read-more a:hover {
 .link-dark {
 	color:rgba(0,0,0,.8);
 }
+
 .article-post {
 	font-family:Merriweather;
 	font-size:1.2rem;
 	line-height:1.8;
 	color:rgba(0,0,0,.8);
 }
-blockquote {
+
+/* blockquote {
 	border-left:4px solid #00ab6b;
 	padding:0 20px;
 	font-style:italic;
@@ -231,7 +233,8 @@ blockquote {
 }
 .article-post p,.article-post blockquote {
 	margin:0 0 1.5rem 0;
-}
+} */
+
 .featured-image {
 	display:block;
 	margin:0px auto;
