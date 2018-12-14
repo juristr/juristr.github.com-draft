@@ -9,21 +9,22 @@ enableEmoji = true
 pygmentsUseClasses=true
 PygmentsCodeFences = true
 #publishDir = "docs"
-#disqusShortname = "your-shortname-here"
+disqusShortname = "juristr"
 #googleAnalytics = "UA-1XXXXXXX1-1"
 
 [permalinks]
   blog = "/blog/:year/:month/:title/"
 
-[params]
-  logo = "/images/logo.png"
-  description ="the clean blog!"
-  #mailchimp = "you can provide a mailchimp-link here"
+# [params]
+#   logo = "/images/logo.png"
+#   description ="the clean blog!"
+#   #mailchimp = "you can provide a mailchimp-link here"
 
 [params.author]
   name = "Juri Strumpflohner"
-  thumbnail = "/images/author.png"
-  description = "Creator of this blog. bla bla bla ddd "
+  thumbnail = "https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&d=identicon&r=PG"
+  description = "Juri is a full stack developer and tech lead with a special passion for the web and frontend development. He creates online videos for [Egghead.io](https://egghead.io/instructors/juri-strumpflohner), writes articles on his blog and for tech magazines, speaks at conferences and holds training workshops."
+  twitter = "@juristr"
 
 [params.index]
   picture = "/images/author.png"
@@ -51,12 +52,17 @@ alertbar = false
     identifier = "blog"
     url = "/blog"
 [[menu.main]]
+    name = "Talks"
+    weight = 100
+    identifier = "talks"
+    url = "/talks"
+[[menu.main]]
+    name = "Consulting"
+    weight = 100
+    identifier = "consulting"
+    url = "/consulting"
+[[menu.main]]
     name = "About Me"
     identifier = "about"
     weight = 200
-    url = "/"
-[[menu.main]]
-    name = "Imprint"
-    identifier = "imprint"
-    weight = 200
-    url = "/static/imprint"
+    url = "/about"

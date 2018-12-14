@@ -24,12 +24,13 @@
                 <div class="row post-top-meta">
                     <div class="col-md-2">
                         <!-- <a href="author.html"> -->
-                        <img class="author-thumb" src="{{ .Site.Params.author.thumbnail | urlize | relURL}}" alt="{{ .Site.Params.author.name }}">
+                        <img class="author-thumb" src="{{ .Site.Params.author.thumbnail}}" alt="{{ .Site.Params.author.name }}">
                         <!-- </a> -->
                     </div>
                     <div class="col-md-10">
-                        <a class="link-dark" href="author.html">{{ .Site.Params.author.name }}</a><a href="#" class="btn follow">Follow</a>
-                        <span class="author-description">{{ .Site.Params.author.description }}</span>
+                        <a class="link-dark" href="author.html">{{ .Site.Params.author.name }}</a><a href="https://twitter.com/{{.Site.Params.author.twitter}}"
+                            class="btn follow">Follow</a>
+                        <span class="author-description">{{ .Site.Params.author.description | markdownify }}</span>
                         <!-- <span class="post-date">{{ dateFormat "Jan 2, 2006" .PublishDate }}</span><span class="dot"></span>
                         <span class="post-read">{{ .ReadingTime }} min read</span> -->
                     </div>

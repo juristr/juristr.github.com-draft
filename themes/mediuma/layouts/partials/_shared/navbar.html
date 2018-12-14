@@ -1,40 +1,85 @@
 <!-- Begin Menu Navigation
 ================================================== -->
-<nav class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<header class="navbar-light bg-white fixed-top mediumnavigation nav-down">
     <div class="container">
-        <!-- Begin Logo -->
-        <a class="navbar-brand" href="{{ .Site.BaseURL }}/">
-            {{ with .Site.Params.logo }}
-            <img src="{{ . | urlize | relURL }}" alt="logo">
-            {{ else }}
-            <span style="font-family:Righteous;">{{.Site.Title}}</span>
-            {{ end }}
-        </a>
-        <!-- End Logo -->
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <!-- Begin Menu -->
-            {{ $currentPage := . }}
-            <ul class="navbar-nav ml-auto">
-                {{ range .Site.Menus.main }}
-                <li class="nav-item {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-                    <a class="nav-link" href="{{ .URL }}">{{ .Name | title }}</a>
-                </li>
-                {{ end }}
-            </ul>
 
-            <!-- End Menu -->
-            <!-- Begin Search -->
-            <!-- <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <span class="search-icon"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25">
-                        <path d="M20.067 18.933l-4.157-4.157a6 6 0 1 0-.884.884l4.157 4.157a.624.624 0 1 0 .884-.884zM6.5 11c0-2.62 2.13-4.75 4.75-4.75S16 8.38 16 11s-2.13 4.75-4.75 4.75S6.5 13.62 6.5 11z"></path>
-                    </svg></span>
-            </form> -->
-            <!-- End Search -->
+        <!-- Begin Logo -->
+        <div class="row justify-content-center align-items-center brandrow">
+
+            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+
+                <!-- <a class="btn follow" href="https://twitter.com/wowthemesnet" target="blank"><i class="fa fa-twitter"></i>
+                    Follow</a>
+
+
+                <a target="_blank" href="https://plus.google.com/+WowthemesNet"> <i class="fa fa-google-plus social"></i></a>
+                <a target="_blank" href="https://facebook.com/wowthemesnet"> <i class="fa fa-facebook social"></i></a> -->
+
+            </div>
+
+            <div class="col-lg-4 col-md-4  col-xs-12 text-center logoarea">
+                <a class="navbar-brand" href="{{ .Site.BaseURL }}/">
+                    {{ with .Site.Params.logo }}
+                    <img src="{{ . | urlize | relURL }}" alt="logo">
+                    {{ else }}
+                    <span style="font-family:Righteous;">{{.Site.Title}}</span>
+                    {{ end }}
+                </a>
+                <!-- <a class="navbar-brand" href="https://www.themepush.com/demo-mediumish/">{{.Site.Title}}</a> -->
+            </div>
+
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+                <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
         </div>
+        <!-- End Logo -->
+
+        <div class="navarea">
+
+            <nav class="navbar navbar-toggleable-sm">
+                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="bs4navbar" class="navbar-collapse collapse">
+                    {{ $currentPage := . }}
+                    <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
+                        {{ range .Site.Menus.main }}
+                        <li class="menu-item {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                            <a class="nav-link" href="{{ .URL }}">{{ .Name | title }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+
+                    <!-- <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
+                        <li id="menu-item-247" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-247 nav-item"><a
+                                href="https://www.themepush.com/demo-mediumish/" class="nav-link">Home</a></li>
+                        <li id="menu-item-68" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68 nav-item"><a
+                                href="https://www.themepush.com/demo-mediumish/category/life/" class="nav-link">life</a></li>
+                        <li id="menu-item-69" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-69 nav-item"><a
+                                href="https://www.themepush.com/demo-mediumish/category/marketing/" class="nav-link">marketing</a></li>
+                        <li id="menu-item-71" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-71 nav-item"><a
+                                href="https://www.themepush.com/demo-mediumish/category/how-to/" class="nav-link">how
+                                to</a></li>
+                        <li id="menu-item-109" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-109 nav-item"><a
+                                href="https://www.themepush.com/demo-mediumish/category/creativity/" class="nav-link">creativity</a></li>
+                        <li id="menu-item-185" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-185 nav-item"><a
+                                href="https://www.themepush.com/demo-mediumish/category/social/" class="nav-link">social</a></li>
+                        <li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-189 nav-item"><a
+                                href="https://www.themepush.com/demo-mediumish/authors/" class="nav-link">Authors</a></li>
+                        <li id="menu-item-184" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-184 nav-item"><a
+                                href="https://www.themepush.com/demo-mediumish/write-for-us/" class="nav-link">Write
+                                for Us</a></li>
+                        <li id="menu-item-192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-192 nav-item"><a
+                                href="https://www.themepush.com/demo-mediumish/contact/" class="nav-link">Contact</a></li>
+                    </ul> -->
+                </div>
+            </nav>
+
+        </div>
+
     </div>
-</nav>
+
+</header>
