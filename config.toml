@@ -64,5 +64,10 @@ alertbar = false
 [[menu.main]]
     name = "About Me"
     identifier = "about"
-    weight = 200
+    weight = 500
     url = "/about"
+[[menu.main]]
+    name = "AMA"
+    identifier = "ama"
+    weight = 300
+    url = "https://github.com/juristr/ama"
