@@ -1,0 +1,20 @@
+.article-link {
+    .title {
+        font-weight: bold;
+    }
+
+    .description {
+        font-size: smaller;
+    }
+
+    .share-link {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .link {
+        padding-top: 5px;
+        font-size: small;
+    }
+}

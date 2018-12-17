@@ -2,6 +2,36 @@
 @import "external/tango_syntax";
 @import "custom/navigation";
 
+.list-page {
+    section {
+        margin-top: 40px;
+    }
+}
+
+.card {
+    border: 1px solid rgba(38,41,58,.1);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(38,41,58,.06);
+    box-shadow: 0 1px 3px 0 rgba(38,41,58,.06);
+    -webkit-transition: -webkit-box-shadow .2s ease;
+    transition: -webkit-box-shadow .2s ease;
+    -o-transition: box-shadow .2s ease;
+    transition: box-shadow .2s ease;
+    transition: box-shadow .2s ease,-webkit-box-shadow .2s ease;
+
+    &:hover {
+        -webkit-box-shadow: 0 2px 8px rgba(38,41,58,.1);
+        box-shadow: 0 2px 8px rgba(38,41,58,.1);
+    }
+}
+
+.article-link {
+    padding: 15px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
 
 .bottompagination span.navigation {
     display:block;

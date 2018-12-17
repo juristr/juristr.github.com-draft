@@ -2,6 +2,7 @@
 @import "custom/article-images";
 @import "external/fluidbox";
 @import "custom/toc";
+@import "custom/article-link";
 
 body {
     text-rendering: optimizeLegibility;
@@ -13,21 +14,19 @@ body {
 .article-post {
   background-color: white;
   color:rgba(0,0,0,0.8);
-  padding: 50px 0 0 0;
   width: 100%;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.01rem;
   font-family: $article-body-font;
-}
-
-.article-post h1, h2, h3, h4 {
+  
+  h1, h2, h3, h4 {
     font-weight: 700;
     margin-top: 0.83em;
     margin-bottom: 0.83em;
-}
+  }
 
-.article-post h4 {
+  h4 {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     letter-spacing: -0.02em;
     font-weight: 300;
@@ -38,7 +37,14 @@ body {
     color: rgba(0,0,0,0.44);
     margin-top: 40px;
     margin-bottom: 2px;
+  }
+
+  .article-intro {
+    font-size: 25px
+  }
+
 }
+
 
 .posttitle {
     font-family: $article-title-font;
@@ -60,12 +66,7 @@ body {
   font-size: 28px;
   line-height: 1.1;
   color: $article-subtitle-color;
-  margin-bottom: 30px;
-}
-
-
-.article-intro {
-    font-size: 25px
+  margin-bottom: 10px;
 }
 
 a {
