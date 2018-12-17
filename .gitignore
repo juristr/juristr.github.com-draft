@@ -1,1 +1,3 @@
 _gen/
+content/blog/*.md
+content/blog/*.html
