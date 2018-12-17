@@ -41,9 +41,14 @@
                 {{end}}
 
                 <h1 class="posttitle">{{ .Title }}</h1>
+                {{ if .Params.lead }}
+                <h2 class="article-subtitle">{{ .Params.lead }}</h2>
+                {{ end }}
                 <p>
-                    <span class="post-date"><time class="post-date">
-                            December 7, 2018 </time></span>
+                    <span class="post-date">
+                        <time class="post-date">
+                            {{ dateFormat "Jan 2, 2006" .PublishDate }}
+                        </time></span>
                     <span class="dot"></span>
                     <span class="post-read">2 min read</span>
                 </p>

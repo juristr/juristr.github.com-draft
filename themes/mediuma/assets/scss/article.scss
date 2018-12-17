@@ -51,6 +51,17 @@ body {
     /* margin-bottom: 8px; */
 }
 
+.article-subtitle {
+  font-family: $article-subtitle-font;
+  letter-spacing: -0.02em;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 1.1;
+  color: $article-subtitle-color;
+  margin-bottom: 30px;
+}
+
 
 .article-intro {
     font-size: 25px
