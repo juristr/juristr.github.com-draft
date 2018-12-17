@@ -14,7 +14,7 @@
             <h2><span>All Posts</span></h2>
         </div>
         <div class="card-columns listrecent">
-            {{ $post_paginator := .Paginate (.Pages.ByDate.Reverse) 6 }}
+            {{ $post_paginator := .Paginate (.Pages) 6 }}
             {{ range $post_paginator.Pages }}
             {{- partial "list-partials/postbox.html" . -}}
             {{end}}
