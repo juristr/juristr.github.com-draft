@@ -11,12 +11,21 @@
         ================================================== -->
     <section class="recent-posts">
         <div class="section-title">
+            {{ if eq .Kind "taxonomyTerm" }}
             <h2><span>All Categories</span></h2>
+            {{ else }}
+            <h2><span>Articles for "{{.Title}}"</span></h2>
+            {{ end }}
         </div>
         <div class="card-columns listrecent">
             {{ $post_paginator := .Paginate (.Pages) 6 }}
             {{ range $post_paginator.Pages }}
+
+            {{ if and (eq .Kind "taxonomy") (eq .Type "categories") }}
             {{- partial "list-partials/categorybox.html" . -}}
+            {{ else }}
+            {{- partial "list-partials/postbox.html" . -}}
+            {{ end }}
             {{end}}
         </div>
     </section>

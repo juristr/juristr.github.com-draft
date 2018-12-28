@@ -8,6 +8,8 @@ date: 2018-11-29T00:00:00Z
 
 Demo article showcasing the various things you can use on this blog here
 
+<!--more-->
+
 Intros as seen above, are wrapped with the `.article-intro` class.
 
 ## Some text
@@ -15,6 +17,13 @@ Intros as seen above, are wrapped with the `.article-intro` class.
 The information corresponding to the source of the quote is a separate text field, similar to captions under images, so the structure of the quote is protected even if you select, modify, or remove the source. It’s always easy to add it back.
 
 Blocks can be anything you need. For instance, you may want to add a subdued quote as part of the composition of your text, or you may prefer to display a giant stylized one. All of these options are available in the inserter.
+
+Also having some bullet points
+
+- number 1
+- another one
+- one with [a link in it](https://www.google.com)
+- and a last one
 
 
 ## Images
