@@ -50,14 +50,14 @@ jQuery(document).ready(function ($) {
     }
 
     // minutes to read
-    if ($('.post-read').length) {
-        var txt = $('.article-post')[0].textContent,
-            wordCount = txt.replace(/[^\w ]/g, "").split(/\s+/).length;
+    // if ($('.post-read').length) {
+    //     var txt = $('.article-post')[0].textContent,
+    //         wordCount = txt.replace(/[^\w ]/g, "").split(/\s+/).length;
 
-        var readingTimeInMinutes = Math.floor(wordCount / 250) + 1;
-        var readingTimeAsString = readingTimeInMinutes + " min";
-        $('.post-read').html(readingTimeAsString);
-    }
+    //     var readingTimeInMinutes = Math.floor(wordCount / 250) + 1;
+    //     var readingTimeAsString = readingTimeInMinutes + " min";
+    //     $('.post-read').html(readingTimeAsString);
+    // }
 
 
     // Smooth scroll to an anchor

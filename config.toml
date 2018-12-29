@@ -45,22 +45,38 @@ alertbar = false
   medium = "juristr"
   twitter = "juristr"
 
+[params.adlink]
+  link = "https://egghead.io/courses/learn-angular-router-for-real-world-applications"
+  image = "/assets/images/banners/router-course-banner.png"
+  client = "eggheadio"
+  uid = "url"
+
 ## Main Menu
+[[menu.main]]
+    name = "Home"
+    weight = 1
+    identifier = "home"
+    url = "/"
 [[menu.main]]
     name = "Blog"
     weight = 100
     identifier = "blog"
     url = "/blog"
 [[menu.main]]
-    name = "Talks"
+    name = "Collections"
     weight = 100
-    identifier = "talks"
-    url = "/talks"
-[[menu.main]]
-    name = "Consulting"
-    weight = 100
-    identifier = "consulting"
-    url = "/consulting"
+    identifier = "categories"
+    url = "/categories"
+# [[menu.main]]
+#     name = "Talks"
+#     weight = 100
+#     identifier = "talks"
+#     url = "/talks"
+# [[menu.main]]
+#     name = "Consulting"
+#     weight = 100
+#     identifier = "consulting"
+#     url = "/consulting"
 [[menu.main]]
     name = "About Me"
     identifier = "about"

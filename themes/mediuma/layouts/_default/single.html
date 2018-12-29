@@ -50,7 +50,7 @@
                             {{ dateFormat "Jan 2, 2006" .PublishDate }}
                         </time></span>
                     <span class="dot"></span>
-                    <span class="post-read">2 min read</span>
+                    <span class="post-read">{{ .ReadingTime }} min read</span>
                 </p>
             </div>
 
@@ -59,6 +59,12 @@
             <img class="featured-image img-fluid" src="{{ . | urlize | relURL }}" alt="thumbnail for this post">
             {{end}} -->
             <!-- End Featured Image -->
+
+            {{ with .Site.Params.adlink }}
+            <a href="{{ .link }}" class="external-link" data-client="{{ .client }}" data-uid="{{ .uid }}">
+                <img src="{{ .image }}" style="width:100%" />
+            </a>
+            {{ end }}
 
             <!-- Post Content -->
             <div class="article-post">
@@ -76,6 +82,11 @@
                 </ul>
             </div>
             <!-- End Categories -->
+
+            <a href="https://egghead.io/instructors/juri-strumpflohner" class="external-link" data-client="eggheadio"
+                data-uid="egghead-instructor-page">
+                <img src="/blog/assets/imgs/egghead-banner-learn-with-me.png" style="width:100%" />
+            </a>
 
             <!-- Prev/Next -->
             <!-- <div class="row PageNavigation d-flex justify-content-between font-weight-bold">

@@ -5,7 +5,12 @@
 {{ define "main" }}
 <div class="container list-page">
     <!-- {{- partial "_shared/title.html" . -}} -->
-    <!-- {{- partial "_shared/featured-posts.html" . -}} -->
+    {{- partial "_shared/featured-posts.html" . -}}
+
+    <a href="https://egghead.io/courses/learn-angular-router-for-real-world-applications" class="external-link"
+        data-client="eggheadio" data-uid="courses/learn-angular-router-for-real-world-applications">
+        <img src="/assets/images/banners/router-course-banner.png" style="width:100%" />
+    </a>
 
     <!-- Posts Index
         ================================================== -->
@@ -15,7 +20,7 @@
         </div>
         <div class="card-columns listrecent">
             {{ $post_paginator := .Paginate (.Pages) 6 }}
-            {{ range $post_paginator.Pages }}
+            {{ range after 1 $post_paginator.Pages }}
             {{- partial "list-partials/postbox.html" . -}}
             {{end}}
         </div>

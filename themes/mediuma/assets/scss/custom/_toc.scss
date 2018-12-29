@@ -16,13 +16,14 @@
     }
 
     /* highlight 1st level */
-    #TableOfContents > ul > li > ul > li > a {
-        font-weight: 700;
-    }
+    // #TableOfContents > ul > li > ul > li > a {
+    //     font-weight: 700;
+    // }
 
     #TableOfContents li {
         margin-bottom:0;
-        margin-left: 20px
+        margin-left: 20px;
+        list-style-type: disc;
     }
     
     #TableOfContents > li > ul > li {

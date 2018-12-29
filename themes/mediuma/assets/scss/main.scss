@@ -1,3 +1,4 @@
+@import "custom/variables";
 @import "mediumish";
 @import "external/tango_syntax";
 @import "custom/navigation";
@@ -21,8 +22,42 @@
     }
 }
 
+.listfeaturedtag {
+    .card {
+        height: 500px;
+
+        .row {
+            height: 100%;
+        }
+    }
+}
+
 .card.category-card {
     height: 80px;
+}
+
+.card.featured-card {
+    .card-title {
+        font-size: 30px;
+    }
+
+    .card-text {
+        font-size: 22px;
+    }
+
+    .card-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .summary {
+        font-size: 18px;
+        color: $article-body-color;
+    }
+
+    .metafooter {
+        position: inherit;
+    }
 }
 
 .card {
