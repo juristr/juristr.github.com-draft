@@ -33,8 +33,10 @@
 	<link href="{{ "/css/tango_syntax.css" | urlize | relURL }}" rel="stylesheet">
 	<link href="{{ "/css/fluidbox.min.css" | urlize | relURL }}" rel="stylesheet"> -->
 
+	{{ if eq .Kind "page" }}
 	{{ $styles := resources.Get "/scss/article.scss" | toCSS | minify | fingerprint }}
 	<link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+	{{ end }}
 
 	<!-- <link href="{{ "/css/article.css" | urlize | relURL }}" rel="stylesheet"> -->
 </head>

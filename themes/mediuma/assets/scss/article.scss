@@ -5,10 +5,11 @@
 @import "custom/article-link";
 
 body {
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: $article-body-color;
+  background: white;
+}
+
+.container.page-container {
+  padding-bottom: 25px;
 }
 
 .article-post {
@@ -19,6 +20,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.01rem;
   font-family: $article-body-font;
+  padding-bottom: 15px;
   
   h1, h2, h3, h4 {
     color: $article-headers-color;
@@ -131,7 +133,6 @@ hr::before {
 }
 
 pre > code {
-    /* background: #f5f5f5; */
     font-family: 'Source Code Pro';
     overflow-x: auto;
     /* margin-bottom: 2.5em;
@@ -141,13 +142,15 @@ pre > code {
     box-sizing: border-box;
     display: block;
     font-size: 16px;
+    background-color: $neutral_200;
+    border-radius: 10px;
 }
 
-  pre,
-  code {
-    background: f5f5f5;
-    border: 0;
-    border-radius: 10px;
+  pre {
+    background-color: none!important;
+    // background: $neutral_300;
+    // background: f5f5f5;
+    // border: 0;
   }
 
   blockquote.emphasized {
@@ -212,5 +215,11 @@ pre > code {
     background-image: none !important;
   }
 
+
+.related-container {
+  background-color: $neutral_100;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 /* END IMAGES */
