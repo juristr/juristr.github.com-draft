@@ -1,0 +1,29 @@
+{{ define "header"}}
+{{- partial "_shared/navbar.html" . -}}
+{{ end }}
+
+{{ define "main" }}
+
+<div class="container list-page archive">
+    {{ .Content}}
+
+    <section class="recent-posts">
+        {{ range (where .Site.Pages "Type" "post").GroupByDate "2006" }}
+        <div class="section-title">
+            <h2><span>{{ .Key }}</span></h2>
+        </div>
+        <div class="listrecent">
+            {{ range .Pages }}
+            {{- partial "list-partials/smallpostbox.html" . -}}
+            {{ end }}
+        </div>
+        {{ end }}
+    </section>
+</div>
+{{ end }}
+{{ define "footer"}}
+<div class="container">
+    <!-- {{- partial "_shared/jumbotron.html" . -}} -->
+    {{- partial "_shared/footer.html" . -}}
+</div>
+{{ end }}

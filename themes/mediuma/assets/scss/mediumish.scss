@@ -18,7 +18,8 @@ a,a:hover {
 }
 .mediumnavigation {
 	background:rgba(255,255,255,.97);
-	box-shadow:0 2px 2px -2px rgba(0,0,0,.15);
+	// box-shadow:0 2px 2px -2px rgba(0,0,0,.15);
+	box-shadow: 0 4px 12px 0 rgba(0,0,0,.05)!important;
 }
 section {
 	margin-bottom:20px;

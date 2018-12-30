@@ -9,23 +9,12 @@
         <h2 class="card-title">
             <a href="{{ .URL }}">{{ .Title }}</a>
         </h2>
-        <h4 class="card-text">
-            {{ .Params.Lead }}
-            <!-- {{ .Summary }} -->
-        </h4>
         <div class="metafooter">
             <div class="wrapfooter">
                 <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="{{ .Site.Params.author.thumbnail}}" alt="{{ .Site.Params.author.name }}">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">{{ .Site.Params.author.name }}</a></span><br />
-                            <span class="post-date">{{ dateFormat "Jan 2, 2006" .PublishDate }}</span><span class="dot"></span><span
-                                class="post-read">{{ .ReadingTime }} min read</span>
+                    <div class="col-10 date-container">
+                        <span class="post-date">{{ dateFormat "Jan 2, 2006" .PublishDate }} - {{ .ReadingTime }} min
+                            read
                         </span>
                     </div>
                     <div class="col-2">
@@ -38,6 +27,8 @@
                         {{ end }}
                     </div>
                 </div>
+
+
             </div>
         </div>
     </div>

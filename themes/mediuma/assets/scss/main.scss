@@ -3,6 +3,10 @@
 @import "external/tango_syntax";
 @import "custom/navigation";
 
+body {
+    background-color: $neutral_100;
+}
+
 .list-page {
     section {
         margin-top: 40px;
@@ -24,7 +28,7 @@
 
 .listfeaturedtag {
     .card {
-        height: 500px;
+        height: 300px;
 
         .row {
             height: 100%;
@@ -60,8 +64,59 @@
     }
 }
 
+.list-page.archive {
+    .section-title {
+        margin-top: 35px;
+    }
+
+    .listrecent {
+        display: flex;
+        flex-wrap: wrap;
+
+        .card {
+            width: 350px;
+            height: 180px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+
+            .date-container {
+                display: flex;
+                align-items: center;
+            }
+
+            .post-category-icon {
+                float: none;
+            }
+
+        }
+    }
+}
+
+.list-page.blog {
+    .listrecent {
+        display: flex;
+        flex-wrap: wrap;
+
+        .card {
+            width: 350px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+
+            .date-container {
+                display: flex;
+                align-items: center;
+            }
+
+            .post-category-icon {
+                float: none;
+            }
+
+        }
+    }
+}
+
 .card {
-    border: 1px solid rgba(38,41,58,.1);
+    border: 1px solid $neutral_300;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     -webkit-box-shadow: 0 1px 3px 0 rgba(38,41,58,.06);
@@ -74,8 +129,8 @@
     height: 300px;
 
     &:hover {
-        -webkit-box-shadow: 0 2px 8px rgba(38,41,58,.1);
-        box-shadow: 0 2px 8px rgba(38,41,58,.1);
+        -webkit-box-shadow: 0 2px 8px $neutral_500;
+        box-shadow: 0 2px 8px $neutral_500;
     }
 
     .card--image {
@@ -92,8 +147,6 @@
     }
 
     .post-category-icon {
-        align-items:center;
-        float:right;
         padding: 0;
         margin: 0;
         

@@ -3,7 +3,7 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="container list-page">
+<div class="container list-page blog">
     <!-- {{- partial "_shared/title.html" . -}} -->
     {{- partial "_shared/featured-posts.html" . -}}
 
@@ -18,8 +18,8 @@
         <div class="section-title">
             <h2><span>All Posts</span></h2>
         </div>
-        <div class="card-columns listrecent">
-            {{ $post_paginator := .Paginate (.Pages) 6 }}
+        <div class="listrecent">
+            {{ $post_paginator := .Paginate (.Pages) 7 }}
             {{ range after 1 $post_paginator.Pages }}
             {{- partial "list-partials/postbox.html" . -}}
             {{end}}
