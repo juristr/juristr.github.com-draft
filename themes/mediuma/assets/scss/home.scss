@@ -1,0 +1,114 @@
+@import "custom/variables";
+
+body {
+    padding: 0;
+    background: white;
+}
+
+.large {
+    max-width: 1280px;
+}
+
+.top-banner {
+    height: 30px;
+    background-color: $primary_600;
+}
+
+.intro-section {
+    background-color: $neutral_100;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.intro-container {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+    .profile-pic-section {
+
+        img {
+            border-radius: 5px;
+            -webkit-box-shadow: 0 15px 35px 0 rgba(42,51,83,.12),0 5px 15px rgba(0,0,0,.06)!important;
+            box-shadow: 0 15px 35px 0 rgba(42,51,83,.12),0 5px 15px rgba(0,0,0,.06)!important;
+        }
+    }
+
+    .welcome-text {
+        color: $neutral_400;
+        font-weight: 700;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        color: $neutral_1000;
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+
+        span {
+            color: $primary_600;
+            font-weight: 400;
+        }
+    }
+
+    p {
+        font-size: 1.5rem;
+        color: $neutral_800;
+    }
+
+}
+
+
+.primary {
+    fill: #A5B3BB; 
+}
+  
+.secondary {
+    fill: #0D2B3E; 
+}
+
+.card-container {
+    display: flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.w-1_3 {
+    width: 33.3333%;
+    flex-direction: column;
+}
+
+
+.page-links {
+    margin-top: 5rem;
+
+}
+
+.page-button {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    background-color: $primary_600;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: 700;
+
+    -webkit-box-shadow: 0 15px 35px 0 rgba(42,51,83,.12),0 5px 15px rgba(0,0,0,.06);
+    box-shadow: 0 15px 35px 0 rgba(42,51,83,.12),0 5px 15px rgba(0,0,0,.06);
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+        background-color: $primary_800;
+    }
+}

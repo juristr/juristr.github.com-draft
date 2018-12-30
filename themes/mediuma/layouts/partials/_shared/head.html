@@ -18,8 +18,8 @@
 	<!-- Fonts -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-	<link href='//fonts.googleapis.com/css?family=Source+Code+Pro|Lora:400,700,400italic|Material+Icons' rel='stylesheet'
-	 type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
+	 rel='stylesheet' type='text/css'>
 	<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 
 	<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/github.min.css"> -->
@@ -32,6 +32,11 @@
 	<!-- <link href="{{ "/css/additional.css" | urlize | relURL }}" rel="stylesheet">
 	<link href="{{ "/css/tango_syntax.css" | urlize | relURL }}" rel="stylesheet">
 	<link href="{{ "/css/fluidbox.min.css" | urlize | relURL }}" rel="stylesheet"> -->
+
+	{{ if eq .Kind "home" }}
+	{{ $styles := resources.Get "/scss/home.scss" | toCSS | minify | fingerprint }}
+	<link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+	{{ end }}
 
 	{{ if eq .Kind "page" }}
 	{{ $styles := resources.Get "/scss/article.scss" | toCSS | minify | fingerprint }}
