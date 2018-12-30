@@ -1,3 +1,5 @@
+@import "custom/variables";
+
 /*
 Template Name:Mediumish
 Copyright:WowThemes.net,https://www.wowthemes.net
@@ -25,17 +27,18 @@ section {
 	margin-bottom:20px;
 }
 .section-title h2 {
-	border-bottom:1px solid rgba(0,0,0,.15);
+	border-bottom:2px solid $neutral_300;
 	margin-bottom:25px;
 	font-weight:700;
 	font-size:1.4rem;
 	margin-bottom:27px;
 }
 .section-title span {
-	border-bottom:1px solid rgba(0,0,0,.44);
+	border-bottom:2px solid $primary_600;
 	display:inline-block;
 	padding-bottom:20px;
 	margin-bottom:-1px;
+	color: $neutral_1000;
 }
 @media (min-width:576px) {
 	.card-columns.listfeaturedtag {

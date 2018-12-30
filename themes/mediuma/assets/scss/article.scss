@@ -13,7 +13,7 @@ body {
 
 .article-post {
   background-color: white;
-  color:rgba(0,0,0,0.8);
+  color:$article-body-color;
   width: 100%;
   font-size: 20px;
   line-height: 1.5;
@@ -21,6 +21,7 @@ body {
   font-family: $article-body-font;
   
   h1, h2, h3, h4 {
+    color: $article-headers-color;
     font-weight: 700;
     margin-top: 0.83em;
     margin-bottom: 0.83em;
