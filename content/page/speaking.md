@@ -4,6 +4,8 @@ title: "Public Speaking"
 
 Here are some of my public speaking events.
 
+- [**SFSCon Bolzano**](https://www.sfscon.it) (November 2018) - "End-to-end testing done right!"
+- [**Angular San Francisco Meetup**](https://www.meetup.com/Angular-SF/events/255253396/) (November 2018) - "Boost your Reactive Angular Forms"
 - [**ngTalks 2018**](https://ngvikings.org/) (August 2018) - "Supercharge your Angular forms!"  
 Slides: [GSlides](https://www.youtube.com/redirect?q=https%3A%2F%2Ft.co%2Fz7dX6vDi0R&redir_token=fKzm0zkGT7CNvkI6A1HIu33pAlh8MTUzOTA4NzI1M0AxNTM5MDAwODUz&event=video_description&v=XYFrWkzHVxw)   
 Talk: [Youtube](https://www.youtube.com/watch?v=XYFrWkzHVxw)
