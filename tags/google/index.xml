@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/google/</link>
+    <description>Recent content in Google on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Tue, 07 Jun 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Should Android Worry About the iOS 5 Update? Definitely Not!</title>
+      <link>https://juristr.com/blog/2011/06/should-android-worry-about-ios-5-update/</link>
+      <pubDate>Tue, 07 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/06/should-android-worry-about-ios-5-update/</guid>
+      <description>With the announcement of the new iOS 5 at the WWDC, the first articles emerge already on the web relating the new features with the existing Android OS.</description>
+    </item>
+    
+    <item>
+      <title>Exercising Our Remote Application Removal Feature</title>
+      <link>https://juristr.com/blog/2010/06/exercising-our-remote-application/</link>
+      <pubDate>Sun, 27 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/06/exercising-our-remote-application/</guid>
+      <description>A friend of mine shared an interesting blog entry from the Android Developer Blog on Buzz. Here some excerpts:
+Exercising Our Remote Application Removal Feature</description>
+    </item>
+    
+    <item>
+      <title>Android 2.2 - Release Froyo</title>
+      <link>https://juristr.com/blog/2010/05/android-22-release-froyo/</link>
+      <pubDate>Fri, 21 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/05/android-22-release-froyo/</guid>
+      <description>Take a look at the official video. Some really great enhancements, on the part of the user but also on the developer&#39;s part.
+Personal highlights:</description>
+    </item>
+    
+    <item>
+      <title>Google seems to care about privacy</title>
+      <link>https://juristr.com/blog/2010/05/google-seems-to-care-about-privacy/</link>
+      <pubDate>Wed, 19 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/05/google-seems-to-care-about-privacy/</guid>
+      <description>I just received the following mail:
+
+Hi,
+To protect your privacy we would like you to know that Google Latitude is running on your Android-powered device and reporting your location.</description>
+    </item>
+    
+    <item>
+      <title>Preview the new Gmail web interface for the iPad in Chrome</title>
+      <link>https://juristr.com/blog/2010/04/preview-new-gmail-web-interface-for/</link>
+      <pubDate>Sun, 11 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/04/preview-new-gmail-web-interface-for/</guid>
+      <description>Since the launch of the iPhone and later the Android mobile OS, Google has investigated some time in creating more mobile friendly interfaces of their common web applications (Gmail, GReader, GDocs,Wave), optimized for the advanced touch interfaces.</description>
+    </item>
+    
+    <item>
+      <title>Updated Home: Stackoverflow iGoogle Gadgets</title>
+      <link>https://juristr.com/blog/2009/11/updated-home-stackoverflow-igoogle/</link>
+      <pubDate>Fri, 06 Nov 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/11/updated-home-stackoverflow-igoogle/</guid>
+      <description>Today my Stackoverflow iGoogle gadgets stopped working. I couldn&#39;t identify the problem. I just got the error
+Unable to retrieve spec for http://files.getdropbox.com/u/10936/gadgetHosting/stackoverflowProfile/prod/stackoverflow.xml. HTTP error 502</description>
+    </item>
+    
+    <item>
+      <title>Accessing the host machine from your Android emulator</title>
+      <link>https://juristr.com/blog/2009/10/accessing-host-machine-from-your/</link>
+      <pubDate>Thu, 29 Oct 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/10/accessing-host-machine-from-your/</guid>
+      <description>I recently started a project where I develop an Android app (there will some posts later on ;) ) which accesses a remote server as its back-end, hosted on the Google Appengine.</description>
+    </item>
+    
+    <item>
+      <title>Google Wave...a first comment</title>
+      <link>https://juristr.com/blog/2009/10/google-wavea-first-comment/</link>
+      <pubDate>Fri, 16 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/10/google-wavea-first-comment/</guid>
+      <description>I&#39;ve now played a bit around with Google Wave for nearly two weeks now and it&#39;s quite cool. The real-time collaborative editing is just amazing, as you can also see in the  dozen of demonstration videos which are around the web already.</description>
+    </item>
+    
+    <item>
+      <title>GWT meets Spring</title>
+      <link>https://juristr.com/blog/2009/09/gwt-meets-spring/</link>
+      <pubDate>Tue, 29 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/09/gwt-meets-spring/</guid>
+      <description>GWT is quite evolving recently. There are a couple of reasons for that:
+Coding apps like Gmail and Google Wave
+We all appreciate the speed of the Gmail UI.</description>
+    </item>
+    
+    <item>
+      <title>New equation editor makes GDocs even more usable!!</title>
+      <link>https://juristr.com/blog/2009/09/new-equation-editor-makes-gdocs-even/</link>
+      <pubDate>Sun, 20 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/09/new-equation-editor-makes-gdocs-even/</guid>
+      <description>I always liked the idea of having a office-like suite on the web. I already used Writely for taking quick notes or just short documents, already before it was acquired by Google and merged - together with Google Spreadsheets - to the Google Documents service.</description>
+    </item>
+    
+    <item>
+      <title>Meta.Stackoverflow, Serverfault and Superuser iGoogle Gadgets submitted!</title>
+      <link>https://juristr.com/blog/2009/08/metastackoverflow-serverfault-and/</link>
+      <pubDate>Wed, 05 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/08/metastackoverflow-serverfault-and/</guid>
+      <description>After the increasing popularity of Stackoverflow, additional three sites have been added
+Serverfault.com
+For system administrators and IT professionals. People who manage and maintain computers in professional capacity.</description>
+    </item>
+    
+    <item>
+      <title>iGoogle Gadget: Stackoverflow Profile View</title>
+      <link>https://juristr.com/blog/2009/06/igoogle-gadget-stackoverflow-profile/</link>
+      <pubDate>Mon, 22 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/06/igoogle-gadget-stackoverflow-profile/</guid>
+      <description>Are you a member of Stackoverflow.com and you want to track your profile such as your reputation or earned badges? A couple of days ago I&#39;ve submitted an iGoogle gadget that makes this easy.</description>
+    </item>
+    
+    <item>
+      <title>Mashup editor about to shut down</title>
+      <link>https://juristr.com/blog/2009/06/mashup-editor-about-to-shut-down/</link>
+      <pubDate>Mon, 15 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/06/mashup-editor-about-to-shut-down/</guid>
+      <description>According to a note on the official Google Mashup Blog, they&#39;re about to shut down the Google Mashup Editor product. They took the valuable info they got from a numerous of Mashup developers to develop their AppEngine which will somehow replace the Mashup editor, although it is a different, much more complex product (with more features of course).</description>
+    </item>
+    
+    <item>
+      <title>Page Speed: Firebug add-on for analyzing web page speed</title>
+      <link>https://juristr.com/blog/2009/06/page-speed-firebug-add-on-for-analyzing/</link>
+      <pubDate>Mon, 08 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/06/page-speed-firebug-add-on-for-analyzing/</guid>
+      <description>Google just released Page Speed, a Firefox add-on for analyzing web pages in terms of speed. The tool directly integrates into Firebug and automatically verifies your page against a set of best practices rules.</description>
+    </item>
+    
+    <item>
+      <title>Image search: Bing vs. Google Image</title>
+      <link>https://juristr.com/blog/2009/06/image-search-bing-vs-google-image/</link>
+      <pubDate>Sun, 07 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/06/image-search-bing-vs-google-image/</guid>
+      <description>Bing does a great job in displaying images. You get all of them displayed in the center of the page within a separate scrollable container.</description>
+    </item>
+    
+    <item>
+      <title>QSB - Google Quick Search bar for the Mac</title>
+      <link>https://juristr.com/blog/2009/06/qsb-google-quick-search-bar-for-mac/</link>
+      <pubDate>Sat, 06 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/06/qsb-google-quick-search-bar-for-mac/</guid>
+      <description>And voila, the 1st Mac-related post :) Just a quick one, I have to continue with my studies so..
+When I switched over to the Mac (2 weeks ago now) I started to get productive as quick as possible (due to my exams).</description>
+    </item>
+    
+    <item>
+      <title>Google Wave - Collaboration et excellence</title>
+      <link>https://juristr.com/blog/2009/06/google-wave-collaboration-et-excellance/</link>
+      <pubDate>Mon, 01 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/06/google-wave-collaboration-et-excellance/</guid>
+      <description>Some days ago I just quickly scrolled over my Google Reader friends&#39; items and saw Manfred&#39;s blog entry about Google Wave. It kept my attention since I didn&#39;t yet hear anything about that new Google product.</description>
+    </item>
+    
+    <item>
+      <title>Will Microsoft&#39;s Bing become Google&#39;s biggest threat?</title>
+      <link>https://juristr.com/blog/2009/05/will-microsofts-bing-become-googles/</link>
+      <pubDate>Sun, 31 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/05/will-microsofts-bing-become-googles/</guid>
+      <description>Microsoft Live Search release wasn&#39;t a big success to compete Google on the search engine market. Now they&#39;re about to release Bing which is isn&#39;t thought to be another &#34;</description>
+    </item>
+    
+    <item>
+      <title>Use Google Scholar and Latex for correctly citing papers</title>
+      <link>https://juristr.com/blog/2009/05/use-google-scholar-and-latex-for/</link>
+      <pubDate>Tue, 26 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/05/use-google-scholar-and-latex-for/</guid>
+      <description>Citing papers is somewhat critical. There are predefined styles that have/should be respected. But it can be really easy. With Latex you can define a kind of &#34;</description>
+    </item>
+    
+    <item>
+      <title>Google&#39;s newest addition: Google Brain search for mobile!!</title>
+      <link>https://juristr.com/blog/2009/04/googles-newest-addition-google-brain/</link>
+      <pubDate>Sun, 12 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/04/googles-newest-addition-google-brain/</guid>
+      <description> 
+Don&#39;t take it too seriously ;) : http://www.google.com/mobile/default/brainsearch.html </description>
+    </item>
+    
+    <item>
+      <title>AJAX APIs Playground Ver. 2</title>
+      <link>https://juristr.com/blog/2009/04/ajax-apis-playground-ver-2/</link>
+      <pubDate>Tue, 07 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/04/ajax-apis-playground-ver-2/</guid>
+      <description>Google announced the version 2 of the AJAX APIs Playground. As you probably know, Google provides you a simple way for managing (especially the versions) the most useful JavaScript libraries such as jQuery, Dojo, Prototype scriptaculus etc.</description>
+    </item>
+    
+    <item>
+      <title>Everything you always wanted to know about Google...</title>
+      <link>https://juristr.com/blog/2009/03/everything-you-always-wanted-to-know/</link>
+      <pubDate>Sun, 08 Mar 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/03/everything-you-always-wanted-to-know/</guid>
+      <description>This is a presentation done by a french consulting firm. The slideshow doesn&#39;t address technology but goes more into the analysis of the business part, of key business strategies that Google applies on the market.</description>
+    </item>
+    
+    <item>
+      <title>Google AJAX APIs: The Google Visualization API</title>
+      <link>https://juristr.com/blog/2009/02/google-ajax-apis-google-visualization/</link>
+      <pubDate>Sun, 22 Feb 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/02/google-ajax-apis-google-visualization/</guid>
+      <description>From now and then I&#39;m always taking a quick look at Google&#39;s API page to see whether something new and interesting is there. Today I got stuck at the Google Visualization API, an API that may be especially be interesting for developers involved in web technologies.</description>
+    </item>
+    
+    <item>
+      <title>Google contacts and calendar sync</title>
+      <link>https://juristr.com/blog/2009/02/google-contacts-and-calendar-sync/</link>
+      <pubDate>Fri, 20 Feb 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/02/google-contacts-and-calendar-sync/</guid>
+      <description>Google published a new service called Google Sync that allows to integrate the data on Gmail and GCalendar with mobile devices. The steps for activating the synchronization are indicated on the Google Sync page.</description>
+    </item>
+    
+    <item>
+      <title>Finally!! Gmail went offline.</title>
+      <link>https://juristr.com/blog/2009/02/finally-gmail-went-offline/</link>
+      <pubDate>Sun, 01 Feb 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/02/finally-gmail-went-offline/</guid>
+      <description>Just a couple of minutes ago, I checked my Gmail account for new lab features (just because of pure annoyance due to the things I&#39;ve currently to study ;) ) and there was a huge surprise:</description>
+    </item>
+    
+    <item>
+      <title>HowTo: synchronize Google Calendar with your iPhone</title>
+      <link>https://juristr.com/blog/2009/01/howto-synchronize-google-calendar-with/</link>
+      <pubDate>Tue, 20 Jan 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/01/howto-synchronize-google-calendar-with/</guid>
+      <description>I&#39;m sure you already tried this before. Well unfortunately there is no existing, pre-installed way for synchronizing your iPhone calendar with your Google Calendar. What you can do is to sync your Outlook calendars with your iPhone, either when attaching it to your Mac, PC or whatever (having iTunes installed of course :) , Apples strategy as usual) or over the Microsoft Exchange account (if you have one).</description>
+    </item>
+    
+    <item>
+      <title>First steps with Silverlight. What about GWT?</title>
+      <link>https://juristr.com/blog/2008/12/first-steps-with-silverlight-what-about/</link>
+      <pubDate>Tue, 23 Dec 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/12/first-steps-with-silverlight-what-about/</guid>
+      <description>Last week I had some time which allowed me to do some experiments with Microsoft Silverlight. I had to give it a try since you hear so much on the web about it, so I was quite curious, how it works out.</description>
+    </item>
+    
+    <item>
+      <title>Building a better query</title>
+      <link>https://juristr.com/blog/2008/10/building-better-query/</link>
+      <pubDate>Thu, 23 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/10/building-better-query/</guid>
+      <description> Building better Google queries:
+http://www.google.com/tour/services/query.html </description>
+    </item>
+    
+    <item>
+      <title>New Google Personalized page</title>
+      <link>https://juristr.com/blog/2008/10/new-google-personalized-page/</link>
+      <pubDate>Thu, 16 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/10/new-google-personalized-page/</guid>
+      <description>Just got the new release of the iGoogle homepage. Lets see whether there are some improvements :)
+Links:
+http://googlesystem.blogspot.com/2008/06/google-tests-new-igoogle.html
+http://www.google.com/support/bin/answer.py?answer=97658
+
+
+Update
+Cool, they reverted my page back to the old iGoogle after 5 days.</description>
+    </item>
+    
+    <item>
+      <title>Picasa web albums improved</title>
+      <link>https://juristr.com/blog/2008/09/picasa-web-albums-improved/</link>
+      <pubDate>Fri, 05 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/09/picasa-web-albums-improved/</guid>
+      <description> 
+Official blog post </description>
+    </item>
+    
+    <item>
+      <title>Google Chrome: browsing the Google way</title>
+      <link>https://juristr.com/blog/2008/09/google-chrome-browsing-google-way_04/</link>
+      <pubDate>Thu, 04 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/09/google-chrome-browsing-google-way_04/</guid>
+      <description>I just came back from holidays at Rhodos (very nice) and flew over my mails and see there, one notice kept particularly my attention: Google Chrome, a new browser developed by Google.</description>
+    </item>
+    
+    <item>
+      <title>Google Earth globe doesn&#39;t appear</title>
+      <link>https://juristr.com/blog/2008/08/google-earth-globe-doesnt-appear/</link>
+      <pubDate>Fri, 15 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/08/google-earth-globe-doesnt-appear/</guid>
+      <description>Some weeks ago I launched Google Earth to check out a route. For some reason however the globe didn&#39;t appear inside the application. All of the pointers, flags and country borders however where there, just the main earth surface was missing.</description>
+    </item>
+    
+    <item>
+      <title>Page creator is going to be disposed this year</title>
+      <link>https://juristr.com/blog/2008/08/page-creator-is-going-to-be-disposed/</link>
+      <pubDate>Thu, 07 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/08/page-creator-is-going-to-be-disposed/</guid>
+      <description> Now we know why all the feature requests have not been answered... </description>
+    </item>
+    
+    <item>
+      <title>Google about to add offline support to Gmail and GCalendar</title>
+      <link>https://juristr.com/blog/2008/07/google-about-to-add-offline-support-to/</link>
+      <pubDate>Fri, 18 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/07/google-about-to-add-offline-support-to/</guid>
+      <description>I did already wonder how long it will take for Google to extend their mission of teaching web-apps to work offline on its remaining major services after adding it to Google Reader and Google Docs.</description>
+    </item>
+    
+    <item>
+      <title>Lively - Google&#39;s answer to Second Live</title>
+      <link>https://juristr.com/blog/2008/07/lively-googles-answer-to-second-live/</link>
+      <pubDate>Fri, 11 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/07/lively-googles-answer-to-second-live/</guid>
+      <description>Originally I wanted to finish a post I&#39;m currently writing, but then I came across one mentioning Google&#39;s newest product. There have already been some rumors about a secret project at Google and now it&#39;s out.</description>
+    </item>
+    
+    <item>
+      <title>Testing Ajax applications</title>
+      <link>https://juristr.com/blog/2008/06/testing-ajax-applications/</link>
+      <pubDate>Fri, 27 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/06/testing-ajax-applications/</guid>
+      <description>Testing the correct functioning of an application is a major issue in software development. Errors happen and cannot (always) be prevented upfront. There are however some approaches to filter bugs already during development</description>
+    </item>
+    
+    <item>
+      <title>Gmail awakes attention</title>
+      <link>https://juristr.com/blog/2008/06/gmail-awakes-attention/</link>
+      <pubDate>Fri, 06 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/06/gmail-awakes-attention/</guid>
+      <description>After quite a long time of silence, today the were a lot of rumors regarding Gmail. After adding an initial loading page, they released a &#34;</description>
+    </item>
+    
+    <item>
+      <title>Finally, I got Google Docs offline access</title>
+      <link>https://juristr.com/blog/2008/04/finally-i-got-google-docs-offline/</link>
+      <pubDate>Sun, 20 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/04/finally-i-got-google-docs-offline/</guid>
+      <description>I don&#39;t whether you&#39;ve heared already something about Google Gears? Summarizing shortly it is the possibility of letting modern web ajax applications work offline. Sounds strange to you, letting an &#34;</description>
+    </item>
+    
+    <item>
+      <title>Finally, a new GTalk version</title>
+      <link>https://juristr.com/blog/2008/04/finally-new-gtalk-version/</link>
+      <pubDate>Sun, 13 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/04/finally-new-gtalk-version/</guid>
+      <description>I don&#39;t even remember for how long Gtalk hasn&#39;t experienced any update. While the Gmail Chat received the capability to be &#34;invisible&#34; and the GTalk Gadget version a &#34;</description>
+    </item>
+    
+    <item>
+      <title>Building and hosting applications empowered by the Google infrastructure</title>
+      <link>https://juristr.com/blog/2008/04/building-and-hosting-applications/</link>
+      <pubDate>Tue, 08 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/04/building-and-hosting-applications/</guid>
+      <description>Today I opened Google Reader and immediately a bunch of Google-related headlines jumped into my eyes: &#34;Google Apps Engine&#34;. Having already some ideas in mind of what it could be I &#34;</description>
+    </item>
+    
+    <item>
+      <title>Improved code browsing on Google Code</title>
+      <link>https://juristr.com/blog/2008/03/improved-code-browsing-on-google-code/</link>
+      <pubDate>Mon, 17 Mar 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/03/improved-code-browsing-on-google-code/</guid>
+      <description>Google Code Hosting changed its way of giving users the possibility to browse code online. Before the plain source file was just displayed on the browser by opening it as a normal text-file.</description>
+    </item>
+    
+    <item>
+      <title>Not bad...</title>
+      <link>https://juristr.com/blog/2008/03/not-bad/</link>
+      <pubDate>Thu, 06 Mar 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/03/not-bad/</guid>
+      <description>In the last few month Google expanded their street view images to a lot of other cities in the US. Yesterday I just took a quick look, randomly on a street at the bay area of San Francisco.</description>
+    </item>
+    
+    <item>
+      <title>Get in contact with your readers</title>
+      <link>https://juristr.com/blog/2008/03/get-in-contact-with-your-readers/</link>
+      <pubDate>Sun, 02 Mar 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/03/get-in-contact-with-your-readers/</guid>
+      <description>Google just released an new interesting feature in relation with its instant messaging client(s) (Google Talk, Google Talk Gadget, Gmail Chat). You have now the possibility to place a so-called &#34;</description>
+    </item>
+    
+    <item>
+      <title>News Mapper experiences a revival</title>
+      <link>https://juristr.com/blog/2007/12/news-mapper-experiences-revival/</link>
+      <pubDate>Thu, 13 Dec 2007 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/12/news-mapper-experiences-revival/</guid>
+      <description>After I first published my Google Mashup project &#34;News Mapper&#34;, it immediately got published first on the Google Code site of the GME project and then also on the Official GME blog.</description>
+    </item>
+    
+    <item>
+      <title>Android - An Open Handset Alliance Project</title>
+      <link>https://juristr.com/blog/2007/11/android-open-handset-alliance-project/</link>
+      <pubDate>Tue, 13 Nov 2007 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/11/android-open-handset-alliance-project/</guid>
+      <description>There have been a lot of rumors around the web recently about an outcoming &#34;GPhone&#34;. Actually there doesn&#39;t exist any GPhone, but Google launched a system called Android.</description>
+    </item>
+    
+    <item>
+      <title>GME starts to appear here and there</title>
+      <link>https://juristr.com/blog/2007/11/gme-starts-to-appear-here-and-there/</link>
+      <pubDate>Sat, 03 Nov 2007 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/11/gme-starts-to-appear-here-and-there/</guid>
+      <description>It seems as if Google uses their new Mashup editor in many other sites for making them more functional in a quick and easy way.</description>
+    </item>
+    
+    <item>
+      <title>News Mapper has success!</title>
+      <link>https://juristr.com/blog/2007/10/news-mapper-has-success/</link>
+      <pubDate>Wed, 31 Oct 2007 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/10/news-mapper-has-success/</guid>
+      <description>My recent News Mapper mashup seems to have some success (at least for me :) ). Today I registered 114 visits which is my personal record for 1 day :D .</description>
+    </item>
+    
+    <item>
+      <title>News Mapper: A mashup experience with the Google Mashup Editor</title>
+      <link>https://juristr.com/blog/2007/10/now-in-two-weeks-after-my-successful/</link>
+      <pubDate>Mon, 29 Oct 2007 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/10/now-in-two-weeks-after-my-successful/</guid>
+      <description>Now in the two weeks after my successful graduation and before starting to work I found some space for doing some programming experiments. :) What I planned already for a longer time now has been to do some JavaScript coding since it becomes an always more important aspect in modern web technologies such as AJAX and so on.</description>
+    </item>
+    
+    <item>
+      <title>Google launched Presentation service</title>
+      <link>https://juristr.com/blog/2007/09/google-launched-presentation-service/</link>
+      <pubDate>Sat, 22 Sep 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/09/google-launched-presentation-service/</guid>
+      <description>Google launched the already announced presentation service, directly integrated into Google Docs. I tried it out and created the following presentation:
+http://docs.google.com/Present?docid=djwjts8_47gkjn9k&amp;amp;fs=true
+(Official GDocs blog)</description>
+    </item>
+    
+    <item>
+      <title>Blogger Buzz: Blogger Play: Watch the blogs go by</title>
+      <link>https://juristr.com/blog/2007/09/blogger-buzz-blogger-play-watch-blogs/</link>
+      <pubDate>Sat, 15 Sep 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/09/blogger-buzz-blogger-play-watch-blogs/</guid>
+      <description>Today Blogger launched a quite nice feature. Well, actually it is not a feature that may be especially useful for Bloggers. They launched Blogger Play.</description>
+    </item>
+    
+    <item>
+      <title>GReader a mature product</title>
+      <link>https://juristr.com/blog/2007/09/greader-mature-product/</link>
+      <pubDate>Sun, 09 Sep 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/09/greader-mature-product/</guid>
+      <description>Google Reader, Google&#39;s News Feed Reader, has become a mature product. Some days ago the Google Reader team released a major update to their product.</description>
+    </item>
+    
+    <item>
+      <title>Google Earth 4.2 - Easter egg</title>
+      <link>https://juristr.com/blog/2007/09/google-earth-42-easter-egg/</link>
+      <pubDate>Sun, 02 Sep 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/09/google-earth-42-easter-egg/</guid>
+      <description>It seems as if Google has integrated an easter egg into Google Earth version 4.2. It is a flight-simulator, not really as the Microsoft Flight Simulator, but a nice and promising start :)</description>
+    </item>
+    
+    <item>
+      <title>The final Gmail video</title>
+      <link>https://juristr.com/blog/2007/08/final-gmail-video/</link>
+      <pubDate>Thu, 30 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/08/final-gmail-video/</guid>
+      <description>Remember I wrote a post about a new Gmail advertising campaign some time ago?
+Look how creative people around the world have been...below there is the final video:</description>
+    </item>
+    
+    <item>
+      <title>Google Earth | Sky</title>
+      <link>https://juristr.com/blog/2007/08/google-earth-sky/</link>
+      <pubDate>Sat, 25 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/08/google-earth-sky/</guid>
+      <description>Some time ago I&#39;ve read (I don&#39;t remember where) that NASA will cooperate with Google for integrating their large amount of space pictures and celestial maps into Google Earth.</description>
+    </item>
+    
+    <item>
+      <title>Google Talk JavaScript Client</title>
+      <link>https://juristr.com/blog/2007/08/google-talk-javascript-client/</link>
+      <pubDate>Thu, 09 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/08/google-talk-javascript-client/</guid>
+      <description>Today, while scrolling over my Google Reader entries, a headline from the Google Operating System blog (not an official Google blog) got my attention: &#34;</description>
+    </item>
+    
+    <item>
+      <title>Creative way of making publicity</title>
+      <link>https://juristr.com/blog/2007/08/creative-way-of-making-publicity/</link>
+      <pubDate>Fri, 03 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/08/creative-way-of-making-publicity/</guid>
+      <description>The Gmail team has found another time a way for publicizing their product. Some months ago I&#39;ve posted a (crazy :) ) video about advertising Gmail.</description>
+    </item>
+    
+    <item>
+      <title>Searched a Google Tasklist?? No? Anyway, take a look at this...</title>
+      <link>https://juristr.com/blog/2007/07/searched-google-tasklist-no-anyway-take/</link>
+      <pubDate>Wed, 11 Jul 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/07/searched-google-tasklist-no-anyway-take/</guid>
+      <description>I&#39;ve seen a lot of people in several online groups claiming that Google should implement some kind of tasklist, possibly integrated with Gmail and Google Calendar.</description>
+    </item>
+    
+    <item>
+      <title>GPC team finally replies to user request</title>
+      <link>https://juristr.com/blog/2007/06/gpc-team-finally-replies-to-user/</link>
+      <pubDate>Fri, 29 Jun 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/06/gpc-team-finally-replies-to-user/</guid>
+      <description>Some time ago I complained about the missing possibility in Google Page Creator to delete a created site. A lot of people complained about it on the official GPC Group without any reaction from the part of the Google Page Creator team.</description>
+    </item>
+    
+    <item>
+      <title>Huge update to GDocs interface</title>
+      <link>https://juristr.com/blog/2007/06/huge-update-to-gdocs-interface/</link>
+      <pubDate>Wed, 27 Jun 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/06/huge-update-to-gdocs-interface/</guid>
+      <description>Google has done a huge update to the main Google Docs user interface. One of the major changes was to add support for &#34;folders&#34; which allows for better management of all the different documents.</description>
+    </item>
+    
+    <item>
+      <title>Street View on Google Maps</title>
+      <link>https://juristr.com/blog/2007/06/street-view-on-google-maps/</link>
+      <pubDate>Fri, 01 Jun 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/06/street-view-on-google-maps/</guid>
+      <description>Google Maps has now a new feature, the &#34;Street View&#34;.
+Street View gives you navigable 360-degree street-level imagery in
+Google Maps for selected cities. You can see images for a spot and</description>
+    </item>
+    
+    <item>
+      <title>One step forward to the &#34;Google Operating System&#34;?</title>
+      <link>https://juristr.com/blog/2007/05/one-step-forward-to-google-operating/</link>
+      <pubDate>Thu, 31 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/05/one-step-forward-to-google-operating/</guid>
+      <description>Yesterday Google released an open source tool called &#34;Google Gears&#34; which allows to run Google Applications offline. According to Aaron Boodman and Erik Arvidsson, two Google Gears Engineers, the ability of running Google web applications offline were one of the major user requests:</description>
+    </item>
+    
+    <item>
+      <title>What &#34;sucks&#34; about Google Page Creator</title>
+      <link>https://juristr.com/blog/2007/05/what-sucks-about-google-page-creator/</link>
+      <pubDate>Sat, 26 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/05/what-sucks-about-google-page-creator/</guid>
+      <description>Google Page Creator has a nice idea: Let people - without any major knowledge in HTML or web design - create and publish easily their own webpage.</description>
+    </item>
+    
+    <item>
+      <title>Google presents itself in new style</title>
+      <link>https://juristr.com/blog/2007/05/google-presents-itself-in-new-style/</link>
+      <pubDate>Thu, 17 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/05/google-presents-itself-in-new-style/</guid>
+      <description>Google has done some major changes on its stlye related to the appearance, but also to the way they place the content on the search results.</description>
+    </item>
+    
+    <item>
+      <title>We&#39;re sorry....but your query looks...</title>
+      <link>https://juristr.com/blog/2007/04/were-sorrybut-your-query-looks/</link>
+      <pubDate>Thu, 26 Apr 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/04/were-sorrybut-your-query-looks/</guid>
+      <description>I&#39;m using the Google Project Hosting service for a university project I&#39;m currently involved in. Recently I got the following error when I wanted to commit my changed code and thought it may be helpful to post it here:</description>
+    </item>
+    
+    <item>
+      <title>Google&#39;s new presentation service</title>
+      <link>https://juristr.com/blog/2007/04/googles-new-presentation-service/</link>
+      <pubDate>Wed, 25 Apr 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/04/googles-new-presentation-service/</guid>
+      <description>Google provides now for already a longer time a service called &#34;Google Docs&#34;, giving the possibility of creating text and spreadsheet documents online. The service emerged, when Google acquired former &#34;</description>
+    </item>
+    
+    <item>
+      <title>Wondered where your blog-album is??</title>
+      <link>https://juristr.com/blog/2007/03/wondered-where-your-blog-album-is/</link>
+      <pubDate>Wed, 28 Mar 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/03/wondered-where-your-blog-album-is/</guid>
+      <description>Some time ago on the Blogger blog...
+
+Blogger and Picasa Web Albums  Ever wanted to see all the photos you&#39;ve uploaded to your blog in one place?</description>
+    </item>
+    
+    <item>
+      <title>Some kind of crazy</title>
+      <link>https://juristr.com/blog/2007/03/some-kind-of-crazy/</link>
+      <pubDate>Fri, 16 Mar 2007 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/03/some-kind-of-crazy/</guid>
+      <description>I just found this video and thought I have to post it&amp;hellip;I don&amp;rsquo;t know what the people at Google do, but somehow they often seem a little crazy :D.</description>
+    </item>
+    
+  </channel>
+</rss>

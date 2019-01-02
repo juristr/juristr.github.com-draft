@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webdev on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/webdev/</link>
+    <description>Recent content in Webdev on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Mon, 22 Jul 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/webdev/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>TypeScript: Application scale JavaScript</title>
+      <link>https://juristr.com/blog/2013/07/typescript-application-scale-javascript/</link>
+      <pubDate>Mon, 22 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2013/07/typescript-application-scale-javascript/</guid>
+      <description>This article is about Hejlsberg&amp;rsquo;s talk about TypeScript at the Build 2013 conference. TypeScript is now already around for about 9 months or so and I like the concept behind of being something to improve the tooling around JavaScript but not really re-inventing a(nother) new language that compiles to it.</description>
+    </item>
+    
+    <item>
+      <title>Learning JavaScriptMVC</title>
+      <link>https://juristr.com/blog/2013/06/learning-javascriptmvc/</link>
+      <pubDate>Tue, 18 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2013/06/learning-javascriptmvc/</guid>
+      <description>About half a year ago, Packt Publishing approached me for a technical review of a new book about JavaScriptMVC they were about to publish. I agreed and started to participate in the review process.</description>
+    </item>
+    
+    <item>
+      <title>Caching, jQuery Ajax and Other IE Fun</title>
+      <link>https://juristr.com/blog/2013/06/caching-jquery-ajax-and-other-ie-fun/</link>
+      <pubDate>Thu, 06 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2013/06/caching-jquery-ajax-and-other-ie-fun/</guid>
+      <description>In the last couple of days I had quite a fun time debugging problems of our JavaScript SPAs on oldIE (thanks God we got the Browserstack licenses).</description>
+    </item>
+    
+    <item>
+      <title>Output Caching in ASP.net MVC</title>
+      <link>https://juristr.com/blog/2012/10/output-caching-in-aspnet-mvc/</link>
+      <pubDate>Mon, 29 Oct 2012 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/10/output-caching-in-aspnet-mvc/</guid>
+      <description>Although nowadays most of us have broadband connections, resource caching is important as loading a resource from your local HD is (by now) still faster than fetching it remotely.</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s time to learn CoffeeScript</title>
+      <link>https://juristr.com/blog/2012/08/its-time-to-learn-coffeescript/</link>
+      <pubDate>Sun, 26 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/08/its-time-to-learn-coffeescript/</guid>
+      <description>Seing and reading all the stuff about CoffeeScript, I thought it might be useful to get into that &amp;ldquo;language&amp;rdquo; as well in order to get a better understanding.</description>
+    </item>
+    
+  </channel>
+</rss>

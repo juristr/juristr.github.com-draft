@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Soft Skills on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/soft-skills/</link>
+    <description>Recent content in Soft Skills on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Wed, 05 Mar 2014 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/soft-skills/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Decision making, problem solving, introducing ideas, being influencial</title>
+      <link>https://juristr.com/blog/2014/03/decision-making-and-problem-solving/</link>
+      <pubDate>Wed, 05 Mar 2014 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2014/03/decision-making-and-problem-solving/</guid>
+      <description>Usually when people think about software development, they just have the typical nerds in mind, shy but smart, introvert people sitting in (often) dark rooms hammering down obscure instruction sets on their keyboards.</description>
+    </item>
+    
+  </channel>
+</rss>

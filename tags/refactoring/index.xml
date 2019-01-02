@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Refactoring on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/refactoring/</link>
+    <description>Recent content in Refactoring on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Thu, 07 Jun 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/refactoring/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>This is all your app is: a collection of tiny details. (Contd.)</title>
+      <link>https://juristr.com/blog/2012/06/this-is-all-your-app-is-collection-of/</link>
+      <pubDate>Thu, 07 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/06/this-is-all-your-app-is-collection-of/</guid>
+      <description>About a month ago, world famous blogger Jeff Atwood published on his Coding Horror blog an article called &#34;This is all your app is: a collection of tiny details.</description>
+    </item>
+    
+    <item>
+      <title>Use The &#34;var&#34; Keyword to Have More Maintainable Tests!?</title>
+      <link>https://juristr.com/blog/2011/11/use-var-keyword-to-have-more/</link>
+      <pubDate>Fri, 18 Nov 2011 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/11/use-var-keyword-to-have-more/</guid>
+      <description>I have to admit that initially when the &#34;var&#34; keyword has been introduced in C# I was quite precautious in using it. It does reduce code readability, I thought.</description>
+    </item>
+    
+    <item>
+      <title>Is It More Readable??</title>
+      <link>https://juristr.com/blog/2011/05/is-it-more-readable/</link>
+      <pubDate>Tue, 03 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/05/is-it-more-readable/</guid>
+      <description>I was just going over some code and came across some webservice methods having a lot of repetitive conditional statements checking the language - represented by the corresponding two-letter code and send by the client from JavaScript.</description>
+    </item>
+    
+    <item>
+      <title>Why Extract {Class | Interface | Method} Refactoring improves Testability and Readability</title>
+      <link>https://juristr.com/blog/2011/01/why-extract-class-interface-method/</link>
+      <pubDate>Sat, 29 Jan 2011 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/01/why-extract-class-interface-method/</guid>
+      <description>I still see many developers coding huge methods and large classes. The code looks very much procedural, having lots of conditional statements and loops one following the other and eventually even nested.</description>
+    </item>
+    
+    <item>
+      <title>Gist: A Suitable Tool For Collaborative Online Code Reviews?</title>
+      <link>https://juristr.com/blog/2011/01/gist-suitable-tool-for-collaborative/</link>
+      <pubDate>Mon, 03 Jan 2011 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/01/gist-suitable-tool-for-collaborative/</guid>
+      <description>Doing code reviews is an extremely useful practice where you can learn a ton of things. Prerequisite: being open-minded and ready to share your code, accept and learn from criticism ;).</description>
+    </item>
+    
+    <item>
+      <title>Smelly Code: Direct Object Instantiation as a Testability Killer</title>
+      <link>https://juristr.com/blog/2010/12/smelly-code-direct-object-instantiation/</link>
+      <pubDate>Thu, 09 Dec 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/12/smelly-code-direct-object-instantiation/</guid>
+      <description>This Smelly Code post discusses mainly a testability issue without going into further detail on other things like readability which could be improved for sure as well.</description>
+    </item>
+    
+    <item>
+      <title>Practical example: Applying the Template Method design pattern</title>
+      <link>https://juristr.com/blog/2010/07/practical-example-applying-template/</link>
+      <pubDate>Tue, 13 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/07/practical-example-applying-template/</guid>
+      <description>As I already mentioned in my previous post I&#39;m currently doing domain objects to XSD generated object mapping. Monotonic, exactly, but I&#39;m approaching the end of the work.</description>
+    </item>
+    
+    <item>
+      <title>Refactoring for the sake of compactness and reusability</title>
+      <link>https://juristr.com/blog/2010/07/refactoring-for-sake-of-compactness-and/</link>
+      <pubDate>Fri, 09 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/07/refactoring-for-sake-of-compactness-and/</guid>
+      <description>Currently I&#39;m doing a rather monotonic work, let&#39;s call it like this. We basically need to serialize our data to an XML file that has to match a given XSD which has been given to us by our customer.</description>
+    </item>
+    
+    <item>
+      <title>Test-Driven-Design: A real world scenario of an email sending requirement</title>
+      <link>https://juristr.com/blog/2010/04/test-driven-design-real-world-scenario/</link>
+      <pubDate>Thu, 15 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/04/test-driven-design-real-world-scenario/</guid>
+      <description>Many applications have requirements to send automatic emails to their users, especially in web environments. So it was also in my case.
+Summarizing in a few words, the requirement was the following: Automatically send an email notification to the company coordinator as well as to the admin (in CC) in case of a rectification of an already transmitted order (let&#39;s call it this way).</description>
+    </item>
+    
+  </channel>
+</rss>

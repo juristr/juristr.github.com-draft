@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Antipatterns on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/antipatterns/</link>
+    <description>Recent content in Antipatterns on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Tue, 04 Sep 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/antipatterns/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Find Code Duplicates with Sublime Text</title>
+      <link>https://juristr.com/blog/2012/09/find-code-duplicates-with-sublime-text/</link>
+      <pubDate>Tue, 04 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/09/find-code-duplicates-with-sublime-text/</guid>
+      <description>Code duplication is the worst practice ever, right? Well, actually there might be situations where duplicating can be better than factoring out, but these are very rare.</description>
+    </item>
+    
+    <item>
+      <title>Are anonymous Lambda style event handlers a readability killer?</title>
+      <link>https://juristr.com/blog/2010/02/are-anonymous-lambda-style-event/</link>
+      <pubDate>Wed, 03 Feb 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/02/are-anonymous-lambda-style-event/</guid>
+      <description>A standard event handling method in C# looks something like this
+public void SomeOtherMethod()
+{
+MyClass aObj = new MyClass();
+aObj.MyCustomEventName += new EventHandler(OnMyCustomEventName);</description>
+    </item>
+    
+    <item>
+      <title>Comments smell! Replace them with more expressive code.</title>
+      <link>https://juristr.com/blog/2010/01/comments-smell-replace-them-with-more/</link>
+      <pubDate>Wed, 06 Jan 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/01/comments-smell-replace-them-with-more/</guid>
+      <description>As already pointed out in that post, here&#39;s another code example:
+...
+//300 = Italy
+if(aCompany.NationId == 300)
+{
+...
+}
+...
+The comment above the if clause is definitely a code smell.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Best Practices on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/best-practices/</link>
+    <description>Recent content in Best Practices on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Tue, 19 Nov 2013 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/best-practices/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The narrow path between best practices and over-engineering</title>
+      <link>https://juristr.com/blog/2013/11/narrow-path-best-practices-overengineering/</link>
+      <pubDate>Tue, 19 Nov 2013 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2013/11/narrow-path-best-practices-overengineering/</guid>
+      <description>A couple of days ago I read a post by Petri Kainulainen about The Dark Side of Best Practices. He really hit what - IMHO - on the one side should be totally obvious and common sense, but sadly, too often is not the case at all.</description>
+    </item>
+    
+    <item>
+      <title>Find Code Duplicates with Sublime Text</title>
+      <link>https://juristr.com/blog/2012/09/find-code-duplicates-with-sublime-text/</link>
+      <pubDate>Tue, 04 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/09/find-code-duplicates-with-sublime-text/</guid>
+      <description>Code duplication is the worst practice ever, right? Well, actually there might be situations where duplicating can be better than factoring out, but these are very rare.</description>
+    </item>
+    
+    <item>
+      <title>Testing and the Single Responsibility Principle</title>
+      <link>https://juristr.com/blog/2012/07/testing-and-single-responsibility/</link>
+      <pubDate>Thu, 26 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/07/testing-and-single-responsibility/</guid>
+      <description>Automated testing is hard! Therefore, if you&#39;re about to learn it, just keep going. Resist the initial learning curve as afterwards it&#39;ll allow you to adopt a completely different programming style.</description>
+    </item>
+    
+    <item>
+      <title>This is all your app is: a collection of tiny details. (Contd.)</title>
+      <link>https://juristr.com/blog/2012/06/this-is-all-your-app-is-collection-of/</link>
+      <pubDate>Thu, 07 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/06/this-is-all-your-app-is-collection-of/</guid>
+      <description>About a month ago, world famous blogger Jeff Atwood published on his Coding Horror blog an article called &#34;This is all your app is: a collection of tiny details.</description>
+    </item>
+    
+    <item>
+      <title>Choose Your Commit Messages Properly</title>
+      <link>https://juristr.com/blog/2012/06/choose-your-commit-messages-properly/</link>
+      <pubDate>Tue, 05 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/06/choose-your-commit-messages-properly/</guid>
+      <description>I wrote already a couple of posts about version control stuff and best practices related with it. So today, what about proper commit messages?</description>
+    </item>
+    
+    <item>
+      <title>QCon London - My Personal Recap</title>
+      <link>https://juristr.com/blog/2012/04/qcon-london-my-personal-recap/</link>
+      <pubDate>Tue, 03 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/04/qcon-london-my-personal-recap/</guid>
+      <description>From the previous posts (or from those on my Tumblr stream) you might have understood my participation at this year&#39;s QCon London. Actually it was my 1st QCon conference and I enjoyed it a lot.</description>
+    </item>
+    
+    <item>
+      <title>Writing IoC Supported Integration Tests using AutoFac</title>
+      <link>https://juristr.com/blog/2011/12/writing-ioc-supported-integration-tests/</link>
+      <pubDate>Mon, 12 Dec 2011 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/12/writing-ioc-supported-integration-tests/</guid>
+      <description>Using a dependency injection framework can greatly facilitate your code&#39;s testability&amp;nbsp;in that you don&#39;t have any &#34;glue&#34; code for managing a classes&#39; dependency that needs to be mocked (if even possible) when writing unit tests.</description>
+    </item>
+    
+    <item>
+      <title>How often did you use the Yield keyword??</title>
+      <link>https://juristr.com/blog/2011/08/how-often-did-you-use-yield-keyword/</link>
+      <pubDate>Mon, 08 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/08/how-often-did-you-use-yield-keyword/</guid>
+      <description>If you think about your coding...how often have you used C#&#39;s yield keyword? To be honest I continuously forget to use it myself, too. But it would be so useful in certain scenarious.</description>
+    </item>
+    
+    <item>
+      <title>Check-in Small Pieces to your VCS!</title>
+      <link>https://juristr.com/blog/2011/08/check-in-small-pieces-to-your-vcs/</link>
+      <pubDate>Sat, 06 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/08/check-in-small-pieces-to-your-vcs/</guid>
+      <description>A while ago our TFS master at work :) sent around a statistic about the &#34;ExcutionCount&#34; of each developer w.r.t. the TFS. The result was me on top of the &#34;</description>
+    </item>
+    
+    <item>
+      <title>Write the Minimum Necessary Code In Your Unit Test Case That Makes It Valuable</title>
+      <link>https://juristr.com/blog/2011/07/write-minimum-necessary-code-in-your/</link>
+      <pubDate>Sun, 17 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/07/write-minimum-necessary-code-in-your/</guid>
+      <description>Maintainability is of major importance in software development. Usually writing tests against your codebase increases maintainability in that it gives you some degree of freedom in making changes, at the same time assuring you did not break any existing logic.</description>
+    </item>
+    
+    <item>
+      <title>Document and Share Your Snippets: Presenting SnippetDoc</title>
+      <link>https://juristr.com/blog/2011/05/document-and-share-your-snippets/</link>
+      <pubDate>Fri, 06 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/05/document-and-share-your-snippets/</guid>
+      <description>Increasing the productivity in the long run is most often tightly related to increasing the quality. Beside introducing best practices like automated testing, defining standards is a good way to start.</description>
+    </item>
+    
+    <item>
+      <title>Why Automated Tests Boost Your Development Speed</title>
+      <link>https://juristr.com/blog/2011/04/why-automated-tests-boost-your/</link>
+      <pubDate>Wed, 06 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/04/why-automated-tests-boost-your/</guid>
+      <description>Many critics against writing automated tests directly address the additional time that is needed for coding them, which alternatively could have been invested in writing new functionality.</description>
+    </item>
+    
+    <item>
+      <title>Why Extract {Class | Interface | Method} Refactoring improves Testability and Readability</title>
+      <link>https://juristr.com/blog/2011/01/why-extract-class-interface-method/</link>
+      <pubDate>Sat, 29 Jan 2011 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/01/why-extract-class-interface-method/</guid>
+      <description>I still see many developers coding huge methods and large classes. The code looks very much procedural, having lots of conditional statements and loops one following the other and eventually even nested.</description>
+    </item>
+    
+    <item>
+      <title>ASP.net: Organize Your Resources the Correct Way!</title>
+      <link>https://juristr.com/blog/2011/01/aspnet-organize-your-resources-correct/</link>
+      <pubDate>Tue, 18 Jan 2011 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/01/aspnet-organize-your-resources-correct/</guid>
+      <description>ASP.net provides well-known mechanisms for localizing web applications, namely by extracting hard-coded strings into resources files. Localization for Pages and UserControls is fully automated and available from within Visual Studio.</description>
+    </item>
+    
+    <item>
+      <title>Gist: A Suitable Tool For Collaborative Online Code Reviews?</title>
+      <link>https://juristr.com/blog/2011/01/gist-suitable-tool-for-collaborative/</link>
+      <pubDate>Mon, 03 Jan 2011 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/01/gist-suitable-tool-for-collaborative/</guid>
+      <description>Doing code reviews is an extremely useful practice where you can learn a ton of things. Prerequisite: being open-minded and ready to share your code, accept and learn from criticism ;).</description>
+    </item>
+    
+    <item>
+      <title>Smelly Code: Direct Object Instantiation as a Testability Killer</title>
+      <link>https://juristr.com/blog/2010/12/smelly-code-direct-object-instantiation/</link>
+      <pubDate>Thu, 09 Dec 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/12/smelly-code-direct-object-instantiation/</guid>
+      <description>This Smelly Code post discusses mainly a testability issue without going into further detail on other things like readability which could be improved for sure as well.</description>
+    </item>
+    
+    <item>
+      <title>Do I Really Need to Test This??</title>
+      <link>https://juristr.com/blog/2010/08/do-i-really-need-to-test-this/</link>
+      <pubDate>Tue, 03 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/08/do-i-really-need-to-test-this/</guid>
+      <description>Yes! Let&#39;s start straight of with an example. Consider I have my service (business) class SourceCodeItemService and an according SourceCodeItemDao class in my nicely layered app and there is the method removeSourceCodeItem(SourceCodeItem) with the following content</description>
+    </item>
+    
+    <item>
+      <title>Passing Property Names the &#34;compiler-safe&#34; Way</title>
+      <link>https://juristr.com/blog/2010/07/passing-property-names-compiler-safe/</link>
+      <pubDate>Thu, 29 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/07/passing-property-names-compiler-safe/</guid>
+      <description>A common bad practice which I often find when browsing through code is to see people directly hard-code strings in their source code. I&#39;ve also proposed some refactorings in some of my previous posts.</description>
+    </item>
+    
+    <item>
+      <title>Why factories with configuration files are better for decoupling but still a testability killer</title>
+      <link>https://juristr.com/blog/2010/05/why-factories-with-configuration-files/</link>
+      <pubDate>Mon, 31 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/05/why-factories-with-configuration-files/</guid>
+      <description>As I already highlighted in several previous posts one of the most critical things when facing unit testing is an appropriate design. My sensation is that those rejecting unit tests.</description>
+    </item>
+    
+    <item>
+      <title>Google seems to care about privacy</title>
+      <link>https://juristr.com/blog/2010/05/google-seems-to-care-about-privacy/</link>
+      <pubDate>Wed, 19 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/05/google-seems-to-care-about-privacy/</guid>
+      <description>I just received the following mail:
+
+Hi,
+To protect your privacy we would like you to know that Google Latitude is running on your Android-powered device and reporting your location.</description>
+    </item>
+    
+    <item>
+      <title>Test-Driven-Design: A real world scenario of an email sending requirement</title>
+      <link>https://juristr.com/blog/2010/04/test-driven-design-real-world-scenario/</link>
+      <pubDate>Thu, 15 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/04/test-driven-design-real-world-scenario/</guid>
+      <description>Many applications have requirements to send automatic emails to their users, especially in web environments. So it was also in my case.
+Summarizing in a few words, the requirement was the following: Automatically send an email notification to the company coordinator as well as to the admin (in CC) in case of a rectification of an already transmitted order (let&#39;s call it this way).</description>
+    </item>
+    
+    <item>
+      <title>Tackle software dependencies with IoC and Dependency Injection</title>
+      <link>https://juristr.com/blog/2010/03/tackle-software-dependencies-with-ioc/</link>
+      <pubDate>Sun, 21 Mar 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/03/tackle-software-dependencies-with-ioc/</guid>
+      <description>Coupling between objects creates &#34;dependency&#34;, which per se is not bad at all. You will always have some dependencies among your objects. It becomes bad when it increases abnormally since that will make maintenance a nightmare.</description>
+    </item>
+    
+    <item>
+      <title>Comments smell! Replace them with more expressive code.</title>
+      <link>https://juristr.com/blog/2010/01/comments-smell-replace-them-with-more/</link>
+      <pubDate>Wed, 06 Jan 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/01/comments-smell-replace-them-with-more/</guid>
+      <description>As already pointed out in that post, here&#39;s another code example:
+...
+//300 = Italy
+if(aCompany.NationId == 300)
+{
+...
+}
+...
+The comment above the if clause is definitely a code smell.</description>
+    </item>
+    
+    <item>
+      <title>The power and simplicity of the Command pattern</title>
+      <link>https://juristr.com/blog/2009/12/power-and-simplicity-of-command-pattern/</link>
+      <pubDate>Thu, 10 Dec 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/12/power-and-simplicity-of-command-pattern/</guid>
+      <description>Never thought of how to implement an &#34;undo&#34; function? Not that easy, huh? People in our architecture class today came up with quite creative solutions: two separate stacks storing operations, versioning of the object to go back etc.</description>
+    </item>
+    
+    <item>
+      <title>Law of Demeter: Nice metaphor</title>
+      <link>https://juristr.com/blog/2009/09/law-of-demeter-nice-metaphor/</link>
+      <pubDate>Tue, 22 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/09/law-of-demeter-nice-metaphor/</guid>
+      <description>I just came across a nice metaphor for explaining the Law of Demeter. For those of you that didn&#39;t yet hear about it, the Law of Demeter is a object oriented design principle.</description>
+    </item>
+    
+    <item>
+      <title>Add semantic through your code, not through commenting</title>
+      <link>https://juristr.com/blog/2009/09/add-semantic-through-your-code-not/</link>
+      <pubDate>Sun, 13 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/09/add-semantic-through-your-code-not/</guid>
+      <description>Is it good to have a lot of code comments, explaining things s.t. your other team members know what was your intention when writing certain pieces?</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t use negated method names!</title>
+      <link>https://juristr.com/blog/2009/08/dont-use-negated-method-names/</link>
+      <pubDate>Fri, 28 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/08/dont-use-negated-method-names/</guid>
+      <description>What does this mean. Don&#39;t write something like
+public bool IsNotCorrect(...)
+{
+...
+}
+but rather write
+public bool IsCorrect(...)
+{
+...
+}
+and the caller of the method then does the negation by calling it like</description>
+    </item>
+    
+    <item>
+      <title>Using code metrics as indicator for code refactoring</title>
+      <link>https://juristr.com/blog/2009/08/using-code-metrics-as-indicator-for/</link>
+      <pubDate>Sun, 02 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/08/using-code-metrics-as-indicator-for/</guid>
+      <description>Developing software is not just hacking in a solution, but to develop simple, well structured and therefore maintainable constructs. There are a couple of design guidelines that one should follow (some of them are here) to achieve this.</description>
+    </item>
+    
+    <item>
+      <title>Did you know the &#34;Joel Test&#34;?</title>
+      <link>https://juristr.com/blog/2009/06/did-you-know-joel-test/</link>
+      <pubDate>Fri, 19 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/06/did-you-know-joel-test/</guid>
+      <description>First of all, who is &#34;Joel&#34;? Joel Spolsky is a software developer in the US. I came across his interesting blog about a year ago.</description>
+    </item>
+    
+    <item>
+      <title>Page Speed: Firebug add-on for analyzing web page speed</title>
+      <link>https://juristr.com/blog/2009/06/page-speed-firebug-add-on-for-analyzing/</link>
+      <pubDate>Mon, 08 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/06/page-speed-firebug-add-on-for-analyzing/</guid>
+      <description>Google just released Page Speed, a Firefox add-on for analyzing web pages in terms of speed. The tool directly integrates into Firebug and automatically verifies your page against a set of best practices rules.</description>
+    </item>
+    
+    <item>
+      <title>Best practices: The challenge of designing software for wireless devices</title>
+      <link>https://juristr.com/blog/2009/04/best-practices-challenge-of-designing/</link>
+      <pubDate>Tue, 14 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/04/best-practices-challenge-of-designing/</guid>
+      <description>Designing good software for wireless devices such as mobile phones is not straightforward. Developers have to consider and address the device&#39;s constraints such as memory, processing power, input, screen etc.</description>
+    </item>
+    
+    <item>
+      <title>Best practices: Deploying webapps (contd.)</title>
+      <link>https://juristr.com/blog/2009/03/best-practices-deploying-webapps-contd_20/</link>
+      <pubDate>Fri, 20 Mar 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/03/best-practices-deploying-webapps-contd_20/</guid>
+      <description>Some time ago I&#39;ve written a post about best practices in deploying web applications by mentioning the different environments
+Development environmentTesting environmentProduction environment
+Since the three different environments must be completely separated (no references between them to the DB or whatever), you have to have different connections strings in your web.</description>
+    </item>
+    
+    <item>
+      <title>Best practices: Tracking information on the source code with Visual Studio and TFS</title>
+      <link>https://juristr.com/blog/2009/01/best-practices-tracking-information-on/</link>
+      <pubDate>Thu, 08 Jan 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/01/best-practices-tracking-information-on/</guid>
+      <description>An issue in managing a code base is not only to guide different developers through the development process, preventing that they overwrite each others modifications on the source code (which would for sure happen when just sharing the code files over the normal file system.</description>
+    </item>
+    
+    <item>
+      <title>Best practices: Deploying webapps</title>
+      <link>https://juristr.com/blog/2008/09/best-practices-deploying-webapps/</link>
+      <pubDate>Thu, 25 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/09/best-practices-deploying-webapps/</guid>
+      <description>I don&#39;t really know whether you want to consider this a &#34;best practices&#34; or not, but I found the title appropriate. So the thing is how to deploy your webapp.</description>
+    </item>
+    
+    <item>
+      <title>Best practices: VCS usage flowchart</title>
+      <link>https://juristr.com/blog/2008/05/best-practices-vcs-usage-flowchart/</link>
+      <pubDate>Fri, 23 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/05/best-practices-vcs-usage-flowchart/</guid>
+      <description>So now there&amp;rsquo;s the graphical representation of my yesterday&amp;rsquo;s post. Computer scientists usually understand these graphs better ;) Comments, critics or improvements are very welcome.</description>
+    </item>
+    
+    <item>
+      <title>Best practices: version control system usage</title>
+      <link>https://juristr.com/blog/2008/05/best-practices-version-control-system/</link>
+      <pubDate>Thu, 22 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/05/best-practices-version-control-system/</guid>
+      <description>I come to the office in the morning, start Visual Studio and fetch the latest versions of the source code....recompile the solution: COMPILATION ERROR. The build is broken!</description>
+    </item>
+    
+  </channel>
+</rss>

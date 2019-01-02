@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Annotated on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/annotated/</link>
+    <description>Recent content in Annotated on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Sat, 20 Aug 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/annotated/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Droidcon London 2011 - Europe&#39;s largest Android Conference</title>
+      <link>https://juristr.com/blog/2011/08/droidcon-london-2011-europes-largest/</link>
+      <pubDate>Sat, 20 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/08/droidcon-london-2011-europes-largest/</guid>
+      <description>Droidcon London 2011 is Europe&#39;s largest conference that exclusively covers Android development and applications. The conference will take place in London on 6th-7th October 2011.</description>
+    </item>
+    
+    <item>
+      <title>Test-Driven Development and Automated Testing: A Metaphor</title>
+      <link>https://juristr.com/blog/2010/10/test-driven-development-and-automated/</link>
+      <pubDate>Fri, 15 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/10/test-driven-development-and-automated/</guid>
+      <description>Motivation is an important factor when learning something new. It is what makes you ambitious and what helps you forget the effort that needs to be invested.</description>
+    </item>
+    
+    <item>
+      <title>Presentation: Dropbox Startup Lessons Learned</title>
+      <link>https://juristr.com/blog/2010/10/presentation-dropbox-startup-lessions/</link>
+      <pubDate>Mon, 04 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/10/presentation-dropbox-startup-lessions/</guid>
+      <description>An interesting presentation by the Dropbox founder Drew Houston about Dropbox startup lessons learned. Also if you don&#39;t plan to create any startup it is still interesting to see some of the strategies that have been applied and which finally made Dropbox as successful as it is - in a market which btw already seemed to be&amp;nbsp;saturated.</description>
+    </item>
+    
+    <item>
+      <title>Tired to Manually Enter Wifi Network Configurations into your Android Phone??</title>
+      <link>https://juristr.com/blog/2010/09/tired-to-manually-enter-wifi-network/</link>
+      <pubDate>Wed, 22 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/09/tired-to-manually-enter-wifi-network/</guid>
+      <description>Today a rather non-programming-related blog post :) . You probably encountered already the issue of configuring your Wifi access to your home or work wireless system.</description>
+    </item>
+    
+    <item>
+      <title>Retrieve Selected Items on Checkable ListView: Differences in SDK Level 7 and 8</title>
+      <link>https://juristr.com/blog/2010/09/retrieve-selected-items-on-checkable/</link>
+      <pubDate>Tue, 14 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/09/retrieve-selected-items-on-checkable/</guid>
+      <description>I&#39;m currently testing my Android app that I&#39;m developing for my MSc thesis on different real devices. While I own a Nexus One with Android Froyo 2.</description>
+    </item>
+    
+    <item>
+      <title>TDD Test == Unit Test or TDD Test &lt;&gt; Unit Test?? Is it Really Important??</title>
+      <link>https://juristr.com/blog/2010/08/tdd-test-unit-test-or-tdd-test-unit/</link>
+      <pubDate>Mon, 16 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/08/tdd-test-unit-test-or-tdd-test-unit/</guid>
+      <description>Recently I had an interesting&amp;nbsp;buzz conversation with a former work-mate, Peter. Just like myself he heavily orientates his learning to best practices, especially into agile software development methodologies and automated testing.</description>
+    </item>
+    
+    <item>
+      <title>The World of ListView</title>
+      <link>https://juristr.com/blog/2010/08/world-of-listview/</link>
+      <pubDate>Fri, 06 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/08/world-of-listview/</guid>
+      <description>I just watched Roman Guy&#39;s and Adam Powell&#39;s (two Android UI framework engineers)&amp;nbsp;talk about the &#34;World of ListView&#34;. They gave the presentation on this year&#39;s Google I/O event in May.</description>
+    </item>
+    
+    <item>
+      <title>Every Developer Needs a Blog!</title>
+      <link>https://juristr.com/blog/2010/08/every-developer-needs-blog/</link>
+      <pubDate>Mon, 02 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/08/every-developer-needs-blog/</guid>
+      <description>I just watched an interesting talk from Channel 9 held by Scott Hanselman.&amp;nbsp;His message: &#34;Every developer needs a blog&#34;. As you can imagine it is a rather non-technical talk, but still interesting cause he emphasizes the importance of being &#34;</description>
+    </item>
+    
+    <item>
+      <title>Testing Newbies: Some Thoughts about Test First</title>
+      <link>https://juristr.com/blog/2010/07/testing-newbies-some-thoughts-about/</link>
+      <pubDate>Fri, 30 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/07/testing-newbies-some-thoughts-about/</guid>
+      <description>A quick post just before diving into the weekend filled with Yoseikan training, swimming, going out with friends and - of course - Android coding :) .</description>
+    </item>
+    
+    <item>
+      <title>I am ready to write some unit tests. What code coverage should I aim for?</title>
+      <link>https://juristr.com/blog/2010/07/i-am-ready-to-write-some-unit-tests/</link>
+      <pubDate>Wed, 21 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/07/i-am-ready-to-write-some-unit-tests/</guid>
+      <description>Here&#39;s a nice &#34;story&#34; about code coverage from the Google Testing Blog.
+Testivus on Test Coverage
+Early one morning, a young programmer asked the great master:</description>
+    </item>
+    
+    <item>
+      <title>Exercising Our Remote Application Removal Feature</title>
+      <link>https://juristr.com/blog/2010/06/exercising-our-remote-application/</link>
+      <pubDate>Sun, 27 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/06/exercising-our-remote-application/</guid>
+      <description>A friend of mine shared an interesting blog entry from the Android Developer Blog on Buzz. Here some excerpts:
+Exercising Our Remote Application Removal Feature</description>
+    </item>
+    
+    <item>
+      <title>Let tests guide you through development</title>
+      <link>https://juristr.com/blog/2010/06/let-tests-guide-you-through-development/</link>
+      <pubDate>Sat, 26 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/06/let-tests-guide-you-through-development/</guid>
+      <description>I&#39;m currently working on my MSc thesis work which is divided into a project that has to be developed (in my case an Android application) and then the according paper that has to be written.</description>
+    </item>
+    
+    <item>
+      <title>Preview the new Gmail web interface for the iPad in Chrome</title>
+      <link>https://juristr.com/blog/2010/04/preview-new-gmail-web-interface-for/</link>
+      <pubDate>Sun, 11 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/04/preview-new-gmail-web-interface-for/</guid>
+      <description>Since the launch of the iPhone and later the Android mobile OS, Google has investigated some time in creating more mobile friendly interfaces of their common web applications (Gmail, GReader, GDocs,Wave), optimized for the advanced touch interfaces.</description>
+    </item>
+    
+    <item>
+      <title>Tune your emulator with a pretty Nexus One skin!</title>
+      <link>https://juristr.com/blog/2010/03/tune-your-emulator-with-pretty-nexus/</link>
+      <pubDate>Tue, 09 Mar 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/03/tune-your-emulator-with-pretty-nexus/</guid>
+      <description>I know it doesn&#39;t really increase your value during development. It&#39;s just for fun but those of you that like it, here are some links that point to Nexus One skins that can be used on your local dev emulator.</description>
+    </item>
+    
+    <item>
+      <title>That&#39;s what I&#39;m missing in Visual Studio! Give me better code editor support!!</title>
+      <link>https://juristr.com/blog/2010/03/thats-what-im-missing-in-visual-studio/</link>
+      <pubDate>Tue, 02 Mar 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/03/thats-what-im-missing-in-visual-studio/</guid>
+      <description>Visual Studio is great in doing many things as for instance in integrating with other MS products (obviously) or with debugging. The VS debugger is one of the best I&#39;ve seen till now (using different IDEs).</description>
+    </item>
+    
+    <item>
+      <title>Android SMS activity doesn&#39;t fill phone number</title>
+      <link>https://juristr.com/blog/2009/12/android-sms-activity-doesnt-fill-phone/</link>
+      <pubDate>Sat, 26 Dec 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/12/android-sms-activity-doesnt-fill-phone/</guid>
+      <description>Today while fixing a bug for our current project we develop for the Android phone I found a strange behavior when trying to launch the phone&#39;s SMS sender activity.</description>
+    </item>
+    
+    <item>
+      <title>Instantiating object from generic type: Java vs. .Net</title>
+      <link>https://juristr.com/blog/2009/10/instantiating-object-from-generic-type/</link>
+      <pubDate>Fri, 30 Oct 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/10/instantiating-object-from-generic-type/</guid>
+      <description>Consider the following .Net code:
+public static class Processor
+{
+public static TItem CreateInstance&amp;lt;TItem&amp;gt;() where TItem:new()
+{
+TItem result = new TItem();
+return result;</description>
+    </item>
+    
+    <item>
+      <title>Repeater looses its data collection. ViewState problem?</title>
+      <link>https://juristr.com/blog/2009/10/repeater-looses-its-data-collection/</link>
+      <pubDate>Tue, 27 Oct 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/10/repeater-looses-its-data-collection/</guid>
+      <description>A while back I experienced a really strange problem in one of our ASP.net applications, namely my repeater control which was loosing its data collection after a postback to the server.</description>
+    </item>
+    
+    <item>
+      <title>Are C# regions a good thing??</title>
+      <link>https://juristr.com/blog/2009/09/are-c-regions-good-thing/</link>
+      <pubDate>Fri, 25 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/09/are-c-regions-good-thing/</guid>
+      <description>Well, I&#39;d say it depends. If you use regions to logically group your code in your class, then it may be a good thing &#39;cause people come to your class and see something like</description>
+    </item>
+    
+    <item>
+      <title>What is a browser?</title>
+      <link>https://juristr.com/blog/2009/07/what-is-browser/</link>
+      <pubDate>Wed, 01 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/07/what-is-browser/</guid>
+      <description>Do you know the answer? I&#39;m pretty sure (&amp;gt; 90% of the blog readers here have a technical background). But check out this video to get a feeling of how non-technical users view the world of browsers, search engines and the Internet.</description>
+    </item>
+    
+    <item>
+      <title>Did you know the &#34;Joel Test&#34;?</title>
+      <link>https://juristr.com/blog/2009/06/did-you-know-joel-test/</link>
+      <pubDate>Fri, 19 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/06/did-you-know-joel-test/</guid>
+      <description>First of all, who is &#34;Joel&#34;? Joel Spolsky is a software developer in the US. I came across his interesting blog about a year ago.</description>
+    </item>
+    
+    <item>
+      <title>Image search: Bing vs. Google Image</title>
+      <link>https://juristr.com/blog/2009/06/image-search-bing-vs-google-image/</link>
+      <pubDate>Sun, 07 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/06/image-search-bing-vs-google-image/</guid>
+      <description>Bing does a great job in displaying images. You get all of them displayed in the center of the page within a separate scrollable container.</description>
+    </item>
+    
+    <item>
+      <title>Google Wave - Collaboration et excellence</title>
+      <link>https://juristr.com/blog/2009/06/google-wave-collaboration-et-excellance/</link>
+      <pubDate>Mon, 01 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/06/google-wave-collaboration-et-excellance/</guid>
+      <description>Some days ago I just quickly scrolled over my Google Reader friends&#39; items and saw Manfred&#39;s blog entry about Google Wave. It kept my attention since I didn&#39;t yet hear anything about that new Google product.</description>
+    </item>
+    
+    <item>
+      <title>Will Microsoft&#39;s Bing become Google&#39;s biggest threat?</title>
+      <link>https://juristr.com/blog/2009/05/will-microsofts-bing-become-googles/</link>
+      <pubDate>Sun, 31 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/05/will-microsofts-bing-become-googles/</guid>
+      <description>Microsoft Live Search release wasn&#39;t a big success to compete Google on the search engine market. Now they&#39;re about to release Bing which is isn&#39;t thought to be another &#34;</description>
+    </item>
+    
+    <item>
+      <title>Dropbox - Sharing, synching and backup has never been so easy</title>
+      <link>https://juristr.com/blog/2009/05/dropbox-sharing-synching-and-backup-has/</link>
+      <pubDate>Sat, 02 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/05/dropbox-sharing-synching-and-backup-has/</guid>
+      <description>I wanted to write this post already for a longer time, actually I had it (between my other approx. 30 not yet finished posts) in the draft folder.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Surface...the future of human-computer interaction?</title>
+      <link>https://juristr.com/blog/2009/03/microsoft-surfacethe-future-of-human/</link>
+      <pubDate>Tue, 10 Mar 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/03/microsoft-surfacethe-future-of-human/</guid>
+      <description> Here are some videos about Microsoft Surface. I wonder how long it will take to see one of these live :)
+
+
+(bad audio quality) </description>
+    </item>
+    
+    <item>
+      <title>The competition is open: Safari 4 vs. Chrome</title>
+      <link>https://juristr.com/blog/2009/02/competition-is-open-safari-4-vs-chrome/</link>
+      <pubDate>Thu, 26 Feb 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/02/competition-is-open-safari-4-vs-chrome/</guid>
+      <description>No, joke :) . But did you check out the new Safari 4? Ehm...seems as if the guys at Apple have taken a quite deep look at the Chrome source code and then they suddenly came up with great new ideas :D And.</description>
+    </item>
+    
+  </channel>
+</rss>

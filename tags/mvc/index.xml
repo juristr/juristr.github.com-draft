@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mvc on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/mvc/</link>
+    <description>Recent content in Mvc on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Mon, 21 Nov 2011 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/mvc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Large-scale JavaScript Application Architecture</title>
+      <link>https://juristr.com/blog/2011/11/large-scale-javascript-application/</link>
+      <pubDate>Mon, 21 Nov 2011 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/11/large-scale-javascript-application/</guid>
+      <description>JavaScript programming has evolved a lot over the past years and has somehow revolutionized the way you develop on the web. While many initially just used it as a scripting language to quickly hack in some dynamic behavior into traditional websites, it starts now to be used much more like a fully capable programming language (mainly also due to many emerging JavaScript libraries and more capable browsers).</description>
+    </item>
+    
+    <item>
+      <title>What? Model-View-Controller in JavaScript?</title>
+      <link>https://juristr.com/blog/2011/10/what-model-view-controller-in/</link>
+      <pubDate>Mon, 10 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/10/what-model-view-controller-in/</guid>
+      <description>At work I&#39;m currently working on a new web architecture composed of a rich client written in JavaScript and an ASP.net MVC server-side backend exposing a REST-like JSON api.</description>
+    </item>
+    
+    <item>
+      <title>Why Did it Have to Be So Complicated Before??</title>
+      <link>https://juristr.com/blog/2011/08/why-did-it-have-to-be-so-complicated/</link>
+      <pubDate>Fri, 26 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/08/why-did-it-have-to-be-so-complicated/</guid>
+      <description>I started&amp;nbsp;web development using Java, basically during my studies at the university. When working on my bachelor degree thesis I needed a web server back-end system (to my mobile J2ME client); I decided to do it &#34;</description>
+    </item>
+    
+    <item>
+      <title>JavaScriptSerializer: Circular Reference was Detected While Serializing an Object of Type...</title>
+      <link>https://juristr.com/blog/2011/08/javascriptserializer-circular-reference/</link>
+      <pubDate>Fri, 12 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/08/javascriptserializer-circular-reference/</guid>
+      <description>Consider an ASP.net MVC web application where you use some Ajax for retrieving an object. Let&#39;s start from the server-side MVC controller:
+public class BaseDataController : Controller</description>
+    </item>
+    
+    <item>
+      <title>Posting JSON Data to an ASP.net MVC 3 Web Application</title>
+      <link>https://juristr.com/blog/2011/08/posting-json-data-to-aspnet-mvc-3-web/</link>
+      <pubDate>Thu, 04 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/08/posting-json-data-to-aspnet-mvc-3-web/</guid>
+      <description>The trend in today&#39;s web application development goes more and more in the direction of having rich, desktop-like applications. There are numerous examples on the web, just watch out while your navigating around (Google services are always a good place to look for such apps).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on juri.strumpflohner</title>
+    <link>https://juristr.com/categories/javascript/</link>
+    <description>Recent content in Javascript on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Mon, 08 Apr 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Modularity in JavaScript MVC Frameworks</title>
+      <link>https://juristr.com/blog/2013/04/modularity-in-javascript-frameworks/</link>
+      <pubDate>Mon, 08 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2013/04/modularity-in-javascript-frameworks/</guid>
+      <description>JavaScript MVC architectures are a de-facto standard when you create complex single-page JavaScript applications. But it doesn&#39;t stop here. MVC helps to separate reponsibilities for coordinating the data (model) and visualization (view), but it doesn&#39;t have a concept for coordination among an application&#39;s modules or widgets as you might call them.</description>
+    </item>
+    
+  </channel>
+</rss>

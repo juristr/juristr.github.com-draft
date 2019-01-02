@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech Vids on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/tech-vids/</link>
+    <description>Recent content in Tech Vids on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Tue, 12 Feb 2013 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/tech-vids/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Coaching Architect</title>
+      <link>https://juristr.com/blog/2013/02/the-coaching-architect/</link>
+      <pubDate>Tue, 12 Feb 2013 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2013/02/the-coaching-architect/</guid>
+      <description>In this talk, Roy Osherove speaks about how to become a better coach. A nice talk highlighting some of my personal principles I try to follow every day.</description>
+    </item>
+    
+    <item>
+      <title>Architecting for Failure at the Guardian</title>
+      <link>https://juristr.com/blog/2012/05/architecting-for-failure-at-guardian/</link>
+      <pubDate>Sun, 20 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/05/architecting-for-failure-at-guardian/</guid>
+      <description>Architecting for the Failure, a presentation of this year&#39;s QCon London 2012. Michael Brunton-Spall gives some insights into how they moved their architecture at the Guardian from a monolith system to a system composed of &#34;</description>
+    </item>
+    
+    <item>
+      <title>HTML5 version Android: Apps or Web for mobile development??</title>
+      <link>https://juristr.com/blog/2012/04/html5-version-android-apps-or-web-for/</link>
+      <pubDate>Thu, 26 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/04/html5-version-android-apps-or-web-for/</guid>
+      <description>This is a hotly discussed topic recently. The web is now a fully-capable platform and it&#39;s getting better and better as the HTML5 standard advances.</description>
+    </item>
+    
+    <item>
+      <title>Sharpening the Tools</title>
+      <link>https://juristr.com/blog/2012/03/sharpening-tools/</link>
+      <pubDate>Wed, 14 Mar 2012 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/03/sharpening-tools/</guid>
+      <description>This is a talk from Dan North about Sharpening the Tools at QCon 2010. I had the great pleasure to listen to this guy at this year&#39;s QCon (recap is in the drafts already and will be published soon btw).</description>
+    </item>
+    
+    <item>
+      <title>Questions for an Enterprise Architect</title>
+      <link>https://juristr.com/blog/2012/03/questions-for-enterprise-architect/</link>
+      <pubDate>Fri, 02 Mar 2012 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/03/questions-for-enterprise-architect/</guid>
+      <description>Erik Dörnenburg answers: What is Enterprise and Evolutionary Architecture?, discussing 4 issues: Turning strategy into execution, Ensuring conformance, Where do the architects sit? Buying or building?</description>
+    </item>
+    
+    <item>
+      <title>TechVid: Become a Javascript Console Power-User</title>
+      <link>https://juristr.com/blog/2011/10/techvid-become-javascript-console-power/</link>
+      <pubDate>Sat, 08 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/10/techvid-become-javascript-console-power/</guid>
+      <description> A nice 7 minute video showing some Chrome, Opera and Firefox power user commands for the JavaScript console.
+ </description>
+    </item>
+    
+    <item>
+      <title>Chrome Developer Tools: 12 Tricks to Develop Quicker</title>
+      <link>https://juristr.com/blog/2011/08/chrome-developer-tools-12-tricks-to/</link>
+      <pubDate>Thu, 25 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/08/chrome-developer-tools-12-tricks-to/</guid>
+      <description>This is definitely a &#34;must-have-seen&#34; video for every JavaScript developer. Chrome has some really nice features build into their developer tools which are being demonstrated in this short ~5 min video.</description>
+    </item>
+    
+    <item>
+      <title>Android Development Tools</title>
+      <link>https://juristr.com/blog/2011/06/android-development-tools/</link>
+      <pubDate>Thu, 23 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/06/android-development-tools/</guid>
+      <description>Till recently,&amp;nbsp;(IMHO)&amp;nbsp;Android Developers had a very bad experience in designing graphical UIs for their Android apps. Personally I never relied on the graphical designer that was provided with the Android Eclipse plugin.</description>
+    </item>
+    
+    <item>
+      <title>Integrating Android and Google App Engine</title>
+      <link>https://juristr.com/blog/2011/06/integrating-android-and-google-app/</link>
+      <pubDate>Mon, 06 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/06/integrating-android-and-google-app/</guid>
+      <description>Google App Engine is great for those of you in search of a complete, scalable&amp;nbsp;and affordable hosting solution. Especially if you start a project and you don&#39;t yet know exactly how successful it&#39;ll be (which mostly you never know), how much potential users you&#39;ll have and so on, then App Engine is great.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Upgrade RAM of Your Macbook Pro</title>
+      <link>https://juristr.com/blog/2011/05/howto-upgrade-ram-of-your-macbook-pro/</link>
+      <pubDate>Thu, 26 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/05/howto-upgrade-ram-of-your-macbook-pro/</guid>
+      <description> Here&#39;s a nice video that clearly explains how you can upgrade your Macbook RAM:
+ </description>
+    </item>
+    
+    <item>
+      <title>Design Tech Talk Series Presents: OO Design for Testability</title>
+      <link>https://juristr.com/blog/2010/08/design-tech-talk-series-presents-oo/</link>
+      <pubDate>Wed, 18 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/08/design-tech-talk-series-presents-oo/</guid>
+      <description>One of the main challenges in adopting TDD methodologies and automated testing with xUnit frameworks is to create an appropriate OO design that is testable.</description>
+    </item>
+    
+    <item>
+      <title>The World of ListView</title>
+      <link>https://juristr.com/blog/2010/08/world-of-listview/</link>
+      <pubDate>Fri, 06 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/08/world-of-listview/</guid>
+      <description>I just watched Roman Guy&#39;s and Adam Powell&#39;s (two Android UI framework engineers)&amp;nbsp;talk about the &#34;World of ListView&#34;. They gave the presentation on this year&#39;s Google I/O event in May.</description>
+    </item>
+    
+    <item>
+      <title>Every Developer Needs a Blog!</title>
+      <link>https://juristr.com/blog/2010/08/every-developer-needs-blog/</link>
+      <pubDate>Mon, 02 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/08/every-developer-needs-blog/</guid>
+      <description>I just watched an interesting talk from Channel 9 held by Scott Hanselman.&amp;nbsp;His message: &#34;Every developer needs a blog&#34;. As you can imagine it is a rather non-technical talk, but still interesting cause he emphasizes the importance of being &#34;</description>
+    </item>
+    
+    <item>
+      <title>Android 2.2 - Release Froyo</title>
+      <link>https://juristr.com/blog/2010/05/android-22-release-froyo/</link>
+      <pubDate>Fri, 21 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/05/android-22-release-froyo/</guid>
+      <description>Take a look at the official video. Some really great enhancements, on the part of the user but also on the developer&#39;s part.
+Personal highlights:</description>
+    </item>
+    
+    <item>
+      <title>Microsoft contributes to jQuery: Client-side templating mechanism</title>
+      <link>https://juristr.com/blog/2010/04/microsoft-contributes-to-jquery-client/</link>
+      <pubDate>Tue, 13 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/04/microsoft-contributes-to-jquery-client/</guid>
+      <description>Comment
+This is an extremely useful addon to jQuery: templates. The video below shows you a preview of the templating mechanism which will be contributed by MS to jQuery.</description>
+    </item>
+    
+    <item>
+      <title>Cross-Compiling Android Applications to the iPhone</title>
+      <link>https://juristr.com/blog/2010/03/cross-compiling-android-applications-to/</link>
+      <pubDate>Wed, 31 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/03/cross-compiling-android-applications-to/</guid>
+      <description>Comment
+Nice talk that gives insight in an approach for cross-compiling Android targeted apps to the iPhone (but not only). The idea is to overcome the problem of coding the mobile app for multiple platforms which often is just not feasible due to time and skills.</description>
+    </item>
+    
+    <item>
+      <title>Debugging and Testing the Web with Firebug</title>
+      <link>https://juristr.com/blog/2009/05/debugging-and-testing-web-with-firebug/</link>
+      <pubDate>Thu, 14 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/05/debugging-and-testing-web-with-firebug/</guid>
+      <description>Comment
+Rob Cambell, member of the Firebug working group gives a talk about Firebug, its history and a short intro to the newest features in the latest version and how to use them.</description>
+    </item>
+    
+    <item>
+      <title>HTML 5: Features you want desperately but still can&#39;t use</title>
+      <link>https://juristr.com/blog/2008/10/html-5-features-you-want-desperately/</link>
+      <pubDate>Mon, 06 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/10/html-5-features-you-want-desperately/</guid>
+      <description>Comment
+Ian Hickson speaks about the new features of HTML5. He makes some interesting demos of what can be achieved with the newly introduced tags.</description>
+    </item>
+    
+    <item>
+      <title>Aspect Oriented Programming: Radical Research in Modularity</title>
+      <link>https://juristr.com/blog/2008/06/aspect-oriented-programming-radical/</link>
+      <pubDate>Sun, 01 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/06/aspect-oriented-programming-radical/</guid>
+      <description>Comment
+Gregor Kiczales, Professor at the University of British Columbia, talks at Google about Aspect Oriented Programming. The video is very interesting and highlights a lot of advantages in using AOP.</description>
+    </item>
+    
+    <item>
+      <title>Better Web Application Framework</title>
+      <link>https://juristr.com/blog/2008/05/better-web-application-framework/</link>
+      <pubDate>Fri, 30 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/05/better-web-application-framework/</guid>
+      <description>Introduction to this post
+In the future you&#39;ll see more posts of this kind (at least I want to). Since the computer science area is evolving rapidly, you have to stay up-to-date.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agile Development on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/agile-development/</link>
+    <description>Recent content in Agile Development on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Thu, 18 Jun 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/agile-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Scrum - in under 10 minutes</title>
+      <link>https://juristr.com/blog/2009/06/about-scrum-in-under-10-minutes/</link>
+      <pubDate>Thu, 18 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/06/about-scrum-in-under-10-minutes/</guid>
+      <description>Here&#39;s a nice video that explains Scrum in under 10 minutes. It was quite useful when preparing for the exam in Software Quality Management. Some of you might be interested in it.</description>
+    </item>
+    
+  </channel>
+</rss>

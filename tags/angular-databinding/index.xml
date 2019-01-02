@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angular Databinding on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/angular-databinding/</link>
+    <description>Recent content in Angular Databinding on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Fri, 07 Nov 2014 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/angular-databinding/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning Angular: Gosh, my two-way binding doesn&#39;t seem to work properly!</title>
+      <link>https://juristr.com/blog/2014/11/learning-ng-databinding-doesnt-work/</link>
+      <pubDate>Fri, 07 Nov 2014 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2014/11/learning-ng-databinding-doesnt-work/</guid>
+      <description>Angular data-binding seems magic, but obviously isn&#39;t. You have to give it a chance to do its work. As such, watch out and think about the difference &#34;</description>
+    </item>
+    
+  </channel>
+</rss>

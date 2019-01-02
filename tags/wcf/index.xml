@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wcf on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/wcf/</link>
+    <description>Recent content in Wcf on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Mon, 06 Dec 2010 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/wcf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HowTo: Using VS2010 Web.config Transformations to Bypass SSL Authentication Locally</title>
+      <link>https://juristr.com/blog/2010/12/howto-using-vs2010-webconfig/</link>
+      <pubDate>Mon, 06 Dec 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/12/howto-using-vs2010-webconfig/</guid>
+      <description>Most often when you create WCF webservices you&#39;ll want to run them in a secure channel, for instance by using SSL encryption on the transport level.</description>
+    </item>
+    
+    <item>
+      <title>Intercepting WCF Operation Calls with Impersonated Identity</title>
+      <link>https://juristr.com/blog/2010/11/intercepting-wcf-operation-calls-with/</link>
+      <pubDate>Fri, 05 Nov 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/11/intercepting-wcf-operation-calls-with/</guid>
+      <description>Take the following scenario. You have a WCF webservice with several operations. The communication runs within a secure SSL channel and uses Kerberos authentication. The webservice application runs with an assigned application pool user, in your .</description>
+    </item>
+    
+    <item>
+      <title>ASP.net Ajax: Consuming webservice from client-side JavaScript</title>
+      <link>https://juristr.com/blog/2009/11/aspnet-ajax-consuming-webservice-from/</link>
+      <pubDate>Sat, 07 Nov 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/11/aspnet-ajax-consuming-webservice-from/</guid>
+      <description>Yesterday I answered a question on SO related to the problem of consuming an ASP.net webservice from JavaScript on the client-side. So I thought it might be a good idea to put it down in a downloadable example that can be used as a starting point for all those that didn&#39;t yet use this method.</description>
+    </item>
+    
+  </channel>
+</rss>

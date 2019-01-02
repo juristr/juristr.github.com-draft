@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Howto on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/howto/</link>
+    <description>Recent content in Howto on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Sun, 18 Jan 2015 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/howto/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Backup your Win8 computer to your Synology NAS</title>
+      <link>https://juristr.com/blog/2015/01/backup-windows-to-synology/</link>
+      <pubDate>Sun, 18 Jan 2015 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2015/01/backup-windows-to-synology/</guid>
+      <description>I love my Macbook Pro which I&amp;rsquo;ve been using now for about 6 years. At work I&amp;rsquo;m a PC user and lately I acquired a Surface Pro 3 as well.</description>
+    </item>
+    
+    <item>
+      <title>Hack: How to mimic a disabled checkbox</title>
+      <link>https://juristr.com/blog/2014/09/hack-mimic-disabled-checkboxes/</link>
+      <pubDate>Fri, 12 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2014/09/hack-mimic-disabled-checkboxes/</guid>
+      <description>The world is not always as we want it to be :). So from now and then you have to place a nice hack here and there.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Subscribe to Failed TFS Builds</title>
+      <link>https://juristr.com/blog/2012/11/howto-subscribe-to-failed-tfs-builds/</link>
+      <pubDate>Fri, 23 Nov 2012 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/11/howto-subscribe-to-failed-tfs-builds/</guid>
+      <description>When you use a build server it is a must to get notified in case of build failures. Microsoft&amp;rsquo;s Team Foundation server has different possibilities to achieve this: using the Build Notification Tool or through so-called Alerts.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Upgrade RAM of Your Macbook Pro</title>
+      <link>https://juristr.com/blog/2011/05/howto-upgrade-ram-of-your-macbook-pro/</link>
+      <pubDate>Thu, 26 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/05/howto-upgrade-ram-of-your-macbook-pro/</guid>
+      <description> Here&#39;s a nice video that clearly explains how you can upgrade your Macbook RAM:
+ </description>
+    </item>
+    
+    <item>
+      <title>Least Invasive Approach to Gain Root Access on the Nexus One</title>
+      <link>https://juristr.com/blog/2011/02/least-invasive-approach-to-gain-root/</link>
+      <pubDate>Mon, 14 Feb 2011 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/02/least-invasive-approach-to-gain-root/</guid>
+      <description>For my current Android research project I needed to copy an APK to the /system/app folder. Now for that you need root rights. Well, that shouldn&#39;t be a problem, right?</description>
+    </item>
+    
+    <item>
+      <title>Android: HowTo Detect Installed SQLite DB Version</title>
+      <link>https://juristr.com/blog/2011/01/android-howto-detect-installed-sqlite/</link>
+      <pubDate>Fri, 21 Jan 2011 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/01/android-howto-detect-installed-sqlite/</guid>
+      <description>As you might already know, Android comes with a preinstalled SQLite database. This is quite handy because you can rely on it without the need to care about installing a DB along with your application (although you can, standalone, small DB&#39;s of course like HSQLDB).</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Using VS2010 Web.config Transformations to Bypass SSL Authentication Locally</title>
+      <link>https://juristr.com/blog/2010/12/howto-using-vs2010-webconfig/</link>
+      <pubDate>Mon, 06 Dec 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/12/howto-using-vs2010-webconfig/</guid>
+      <description>Most often when you create WCF webservices you&#39;ll want to run them in a secure channel, for instance by using SSL encryption on the transport level.</description>
+    </item>
+    
+    <item>
+      <title>More Than Just Synching - Dropbox</title>
+      <link>https://juristr.com/blog/2010/11/more-than-just-synching-dropbox/</link>
+      <pubDate>Tue, 16 Nov 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/11/more-than-just-synching-dropbox/</guid>
+      <description>You know Dropbox, right (if not, head on to get it here)? I totally love that tool. I mean, you nearly don&#39;t notice its presence and actually that&#39;s what I love so much.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: MySQL Workbench to Remote Ubuntu Production Server Using SSH Port Forwarding</title>
+      <link>https://juristr.com/blog/2010/11/howto-mysql-workbench-to-remote-ubuntu/</link>
+      <pubDate>Mon, 15 Nov 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/11/howto-mysql-workbench-to-remote-ubuntu/</guid>
+      <description>Before starting, I&#39;m totally not the Linux command line guru, unfortunately. It feels like years of just using Windows base OS makes you a wizard-click-through guy ;).</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Teach Visual Studio to Remember Your TFS Password</title>
+      <link>https://juristr.com/blog/2010/08/howto-teach-visual-studio-to-remember/</link>
+      <pubDate>Wed, 11 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/08/howto-teach-visual-studio-to-remember/</guid>
+      <description>I often now ran into the problem of continuously getting queried for the TFS credentials when connecting to the company&#39;s TFS server from my personal notebook.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Install your Android app OTA on your device for testing</title>
+      <link>https://juristr.com/blog/2010/07/howto-install-your-android-app-ota-on/</link>
+      <pubDate>Thu, 15 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/07/howto-install-your-android-app-ota-on/</guid>
+      <description>A fundamental thing when developing Android apps but also in general when developing with device emulators is to test your app on real devices. Android makes this easy.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Get an Android app&#39;s database from the emulator</title>
+      <link>https://juristr.com/blog/2010/06/howto-get-android-apps-database-from/</link>
+      <pubDate>Thu, 03 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/06/howto-get-android-apps-database-from/</guid>
+      <description>Most apps need a database for storing their data onto the device in a structured form. Android&#39;s natively supported DB is SQLite. Now of course if you develop an app you&#39;ll probably have the need for inspecting the stored data during development.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Prevent Visual Studio from auto-formatting your jQuery source</title>
+      <link>https://juristr.com/blog/2010/04/howto-prevent-visual-studio-from-auto/</link>
+      <pubDate>Wed, 07 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/04/howto-prevent-visual-studio-from-auto/</guid>
+      <description>When writing JavaScript code with Visual Studio 2008 it automatically formats your source code when going into a new line or placing the &#34;;&#34; delimiter.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Launch JavaScript after async postback of UpdatePanel</title>
+      <link>https://juristr.com/blog/2010/02/howto-launch-javascript-after-async/</link>
+      <pubDate>Thu, 18 Feb 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/02/howto-launch-javascript-after-async/</guid>
+      <description>Assume the scenario where you want to launch a JavaScript function after your UpdatePanel finished to do its async postback. This turns out to actually be quite simple.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Use your iPhone as a remote control for presentations</title>
+      <link>https://juristr.com/blog/2010/01/howto-use-your-iphone-as-remote-control/</link>
+      <pubDate>Thu, 28 Jan 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/01/howto-use-your-iphone-as-remote-control/</guid>
+      <description>My latest post is already a while back but I&#39;m currently extremely busy. More posts will come in February.&amp;nbsp;Today, I successfully presented my talk for the final exam of the &#34;</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Use globally defined resources in your ASPX code</title>
+      <link>https://juristr.com/blog/2010/01/howto-use-globally-defined-resources-in/</link>
+      <pubDate>Fri, 08 Jan 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/01/howto-use-globally-defined-resources-in/</guid>
+      <description>When creating localized web applications using ASP.net you may often come across strings which are the same on many of your interface parts. Usually you probably use the VS functionality &#34;</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Fade out div after some seconds using jQuery</title>
+      <link>https://juristr.com/blog/2009/12/howto-fade-out-div-after-some-seconds/</link>
+      <pubDate>Wed, 30 Dec 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/12/howto-fade-out-div-after-some-seconds/</guid>
+      <description>Today I made a quick change to my blog. I don&#39;t know whether many of my readers noticed the possibility of expanding the reading area by clicking on the gray vertical bar which separates the left column with the post content.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Include JavaScript file from JavaScript code</title>
+      <link>https://juristr.com/blog/2009/11/howto-include-javascript-file-from/</link>
+      <pubDate>Thu, 26 Nov 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/11/howto-include-javascript-file-from/</guid>
+      <description>Recently a colleague asked me on how to add a JavaScript file reference to an HTML document from within JavaScript code. It&#39;s actually quite easy.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Get the selected list index on Android Activity from context menu event</title>
+      <link>https://juristr.com/blog/2009/11/howto-get-selected-list-index-on/</link>
+      <pubDate>Wed, 11 Nov 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/11/howto-get-selected-list-index-on/</guid>
+      <description>Consider the situation where you have an Activity displaying a list of items. You have a context menu and a normal option menu. When pressing the option menu button, you can get the selected item and index as follows:</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Run IIS 7 on Vista 64bit OS in 32bit mode</title>
+      <link>https://juristr.com/blog/2009/11/howto-run-iis-7-on-vista-64bit-os-in/</link>
+      <pubDate>Tue, 10 Nov 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/11/howto-run-iis-7-on-vista-64bit-os-in/</guid>
+      <description>A couple of days ago, I ran into a nice problem. I had to configure the setup of a new project using an old ASP based application as the entry point from which then the new ASP.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Control the rendered Html tag on your custom, composite server controls</title>
+      <link>https://juristr.com/blog/2009/08/controlling-rendered-html-tag-on-your/</link>
+      <pubDate>Tue, 11 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/08/controlling-rendered-html-tag-on-your/</guid>
+      <description>Normally when you want to achieve that your custom server control is rendered inside a specific HTML tag you don&#39;t override the Render method, but you do something like</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Changing TFS workitem type from task to bug</title>
+      <link>https://juristr.com/blog/2009/08/howto-changing-tfs-workitem-type-from/</link>
+      <pubDate>Fri, 07 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/08/howto-changing-tfs-workitem-type-from/</guid>
+      <description>Recently I found a bug while implementing another feature and in order to not forget it, I created a new work item for our Team Foundation bug tracking system.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Getting started with JUnit testing for Liferay portlets with Netbeans (for Eclipse users)</title>
+      <link>https://juristr.com/blog/2009/06/howto-getting-started-with-junit/</link>
+      <pubDate>Wed, 10 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/06/howto-getting-started-with-junit/</guid>
+      <description>Besides at work, where I&#39;m developing in .Net using Visual Studio, I&#39;m a heavy Eclipse user. I use it for a lot of things, programming J2ME, J2EE, when developing Java desktop clients (using Eclipse RCP) or even when writing LaTeX documents.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Keep request parameters on validation errors with Spring&#39;s SimpleFormController</title>
+      <link>https://juristr.com/blog/2009/05/howto-keep-request-parameters-on/</link>
+      <pubDate>Sun, 31 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/05/howto-keep-request-parameters-on/</guid>
+      <description>I recently had a problem when using Spring&#39;s SimpleFormController together with validation. So I posted on StackOverflow, got an answer, that didn&#39;t work out so I found a solution and answered to myself :)</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Get localized string different from the current culture</title>
+      <link>https://juristr.com/blog/2009/05/howto-get-localized-string-different/</link>
+      <pubDate>Fri, 29 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/05/howto-get-localized-string-different/</guid>
+      <description>Localization is a key part of most applications. For this purpose you usually use resource files (property files in Java, actually they are the same) with the according culture extension, like &#34;</description>
+    </item>
+    
+    <item>
+      <title>Intel ProSet Wireless tool causing a lot of trouble</title>
+      <link>https://juristr.com/blog/2009/05/intel-proset-wireless-tool-causing-lot/</link>
+      <pubDate>Tue, 19 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/05/intel-proset-wireless-tool-causing-lot/</guid>
+      <description>Years ago I installed the Intel ProSet Wireless tool for managing my wireless network connections on my HP Compaq. Initially it worked quite well, but then updating it several times introduced a couple of bugs such as delaying the windows startup time because a related service waited till a certain timeout for proceeding etc.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Make your custom ASP.net server control validatable</title>
+      <link>https://juristr.com/blog/2009/05/howto-make-your-custom-aspnet-server/</link>
+      <pubDate>Mon, 11 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/05/howto-make-your-custom-aspnet-server/</guid>
+      <description>Content validation is a major issue of every application. It is an absolute &#34;must have&#34; to notify the user about invalid data he may have entered.</description>
+    </item>
+    
+    <item>
+      <title>Floating figures and tables with Latex</title>
+      <link>https://juristr.com/blog/2009/03/floating-figures-and-tables-with-latex/</link>
+      <pubDate>Sun, 15 Mar 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/03/floating-figures-and-tables-with-latex/</guid>
+      <description>Latex provides you with a lot of advantages when writing scientific papers. It allows you to fully focus on the content without having to worry to much about the formatting.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Set the assembly binding location</title>
+      <link>https://juristr.com/blog/2009/02/howto-set-assembly-binding-location/</link>
+      <pubDate>Sat, 28 Feb 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/02/howto-set-assembly-binding-location/</guid>
+      <description>This post is somehow related to the one I made just a couple of days ago. The application plugins (dlls placed in a special folder of my app) are loaded dynamically at run-time with my small &#34;</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Detect Assembly dependencies at runtime</title>
+      <link>https://juristr.com/blog/2009/02/howto-detect-assembly-dependencies-at/</link>
+      <pubDate>Wed, 25 Feb 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/02/howto-detect-assembly-dependencies-at/</guid>
+      <description>I&#39;m currently developing a small project for myself, where I&#39;m trying to build a small plugin framework (for experimenting purposes). In that environment I just came across the problem of detecting an assemblies dependencies at runtime.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Persist viewstate on the server-side</title>
+      <link>https://juristr.com/blog/2009/02/howto-persist-viewstate-on-server-side/</link>
+      <pubDate>Thu, 12 Feb 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/02/howto-persist-viewstate-on-server-side/</guid>
+      <description>In our last web project we had some performance issues, mainly caused by the extremely big page viewstate of our asp.net pages. If you then add Ajax capabilities to your site, using UpdatePanels, you really get in trouble.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: synchronize Google Calendar with your iPhone</title>
+      <link>https://juristr.com/blog/2009/01/howto-synchronize-google-calendar-with/</link>
+      <pubDate>Tue, 20 Jan 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/01/howto-synchronize-google-calendar-with/</guid>
+      <description>I&#39;m sure you already tried this before. Well unfortunately there is no existing, pre-installed way for synchronizing your iPhone calendar with your Google Calendar. What you can do is to sync your Outlook calendars with your iPhone, either when attaching it to your Mac, PC or whatever (having iTunes installed of course :) , Apples strategy as usual) or over the Microsoft Exchange account (if you have one).</description>
+    </item>
+    
+    <item>
+      <title>HowTo: testing jFace Action class taking a StructuredSelection object</title>
+      <link>https://juristr.com/blog/2009/01/howto-testing-jface-action-class-taking/</link>
+      <pubDate>Thu, 15 Jan 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/01/howto-testing-jface-action-class-taking/</guid>
+      <description>Let&#39;s consider the following jFace Action class:
+public class RateAction extends Action {
+private final int fRating;
+private IStructuredSelection fSelection;
+/**
+* @param rating</description>
+    </item>
+    
+    <item>
+      <title>HowTo: execute a file download from Windows command line</title>
+      <link>https://juristr.com/blog/2008/11/howto-execute-file-download-from/</link>
+      <pubDate>Mon, 10 Nov 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/11/howto-execute-file-download-from/</guid>
+      <description>Under Linux it is often very comfortable to download files quickly from within the shell by typing wget [some URL], especially if you do that from within a script.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Create &#39;linked tables&#39; in MS Access</title>
+      <link>https://juristr.com/blog/2008/10/howto-create-linked-tables-in-ms-access/</link>
+      <pubDate>Thu, 02 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/10/howto-create-linked-tables-in-ms-access/</guid>
+      <description>Assume you have to migrate some historical data from an application which used an MS Access database to a new application which uses some other DB system (in my case an Oracle DB).</description>
+    </item>
+    
+    <item>
+      <title>Extended User Management under XP</title>
+      <link>https://juristr.com/blog/2008/05/extended-user-management-under-xp/</link>
+      <pubDate>Thu, 15 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/05/extended-user-management-under-xp/</guid>
+      <description>This will become just a very short post since I&#39;m too tired to write a lot today. I just set up my little &#34;server&#34; the term is maybe not really appropriate, anyway.</description>
+    </item>
+    
+    <item>
+      <title>Retrieving list of installed applications</title>
+      <link>https://juristr.com/blog/2008/05/retrieving-list-of-installed/</link>
+      <pubDate>Wed, 07 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/05/retrieving-list-of-installed/</guid>
+      <description>From now and then it happens that you have to reset your workstation, meaning to reformat your hard disk and install everything fresh. In this way you get rid of all the garbage on your PC.</description>
+    </item>
+    
+    <item>
+      <title>Posting Source code on Blogger</title>
+      <link>https://juristr.com/blog/2008/03/posting-source-code-on-blogger/</link>
+      <pubDate>Tue, 18 Mar 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/03/posting-source-code-on-blogger/</guid>
+      <description>When you have a blog (like this here) whose content is dedicated to Computer Science related stuff you will often have to post pieces of source code.</description>
+    </item>
+    
+    <item>
+      <title>How to open docx files??</title>
+      <link>https://juristr.com/blog/2008/02/how-to-open-docx-files/</link>
+      <pubDate>Thu, 21 Feb 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/02/how-to-open-docx-files/</guid>
+      <description>First of all: I forgot my blog&#39;s &#34;birthday&#34; :D On the 9th february this blog here became 1 year old. My resumé of 1 year of blogging?</description>
+    </item>
+    
+  </channel>
+</rss>

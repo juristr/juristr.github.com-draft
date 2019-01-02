@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Design on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/software-design/</link>
+    <description>Recent content in Software Design on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Tue, 19 Nov 2013 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/software-design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The narrow path between best practices and over-engineering</title>
+      <link>https://juristr.com/blog/2013/11/narrow-path-best-practices-overengineering/</link>
+      <pubDate>Tue, 19 Nov 2013 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2013/11/narrow-path-best-practices-overengineering/</guid>
+      <description>A couple of days ago I read a post by Petri Kainulainen about The Dark Side of Best Practices. He really hit what - IMHO - on the one side should be totally obvious and common sense, but sadly, too often is not the case at all.</description>
+    </item>
+    
+    <item>
+      <title>Some Usability Thoughts for the Weekend...</title>
+      <link>https://juristr.com/blog/2011/11/some-usability-thoughts-for-weekend/</link>
+      <pubDate>Fri, 18 Nov 2011 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/11/some-usability-thoughts-for-weekend/</guid>
+      <description>A couple of days ago I got the order to write a very simple program that would take a bunch of XML input files with the task to elaborate them in terms of grouping them according to some identifier and then to output the result (grouped per directory) in a more user friendly and readable way.</description>
+    </item>
+    
+    <item>
+      <title>Integrating Jersey with Spring</title>
+      <link>https://juristr.com/blog/2011/08/integrating-jersey-with-spring/</link>
+      <pubDate>Sun, 28 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/08/integrating-jersey-with-spring/</guid>
+      <description>Spring provides a lot of benefits and promotes best practices with its dependency injection mechanism, application lifecycle management and Hibernate support (just to mention some).</description>
+    </item>
+    
+    <item>
+      <title>SmellyCode: A Classical Example of Non-Unittestable Code</title>
+      <link>https://juristr.com/blog/2011/06/smellycode-classical-example-of-non/</link>
+      <pubDate>Mon, 20 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/06/smellycode-classical-example-of-non/</guid>
+      <description>I know there might be some degree of repetition in my posts when I speak about unit testing and mocking, but I always again come over similar problems in code I&#39;m reviewing.</description>
+    </item>
+    
+    <item>
+      <title>Smelly Code: Direct Object Instantiation as a Testability Killer</title>
+      <link>https://juristr.com/blog/2010/12/smelly-code-direct-object-instantiation/</link>
+      <pubDate>Thu, 09 Dec 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/12/smelly-code-direct-object-instantiation/</guid>
+      <description>This Smelly Code post discusses mainly a testability issue without going into further detail on other things like readability which could be improved for sure as well.</description>
+    </item>
+    
+    <item>
+      <title>Why factories with configuration files are better for decoupling but still a testability killer</title>
+      <link>https://juristr.com/blog/2010/05/why-factories-with-configuration-files/</link>
+      <pubDate>Mon, 31 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/05/why-factories-with-configuration-files/</guid>
+      <description>As I already highlighted in several previous posts one of the most critical things when facing unit testing is an appropriate design. My sensation is that those rejecting unit tests.</description>
+    </item>
+    
+    <item>
+      <title>Unit testing asynchronous code</title>
+      <link>https://juristr.com/blog/2010/04/unit-testing-asynchronous-code/</link>
+      <pubDate>Sun, 04 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/04/unit-testing-asynchronous-code/</guid>
+      <description>Today I wrote on a first prototype for my current thesis research. I started coding just ahead however - at the same time - trying to find a good design which has a high potential to be reused for the final system.</description>
+    </item>
+    
+    <item>
+      <title>Are anonymous Lambda style event handlers a readability killer?</title>
+      <link>https://juristr.com/blog/2010/02/are-anonymous-lambda-style-event/</link>
+      <pubDate>Wed, 03 Feb 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/02/are-anonymous-lambda-style-event/</guid>
+      <description>A standard event handling method in C# looks something like this
+public void SomeOtherMethod()
+{
+MyClass aObj = new MyClass();
+aObj.MyCustomEventName += new EventHandler(OnMyCustomEventName);</description>
+    </item>
+    
+    <item>
+      <title>Comments smell! Replace them with more expressive code.</title>
+      <link>https://juristr.com/blog/2010/01/comments-smell-replace-them-with-more/</link>
+      <pubDate>Wed, 06 Jan 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/01/comments-smell-replace-them-with-more/</guid>
+      <description>As already pointed out in that post, here&#39;s another code example:
+...
+//300 = Italy
+if(aCompany.NationId == 300)
+{
+...
+}
+...
+The comment above the if clause is definitely a code smell.</description>
+    </item>
+    
+    <item>
+      <title>The power and simplicity of the Command pattern</title>
+      <link>https://juristr.com/blog/2009/12/power-and-simplicity-of-command-pattern/</link>
+      <pubDate>Thu, 10 Dec 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/12/power-and-simplicity-of-command-pattern/</guid>
+      <description>Never thought of how to implement an &#34;undo&#34; function? Not that easy, huh? People in our architecture class today came up with quite creative solutions: two separate stacks storing operations, versioning of the object to go back etc.</description>
+    </item>
+    
+    <item>
+      <title>Part 1: Writing testable code for the Android</title>
+      <link>https://juristr.com/blog/2009/10/part-1-writing-testable-code-for/</link>
+      <pubDate>Tue, 20 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/10/part-1-writing-testable-code-for/</guid>
+      <description>Creating testable code is one of the major aims when designing good, maintainable applications. I actually just started to take a look at developing for the Android and after playing a bit around with UI components, I started to develop a design that allows me to create a nicely testable Android app.</description>
+    </item>
+    
+    <item>
+      <title>Are C# regions a good thing??</title>
+      <link>https://juristr.com/blog/2009/09/are-c-regions-good-thing/</link>
+      <pubDate>Fri, 25 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/09/are-c-regions-good-thing/</guid>
+      <description>Well, I&#39;d say it depends. If you use regions to logically group your code in your class, then it may be a good thing &#39;cause people come to your class and see something like</description>
+    </item>
+    
+    <item>
+      <title>Law of Demeter: Nice metaphor</title>
+      <link>https://juristr.com/blog/2009/09/law-of-demeter-nice-metaphor/</link>
+      <pubDate>Tue, 22 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/09/law-of-demeter-nice-metaphor/</guid>
+      <description>I just came across a nice metaphor for explaining the Law of Demeter. For those of you that didn&#39;t yet hear about it, the Law of Demeter is a object oriented design principle.</description>
+    </item>
+    
+    <item>
+      <title>Add semantic through your code, not through commenting</title>
+      <link>https://juristr.com/blog/2009/09/add-semantic-through-your-code-not/</link>
+      <pubDate>Sun, 13 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/09/add-semantic-through-your-code-not/</guid>
+      <description>Is it good to have a lot of code comments, explaining things s.t. your other team members know what was your intention when writing certain pieces?</description>
+    </item>
+    
+    <item>
+      <title>It is not about writing tests, its about writing stories</title>
+      <link>https://juristr.com/blog/2009/09/it-is-not-about-writing-tests-its-about/</link>
+      <pubDate>Fri, 04 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/09/it-is-not-about-writing-tests-its-about/</guid>
+      <description>Writing unit test and moreover having them in place when developing is a great thing. They give you some kind of assurance (if well done).</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t use negated method names!</title>
+      <link>https://juristr.com/blog/2009/08/dont-use-negated-method-names/</link>
+      <pubDate>Fri, 28 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/08/dont-use-negated-method-names/</guid>
+      <description>What does this mean. Don&#39;t write something like
+public bool IsNotCorrect(...)
+{
+...
+}
+but rather write
+public bool IsCorrect(...)
+{
+...
+}
+and the caller of the method then does the negation by calling it like</description>
+    </item>
+    
+    <item>
+      <title>Using code metrics as indicator for code refactoring</title>
+      <link>https://juristr.com/blog/2009/08/using-code-metrics-as-indicator-for/</link>
+      <pubDate>Sun, 02 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/08/using-code-metrics-as-indicator-for/</guid>
+      <description>Developing software is not just hacking in a solution, but to develop simple, well structured and therefore maintainable constructs. There are a couple of design guidelines that one should follow (some of them are here) to achieve this.</description>
+    </item>
+    
+    <item>
+      <title>Best practices: The challenge of designing software for wireless devices</title>
+      <link>https://juristr.com/blog/2009/04/best-practices-challenge-of-designing/</link>
+      <pubDate>Tue, 14 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/04/best-practices-challenge-of-designing/</guid>
+      <description>Designing good software for wireless devices such as mobile phones is not straightforward. Developers have to consider and address the device&#39;s constraints such as memory, processing power, input, screen etc.</description>
+    </item>
+    
+    <item>
+      <title>UML Use Case &#34;extend&#34; and &#34;include&#34; relationships</title>
+      <link>https://juristr.com/blog/2009/03/uml-use-case-extend-and-include/</link>
+      <pubDate>Tue, 17 Mar 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/03/uml-use-case-extend-and-include/</guid>
+      <description>From now and then I have to create UML diagrams to model certain parts of software projects, especially for the University. Initially, creating UML models, may seem annoying but in fact they can be very useful if they are applied correctly.</description>
+    </item>
+    
+    <item>
+      <title>How does one elaborate design using CRC cards?</title>
+      <link>https://juristr.com/blog/2009/02/how-does-one-elaborate-design-using-crc/</link>
+      <pubDate>Sat, 28 Feb 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/02/how-does-one-elaborate-design-using-crc/</guid>
+      <description>An interesting discussion on Stackoverflow (where I also participated) about using CRC cards in the design process of software projects:
+http://stackoverflow.com/questions/98878/how-does-one-elaborate-design-using-crc-cards/
+Even Kent Beck itself contributed to the discussion ;) .</description>
+    </item>
+    
+  </channel>
+</rss>

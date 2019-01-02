@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angular Translate on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/angular-translate/</link>
+    <description>Recent content in Angular Translate on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Tue, 03 Mar 2015 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/angular-translate/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning Angular: Set your language culture before any UI is displayed</title>
+      <link>https://juristr.com/blog/2015/03/learning-ng-angular-translate-promises/</link>
+      <pubDate>Tue, 03 Mar 2015 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2015/03/learning-ng-angular-translate-promises/</guid>
+      <description>In this article I briefly outline an issue I had, namely to make sure that my language&amp;rsquo;s locale files are loaded by angular-translate before any UI is shown.</description>
+    </item>
+    
+  </channel>
+</rss>

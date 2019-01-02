@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webclips on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/webclips/</link>
+    <description>Recent content in Webclips on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Wed, 22 Apr 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/webclips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>jQuery plugin development pattern</title>
+      <link>https://juristr.com/blog/2009/04/jquery-plugin-development-pattern/</link>
+      <pubDate>Wed, 22 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/04/jquery-plugin-development-pattern/</guid>
+      <description>I&#39;m currently diving more and more into the jQuery library. First I&#39;m using it on a portlet I&#39;m developing for the Liferay portal server as the project for a university course and secondly I&#39;m planning to use jQuery on some ajax-enabled server controls I&#39;m designing (I&#39;m not yet 100% sure whether to use jQuery or Asp.</description>
+    </item>
+    
+    <item>
+      <title>Google&#39;s newest addition: Google Brain search for mobile!!</title>
+      <link>https://juristr.com/blog/2009/04/googles-newest-addition-google-brain/</link>
+      <pubDate>Sun, 12 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/04/googles-newest-addition-google-brain/</guid>
+      <description> 
+Don&#39;t take it too seriously ;) : http://www.google.com/mobile/default/brainsearch.html </description>
+    </item>
+    
+    <item>
+      <title>Internet Explorer 8: Compatibility</title>
+      <link>https://juristr.com/blog/2009/04/internet-explorer-8-compatibility/</link>
+      <pubDate>Thu, 02 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/04/internet-explorer-8-compatibility/</guid>
+      <description>Here&#39;s an article written by Pietro Brambati on his blog about IE8 compatibility. It&#39;s quite interesting to go quickly over it, especially for web developers.</description>
+    </item>
+    
+    <item>
+      <title>How does one elaborate design using CRC cards?</title>
+      <link>https://juristr.com/blog/2009/02/how-does-one-elaborate-design-using-crc/</link>
+      <pubDate>Sat, 28 Feb 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/02/how-does-one-elaborate-design-using-crc/</guid>
+      <description>An interesting discussion on Stackoverflow (where I also participated) about using CRC cards in the design process of software projects:
+http://stackoverflow.com/questions/98878/how-does-one-elaborate-design-using-crc-cards/
+Even Kent Beck itself contributed to the discussion ;) .</description>
+    </item>
+    
+    <item>
+      <title>Do you also lie awake at night wondering...</title>
+      <link>https://juristr.com/blog/2009/02/do-you-also-lie-awake-at-night/</link>
+      <pubDate>Wed, 11 Feb 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/02/do-you-also-lie-awake-at-night/</guid>
+      <description>...what is 2 + 1, whether ABBA is a palindrome? :D
+Then you will have a solution now: The lego Turing machine!!
+
+Too cool :) Here&#39;s the link to the according blog:</description>
+    </item>
+    
+    <item>
+      <title>Webclip: Mashups, geocoding with Google Spreadsheets (and Gadgets)</title>
+      <link>https://juristr.com/blog/2008/11/webclip-mashups-geocoding-with-google/</link>
+      <pubDate>Thu, 27 Nov 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/11/webclip-mashups-geocoding-with-google/</guid>
+      <description>Amazing how people exploit different technologies to achieve their goals and still more amazing how much things you can do combining those freely available services: http://ouseful.</description>
+    </item>
+    
+    <item>
+      <title>Webclip: jQuery Intellisense in VS 2008 - ScottGu&#39;s Blog</title>
+      <link>https://juristr.com/blog/2008/11/webclip-jquery-intellisense-in-vs-2008/</link>
+      <pubDate>Thu, 27 Nov 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/11/webclip-jquery-intellisense-in-vs-2008/</guid>
+      <description>I came across jQuery on the web already several times, but I never took a deep look at it. Now some days ago, &amp;nbsp;Scott Guthrie posted some steps on his blog that show you how to add Intellisense support jo jQuery inside Visual Studio (and also the Express Editions).</description>
+    </item>
+    
+    <item>
+      <title>JFace Table API with Eclipse RCP</title>
+      <link>https://juristr.com/blog/2008/11/jface-table-api-with-eclipse-rcp/</link>
+      <pubDate>Thu, 20 Nov 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/11/jface-table-api-with-eclipse-rcp/</guid>
+      <description>Today I had to create a new view inside on an Eclipse RCP application representing data inside a table. I found the following article</description>
+    </item>
+    
+  </channel>
+</rss>

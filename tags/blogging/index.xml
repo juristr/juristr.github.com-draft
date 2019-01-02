@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogging on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/blogging/</link>
+    <description>Recent content in Blogging on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Sat, 30 Dec 2017 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Looking back on 2017</title>
+      <link>https://juristr.com/blog/2017/12/looking-back-on-2017/</link>
+      <pubDate>Sat, 30 Dec 2017 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2017/12/looking-back-on-2017/</guid>
+      <description>2017 has been a great year, lots of changes for me and new things 😅. Time for some retrospective. (Warning: this is not a tech blog post 😉)  i love that people are tweeting lists of work they&amp;#39;re proud of this year!</description>
+    </item>
+    
+    <item>
+      <title>Easy SSL support for your Jekyll Blog with CloudFlare</title>
+      <link>https://juristr.com/blog/2017/01/enable-ssl-jekyll-blog/</link>
+      <pubDate>Wed, 04 Jan 2017 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2017/01/enable-ssl-jekyll-blog/</guid>
+      <description>It&#39;s 2017 and if you didn&#39;t switch to a secure SSL connection yet, it&#39;s definitely time to do so. This has been on my todo list for a while already and now that I know how easy it was, I definitely should have done it before!</description>
+    </item>
+    
+    <item>
+      <title>Happy new year 2015!</title>
+      <link>https://juristr.com/blog/2014/12/happy-new-year-2015/</link>
+      <pubDate>Wed, 31 Dec 2014 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2014/12/happy-new-year-2015/</guid>
+      <description>A very short post as I&amp;rsquo;m preparing to go out for celebrating New Year&amp;rsquo;s Eve. 2014 has been a great year, with its ups and downs.</description>
+    </item>
+    
+    <item>
+      <title>Kudos for your site - powered by Firebase</title>
+      <link>https://juristr.com/blog/2014/12/kudos-for-your-site/</link>
+      <pubDate>Mon, 29 Dec 2014 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2014/12/kudos-for-your-site/</guid>
+      <description>I don&amp;rsquo;t quite remember, guess it was about more than a year ago when I came across a Svbtle-hosted blog where I noticed a small little circle, bouncing when you hover it and showing a number followed by &amp;ldquo;Kudos&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>How to add a reading time indicator to your blog in ten minutes</title>
+      <link>https://juristr.com/blog/2013/07/how-to-setup-reading-time-indicator-ten-minutes/</link>
+      <pubDate>Tue, 23 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2013/07/how-to-setup-reading-time-indicator-ten-minutes/</guid>
+      <description>Time is money, right, and given that nowadays we are continuously being flooded with an enormous amount of information, we need to be fast in consuming it and particularly good at filtering what&amp;rsquo;s worth and what isn&amp;rsquo;t.</description>
+    </item>
+    
+    <item>
+      <title>Blog Like a Hacker with Jekyll and Nitrous.IO</title>
+      <link>https://juristr.com/blog/2013/05/blog-like-a-hacker-with-jekyll-and-nitrousio/</link>
+      <pubDate>Wed, 08 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2013/05/blog-like-a-hacker-with-jekyll-and-nitrousio/</guid>
+      <description>One of the best moves I probably did about half a year ago was to move my Blog from blogger to Jekyll, hosted on GitHub.</description>
+    </item>
+    
+    <item>
+      <title>Interview with DZone</title>
+      <link>https://juristr.com/blog/2013/03/interview-with-dzone/</link>
+      <pubDate>Wed, 06 Mar 2013 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2013/03/interview-with-dzone/</guid>
+      <description>DZone, where I&#39;m part as an MVB, recently contacted me for an interview for their weekly newsletter edition. Yesterday it got published. If you&#39;re interested in their newsletter, the best way is to follow DZone on their Facebook page.</description>
+    </item>
+    
+    <item>
+      <title>Retrospective 2012</title>
+      <link>https://juristr.com/blog/2012/12/retrospective-2012/</link>
+      <pubDate>Mon, 31 Dec 2012 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/12/retrospective-2012/</guid>
+      <description>Yes we&amp;rsquo;re still alive ;) No jokes apart, it&amp;rsquo;s time for a year retrospective.
+Normally, a retrospective consists more or less about asking the following three questions:</description>
+    </item>
+    
+    <item>
+      <title>Joining the DZone MVB Program</title>
+      <link>https://juristr.com/blog/2012/04/joining-dzone-mvb-program/</link>
+      <pubDate>Tue, 03 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/04/joining-dzone-mvb-program/</guid>
+      <description>A couple of weeks ago I was kindly invited to join DZone as a MVB (Most Valuable Blogger). If you shouldn&#39;t already know, &#34;DZone is a technology publishing company that produces valuable content for software architects and developers worldwide.</description>
+    </item>
+    
+    <item>
+      <title>QCon London - My Personal Recap</title>
+      <link>https://juristr.com/blog/2012/04/qcon-london-my-personal-recap/</link>
+      <pubDate>Tue, 03 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/04/qcon-london-my-personal-recap/</guid>
+      <description>From the previous posts (or from those on my Tumblr stream) you might have understood my participation at this year&#39;s QCon London. Actually it was my 1st QCon conference and I enjoyed it a lot.</description>
+    </item>
+    
+    <item>
+      <title>My Tumblr Stream: A Developer&#39;s Work Log</title>
+      <link>https://juristr.com/blog/2011/10/my-tumblr-stream-developers-work-log/</link>
+      <pubDate>Wed, 26 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/10/my-tumblr-stream-developers-work-log/</guid>
+      <description>You may have noted the diminishing frequency of posts being published on my blog here. Well, sadly I&#39;m currently quite busy at work as well as privately.</description>
+    </item>
+    
+    <item>
+      <title>JCG - Joining the Java Code Geeks Program</title>
+      <link>https://juristr.com/blog/2011/03/jcg-joining-java-code-geeks-program/</link>
+      <pubDate>Thu, 10 Mar 2011 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/03/jcg-joining-java-code-geeks-program/</guid>
+      <description>A couple of days ago I was kindly invited to the Java Code Geeks program. Their goal is to build an online community for Java developers by aggregating and republishing content from different bloggers on their blog.</description>
+    </item>
+    
+    <item>
+      <title>Blog to learn...</title>
+      <link>https://juristr.com/blog/2009/10/blog-to-learn/</link>
+      <pubDate>Sun, 11 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/10/blog-to-learn/</guid>
+      <description>John Skeet answered a question on SO related to how to learn good programming in terms of learning good software design.
+I liked John&#39;s statement which btw explains pretty much why to have a technical blog like this one here.</description>
+    </item>
+    
+    <item>
+      <title>These damn spammers!!!</title>
+      <link>https://juristr.com/blog/2009/03/these-damn-spammers/</link>
+      <pubDate>Mon, 30 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/03/these-damn-spammers/</guid>
+      <description>Once again one of my blog posts got infected by &#34;spam&#34; comments. But this time not the usual pharmaceutical spam messages which you immediately recognize.</description>
+    </item>
+    
+    <item>
+      <title>Extended view reloaded</title>
+      <link>https://juristr.com/blog/2009/03/extended-view-reloaded/</link>
+      <pubDate>Wed, 25 Mar 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/03/extended-view-reloaded/</guid>
+      <description>With the transition to the complete new blog design I initially had to leave away some features which I had on my old blog layout.</description>
+    </item>
+    
+    <item>
+      <title>Del.icio.us links and three new projects online</title>
+      <link>https://juristr.com/blog/2009/03/delicious-links-and-three-new-projects/</link>
+      <pubDate>Mon, 09 Mar 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/03/delicious-links-and-three-new-projects/</guid>
+      <description>My blog readers can now bookmark posts I&#39;ve written with delicious, by just clicking on the &#34;add to del.icio.us&#34; link on the bottom of each post.</description>
+    </item>
+    
+    <item>
+      <title>Guidelines for promoting your blog</title>
+      <link>https://juristr.com/blog/2009/03/guidelines-for-promoting-your-blog/</link>
+      <pubDate>Thu, 05 Mar 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/03/guidelines-for-promoting-your-blog/</guid>
+      <description>Some guidelines on how to promote and so to increase the traffic on your blog. These &#34;rules&#34; have been taken from the Blogger Help and I thought some of you may be interested.</description>
+    </item>
+    
+    <item>
+      <title>It is done...</title>
+      <link>https://juristr.com/blog/2009/01/it-is-done/</link>
+      <pubDate>Sat, 10 Jan 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/01/it-is-done/</guid>
+      <description>...my blog shines in new splendor :) . I finally &#34;managed&#34; to upgrade everything to a new design. Managed....well...ehm...in theory I should have studied for my exams the last hours when I upgraded everything.</description>
+    </item>
+    
+    <item>
+      <title>Blogging year 2008</title>
+      <link>https://juristr.com/blog/2009/01/blogging-year-2008/</link>
+      <pubDate>Thu, 01 Jan 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/01/blogging-year-2008/</guid>
+      <description>First of all, happy new year 2009, I wish you all the best! :) This is a scheduled post of course :D I&#39;m not in front of the PC over new year, and you shouldn&#39;t be neither.</description>
+    </item>
+    
+    <item>
+      <title>Blog renewal status</title>
+      <link>https://juristr.com/blog/2008/10/blog-renewal-status/</link>
+      <pubDate>Fri, 31 Oct 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/10/blog-renewal-status/</guid>
+      <description>I just marked a couple of features in my &#34;blog renewal&#34; todo list as &#34;nice to have&#34; :) since I don&#39;t really have the time at the moment to solve them and I finally want to kick that pie-chart (on the right) out.</description>
+    </item>
+    
+    <item>
+      <title>Star rating - Encouraging readers to interact</title>
+      <link>https://juristr.com/blog/2008/08/star-rating-encouraging-readers-to/</link>
+      <pubDate>Thu, 21 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/08/star-rating-encouraging-readers-to/</guid>
+      <description>Although having quite a lot of blog readers per day, it is quite hard to make your readers interact with you. Now I&#39;ve experimentally added &#34;</description>
+    </item>
+    
+    <item>
+      <title>Label cloud on my blog</title>
+      <link>https://juristr.com/blog/2008/05/label-cloud-on-my-blog/</link>
+      <pubDate>Sun, 25 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/05/label-cloud-on-my-blog/</guid>
+      <description>Yesterday I found some minutes to go ahead with my blog revision. Already for a longer time I planned to integrate a label cloud, since a lot of sites and blogs which manage tags or labels have one.</description>
+    </item>
+    
+    <item>
+      <title>Extended-view improved</title>
+      <link>https://juristr.com/blog/2008/05/extended-view-improved/</link>
+      <pubDate>Thu, 01 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/05/extended-view-improved/</guid>
+      <description>I&#39;ve recently written about the &#34;extended view&#34; feature I&#39;ve implemented on my blog here. Today I improved it. Now it automatically saves your last view mode such that the next time you can immediately start reading from you preferred one.</description>
+    </item>
+    
+    <item>
+      <title>Extended view: full focus on readers</title>
+      <link>https://juristr.com/blog/2008/04/extended-view-full-focus-on-readers/</link>
+      <pubDate>Wed, 23 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/04/extended-view-full-focus-on-readers/</guid>
+      <description>I recently took a critical look at my blog and started to plan some changes. Today I&#39;m &#34;releasing&#34; the first one, let&#39;s say under the theme &#34;</description>
+    </item>
+    
+    <item>
+      <title>Fighting with cross-browser incompatibilities</title>
+      <link>https://juristr.com/blog/2008/04/fighting-with-cross-browser/</link>
+      <pubDate>Mon, 21 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/04/fighting-with-cross-browser/</guid>
+      <description>If you ever have done some web programming stuff and if it may have been just to style a plain old static HTML page with some CSS I&#39;m sure you already had to tackle with absurd cross-browser incompatibilities.</description>
+    </item>
+    
+    <item>
+      <title>Posting Source code on Blogger</title>
+      <link>https://juristr.com/blog/2008/03/posting-source-code-on-blogger/</link>
+      <pubDate>Tue, 18 Mar 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/03/posting-source-code-on-blogger/</guid>
+      <description>When you have a blog (like this here) whose content is dedicated to Computer Science related stuff you will often have to post pieces of source code.</description>
+    </item>
+    
+  </channel>
+</rss>

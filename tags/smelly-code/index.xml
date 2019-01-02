@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smelly Code on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/smelly-code/</link>
+    <description>Recent content in Smelly Code on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Mon, 20 Jun 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/smelly-code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SmellyCode: A Classical Example of Non-Unittestable Code</title>
+      <link>https://juristr.com/blog/2011/06/smellycode-classical-example-of-non/</link>
+      <pubDate>Mon, 20 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/06/smellycode-classical-example-of-non/</guid>
+      <description>I know there might be some degree of repetition in my posts when I speak about unit testing and mocking, but I always again come over similar problems in code I&#39;m reviewing.</description>
+    </item>
+    
+    <item>
+      <title>Smelly Code: Direct Object Instantiation as a Testability Killer</title>
+      <link>https://juristr.com/blog/2010/12/smelly-code-direct-object-instantiation/</link>
+      <pubDate>Thu, 09 Dec 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/12/smelly-code-direct-object-instantiation/</guid>
+      <description>This Smelly Code post discusses mainly a testability issue without going into further detail on other things like readability which could be improved for sure as well.</description>
+    </item>
+    
+    <item>
+      <title>Smelly Code: Eager Test</title>
+      <link>https://juristr.com/blog/2010/09/smelly-code-eager-test/</link>
+      <pubDate>Wed, 29 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/09/smelly-code-eager-test/</guid>
+      <description>This post shows a common code smell in unit tests also mentioned in the xunit test patterns book, namely &#34;Eager tests&#34;. Original, smelly code public void testSaveSession(){</description>
+    </item>
+    
+    <item>
+      <title>Introducing #smellycode</title>
+      <link>https://juristr.com/blog/2010/09/introducing-smellycode/</link>
+      <pubDate>Mon, 27 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/09/introducing-smellycode/</guid>
+      <description>Couple of month ago, after posting some comments about bad code on Twitter, my ex-work-mate Peter (greets to Oz) asked me to show it s.</description>
+    </item>
+    
+  </channel>
+</rss>

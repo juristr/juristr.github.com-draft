@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Entity Framework on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/entity-framework/</link>
+    <description>Recent content in Entity Framework on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Fri, 22 Mar 2013 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/entity-framework/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Entity Framework: Intercepting SQL Queries for Contextual Logging</title>
+      <link>https://juristr.com/blog/2013/03/intercepting-sql-queries-for-contextual-logging/</link>
+      <pubDate>Fri, 22 Mar 2013 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2013/03/intercepting-sql-queries-for-contextual-logging/</guid>
+      <description>Proper logging is of major importance and a must have in any serious application. Writing logs is trivial and is already done successfully by a couple of open source libraries.</description>
+    </item>
+    
+    <item>
+      <title>Entity Framework Schema Translations</title>
+      <link>https://juristr.com/blog/2012/07/entity-framework-schema-translations/</link>
+      <pubDate>Mon, 30 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/07/entity-framework-schema-translations/</guid>
+      <description>You should have different setup environments, right. Normally something like dev, test (or staging) and production. This implies to have different DBs as well. At work we have Oracle databases and there we don&#39;t really have different DB &#34;</description>
+    </item>
+    
+    <item>
+      <title>Basta-On-Tour Wrap Up Day 2: EF Best Practices, JavaScript, MVC</title>
+      <link>https://juristr.com/blog/2011/05/basta-on-tour-wrap-up-day-2-ef-best/</link>
+      <pubDate>Tue, 24 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/05/basta-on-tour-wrap-up-day-2-ef-best/</guid>
+      <description>Day 2 at the BASTA! On Tour was dedicated to different kind of small workshops.
+Web 2.0 Applications with ASP.net MVC, Entity Framework and jQuery</description>
+    </item>
+    
+    <item>
+      <title>Basta-On-Tour Wrap Up Day 1: Entity Framework</title>
+      <link>https://juristr.com/blog/2011/05/basta-on-tour-wrap-up-day-1-entity/</link>
+      <pubDate>Fri, 20 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/05/basta-on-tour-wrap-up-day-1-entity/</guid>
+      <description>Well, this is a very short and brief wrap up of the 1st day here at the Basta! On Tour in Düsseldorf. The session was about Entity Framework, hold by Dr.</description>
+    </item>
+    
+  </channel>
+</rss>

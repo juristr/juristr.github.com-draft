@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design Patterns on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/design-patterns/</link>
+    <description>Recent content in Design Patterns on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Mon, 10 Oct 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/design-patterns/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What? Model-View-Controller in JavaScript?</title>
+      <link>https://juristr.com/blog/2011/10/what-model-view-controller-in/</link>
+      <pubDate>Mon, 10 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/10/what-model-view-controller-in/</guid>
+      <description>At work I&#39;m currently working on a new web architecture composed of a rich client written in JavaScript and an ASP.net MVC server-side backend exposing a REST-like JSON api.</description>
+    </item>
+    
+    <item>
+      <title>Practical example: Applying the Template Method design pattern</title>
+      <link>https://juristr.com/blog/2010/07/practical-example-applying-template/</link>
+      <pubDate>Tue, 13 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/07/practical-example-applying-template/</guid>
+      <description>As I already mentioned in my previous post I&#39;m currently doing domain objects to XSD generated object mapping. Monotonic, exactly, but I&#39;m approaching the end of the work.</description>
+    </item>
+    
+    <item>
+      <title>Tackle software dependencies with IoC and Dependency Injection</title>
+      <link>https://juristr.com/blog/2010/03/tackle-software-dependencies-with-ioc/</link>
+      <pubDate>Sun, 21 Mar 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/03/tackle-software-dependencies-with-ioc/</guid>
+      <description>Coupling between objects creates &#34;dependency&#34;, which per se is not bad at all. You will always have some dependencies among your objects. It becomes bad when it increases abnormally since that will make maintenance a nightmare.</description>
+    </item>
+    
+    <item>
+      <title>The power and simplicity of the Command pattern</title>
+      <link>https://juristr.com/blog/2009/12/power-and-simplicity-of-command-pattern/</link>
+      <pubDate>Thu, 10 Dec 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/12/power-and-simplicity-of-command-pattern/</guid>
+      <description>Never thought of how to implement an &#34;undo&#34; function? Not that easy, huh? People in our architecture class today came up with quite creative solutions: two separate stacks storing operations, versioning of the object to go back etc.</description>
+    </item>
+    
+    <item>
+      <title>ExecutableTask pattern to tackle J2ME multithreading</title>
+      <link>https://juristr.com/blog/2009/07/executabletask-pattern-to-tackle-j2me/</link>
+      <pubDate>Tue, 07 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/07/executabletask-pattern-to-tackle-j2me/</guid>
+      <description>Programming on the mobile device is quite different to more common environments like web or client-server desktop applications. Although mobile devices become always more and more powerful (i.</description>
+    </item>
+    
+    <item>
+      <title>jQuery plugin development pattern</title>
+      <link>https://juristr.com/blog/2009/04/jquery-plugin-development-pattern/</link>
+      <pubDate>Wed, 22 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/04/jquery-plugin-development-pattern/</guid>
+      <description>I&#39;m currently diving more and more into the jQuery library. First I&#39;m using it on a portlet I&#39;m developing for the Liferay portal server as the project for a university course and secondly I&#39;m planning to use jQuery on some ajax-enabled server controls I&#39;m designing (I&#39;m not yet 100% sure whether to use jQuery or Asp.</description>
+    </item>
+    
+    <item>
+      <title>Logical separation with MVC</title>
+      <link>https://juristr.com/blog/2008/03/logical-separation-with-mvc/</link>
+      <pubDate>Sat, 22 Mar 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/03/logical-separation-with-mvc/</guid>
+      <description>I&#39;m currently working on a personal project (which I&#39;ll publish here, so keep an eye on my blog ;) ) which I wanted to construct optimally in terms of the architecture.</description>
+    </item>
+    
+  </channel>
+</rss>

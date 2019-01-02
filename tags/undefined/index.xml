@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Undefined on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/undefined/</link>
+    <description>Recent content in Undefined on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Mon, 06 Feb 2017 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/undefined/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ted Talk: The Puzzle of Motivation</title>
+      <link>https://juristr.com/blog/2017/02/link-talk-puzzle-of-motivation/</link>
+      <pubDate>Mon, 06 Feb 2017 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2017/02/link-talk-puzzle-of-motivation/</guid>
+      <description>Nice talk about how many businesses get motivation wrong.
+Key points  Those 20th century rewards, those motivators we think are a natural part of business do work, but only in a surprisingly narrow band of circumstances.</description>
+    </item>
+    
+    <item>
+      <title>Innovative web technology in 2015</title>
+      <link>https://juristr.com/blog/2016/01/link-2015-innovation-technology/</link>
+      <pubDate>Sun, 03 Jan 2016 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2016/01/link-2015-innovation-technology/</guid>
+      <description>Blog post by Axel Rauschmayer on it&amp;rsquo;s popular 2ality blog about innovative web technologies in 2015. Good to catch up if you didn&amp;rsquo;t yet 😉.</description>
+    </item>
+    
+    <item>
+      <title>Role of an Enterprise Architect in a Lean Organization</title>
+      <link>https://juristr.com/blog/2015/11/link-ea-in-lean-enterprise/</link>
+      <pubDate>Mon, 30 Nov 2015 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2015/11/link-ea-in-lean-enterprise/</guid>
+      <description>map the current state present vision to key technical leaders and get feedback, they know why certain things are the way they are upon consensus, make current + future state visible to all (not in a Sharepoint folder, or document) &amp;ldquo;build bridges&amp;rdquo;, become partner and resource for development teams When a new project starts, update the team of the latest vision Try to avoid getting mired in the details of the implementation focus on high level goals and design avoid temptation to immediately say no to new technology, discuss, do time-boxed proof of concept, measure, discuss success as an EA is only made possible with the support of the development teams build excitement of new vision, celebrate the victories (however small) try to bind technical changes to business changes build community of learning, involve passionate technologists, lead devs etc&amp;hellip;give opportunity to share their learnings do not force people to attend training and learning activities.</description>
+    </item>
+    
+    <item>
+      <title>Good Tech Lead, Bad Tech Lead</title>
+      <link>https://juristr.com/blog/2015/11/link-good-bad-techleads/</link>
+      <pubDate>Sun, 29 Nov 2015 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2015/11/link-good-bad-techleads/</guid>
+      <description> A very good read and I couldn&amp;rsquo;t agree more on this. Here&amp;rsquo;s a quick summary of the main points from the article.
+Good techleads&amp;hellip;  act as team members also do &amp;ldquo;unsexy&amp;rdquo; work, clear roadblocks for the team broaden technical capabilities of their team; knowledge not concentrated in one mind have overall vision of technical direction and explains to team trust team members, recognize they are smart encourage debates, lead them, help members to come up with a path to a solution allow themselves to be persuaded with new ideas (don&amp;rsquo;t enter discussions with foregone conclusions) proactive identify areas of overlapping and possibilities to share work pragmatic, balance between doing right and getting it done details matter, code quality, reviews etc&amp;hellip; are as important as shipping on time know effective communication is important, more than just writing code sacrifice personal productivity for overall team productivity constant communication with product managers and designers easy-going but assertive good tech leads emerge naturally, earn respect through technical competence and experience always looking for ways to improve boost confidence of everyone else on the team  Bad techleads&amp;hellip;  take only high profile tasks and expect to take credit optimize locally without looking at the entire organization believe it is more important to win an argument rather than the team gets to the right decision delegate, but then don&amp;rsquo;t follow progress (hope it will get done) only focus on being in time, take shortcuts, but increase costs in the long run think they&amp;rsquo;re only productive when writing code and think communication is just point of distraction do not take ownership of the product confrontational and aggressive arrogant and take pleasure in making their mates feel inferior  </description>
+    </item>
+    
+    <item>
+      <title>Become a Command Line Power User</title>
+      <link>https://juristr.com/blog/2015/11/link-commandline-poweruser/</link>
+      <pubDate>Fri, 27 Nov 2015 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2015/11/link-commandline-poweruser/</guid>
+      <description>Nice, free video series. Because it is important to be a command line master, especially with all the new frontend toolings!</description>
+    </item>
+    
+    <item>
+      <title>Modern Workflow and Tooling for Front-end Devs</title>
+      <link>https://juristr.com/blog/2015/11/link-modern-workflow-tooling-frontend/</link>
+      <pubDate>Fri, 27 Nov 2015 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2015/11/link-modern-workflow-tooling-frontend/</guid>
+      <description>Talk by Wes Bos about modern workflow and tooling for front-end developers.
+Guess I&amp;rsquo;ll need to update my article on Node, Grunt, Bower and Yeoman - A Modern web dev&amp;rsquo;s Toolkit.</description>
+    </item>
+    
+    <item>
+      <title>The Sliding Scale of Giving a Fuck</title>
+      <link>https://juristr.com/blog/2015/10/link-sliding-scale-giving-a-fuck/</link>
+      <pubDate>Fri, 02 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2015/10/link-sliding-scale-giving-a-fuck/</guid>
+      <description>&amp;hellip;or how to constructively debate with your peers.
+I love good, constructive criticism and debates. It&amp;rsquo;s a good sanity check for your decisions. There&amp;rsquo;s a problem, however: when debates stop you from getting to a solution or even worse, when they result in an argument.</description>
+    </item>
+    
+    <item>
+      <title>Building an Enterprise CSS Framework</title>
+      <link>https://juristr.com/blog/2015/10/link-building-enterprise-css-frmwrk/</link>
+      <pubDate>Thu, 01 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2015/10/link-building-enterprise-css-frmwrk/</guid>
+      <description>I&amp;rsquo;ve already had a couple of times the chance to work on a common style guide for our enterprise-wide web applications. It really is tough.</description>
+    </item>
+    
+    <item>
+      <title>Can you find the 5 smells</title>
+      <link>https://juristr.com/blog/2015/09/link-five-smells-code-review/</link>
+      <pubDate>Sat, 26 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2015/09/link-five-smells-code-review/</guid>
+      <description>Peter Gfader asks: Can you find the 5 smells in “I reviewed your code last night and deleted all of it since it’s crap”
+Nice read and some good stuff I already encountered by myself, like the absence of collective code ownership.</description>
+    </item>
+    
+  </channel>
+</rss>

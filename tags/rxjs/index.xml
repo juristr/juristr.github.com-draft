@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rxjs on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/rxjs/</link>
+    <description>Recent content in Rxjs on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Sun, 11 Nov 2018 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/rxjs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Egghead Lesson: Simple caching with RxJS</title>
+      <link>https://juristr.com/blog/2018/11/videolesson-rxjs-caching-angular/</link>
+      <pubDate>Sun, 11 Nov 2018 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2018/11/videolesson-rxjs-caching-angular/</guid>
+      <description>This is the accompanying article for my latest Egghead video lesson on caching data in Angular by leveraging RxjS.     (adsbygoogle = window.</description>
+    </item>
+    
+  </channel>
+</rss>

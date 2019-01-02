@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exploring Javascript on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/exploring-javascript/</link>
+    <description>Recent content in Exploring Javascript on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Wed, 07 Dec 2011 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/exploring-javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Exploring JavaScript: Scope Pollution when instantiating JavaScript Objects</title>
+      <link>https://juristr.com/blog/2011/12/exploring-javascript-scope-pollution/</link>
+      <pubDate>Wed, 07 Dec 2011 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/12/exploring-javascript-scope-pollution/</guid>
+      <description>John Resig has written a very interesting article (I&#39;m not able to find just now) on how the current scope might get polluted if you&#39;re accidentally invoking a function intended as an object constructor function without using the &#34;</description>
+    </item>
+    
+    <item>
+      <title>Exploring JavaScript: Iterating Over a Collection of Items</title>
+      <link>https://juristr.com/blog/2011/10/exploring-javascript-iterating-over/</link>
+      <pubDate>Thu, 27 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/10/exploring-javascript-iterating-over/</guid>
+      <description>If I manage to do it, I&#39;d like to write a series of introductory posts about programming in JavaScript as when listening to the latest hypes it is going to play a major role in programming the web but even desktop or mobile apps (see Microsoft&#39;s latest moves regarding Silverlight, HTML5 and their new Win8 OS).</description>
+    </item>
+    
+    <item>
+      <title>Testing JavaScript: Mocking jQuery Ajax Calls</title>
+      <link>https://juristr.com/blog/2011/09/testing-javascript-mocking-jquery-ajax/</link>
+      <pubDate>Mon, 26 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/09/testing-javascript-mocking-jquery-ajax/</guid>
+      <description>When &#34;seriously&#34; developing JavaScript applications we obviously need to write tests. Being a fully dynamic language (similar as Ruby), tests are more necessary than ever since there is no compiler that checks for you all the silly mistakes before you run your code the first time.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Scoping by Example</title>
+      <link>https://juristr.com/blog/2011/09/javascript-scoping-by-example/</link>
+      <pubDate>Thu, 01 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/09/javascript-scoping-by-example/</guid>
+      <description>Understanding the scoping rules of JavaScript is one of the fundamental things to learn when getting started with the language. I just found this link posted by @codylindley on Twitter.</description>
+    </item>
+    
+  </channel>
+</rss>

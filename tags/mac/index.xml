@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/mac/</link>
+    <description>Recent content in Mac on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Thu, 26 May 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HowTo: Upgrade RAM of Your Macbook Pro</title>
+      <link>https://juristr.com/blog/2011/05/howto-upgrade-ram-of-your-macbook-pro/</link>
+      <pubDate>Thu, 26 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/05/howto-upgrade-ram-of-your-macbook-pro/</guid>
+      <description> Here&#39;s a nice video that clearly explains how you can upgrade your Macbook RAM:
+ </description>
+    </item>
+    
+    <item>
+      <title>Reloaded: Clean up your folder. For OSX</title>
+      <link>https://juristr.com/blog/2010/02/reloaded-clean-up-your-folder-for-osx/</link>
+      <pubDate>Sun, 07 Feb 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/02/reloaded-clean-up-your-folder-for-osx/</guid>
+      <description>When downloading files from the web I usually have a predefined folder where all the downloads from my different browsers are stored. It doesn&#39;t take long till that folder grows to quite a remarkable size.</description>
+    </item>
+    
+    <item>
+      <title>Time Machine backups to Windows shared network drive</title>
+      <link>https://juristr.com/blog/2010/01/time-machine-backups-to-windows-shared/</link>
+      <pubDate>Sun, 31 Jan 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/01/time-machine-backups-to-windows-shared/</guid>
+      <description>As some of you may have already read I acquired a MacBook Pro about half a year ago and I love it ;) . Now one of the really cool things OS X provides is Time Machine backups.</description>
+    </item>
+    
+    <item>
+      <title>Annotation tools for the Mac</title>
+      <link>https://juristr.com/blog/2009/10/annotation-tools-for-mac/</link>
+      <pubDate>Tue, 06 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/10/annotation-tools-for-mac/</guid>
+      <description>When you create scientific reports or you just prepare for exams you usually have to go over a whole bunch of papers, lecture notes and websites.</description>
+    </item>
+    
+    <item>
+      <title>New equation editor makes GDocs even more usable!!</title>
+      <link>https://juristr.com/blog/2009/09/new-equation-editor-makes-gdocs-even/</link>
+      <pubDate>Sun, 20 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/09/new-equation-editor-makes-gdocs-even/</guid>
+      <description>I always liked the idea of having a office-like suite on the web. I already used Writely for taking quick notes or just short documents, already before it was acquired by Google and merged - together with Google Spreadsheets - to the Google Documents service.</description>
+    </item>
+    
+    <item>
+      <title>Problems connecting to Windows Live Messenger account with Adium</title>
+      <link>https://juristr.com/blog/2009/08/problems-connecting-to-windows-live/</link>
+      <pubDate>Tue, 18 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/08/problems-connecting-to-windows-live/</guid>
+      <description>I recently had a hard fight with Adium when trying to connect to my Windows Live account. It worked the 1st time and then suddenly it stopped working.</description>
+    </item>
+    
+    <item>
+      <title>QSB - Google Quick Search bar for the Mac</title>
+      <link>https://juristr.com/blog/2009/06/qsb-google-quick-search-bar-for-mac/</link>
+      <pubDate>Sat, 06 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/06/qsb-google-quick-search-bar-for-mac/</guid>
+      <description>And voila, the 1st Mac-related post :) Just a quick one, I have to continue with my studies so..
+When I switched over to the Mac (2 weeks ago now) I started to get productive as quick as possible (due to my exams).</description>
+    </item>
+    
+    <item>
+      <title>My new MacBook Pro</title>
+      <link>https://juristr.com/blog/2009/05/my-new-macbook-pro/</link>
+      <pubDate>Fri, 22 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/05/my-new-macbook-pro/</guid>
+      <description> It arrived! My new MacBook Pro :)
+ </description>
+    </item>
+    
+  </channel>
+</rss>

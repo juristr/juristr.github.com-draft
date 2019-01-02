@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Iphone on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/iphone/</link>
+    <description>Recent content in Iphone on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Wed, 31 Mar 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/iphone/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cross-Compiling Android Applications to the iPhone</title>
+      <link>https://juristr.com/blog/2010/03/cross-compiling-android-applications-to/</link>
+      <pubDate>Wed, 31 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/03/cross-compiling-android-applications-to/</guid>
+      <description>Comment
+Nice talk that gives insight in an approach for cross-compiling Android targeted apps to the iPhone (but not only). The idea is to overcome the problem of coding the mobile app for multiple platforms which often is just not feasible due to time and skills.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Use your iPhone as a remote control for presentations</title>
+      <link>https://juristr.com/blog/2010/01/howto-use-your-iphone-as-remote-control/</link>
+      <pubDate>Thu, 28 Jan 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/01/howto-use-your-iphone-as-remote-control/</guid>
+      <description>My latest post is already a while back but I&#39;m currently extremely busy. More posts will come in February.&amp;nbsp;Today, I successfully presented my talk for the final exam of the &#34;</description>
+    </item>
+    
+    <item>
+      <title>Google contacts and calendar sync</title>
+      <link>https://juristr.com/blog/2009/02/google-contacts-and-calendar-sync/</link>
+      <pubDate>Fri, 20 Feb 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/02/google-contacts-and-calendar-sync/</guid>
+      <description>Google published a new service called Google Sync that allows to integrate the data on Gmail and GCalendar with mobile devices. The steps for activating the synchronization are indicated on the Google Sync page.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: synchronize Google Calendar with your iPhone</title>
+      <link>https://juristr.com/blog/2009/01/howto-synchronize-google-calendar-with/</link>
+      <pubDate>Tue, 20 Jan 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/01/howto-synchronize-google-calendar-with/</guid>
+      <description>I&#39;m sure you already tried this before. Well unfortunately there is no existing, pre-installed way for synchronizing your iPhone calendar with your Google Calendar. What you can do is to sync your Outlook calendars with your iPhone, either when attaching it to your Mac, PC or whatever (having iTunes installed of course :) , Apples strategy as usual) or over the Microsoft Exchange account (if you have one).</description>
+    </item>
+    
+    <item>
+      <title>Discover: file management on the iPhone</title>
+      <link>https://juristr.com/blog/2009/01/discover-file-management-on-iphone/</link>
+      <pubDate>Mon, 05 Jan 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/01/discover-file-management-on-iphone/</guid>
+      <description>As I&#39;ve written already in this post I bought an iPhone and I&#39;m really satisfied with it. The experience in browsing the web is really amazing.</description>
+    </item>
+    
+  </channel>
+</rss>

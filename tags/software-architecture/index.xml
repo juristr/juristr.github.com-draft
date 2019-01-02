@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Architecture on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/software-architecture/</link>
+    <description>Recent content in Software Architecture on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Tue, 03 Nov 2015 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/software-architecture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>REST Api Design - Resource Modeling</title>
+      <link>https://juristr.com/blog/2015/11/rest-api-design/</link>
+      <pubDate>Tue, 03 Nov 2015 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2015/11/rest-api-design/</guid>
+      <description>Important note: this is not something I&#39;ve written up by myself, but it&#39;s rather a summary, some highlighting of the most important quotes with some of my comments for an awesome post on the Thoughtworks blog about API design.</description>
+    </item>
+    
+    <item>
+      <title>Breaking apart conceptions by Ayende Rahien</title>
+      <link>https://juristr.com/blog/2015/10/link-vid-breaking-apart-conceptions/</link>
+      <pubDate>Sun, 11 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2015/10/link-vid-breaking-apart-conceptions/</guid>
+      <description>Cool guy talking about the cost of abstractions and why you should often step out and critically look at what you do. Don&amp;rsquo;t do it because you always have done it like that.</description>
+    </item>
+    
+    <item>
+      <title>On Monoliths and Microservices</title>
+      <link>https://juristr.com/blog/2015/10/link-otto-monoliths-microservices/</link>
+      <pubDate>Fri, 02 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2015/10/link-otto-monoliths-microservices/</guid>
+      <description>Have cross-functional teams vertical decomposition: create vertical slices, being as independent from each other as possible (self-contained systems) vertical services may be even large -&amp;gt; split internally services don&amp;rsquo;t have a common DB as that would create a tight coupling between them good experiences with &amp;ldquo;Fat JARs&amp;rdquo; which can be executed via java -jar &amp;lt;file&amp;gt; (starting an embedded Jetty or something.</description>
+    </item>
+    
+    <item>
+      <title>QCon London 2014 - Embracing Change - Building Adaptable Software with Events</title>
+      <link>https://juristr.com/blog/2014/04/building-adaptable-software-with-events/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2014/04/building-adaptable-software-with-events/</guid>
+      <description>Building adaptable software is what we continuously aim at achieving during our day to day work. However, at the same time, it&amp;rsquo;s probably the hardest part in software development.</description>
+    </item>
+    
+    <item>
+      <title>The narrow path between best practices and over-engineering</title>
+      <link>https://juristr.com/blog/2013/11/narrow-path-best-practices-overengineering/</link>
+      <pubDate>Tue, 19 Nov 2013 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2013/11/narrow-path-best-practices-overengineering/</guid>
+      <description>A couple of days ago I read a post by Petri Kainulainen about The Dark Side of Best Practices. He really hit what - IMHO - on the one side should be totally obvious and common sense, but sadly, too often is not the case at all.</description>
+    </item>
+    
+    <item>
+      <title>Modularity in JavaScript MVC Frameworks</title>
+      <link>https://juristr.com/blog/2013/04/modularity-in-javascript-frameworks/</link>
+      <pubDate>Mon, 08 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2013/04/modularity-in-javascript-frameworks/</guid>
+      <description>JavaScript MVC architectures are a de-facto standard when you create complex single-page JavaScript applications. But it doesn&#39;t stop here. MVC helps to separate reponsibilities for coordinating the data (model) and visualization (view), but it doesn&#39;t have a concept for coordination among an application&#39;s modules or widgets as you might call them.</description>
+    </item>
+    
+    <item>
+      <title>Architecting for Failure at the Guardian</title>
+      <link>https://juristr.com/blog/2012/05/architecting-for-failure-at-guardian/</link>
+      <pubDate>Sun, 20 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/05/architecting-for-failure-at-guardian/</guid>
+      <description>Architecting for the Failure, a presentation of this year&#39;s QCon London 2012. Michael Brunton-Spall gives some insights into how they moved their architecture at the Guardian from a monolith system to a system composed of &#34;</description>
+    </item>
+    
+    <item>
+      <title>QCon London - My Personal Recap</title>
+      <link>https://juristr.com/blog/2012/04/qcon-london-my-personal-recap/</link>
+      <pubDate>Tue, 03 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/04/qcon-london-my-personal-recap/</guid>
+      <description>From the previous posts (or from those on my Tumblr stream) you might have understood my participation at this year&#39;s QCon London. Actually it was my 1st QCon conference and I enjoyed it a lot.</description>
+    </item>
+    
+    <item>
+      <title>Sharpening the Tools</title>
+      <link>https://juristr.com/blog/2012/03/sharpening-tools/</link>
+      <pubDate>Wed, 14 Mar 2012 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/03/sharpening-tools/</guid>
+      <description>This is a talk from Dan North about Sharpening the Tools at QCon 2010. I had the great pleasure to listen to this guy at this year&#39;s QCon (recap is in the drafts already and will be published soon btw).</description>
+    </item>
+    
+    <item>
+      <title>Questions for an Enterprise Architect</title>
+      <link>https://juristr.com/blog/2012/03/questions-for-enterprise-architect/</link>
+      <pubDate>Fri, 02 Mar 2012 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/03/questions-for-enterprise-architect/</guid>
+      <description>Erik Dörnenburg answers: What is Enterprise and Evolutionary Architecture?, discussing 4 issues: Turning strategy into execution, Ensuring conformance, Where do the architects sit? Buying or building?</description>
+    </item>
+    
+    <item>
+      <title>Large-scale JavaScript Application Architecture</title>
+      <link>https://juristr.com/blog/2011/11/large-scale-javascript-application/</link>
+      <pubDate>Mon, 21 Nov 2011 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/11/large-scale-javascript-application/</guid>
+      <description>JavaScript programming has evolved a lot over the past years and has somehow revolutionized the way you develop on the web. While many initially just used it as a scripting language to quickly hack in some dynamic behavior into traditional websites, it starts now to be used much more like a fully capable programming language (mainly also due to many emerging JavaScript libraries and more capable browsers).</description>
+    </item>
+    
+  </channel>
+</rss>

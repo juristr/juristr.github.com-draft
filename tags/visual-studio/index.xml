@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visual Studio on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/visual-studio/</link>
+    <description>Recent content in Visual Studio on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Fri, 23 Nov 2012 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/visual-studio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HowTo: Subscribe to Failed TFS Builds</title>
+      <link>https://juristr.com/blog/2012/11/howto-subscribe-to-failed-tfs-builds/</link>
+      <pubDate>Fri, 23 Nov 2012 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/11/howto-subscribe-to-failed-tfs-builds/</guid>
+      <description>When you use a build server it is a must to get notified in case of build failures. Microsoft&amp;rsquo;s Team Foundation server has different possibilities to achieve this: using the Build Notification Tool or through so-called Alerts.</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio: Where Did My Shelvesets Go?</title>
+      <link>https://juristr.com/blog/2012/11/visual-studio-where-did-my-shelvesets-go/</link>
+      <pubDate>Mon, 19 Nov 2012 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/11/visual-studio-where-did-my-shelvesets-go/</guid>
+      <description>Do you use the TFS shelvesets?? I do, not regularly, but from now and then they&amp;rsquo;re quite useful for staging or even for sharing some unfinished work with others.</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio Tips</title>
+      <link>https://juristr.com/blog/2012/10/visual-studio-tips/</link>
+      <pubDate>Wed, 31 Oct 2012 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/10/visual-studio-tips/</guid>
+      <description>At work, I spend a huge amount of my time working with Microsoft Technologies. As such, I also use Visual Studio. Here are some of the tipps and tricks to efficiently work with it.</description>
+    </item>
+    
+    <item>
+      <title>UX: Why GitHub for Windows is better than VS TFS Integration</title>
+      <link>https://juristr.com/blog/2012/07/ux-why-github-for-windows-is-better/</link>
+      <pubDate>Tue, 24 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/07/ux-why-github-for-windows-is-better/</guid>
+      <description>Did you already try GitHub for Windows? It&#39;s created in a modern Win8 looking style. Initially it actually feels a little bit odd, but the more I use it, the more I like it.</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio: Set the Build Action for an Entire Folder</title>
+      <link>https://juristr.com/blog/2012/05/visual-studio-set-build-action-for/</link>
+      <pubDate>Mon, 14 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/05/visual-studio-set-build-action-for/</guid>
+      <description>I&#39;m sure you already encountered this problem, right? In my specific case I have a folder called &#34;frontend&#34; with a bunch of JavaScript, CSS and view template (EJS) files; my rich JavaScript client basically.</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio: The application cannot start</title>
+      <link>https://juristr.com/blog/2011/05/visual-studio-application-cannot-start/</link>
+      <pubDate>Wed, 25 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/05/visual-studio-application-cannot-start/</guid>
+      <description>Today I started my Visual Studio 2010 instance by using the &#34;Run as administrator&#34; option (as I often do when using the local IIS server for hosting my webapp).</description>
+    </item>
+    
+    <item>
+      <title>Document and Share Your Snippets: Presenting SnippetDoc</title>
+      <link>https://juristr.com/blog/2011/05/document-and-share-your-snippets/</link>
+      <pubDate>Fri, 06 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/05/document-and-share-your-snippets/</guid>
+      <description>Increasing the productivity in the long run is most often tightly related to increasing the quality. Beside introducing best practices like automated testing, defining standards is a good way to start.</description>
+    </item>
+    
+    <item>
+      <title>Trouble with the VS QualityTools.UnitTestFramework dll</title>
+      <link>https://juristr.com/blog/2011/04/trouble-with-vs-qualitytoolsunittestfra/</link>
+      <pubDate>Sat, 09 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/04/trouble-with-vs-qualitytoolsunittestfra/</guid>
+      <description>I recently build a tool that automates and simplifies the unit testing of large parts of our application&#39;s business layer. The system works by declaratively specifying scenarios in xml files which are read by using the MS test&#39;s data driven test cases and validated against a set of &#34;</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Teach Visual Studio to Remember Your TFS Password</title>
+      <link>https://juristr.com/blog/2010/08/howto-teach-visual-studio-to-remember/</link>
+      <pubDate>Wed, 11 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/08/howto-teach-visual-studio-to-remember/</guid>
+      <description>I often now ran into the problem of continuously getting queried for the TFS credentials when connecting to the company&#39;s TFS server from my personal notebook.</description>
+    </item>
+    
+    <item>
+      <title>Boost your productivity using shortcuts in Visual Studio</title>
+      <link>https://juristr.com/blog/2010/05/boost-your-productivity-using-shortcuts/</link>
+      <pubDate>Wed, 26 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/05/boost-your-productivity-using-shortcuts/</guid>
+      <description>A major aim of everyone is (or should be) to increase his personal productivity. Now productivity is a vast term actually. It can be related to individual programming productivity focusing on code quality problems but it can also be related to management issues and so on.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Prevent Visual Studio from auto-formatting your jQuery source</title>
+      <link>https://juristr.com/blog/2010/04/howto-prevent-visual-studio-from-auto/</link>
+      <pubDate>Wed, 07 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/04/howto-prevent-visual-studio-from-auto/</guid>
+      <description>When writing JavaScript code with Visual Studio 2008 it automatically formats your source code when going into a new line or placing the &#34;;&#34; delimiter.</description>
+    </item>
+    
+    <item>
+      <title>That&#39;s what I&#39;m missing in Visual Studio! Give me better code editor support!!</title>
+      <link>https://juristr.com/blog/2010/03/thats-what-im-missing-in-visual-studio/</link>
+      <pubDate>Tue, 02 Mar 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/03/thats-what-im-missing-in-visual-studio/</guid>
+      <description>Visual Studio is great in doing many things as for instance in integrating with other MS products (obviously) or with debugging. The VS debugger is one of the best I&#39;ve seen till now (using different IDEs).</description>
+    </item>
+    
+    <item>
+      <title>RT: Testing with VS2010 - A Bugs Life</title>
+      <link>https://juristr.com/blog/2009/11/rt-testing-with-vs2010-bugs-life/</link>
+      <pubDate>Thu, 26 Nov 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/11/rt-testing-with-vs2010-bugs-life/</guid>
+      <description>I&#39;m surely one who loves automated tests. Having them in place (with appropriate code coverage of course) and seeing the green bar or green check icons (depending on your IDE) just gives you the necessary peace for making changes to your application and for applying concepts like refactoring which otherwise is just as if you&#39;d drive blindly (it may work, but it very much depends on your luck).</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio intellisense not working properly</title>
+      <link>https://juristr.com/blog/2009/11/visual-studio-intellisense-not-working_20/</link>
+      <pubDate>Fri, 20 Nov 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/11/visual-studio-intellisense-not-working_20/</guid>
+      <description>Recently a work mate pointed me out that my Visual Studio Intellisense seemed to not work correctly. When writing...
+this.Page.GetPostBackClientEvent(
+...the info with the remaining parameters should appear automatically which was not the case on my machine.</description>
+    </item>
+    
+    <item>
+      <title>Visual Studio 2010 Beta2: Cannot start application</title>
+      <link>https://juristr.com/blog/2009/10/visual-studio-2010-beta2-cannot-start/</link>
+      <pubDate>Fri, 23 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/10/visual-studio-2010-beta2-cannot-start/</guid>
+      <description>After installing the new Visual Studio 2010 Ultimate beta2 release today, I just started to play a bit, trying out the new features. One was to move the Solution Explorer panel out of the main Visual Studio frame onto my second monitor and then again back into the main window.</description>
+    </item>
+    
+    <item>
+      <title>Are C# regions a good thing??</title>
+      <link>https://juristr.com/blog/2009/09/are-c-regions-good-thing/</link>
+      <pubDate>Fri, 25 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/09/are-c-regions-good-thing/</guid>
+      <description>Well, I&#39;d say it depends. If you use regions to logically group your code in your class, then it may be a good thing &#39;cause people come to your class and see something like</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Changing TFS workitem type from task to bug</title>
+      <link>https://juristr.com/blog/2009/08/howto-changing-tfs-workitem-type-from/</link>
+      <pubDate>Fri, 07 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/08/howto-changing-tfs-workitem-type-from/</guid>
+      <description>Recently I found a bug while implementing another feature and in order to not forget it, I created a new work item for our Team Foundation bug tracking system.</description>
+    </item>
+    
+    <item>
+      <title>Help, my MSTest DeploymentItem doesn&#39;t get deployed!</title>
+      <link>https://juristr.com/blog/2009/05/help-my-mstest-deploymentitem-doesnt/</link>
+      <pubDate>Sat, 23 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/05/help-my-mstest-deploymentitem-doesnt/</guid>
+      <description>MSTests allow you to define items you&#39;d like to deploy to the deployment directory when executing the test cases. There are different ways for achieving this, either to configure it in your LocalTestRun.</description>
+    </item>
+    
+    <item>
+      <title>Best practices: Deploying webapps (contd.)</title>
+      <link>https://juristr.com/blog/2009/03/best-practices-deploying-webapps-contd_20/</link>
+      <pubDate>Fri, 20 Mar 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/03/best-practices-deploying-webapps-contd_20/</guid>
+      <description>Some time ago I&#39;ve written a post about best practices in deploying web applications by mentioning the different environments
+Development environmentTesting environmentProduction environment
+Since the three different environments must be completely separated (no references between them to the DB or whatever), you have to have different connections strings in your web.</description>
+    </item>
+    
+    <item>
+      <title>Best practices: Tracking information on the source code with Visual Studio and TFS</title>
+      <link>https://juristr.com/blog/2009/01/best-practices-tracking-information-on/</link>
+      <pubDate>Thu, 08 Jan 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/01/best-practices-tracking-information-on/</guid>
+      <description>An issue in managing a code base is not only to guide different developers through the development process, preventing that they overwrite each others modifications on the source code (which would for sure happen when just sharing the code files over the normal file system.</description>
+    </item>
+    
+  </channel>
+</rss>

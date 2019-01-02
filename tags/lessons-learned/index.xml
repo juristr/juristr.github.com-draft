@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lessons Learned on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/lessons-learned/</link>
+    <description>Recent content in Lessons Learned on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Wed, 24 Oct 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/lessons-learned/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lessons Learned: Don&#39;t Expose EF Entities to the Client Directly</title>
+      <link>https://juristr.com/blog/2012/10/lessions-learned-dont-expose-ef-entities-to-the-client-directly/</link>
+      <pubDate>Wed, 24 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/10/lessions-learned-dont-expose-ef-entities-to-the-client-directly/</guid>
+      <description>When we refactored our main application architecture, moving from an ASP.net WebForms app to a rich client JavaScript application with an ASP.net MVC REST backend, one of our main goals was to keep things as simple as possible.</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t Underestimate the Trouble Caused by URLs in Emails</title>
+      <link>https://juristr.com/blog/2011/11/dont-underestimate-trouble-caused-by/</link>
+      <pubDate>Thu, 03 Nov 2011 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/11/dont-underestimate-trouble-caused-by/</guid>
+      <description>At a first glance, the title might seem strange, but wait. The company I&#39;m working at creates e-government solutions, so the target audience are the citizens, from the young, very computer-literate ones to the more elderly (and often, but not always) less computer-literate ones :).</description>
+    </item>
+    
+    <item>
+      <title>Juri Goes GIT - First Steps</title>
+      <link>https://juristr.com/blog/2010/11/juri-goes-git-first-steps/</link>
+      <pubDate>Tue, 30 Nov 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/11/juri-goes-git-first-steps/</guid>
+      <description>Yes, I&#39;m going &#34;git&#34; ;). An inherent part of structured, well organized working is to have your stuff under version control (1st point on the Joel Test).</description>
+    </item>
+    
+    <item>
+      <title>Testing Your SUT Against Exceptions</title>
+      <link>https://juristr.com/blog/2010/11/testing-your-sut-against-exceptions/</link>
+      <pubDate>Tue, 23 Nov 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/11/testing-your-sut-against-exceptions/</guid>
+      <description>When you test your method for exceptions (which is good practice) the usually naive approach - which btw I was following myself till today - is to wrap your method under test with an appropriate try-catch and set a boolean.</description>
+    </item>
+    
+    <item>
+      <title>Presentation: Dropbox Startup Lessons Learned</title>
+      <link>https://juristr.com/blog/2010/10/presentation-dropbox-startup-lessions/</link>
+      <pubDate>Mon, 04 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/10/presentation-dropbox-startup-lessions/</guid>
+      <description>An interesting presentation by the Dropbox founder Drew Houston about Dropbox startup lessons learned. Also if you don&#39;t plan to create any startup it is still interesting to see some of the strategies that have been applied and which finally made Dropbox as successful as it is - in a market which btw already seemed to be&amp;nbsp;saturated.</description>
+    </item>
+    
+    <item>
+      <title>Smelly Code: Eager Test</title>
+      <link>https://juristr.com/blog/2010/09/smelly-code-eager-test/</link>
+      <pubDate>Wed, 29 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/09/smelly-code-eager-test/</guid>
+      <description>This post shows a common code smell in unit tests also mentioned in the xunit test patterns book, namely &#34;Eager tests&#34;. Original, smelly code public void testSaveSession(){</description>
+    </item>
+    
+    <item>
+      <title>Lessons Learned: Make your ListItemCollection Linq Queryable</title>
+      <link>https://juristr.com/blog/2010/09/lessions-learned-make-your/</link>
+      <pubDate>Mon, 20 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/09/lessions-learned-make-your/</guid>
+      <description>I love Linq! In my opinion it is one of the best features that have ever been added to C#, making developers extremely more productive.</description>
+    </item>
+    
+  </channel>
+</rss>

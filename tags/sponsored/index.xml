@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sponsored on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/sponsored/</link>
+    <description>Recent content in Sponsored on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Sun, 16 Mar 2014 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/sponsored/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Packt Video: JBoss EAP Configuration, Deployment and Administration</title>
+      <link>https://juristr.com/blog/2014/03/video-jboss-eap-administration/</link>
+      <pubDate>Sun, 16 Mar 2014 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2014/03/video-jboss-eap-administration/</guid>
+      <description>Packt Publishing recently approached me about quickly reviewing a video series on JBoss EAP and its configuration, deployment and administration. Although I&amp;rsquo;m primarily working with the .</description>
+    </item>
+    
+  </channel>
+</rss>

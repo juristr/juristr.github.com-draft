@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eclipse on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/eclipse/</link>
+    <description>Recent content in Eclipse on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Mon, 23 Jan 2012 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/eclipse/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Eclipse: Importing existing project: &#34;Invalid project description&#34;</title>
+      <link>https://juristr.com/blog/2012/01/eclipse-importing-existing-project/</link>
+      <pubDate>Mon, 23 Jan 2012 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/01/eclipse-importing-existing-project/</guid>
+      <description>Monday morning, 07:30 AM. Me, starting the computer after the weekend, executing a git pull from my repository&amp;nbsp;to fetch the latest src. Then I opened my freshly installed Eclipse JavaScript version followed by a nice &#34;</description>
+    </item>
+    
+    <item>
+      <title>Update SDK to Platform Gingerbread 2.3: Conversion to Dalvik Format Failed</title>
+      <link>https://juristr.com/blog/2010/12/update-sdk-to-platform-gingerbread-23/</link>
+      <pubDate>Wed, 08 Dec 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/12/update-sdk-to-platform-gingerbread-23/</guid>
+      <description>Today I took the chance (and a bit of free time) to upgrade to the latest Android SDK release, namely Gingerbread. Experience has shown that you better back up your Eclipse as well as currently installed Android SDK folder, especially if you&#39;re working on an important project (which I consider my Master thesis project to be kind of ;)).</description>
+    </item>
+    
+    <item>
+      <title>Android Instrumentation test - AndroidTestCase: java.lang.IllegalAccessError</title>
+      <link>https://juristr.com/blog/2010/06/android-instrumentation-test/</link>
+      <pubDate>Sun, 06 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/06/android-instrumentation-test/</guid>
+      <description>Today I started writing the instrumentation tests for the Android platform side of the project. For your understanding, here&#39;s the structure of my situation:</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Get an Android app&#39;s database from the emulator</title>
+      <link>https://juristr.com/blog/2010/06/howto-get-android-apps-database-from/</link>
+      <pubDate>Thu, 03 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/06/howto-get-android-apps-database-from/</guid>
+      <description>Most apps need a database for storing their data onto the device in a structured form. Android&#39;s natively supported DB is SQLite. Now of course if you develop an app you&#39;ll probably have the need for inspecting the stored data during development.</description>
+    </item>
+    
+    <item>
+      <title>That&#39;s what I&#39;m missing in Visual Studio! Give me better code editor support!!</title>
+      <link>https://juristr.com/blog/2010/03/thats-what-im-missing-in-visual-studio/</link>
+      <pubDate>Tue, 02 Mar 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/03/thats-what-im-missing-in-visual-studio/</guid>
+      <description>Visual Studio is great in doing many things as for instance in integrating with other MS products (obviously) or with debugging. The VS debugger is one of the best I&#39;ve seen till now (using different IDEs).</description>
+    </item>
+    
+    <item>
+      <title>Creating Test Suites with jUnit 4</title>
+      <link>https://juristr.com/blog/2009/12/creating-test-suites-with-junit-4/</link>
+      <pubDate>Fri, 25 Dec 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/12/creating-test-suites-with-junit-4/</guid>
+      <description>A while back I&#39;ve posted about how to enable the automatic (jUnit 3.8-style) creation of test suites in Eclipse. That was necessary for Eclipse 3.</description>
+    </item>
+    
+    <item>
+      <title>Del.icio.us links and three new projects online</title>
+      <link>https://juristr.com/blog/2009/03/delicious-links-and-three-new-projects/</link>
+      <pubDate>Mon, 09 Mar 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/03/delicious-links-and-three-new-projects/</guid>
+      <description>My blog readers can now bookmark posts I&#39;ve written with delicious, by just clicking on the &#34;add to del.icio.us&#34; link on the bottom of each post.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: testing jFace Action class taking a StructuredSelection object</title>
+      <link>https://juristr.com/blog/2009/01/howto-testing-jface-action-class-taking/</link>
+      <pubDate>Thu, 15 Jan 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/01/howto-testing-jface-action-class-taking/</guid>
+      <description>Let&#39;s consider the following jFace Action class:
+public class RateAction extends Action {
+private final int fRating;
+private IStructuredSelection fSelection;
+/**
+* @param rating</description>
+    </item>
+    
+    <item>
+      <title>C&#43;&#43; linking libraries to build configuration in Eclipse</title>
+      <link>https://juristr.com/blog/2008/11/c-linking-libraries-to-build/</link>
+      <pubDate>Thu, 27 Nov 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/11/c-linking-libraries-to-build/</guid>
+      <description>When programming in C++ you may often have to link at compile time to 3rd-party libraries which you&#39;re using.
+In Eclipse you can do that on the project properties dialog, as demonstrated in the screenshot below.</description>
+    </item>
+    
+    <item>
+      <title>JFace Table API with Eclipse RCP</title>
+      <link>https://juristr.com/blog/2008/11/jface-table-api-with-eclipse-rcp/</link>
+      <pubDate>Thu, 20 Nov 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/11/jface-table-api-with-eclipse-rcp/</guid>
+      <description>Today I had to create a new view inside on an Eclipse RCP application representing data inside a table. I found the following article</description>
+    </item>
+    
+    <item>
+      <title>Persisting the current perspective state of an RCP</title>
+      <link>https://juristr.com/blog/2008/11/persisting-current-perspective-state-of/</link>
+      <pubDate>Sat, 15 Nov 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/11/persisting-current-perspective-state-of/</guid>
+      <description>If you&#39;re developing on Eclipse RCP applications it may be interesting to save the perspective layout and open views of the user s.t. when he launches the application the next time, everything looks as before.</description>
+    </item>
+    
+    <item>
+      <title>The type X is not accessible due to restriction on the...</title>
+      <link>https://juristr.com/blog/2008/11/type-x-is-not-accessible-due-to/</link>
+      <pubDate>Sun, 09 Nov 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/11/type-x-is-not-accessible-due-to/</guid>
+      <description>For some university course we currently have to modify an Open Source application with LOC &amp;gt; 50,000. So due to our particular interest in Eclipse RCP development, our team has chosen the RSSOwl, a smart Newsfeed reader which is based on Eclipse RCP (you should check it out).</description>
+    </item>
+    
+    <item>
+      <title>C/C&#43;&#43; programming on Linux</title>
+      <link>https://juristr.com/blog/2008/10/cc-programming-on-linux/</link>
+      <pubDate>Sat, 25 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/10/cc-programming-on-linux/</guid>
+      <description>For a course at the university we have to develop a system using C++ on Linux. Being from the Java and C# world this won&#39;t become an easy task, already by choosing the right development tools and environment (coding, debugging, deploying.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Con is open!!</title>
+      <link>https://juristr.com/blog/2008/03/eclipse-con-is-open/</link>
+      <pubDate>Mon, 17 Mar 2008 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/03/eclipse-con-is-open/</guid>
+      <description>Those of you (as myself) who were not able to attend the Eclipse Conference at Santa Clara have the possibility to download most of the material from the conference website:</description>
+    </item>
+    
+  </channel>
+</rss>

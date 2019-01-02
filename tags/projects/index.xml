@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/projects/</link>
+    <description>Recent content in Projects on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Tue, 18 Dec 2012 01:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gist: My New Devbook</title>
+      <link>https://juristr.com/blog/2012/12/gist-my-new-devbook/</link>
+      <pubDate>Tue, 18 Dec 2012 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/12/gist-my-new-devbook/</guid>
+      <description>I always had the idea of having some kind of organized store, some kind of very simple knowledge base where I could memorize interesting stuff around software development which I encounter i my day-to-day business.</description>
+    </item>
+    
+    <item>
+      <title>Document and Share Your Snippets: Presenting SnippetDoc</title>
+      <link>https://juristr.com/blog/2011/05/document-and-share-your-snippets/</link>
+      <pubDate>Fri, 06 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2011/05/document-and-share-your-snippets/</guid>
+      <description>Increasing the productivity in the long run is most often tightly related to increasing the quality. Beside introducing best practices like automated testing, defining standards is a good way to start.</description>
+    </item>
+    
+    <item>
+      <title>GWT, App Engine and App Engine Data Classes</title>
+      <link>https://juristr.com/blog/2010/02/gwt-app-engine-and-app-engine-data/</link>
+      <pubDate>Tue, 23 Feb 2010 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2010/02/gwt-app-engine-and-app-engine-data/</guid>
+      <description>I currently have some time before starting with my Master thesis project which will bring me back to Android programming. So to make use of that, I started to develop a project I already wanted to implement a couple of years ago, but due to my Master studies I didn&#39;t have the time to.</description>
+    </item>
+    
+    <item>
+      <title>Updated Home: Stackoverflow iGoogle Gadgets</title>
+      <link>https://juristr.com/blog/2009/11/updated-home-stackoverflow-igoogle/</link>
+      <pubDate>Fri, 06 Nov 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/11/updated-home-stackoverflow-igoogle/</guid>
+      <description>Today my Stackoverflow iGoogle gadgets stopped working. I couldn&#39;t identify the problem. I just got the error
+Unable to retrieve spec for http://files.getdropbox.com/u/10936/gadgetHosting/stackoverflowProfile/prod/stackoverflow.xml. HTTP error 502</description>
+    </item>
+    
+    <item>
+      <title>Meta.Stackoverflow, Serverfault and Superuser iGoogle Gadgets submitted!</title>
+      <link>https://juristr.com/blog/2009/08/metastackoverflow-serverfault-and/</link>
+      <pubDate>Wed, 05 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/08/metastackoverflow-serverfault-and/</guid>
+      <description>After the increasing popularity of Stackoverflow, additional three sites have been added
+Serverfault.com
+For system administrators and IT professionals. People who manage and maintain computers in professional capacity.</description>
+    </item>
+    
+    <item>
+      <title>Around(J2)ME listed on Softpedia</title>
+      <link>https://juristr.com/blog/2009/08/aroundj2me-listed-on-softpedia/</link>
+      <pubDate>Mon, 03 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/08/aroundj2me-listed-on-softpedia/</guid>
+      <description>A project I developed together with my colleague Matthias Braunhofer during the course of Mobile Services at the university has now been listed on Softpedia.</description>
+    </item>
+    
+    <item>
+      <title>iGoogle Gadget: Stackoverflow Profile View</title>
+      <link>https://juristr.com/blog/2009/06/igoogle-gadget-stackoverflow-profile/</link>
+      <pubDate>Mon, 22 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/06/igoogle-gadget-stackoverflow-profile/</guid>
+      <description>Are you a member of Stackoverflow.com and you want to track your profile such as your reputation or earned badges? A couple of days ago I&#39;ve submitted an iGoogle gadget that makes this easy.</description>
+    </item>
+    
+    <item>
+      <title>Mashup editor about to shut down</title>
+      <link>https://juristr.com/blog/2009/06/mashup-editor-about-to-shut-down/</link>
+      <pubDate>Mon, 15 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/06/mashup-editor-about-to-shut-down/</guid>
+      <description>According to a note on the official Google Mashup Blog, they&#39;re about to shut down the Google Mashup Editor product. They took the valuable info they got from a numerous of Mashup developers to develop their AppEngine which will somehow replace the Mashup editor, although it is a different, much more complex product (with more features of course).</description>
+    </item>
+    
+    <item>
+      <title>Del.icio.us links and three new projects online</title>
+      <link>https://juristr.com/blog/2009/03/delicious-links-and-three-new-projects/</link>
+      <pubDate>Mon, 09 Mar 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/03/delicious-links-and-three-new-projects/</guid>
+      <description>My blog readers can now bookmark posts I&#39;ve written with delicious, by just clicking on the &#34;add to del.icio.us&#34; link on the bottom of each post.</description>
+    </item>
+    
+    <item>
+      <title>HowTo: Set the assembly binding location</title>
+      <link>https://juristr.com/blog/2009/02/howto-set-assembly-binding-location/</link>
+      <pubDate>Sat, 28 Feb 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/02/howto-set-assembly-binding-location/</guid>
+      <description>This post is somehow related to the one I made just a couple of days ago. The application plugins (dlls placed in a special folder of my app) are loaded dynamically at run-time with my small &#34;</description>
+    </item>
+    
+    <item>
+      <title>GMap script being reused</title>
+      <link>https://juristr.com/blog/2008/07/gmap-script-being-reused/</link>
+      <pubDate>Sun, 13 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2008/07/gmap-script-being-reused/</guid>
+      <description>It is always nice to see people adapt and use your work. Today I made a quick look to my blog access statistics and found the following webpage using a Google map script which I made (description) about more than a year ago.</description>
+    </item>
+    
+    <item>
+      <title>News Mapper experiences a revival</title>
+      <link>https://juristr.com/blog/2007/12/news-mapper-experiences-revival/</link>
+      <pubDate>Thu, 13 Dec 2007 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/12/news-mapper-experiences-revival/</guid>
+      <description>After I first published my Google Mashup project &#34;News Mapper&#34;, it immediately got published first on the Google Code site of the GME project and then also on the Official GME blog.</description>
+    </item>
+    
+    <item>
+      <title>Clean up your folder</title>
+      <link>https://juristr.com/blog/2007/12/clean-up-your-folder/</link>
+      <pubDate>Thu, 06 Dec 2007 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/12/clean-up-your-folder/</guid>
+      <description>It&#39;s actually not really worth to put a post about this...but anyway :) I recently coded just a simple one-class prog which deletes - or more specifically emtpies - a specified folder in certain time intervals.</description>
+    </item>
+    
+    <item>
+      <title>News Mapper has success!</title>
+      <link>https://juristr.com/blog/2007/10/news-mapper-has-success/</link>
+      <pubDate>Wed, 31 Oct 2007 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/10/news-mapper-has-success/</guid>
+      <description>My recent News Mapper mashup seems to have some success (at least for me :) ). Today I registered 114 visits which is my personal record for 1 day :D .</description>
+    </item>
+    
+    <item>
+      <title>News Mapper: A mashup experience with the Google Mashup Editor</title>
+      <link>https://juristr.com/blog/2007/10/now-in-two-weeks-after-my-successful/</link>
+      <pubDate>Mon, 29 Oct 2007 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/10/now-in-two-weeks-after-my-successful/</guid>
+      <description>Now in the two weeks after my successful graduation and before starting to work I found some space for doing some programming experiments. :) What I planned already for a longer time now has been to do some JavaScript coding since it becomes an always more important aspect in modern web technologies such as AJAX and so on.</description>
+    </item>
+    
+    <item>
+      <title>Logging is useful</title>
+      <link>https://juristr.com/blog/2007/04/logging-is-useful/</link>
+      <pubDate>Tue, 03 Apr 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2007/04/logging-is-useful/</guid>
+      <description>When I develop some application, I usually add a logging functionality to it. I find logging useful, especially for maintaining the application.
+Some bugs cannot be caught with tests and you often neither detect them when using the application.</description>
+    </item>
+    
+  </channel>
+</rss>

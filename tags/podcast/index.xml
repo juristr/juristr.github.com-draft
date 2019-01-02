@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Podcast on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/podcast/</link>
+    <description>Recent content in Podcast on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Sun, 23 Aug 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>@angularpodcast - Immutability with Angular with Minko Gechev</title>
+      <link>https://juristr.com/blog/2015/08/link-podcast-ng-immutability/</link>
+      <pubDate>Sun, 23 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2015/08/link-podcast-ng-immutability/</guid>
+      <description>Immutability is something that is a hot topic recently. Although is has been used previously Facebook with React made it popular again (at least that&amp;rsquo;s my perception).</description>
+    </item>
+    
+    <item>
+      <title>JavaScriptJabber - Babel with Sebastian McKenzie</title>
+      <link>https://juristr.com/blog/2015/08/link-podcast-babeljs/</link>
+      <pubDate>Sun, 23 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2015/08/link-podcast-babeljs/</guid>
+      <description>Cool talk at the JS-Jabber podcast with Sebastian McKenzie, the creator of Babel, the famous JavaScript transpiler. Definitely worth listening.
+Devs out there, it&amp;rsquo;s time to get started with ES2015!</description>
+    </item>
+    
+  </channel>
+</rss>
