@@ -2,7 +2,10 @@ version: '3'
 
 services:
   hugo:
-    image: yanqd0/hugo
+    # image: yanqd0/hugo
+    build:
+      context: .
+      dockerfile: ./scripts/Dockerfile
     volumes:
       - .:/srv/hugo
     ports:
