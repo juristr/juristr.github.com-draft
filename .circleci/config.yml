@@ -2,6 +2,11 @@
 #
 # Check https://circleci.com/docs/2.0/language-go/ for more details
 version: 2
+general:
+  branhces:
+    only:
+      - site
+
 jobs:
   build:
     docker:
