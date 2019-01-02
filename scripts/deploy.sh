@@ -11,6 +11,9 @@ echo "creating master branch in public folder"
 git clone .git --branch master public
 
 echo "generating hugo files"
+
+hugo version
+
 # generate
 hugo
   
@@ -18,4 +21,4 @@ echo "pushing changes back up to GitHub"
 # commit the changes in the clone and push them back to the local master branch    
 git -C public add --all
 git -C public $GIT_USER_ARGS commit -am "publishing changes ($SHA)"
-git -c public  push git@github.com:juristr/juristr.github.com-draft.git master
+git -c public push git@github.com:juristr/juristr.github.com-draft.git master
