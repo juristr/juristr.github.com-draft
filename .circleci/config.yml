@@ -10,7 +10,7 @@ general:
 jobs:
   build:
     docker:
-      - image: yanqd0/hugo
+      - image: dettmering/hugo-build
     working_directory: /srv/hugo
     steps:
       - checkout
