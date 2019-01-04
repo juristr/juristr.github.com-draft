@@ -11,6 +11,6 @@ services:
       - .:/srv/hugo
     # WORKDIR
     #   - /srv/hugo
-    command: "hugo server --bind 0.0.0.0 --templateMetrics"
+    command: "hugo server --buildDrafts --disableFastRender --bind 0.0.0.0 --templateMetrics"
     ports:
       - 1313:1313

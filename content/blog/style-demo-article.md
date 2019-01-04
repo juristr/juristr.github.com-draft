@@ -1,9 +1,9 @@
 ---
+type: post
 title: 'Article Design Demo'
 lead: 'Learn how to properly redirect in an Angular route guard'
-image: '/blog/assets/imgs/better-route-guards/route-guard-sketch.png'
-tags: ['Angular']
-date: 2018-11-29T00:00:00Z
+date: 2019-01-04T11:39:40+01:00
+draft: true
 ---
 
 Demo article showcasing the various things you can use on this blog here
