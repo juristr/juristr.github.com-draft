@@ -5,7 +5,7 @@ show_img_in_detail: true
 category: null
 categories:
   - JavaScript
-  - Software Architecture
+  - Software Design
 reposts:
   - 'http://architects.dzone.com/articles/modularity-javascript-mvc'
 date: 2013-04-08T00:00:00.000Z

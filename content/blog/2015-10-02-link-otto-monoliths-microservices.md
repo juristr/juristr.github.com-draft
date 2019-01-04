@@ -3,7 +3,7 @@ type: post
 title: On Monoliths and Microservices
 link: 'http://dev.otto.de/2015/09/30/on-monoliths-and-microservices/'
 categories:
-  - Software Architecture
+  - Software Design
 date: 2015-10-02T00:00:00.000Z
 comments: true
 url: /blog/2015/10/link-otto-monoliths-microservices

@@ -5,7 +5,7 @@ coverimage: true
 category: null
 categories:
   - Software Design
-  - Software Architecture
+  - Software Design
   - Best Practices
 reposts:
   - 'http://java.dzone.com/articles/narrow-path-between-best'

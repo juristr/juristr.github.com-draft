@@ -5,7 +5,7 @@ category: null
 reposts:
   - 'https://dzone.com/articles/rest-api-design-resource-modeling-1'
 categories:
-  - Software Architecture
+  - Software Design
 date: 2015-11-03T01:00:00.000Z
 comments: true
 url: /blog/2015/11/rest-api-design

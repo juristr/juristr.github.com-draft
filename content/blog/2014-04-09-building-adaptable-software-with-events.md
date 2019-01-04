@@ -5,7 +5,7 @@ show_img_in_detail: true
 coverimage: false
 category: null
 categories:
-  - Software Architecture
+  - Software Design
 reposts:
   - 'http://java.dzone.com/articles/qcon-london-2014-embracing'
 date: 2014-04-09T00:00:00.000Z

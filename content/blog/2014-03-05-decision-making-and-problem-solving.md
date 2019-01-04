@@ -5,11 +5,7 @@ show_img_in_detail: true
 coverimage: true
 category: null
 categories:
-  - soft skills
-reposts:
-  - 'http://java.dzone.com/articles/decision-making-problem'
-  - >-
-    http://www.javacodegeeks.com/2014/03/decision-making-problem-solving-introducing-ideas-being-influencial.html
+  - the desk
 date: 2014-03-05T01:00:00.000Z
 comments: true
 url: /blog/2014/03/decision-making-and-problem-solving

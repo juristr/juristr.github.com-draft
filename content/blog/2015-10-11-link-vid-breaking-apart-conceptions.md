@@ -4,7 +4,7 @@ title: Breaking apart conceptions by Ayende Rahien
 link: 'https://www.youtube.com/watch?v=0tlMTJDKiug&feature=youtu.be'
 categories:
   - ".Net"
-  - Software Architecture
+  - Software Design
 date: 2015-10-11T00:00:00.000Z
 comments: true
 url: /blog/2015/10/link-vid-breaking-apart-conceptions
