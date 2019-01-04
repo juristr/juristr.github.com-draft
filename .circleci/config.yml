@@ -1,9 +1,6 @@
-# Golang CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-go/ for more details
 version: 2
 general:
-  branhces:
+  branches:
     only:
       - site
 
@@ -11,7 +8,6 @@ jobs:
   build:
     docker:
       - image: juristr/hugo-docker
-    working_directory: /srv/hugo
     steps:
       - checkout
       - run:
@@ -20,7 +16,6 @@ jobs:
       - run: 
           name: "Install container dependencies for deploy"
           command: apk --no-cache add git openssh
-      # specify any bash command here prefixed with `run: `
       - run: 
           name: "Build and deploy to GitHub"
           command: ./scripts/deploy.sh
