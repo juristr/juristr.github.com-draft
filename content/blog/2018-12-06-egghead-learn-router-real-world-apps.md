@@ -14,6 +14,8 @@ image: /blog/assets/imgs/egghead-router-course.png
     Finally, it's out!!! My Angular router course is now available on Egghead, go grab it :)
 </div>
 
+<!--more-->
+
 {{< postad >}}
 
 I'm glad it's finally out. I've been working on this course for quite a while now, on and off. The router is a complex topic and still needed in nearly every real-world Angular app out there. The biggest challenge in creating this course was to keep lessons bite-sized and still useful and complete, but mostly to start with newcomers and get them to become productive with the router quickly. I drafted out lots of lessons, but ultimately decided to split the course in two.
