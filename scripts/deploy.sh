@@ -17,11 +17,10 @@ hugo version
 # generate
 hugo
   
-echo "Verifying GitHub keys"
-mkdir ~/.ssh
-if [ ! -n "$(grep "^github.com " ~/.ssh/known_hosts)" ]; then 
-    ssh-keyscan github.com >> ~/.ssh/known_hosts 2>/dev/null; 
-fi; 
+# echo "Verifying GitHub keys"
+# if [ ! -n "$(grep "^github.com " ~/.ssh/known_hosts)" ]; then 
+#     ssh-keyscan github.com >> ~/.ssh/known_hosts 2>/dev/null; 
+# fi; 
 
 # ssh-agent bash -c "ssh-add /path/to/your/deploy/id_rsa; git clone -b master git@github.com:githubAccount/githubRepo.git /your/target/dir
 
