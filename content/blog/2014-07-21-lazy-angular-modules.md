@@ -5,7 +5,7 @@ show_img_in_detail: false
 coverimage: false
 categories:
   - JavaScript
-  - AngularJS
+  - Angular.js
 date: 2014-07-21T00:00:00.000Z
 comments: true
 url: /blog/2014/07/lazy-angular-modules

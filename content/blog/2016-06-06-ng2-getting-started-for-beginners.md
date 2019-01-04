@@ -8,7 +8,7 @@ reposts:
   - 'https://dzone.com/articles/angular-2-a-getting-started-guide-for-beginners'
 categories:
   - JavaScript
-  - AngularJS
+  - Angular.js
   - Angular
 date: 2016-06-06T00:00:00.000Z
 comments: true

@@ -6,7 +6,7 @@ coverimage: false
 category: null
 categories:
   - JavaScript
-  - AngularJS
+  - Angular.js
 date: 2015-12-14T01:00:00.000Z
 comments: true
 url: /blog/2015/12/perf-startup-ng1

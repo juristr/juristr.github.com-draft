@@ -4,7 +4,7 @@ lead: Driving your Angular frontend architecture to a new level
 category: angular1
 categories:
   - JavaScript
-  - AngularJS
+  - Angular.js
 reposts:
   - 'https://dzone.com/articles/from-ng-controller-to-components-with-angular-15'
 date: 2016-06-27T00:00:00.000Z

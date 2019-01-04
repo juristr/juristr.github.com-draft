@@ -6,7 +6,7 @@ lead: >-
 category: angular2
 categories:
   - JavaScript
-  - AngularJS
+  - Angular.js
   - Angular
 date: 2016-04-27T00:00:00.000Z
 comments: true

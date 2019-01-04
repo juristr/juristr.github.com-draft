@@ -57,7 +57,7 @@
 	<!-- Custom styles for this template -->
 	<!-- <link href="{{ "/css/mediumish.css" | urlize | relURL }}" rel="stylesheet"> -->
 	{{ $main := resources.Get "/scss/main.scss" | toCSS | minify | fingerprint }}
-	<link rel="stylesheet" href="{{ $main.Permalink }}" integrity="{{ $main.Data.Integrity }}" media="screen">
+	<link rel="stylesheet" href="{{ $main.RelPermalink }}" integrity="{{ $main.Data.Integrity }}" media="screen">
 
 	<!-- <link href="{{ "/css/additional.css" | urlize | relURL }}" rel="stylesheet">
 	<link href="{{ "/css/tango_syntax.css" | urlize | relURL }}" rel="stylesheet">
@@ -65,12 +65,12 @@
 
 	{{ if eq .Kind "home" }}
 	{{ $styles := resources.Get "/scss/home.scss" | toCSS | minify | fingerprint }}
-	<link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+	<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 	{{ end }}
 
 	{{ if eq .Kind "page" }}
 	{{ $styles := resources.Get "/scss/article.scss" | toCSS | minify | fingerprint }}
-	<link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+	<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 	{{ end }}
 
 	<!-- <link href="{{ "/css/article.css" | urlize | relURL }}" rel="stylesheet"> -->

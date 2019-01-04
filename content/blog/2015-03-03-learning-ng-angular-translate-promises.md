@@ -7,7 +7,7 @@ show_img_in_detail: true
 coverimage: false
 category: null
 categories:
-  - AngularJS
+  - Angular.js
   - JavaScript
 reposts:
   - 'http://java.dzone.com/articles/learning-angular-set-your'

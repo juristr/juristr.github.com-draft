@@ -5,7 +5,7 @@ show_img_in_detail: true
 coverimage: false
 category: null
 categories:
-  - AngularJS
+  - Angular.js
   - JavaScript
 date: 2015-06-17T00:00:00.000Z
 comments: true

@@ -10,7 +10,7 @@ lastupdated: '2016-05-03'
 coverimage: false
 category: null
 categories:
-  - AngularJS
+  - Angular.js
   - JavaScript
 reposts:
   - >-

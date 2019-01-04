@@ -3,7 +3,7 @@
 <div class="card category-card">
     <div class="card-block">
         <div class="row">
-            <div class="col-3">
+            <div class="col-2">
                 <div class="post-category-icon">
                     {{ if fileExists (print "static/assets/images/categories/" $imgFileName ".svg" ) }}
                         <img src="/assets/images/categories/{{ $imgFileName }}.svg" />
@@ -13,7 +13,7 @@
                     {{ end }}
                 </div>
             </div>
-            <div class="col-7 card-title-container">
+            <div class="col-10 card-title-container">
                 <h2 class="card-title">
                     <a href="{{ .URL }}">{{ .Title }}</a>
                 </h2>

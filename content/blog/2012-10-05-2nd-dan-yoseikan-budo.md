@@ -1,9 +1,6 @@
 ---
 title: 2nd Dan Yoseikan Budo
 description: ''
-category: null
-categories:
-  - Personal
 date: 2012-10-05T00:00:00.000Z
 comments: true
 url: /blog/2012/10/2nd-dan-yoseikan-budo

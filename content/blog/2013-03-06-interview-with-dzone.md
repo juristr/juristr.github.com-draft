@@ -2,10 +2,8 @@
 title: Interview with DZone
 lead: 5 questions from DZone
 categories:
-  - Personal
-  - Blogging
+  - The Desk
   - JavaScript
-  - Web Dev
 date: 2013-03-06T01:00:00.000Z
 comments: true
 url: /blog/2013/03/interview-with-dzone

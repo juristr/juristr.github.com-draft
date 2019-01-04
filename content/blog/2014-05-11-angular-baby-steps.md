@@ -5,7 +5,7 @@ show_img_in_detail: true
 coverimage: false
 category: null
 categories:
-  - AngularJS
+  - Angular.js
   - JavaScript
 reposts:
   - 'http://juristr.com/blog/2014/05/angular-baby-steps/'

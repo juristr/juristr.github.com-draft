@@ -3,7 +3,7 @@ title: 'Video Course: Learning Angular Components'
 lead: The 2nd edition of my video course on Learning Angular Components
 categories:
   - Angular
-  - AngularJS
+  - Angular.js
 date: 2017-01-23T01:00:00.000Z
 comments: true
 url: /blog/2017/01/video-course-learning-ng-cmps

@@ -7,7 +7,7 @@ category: null
 categories:
   - JavaScript
   - testing
-  - AngularJS
+  - Angular.js
 reposts:
   - >-
     http://www.webcodegeeks.com/javascript/avoid-test-code-duplication-in-jasmine-tests/

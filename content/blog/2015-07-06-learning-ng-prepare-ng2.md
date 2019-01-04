@@ -7,7 +7,7 @@ show_img_in_detail: true
 coverimage: false
 category: null
 categories:
-  - AngularJS
+  - Angular.js
   - JavaScript
 reposts:
   - 'https://dzone.com/articles/preparing-for-angular-2'
