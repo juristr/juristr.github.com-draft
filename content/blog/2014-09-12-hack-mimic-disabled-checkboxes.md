@@ -9,7 +9,6 @@ category: null
 categories:
   - ASP.net
   - JavaScript
-  - HowTo
 date: 2014-09-12T00:00:00.000Z
 comments: true
 url: /blog/2014/09/hack-mimic-disabled-checkboxes

@@ -3,7 +3,6 @@ title: 'HowTo: Subscribe to Failed TFS Builds'
 description: ''
 categories:
   - Tooling
-  - HowTo
 reposts:
   - 'http://dotnet.dzone.com/articles/howto-subscribe-failed-tfs'
 date: 2012-11-23T01:00:00.000Z

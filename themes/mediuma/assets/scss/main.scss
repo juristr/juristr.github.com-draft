@@ -11,10 +11,21 @@ body {
     background-color: $neutral_100;
 }
 
-.svgicon {
-    svg {
-        width: 40px;
-        height: 40px;
+.list-page {
+    .svgicon {
+        svg {
+            width: 140px;
+            height: 140px;
+        }
+    }
+}
+
+.card {
+    .svgicon {
+        svg {
+            width: 40px;
+            height: 40px;
+        }
     }
 }
 

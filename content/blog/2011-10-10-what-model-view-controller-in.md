@@ -4,8 +4,6 @@ date: 2011-10-10T00:00:00.000Z
 comments: true
 categories:
   - JavaScript
-  - Design Patterns
-  - Web dev
 url: /blog/2011/10/what-model-view-controller-in
 type: post
 ---
