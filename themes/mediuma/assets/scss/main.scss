@@ -11,6 +11,13 @@ body {
     background-color: $neutral_100;
 }
 
+.svgicon {
+    svg {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 .section-title {
     h2 {
         font-size: 1rem;
