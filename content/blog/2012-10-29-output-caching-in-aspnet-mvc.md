@@ -5,10 +5,9 @@ description: >-
   explains the differences between server-side, client-side and mixed cache and
   approaches on how to implement them.
 category: article
-tags:
-  - ASP.net MVC
+categories:
+  - ASPnet MVC
   - 'C#'
-  - WebDev
 reposts:
   - 'http://dotnet.dzone.com/articles/output-caching-aspnet-mvc'
   - 'http://www.dotnetcodegeeks.com/2012/11/output-caching-in-asp-net-mvc.html'

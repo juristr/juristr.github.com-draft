@@ -1,7 +1,7 @@
 ---
 title: Angular Modules vs ES6 Modules
 lead: 'Angular Modules are DIFFERENT from ES6 Modules, here''s why'
-tags:
+categories:
   - Angular
 date: 2017-03-09T01:00:00.000Z
 comments: true

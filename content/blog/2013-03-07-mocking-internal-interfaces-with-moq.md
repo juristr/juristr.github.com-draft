@@ -2,7 +2,7 @@
 title: Mocking Internal Interfaces with Moq
 description: ''
 category: null
-tags:
+categories:
   - testing
 reposts:
   - 'http://dotnet.dzone.com/articles/mocking-internal-interfaces'

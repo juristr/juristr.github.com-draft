@@ -3,7 +3,7 @@ title: 'In-depth: How do CDK Portals work?'
 lead: >-
   Learn how to implement your own CDK portal for dynamically placing content in
   Angular apps
-tags:
+categories:
   - Angular
 date: 2018-06-26T00:00:00.000Z
 comments: true

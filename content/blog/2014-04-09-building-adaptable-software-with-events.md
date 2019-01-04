@@ -4,7 +4,7 @@ lead: My takeaways from the building adaptable software with events training
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
   - Software Architecture
 reposts:
   - 'http://java.dzone.com/articles/qcon-london-2014-embracing'

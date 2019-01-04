@@ -3,8 +3,8 @@ title: My Journey replacing Promises with RxJS
 lead: >-
   Guest post by Dzahat Ushev describing how to convert a promise based solution
   to RxJS
-tags:
-  - Angular
+categories:
+  - Rxjs
 date: 2018-10-01T00:00:00.000Z
 comments: true
 url: /blog/2018/10/journey-promises-to-rxjs

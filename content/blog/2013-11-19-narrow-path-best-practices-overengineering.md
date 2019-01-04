@@ -3,7 +3,7 @@ title: The narrow path between best practices and over-engineering
 show_img_in_detail: true
 coverimage: true
 category: null
-tags:
+categories:
   - Software Design
   - Software Architecture
   - Best Practices

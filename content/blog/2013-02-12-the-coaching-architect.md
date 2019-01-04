@@ -2,6 +2,8 @@
 title: The Coaching Architect
 description: ''
 category: null
+categories:
+  - Software Architecture
 tags:
   - Tech vids
   - coaching

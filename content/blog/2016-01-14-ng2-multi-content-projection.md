@@ -5,7 +5,7 @@ show_img_in_detail: true
 lastupdated: '2016-06-14'
 coverimage: false
 category: angular2
-tags:
+categories:
   - JavaScript
   - Angular
 reposts:

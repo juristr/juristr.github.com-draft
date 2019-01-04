@@ -8,10 +8,9 @@ lead: >-
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
+  - AngularJS
   - JavaScript
-  - Angular.js
-  - learning-ng
 reposts:
   - 'http://java.dzone.com/articles/learning-angular-access'
   - >-

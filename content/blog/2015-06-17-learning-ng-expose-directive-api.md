@@ -4,10 +4,9 @@ lead: Using shared services and "API objects" to create a directive API
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
+  - AngularJS
   - JavaScript
-  - Angular.js
-  - learning-ng
 date: 2015-06-17T00:00:00.000Z
 comments: true
 url: /blog/2015/06/learning-ng-expose-directive-api

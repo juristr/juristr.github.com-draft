@@ -4,7 +4,7 @@ title: Host and Visibility in Angular 2's Dependency Injection
 link: >-
   http://blog.thoughtram.io/angular/2015/08/20/host-and-visibility-in-angular-2-dependency-injection.html
 category: null
-tags:
+categories:
   - Angular
   - JavaScript
 date: 2015-08-20T00:00:00.000Z

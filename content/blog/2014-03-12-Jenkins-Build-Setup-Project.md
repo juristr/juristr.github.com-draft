@@ -2,8 +2,8 @@
 title: Automating the build of MSI setup packages on Jenkins
 show_img_in_detail: false
 coverimage: false
-tags:
-  - .Net
+categories:
+  - DotNet
 reposts:
   - 'http://java.dzone.com/articles/automating-build-msi-setup'
 date: 2014-03-12T01:00:00.000Z

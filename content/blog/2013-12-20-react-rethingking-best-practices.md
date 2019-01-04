@@ -3,7 +3,7 @@ title: 'JSConf.eu - React: Rethinking best practices'
 description: ''
 show_img_in_detail: true
 coverimage: true
-tags:
+categories:
   - JavaScript
 date: 2013-12-20T01:00:00.000Z
 comments: true

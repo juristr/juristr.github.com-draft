@@ -6,10 +6,9 @@ lead: Collection of best practices to be ready for Angular 2
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
+  - AngularJS
   - JavaScript
-  - Angular.js
-  - learning-ng
 reposts:
   - 'https://dzone.com/articles/preparing-for-angular-2'
 date: 2015-07-06T00:00:00.000Z

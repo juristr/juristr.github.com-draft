@@ -4,7 +4,7 @@ lead: The often undervalued activities in software development
 show_img_in_detail: true
 coverimage: true
 category: null
-tags:
+categories:
   - soft skills
 reposts:
   - 'http://java.dzone.com/articles/decision-making-problem'

@@ -4,7 +4,7 @@ lead: How we use 'git flow' in one of our projects
 show_img_in_detail: false
 coverimage: false
 lastupdated: '2015-03-19'
-tags:
+categories:
   - Git
 reposts:
   - 'http://www.javacodegeeks.com/2014/09/implementing-the-git-flow.html'

@@ -3,7 +3,7 @@ type: post
 title: 'Angular 1 and Angular 2 integration: the path to seamless upgrade'
 link: 'http://angularjs.blogspot.it/2015/08/angular-1-and-angular-2-coexistence.html'
 category: null
-tags:
+categories:
   - Angular
 date: 2015-08-25T00:00:00.000Z
 comments: true

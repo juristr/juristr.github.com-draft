@@ -3,7 +3,7 @@ title: 'Unit Testing Tip: Create Descriptive Tests'
 description: ''
 show_img_in_detail: false
 category: null
-tags:
+categories:
   - testing
 reposts:
   - 'http://architects.dzone.com/articles/unit-testing-tip-create'

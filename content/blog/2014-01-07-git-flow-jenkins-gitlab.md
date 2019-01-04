@@ -4,7 +4,7 @@ description: ''
 show_img_in_detail: true
 category: null
 lastupdated: '2015-06-24'
-tags:
+categories:
   - Git
 reposts:
   - 'http://www.javacodegeeks.com/2014/01/git-flow-with-jenkins-and-gitlab.html'

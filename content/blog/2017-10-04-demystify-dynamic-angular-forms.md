@@ -1,7 +1,7 @@
 ---
 title: Demystifying dynamic Forms in Angular
 lead: 'Learn how easy it is to create dynamic, reactive forms with Angular'
-tags:
+categories:
   - Angular
   - Video Lesson
 date: 2017-10-04T00:00:00.000Z

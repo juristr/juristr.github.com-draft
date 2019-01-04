@@ -2,7 +2,7 @@
 title: 'ASP.net MVC Action Methods: Testing Against Anonymous Return Types'
 description: ''
 category: null
-tags:
+categories:
   - testing
   - 'C#'
 reposts:

@@ -2,7 +2,7 @@
 type: post
 title: Use ngModelOptions to limit digest cycles
 link: 'http://toddmotto.com/super-fast-angular-ng-model-options-limit-digest-cycles'
-tags:
+categories:
   - Angular
 date: 2015-10-26T01:00:00.000Z
 comments: true

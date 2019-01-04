@@ -3,7 +3,7 @@ title: Modularity in JavaScript MVC Frameworks
 lead: ''
 show_img_in_detail: true
 category: null
-tags:
+categories:
   - JavaScript
   - Software Architecture
 reposts:

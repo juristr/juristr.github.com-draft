@@ -1,7 +1,7 @@
 ---
 title: Easy SSL support for your Jekyll Blog with CloudFlare
 lead: Learn how CloudFlare makes it easy to activate SSL for your blog
-tags:
+categories:
   - Blogging
 date: 2017-01-04T01:00:00.000Z
 comments: true
@@ -25,11 +25,11 @@ CloudFlare is an amazing service. Already years ago, they actually introduced a 
 
 Here's an awesome article that guides through the various steps.
 
-{% include article-link.html
+{{< article-link
 	url="https://rck.ms/jekyll-github-pages-custom-domain-gandi-https-ssl-cloudflare/"
 	title="How to have a SSL-enabled Jekyll site with a custom domain on GitHub Pages"
 	text="GitHub Pages in combination with Jekyll is a simple yet powerful tool to build and serve static websites. This article explains how to set it up and activate and enable SSL encryption with CloudFlare."
-%}
+>}}
 
 You basically add a new site to CloudFlare by entering your existing URL. As a consequence, CloudFlare then scans for the the according DNS configuration and copies them over. After that, simply point to those DNS servers on your domain provider's admin panel.
 

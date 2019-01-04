@@ -1,7 +1,7 @@
 ---
 title: 'Egghead Lesson: Simple caching with RxJS'
 lead: Video session on how to implement simple caching using RxJS in Angular
-tags:
+categories:
   - Angular
   - RxJS
 date: 2018-11-11T01:00:00.000Z

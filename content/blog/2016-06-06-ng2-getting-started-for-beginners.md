@@ -6,9 +6,9 @@ reposts:
   - >-
     https://medium.com/@Mybridge/top-10-angular-2-articles-for-the-past-month-v-june-37bb96b667a3#.tjs9etrwb
   - 'https://dzone.com/articles/angular-2-a-getting-started-guide-for-beginners'
-tags:
+categories:
   - JavaScript
-  - Angular.js
+  - AngularJS
   - Angular
 date: 2016-06-06T00:00:00.000Z
 comments: true

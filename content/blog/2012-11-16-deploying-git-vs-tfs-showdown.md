@@ -2,7 +2,7 @@
 title: 'Deploying: Git vs. TFS Showdown'
 description: ''
 category: null
-tags:
+categories:
   - tooling
 reposts:
   - 'http://agile.dzone.com/articles/deploying-git-vs-tfs-showdown'

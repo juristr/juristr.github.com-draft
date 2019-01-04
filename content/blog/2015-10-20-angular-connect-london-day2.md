@@ -4,7 +4,7 @@ lead: Directly from Europe's biggest Angular Developer Conference
 show_img_in_detail: true
 coverimage: true
 category: null
-tags:
+categories:
   - Angular
   - JavaScript
 date: 2015-10-20T00:00:00.000Z

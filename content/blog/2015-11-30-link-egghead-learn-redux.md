@@ -2,7 +2,7 @@
 type: post
 title: Egghead.io - Getting started with Redux
 link: 'https://egghead.io/series/getting-started-with-redux'
-tags:
+categories:
   - JavaScript
 date: 2015-11-30T01:00:00.000Z
 comments: true

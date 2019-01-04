@@ -2,11 +2,11 @@
 title: 'Programming ASP.net MVC4 by J. Chadwick, T. Snyder and H. Panda'
 description: ''
 category: null
-tags:
+categories:
   - book review
-  - ASP.net MVC
+  - ASPnet MVC
   - 'C#'
-  - .Net
+  - DotNet
 date: 2012-12-14T01:00:00.000Z
 comments: true
 url: /blog/2012/12/programming-aspnet-mvc4

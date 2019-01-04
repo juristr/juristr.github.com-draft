@@ -1,7 +1,7 @@
 ---
 title: Better Redirects in Angular Route Guards
 lead: Learn how to properly redirect in an Angular route guard
-tags:
+categories:
   - Angular
 date: 2018-11-29T01:00:00.000Z
 comments: true

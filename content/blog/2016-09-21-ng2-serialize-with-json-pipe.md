@@ -1,7 +1,7 @@
 ---
 title: 'Angular: Using the JSONPipe for debugging'
 lead: Remember the JSON filter in Angular 1? Here's how you can use it in Angular
-tags:
+categories:
   - JavaScript
   - Angular
 reposts:

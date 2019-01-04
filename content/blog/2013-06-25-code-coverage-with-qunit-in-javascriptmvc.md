@@ -3,7 +3,7 @@ title: Code Coverage with QUnit in JavaScriptMVC
 description: ''
 show_img_in_detail: false
 category: null
-tags:
+categories:
   - testing
   - JavaScript
 date: 2013-06-25T00:00:00.000Z

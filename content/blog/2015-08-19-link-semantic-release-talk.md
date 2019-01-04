@@ -3,8 +3,8 @@ type: post
 title: semantic-release - @kentcdodds talks to @boennemann
 link: 'https://youtu.be/g6y3DnhkjrI'
 category: null
-tags:
-  - talk
+categories:
+  - talks
 date: 2015-08-19T00:00:00.000Z
 comments: true
 url: /blog/2015/08/link-semantic-release-talk

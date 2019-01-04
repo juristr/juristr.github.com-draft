@@ -2,7 +2,7 @@
 title: How to Stay Up To Date On Web Technology
 lead: Keeping pace with the latest stuff around web technology is tough
 category: null
-tags: []
+categories: []
 reposts:
   - 'http://css.dzone.com/articles/how-stay-date-web-technology'
 date: 2013-01-11T01:00:00.000Z

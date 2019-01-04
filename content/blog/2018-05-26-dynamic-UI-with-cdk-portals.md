@@ -3,7 +3,7 @@ title: Dynamic UI with CDK TemplatePortal and DomPortalHost
 lead: >-
   Dynamically place a piece of UI from one component into another, without them
   having to know each other
-tags:
+categories:
   - Angular
 date: 2018-05-26T00:00:00.000Z
 comments: true

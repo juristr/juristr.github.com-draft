@@ -3,7 +3,7 @@ type: post
 title: Can you find the 5 smells
 link: >-
   http://blog.zuehlke.com/en/can-you-find-the-5-smells-in-i-reviewed-your-code-last-night-and-deleted-all-of-it-since-its-crap/
-tags:
+categories:
   - undefined
 date: 2015-09-26T00:00:00.000Z
 comments: true

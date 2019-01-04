@@ -6,9 +6,8 @@ description: >-
 lastupdated: 2014-01-11T00:00:00.000Z
 show_img_in_detail: true
 category: article
-tags:
+categories:
   - JavaScript
-  - WebDev
 reposts:
   - 'http://architects.dzone.com/articles/typescript-application-scale'
 date: 2013-07-22T00:00:00.000Z

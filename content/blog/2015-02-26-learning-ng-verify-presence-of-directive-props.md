@@ -9,11 +9,9 @@ show_img_in_detail: true
 lastupdated: '2016-05-03'
 coverimage: false
 category: null
-tags:
+categories:
+  - AngularJS
   - JavaScript
-  - Angular.js
-  - angular-directives
-  - learning-ng
 reposts:
   - >-
     http://www.webcodegeeks.com/javascript/angular-js/learning-angular-verifying-whether-function-passed-directives-isolated-scope/

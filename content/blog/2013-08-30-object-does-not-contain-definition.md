@@ -4,8 +4,8 @@ description: ''
 show_img_in_detail: false
 coverimage: false
 category: null
-tags:
-  - .Net
+categories:
+  - DotNet
   - 'C#'
   - testing
 reposts:

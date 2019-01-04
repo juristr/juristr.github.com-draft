@@ -1,7 +1,7 @@
 ---
 title: Looking back on 2017
 lead: My personal recap of 2017
-tags:
+categories:
   - blogging
 date: 2017-12-30T01:00:00.000Z
 comments: true

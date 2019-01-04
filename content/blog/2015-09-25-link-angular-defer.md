@@ -3,7 +3,7 @@ type: post
 title: '$q.defer: You''re doing it wrong'
 link: 'http://www.codelord.net/2015/09/24/$q-dot-defer-youre-doing-it-wrong/'
 category: null
-tags:
+categories:
   - Angular
 date: 2015-09-25T00:00:00.000Z
 comments: true

@@ -4,7 +4,7 @@ lead: A summary from a post on Thoughtworks blog
 category: null
 reposts:
   - 'https://dzone.com/articles/rest-api-design-resource-modeling-1'
-tags:
+categories:
   - Software Architecture
 date: 2015-11-03T01:00:00.000Z
 comments: true

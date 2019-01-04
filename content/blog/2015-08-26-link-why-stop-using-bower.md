@@ -3,7 +3,7 @@ type: post
 title: Why We Should Stop Using Bower – And How to Do It
 link: 'http://gofore.com/ohjelmistokehitys/stop-using-bower/'
 category: null
-tags:
+categories:
   - JavaScript
 date: 2015-08-26T00:00:00.000Z
 comments: true

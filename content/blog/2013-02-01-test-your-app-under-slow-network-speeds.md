@@ -7,7 +7,7 @@ reposts:
   - 'http://architects.dzone.com/articles/test-your-app-under-slow'
   - >-
     http://developer.yahoo.com/blogs/ydn/posts/2013/02/webp-table-partitioning-and-more/
-tags:
+categories:
   - testing
   - tooling
 date: 2013-02-01T01:00:00.000Z

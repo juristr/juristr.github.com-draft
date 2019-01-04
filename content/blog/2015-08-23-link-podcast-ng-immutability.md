@@ -4,7 +4,7 @@ title: '@angularpodcast - Immutability with Angular with Minko Gechev'
 link: >-
   https://devchat.tv/adventures-in-angular/054-aia-immutability-with-angular-with-minko-gechev
 category: null
-tags:
+categories:
   - podcast
   - Angular
 date: 2015-08-23T00:00:00.000Z

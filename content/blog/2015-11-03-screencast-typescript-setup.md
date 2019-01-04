@@ -4,8 +4,8 @@ lead: >-
   Quick video on how to setup your working environment for playing around with
   TypeScript
 category: null
-tags:
-  - screencast
+categories:
+  - TypeScript
 date: 2015-11-03T01:00:00.000Z
 comments: true
 url: /blog/2015/11/screencast-typescript-setup

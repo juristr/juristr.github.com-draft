@@ -3,7 +3,7 @@ title: Perfect Workflow in Sublime Text 2
 description: ''
 show_img_in_detail: true
 category: null
-tags:
+categories:
   - tooling
 reposts:
   - 'http://agile.dzone.com/articles/perfect-workflow-sublime-text'

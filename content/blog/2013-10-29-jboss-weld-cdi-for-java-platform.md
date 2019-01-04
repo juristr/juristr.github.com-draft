@@ -3,7 +3,7 @@ title: JBoss Weld CDI for Java Platform
 show_img_in_detail: true
 coverimage: true
 category: null
-tags:
+categories:
   - Java
   - book review
 reposts:

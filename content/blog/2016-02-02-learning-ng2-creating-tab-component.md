@@ -4,7 +4,7 @@ lead: >-
   A follow up on thoughtram's excellent article on creating a tabs components
   with Angular
 category: angular2
-tags:
+categories:
   - JavaScript
   - Angular
 date: 2016-02-02T01:00:00.000Z

@@ -2,7 +2,7 @@
 title: About Personal Productivity
 lead: Some thoughts on optimizing my productivity
 category: null
-tags: []
+categories: []
 date: 2016-01-24T01:00:00.000Z
 comments: true
 url: /blog/2016/01/about-personal-productivity

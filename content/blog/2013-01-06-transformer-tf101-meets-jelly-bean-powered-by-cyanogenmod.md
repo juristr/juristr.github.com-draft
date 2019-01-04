@@ -1,7 +1,7 @@
 ---
 title: Transformer TF101 meets Jelly Bean powered by CyanogenMod
 description: Instructions for installing CynogenMod on the TF101.
-tags:
+categories:
   - Android
 show_img_in_detail: true
 reposts:

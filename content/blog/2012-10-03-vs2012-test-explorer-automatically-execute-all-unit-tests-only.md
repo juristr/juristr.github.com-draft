@@ -2,7 +2,7 @@
 title: 'Visual Studio Test Explorer: Automatically Execute All Unit Tests Only'
 description: ''
 category: null
-tags: []
+categories: []
 date: 2012-10-03T00:00:00.000Z
 comments: true
 url: /blog/2012/10/vs2012-test-explorer-automatically-execute-all-unit-tests-only

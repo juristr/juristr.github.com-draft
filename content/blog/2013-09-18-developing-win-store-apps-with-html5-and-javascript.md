@@ -3,7 +3,7 @@ title: Developing Windows Store Apps with HTML5 and JavaScript
 show_img_in_detail: true
 coverimage: true
 category: null
-tags:
+categories:
   - JavaScript
   - book review
 reposts:

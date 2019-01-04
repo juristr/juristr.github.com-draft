@@ -2,8 +2,8 @@
 title: Strange Error When Downloading File in IE8 from SSL Site
 date: 2012-07-16T00:00:00.000Z
 comments: true
-tags:
-  - ASP.net MVC
+categories:
+  - ASPnet MVC
   - Web dev
 url: /blog/2012/07/strange-error-when-downloading-file-in
 type: post

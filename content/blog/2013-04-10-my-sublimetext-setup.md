@@ -3,7 +3,7 @@ title: My Sublime Text Setup
 description: ''
 show_img_in_detail: true
 coverimage: true
-tags:
+categories:
   - tooling
 reposts:
   - 'http://architects.dzone.com/articles/my-sublime-text-setup'

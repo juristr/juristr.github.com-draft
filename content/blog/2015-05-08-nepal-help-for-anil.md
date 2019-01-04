@@ -3,7 +3,8 @@ title: 'Nepal: Help for Anil Joshi'
 lead: He lost his home during the earthquake
 show_img_in_detail: true
 coverimage: false
-category: null
+categories:
+  - blogging
 tags:
   - charity
 date: 2015-05-08T00:00:00.000Z

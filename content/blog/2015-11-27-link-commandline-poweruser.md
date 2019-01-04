@@ -2,7 +2,7 @@
 type: post
 title: Become a Command Line Power User
 link: 'http://commandlinepoweruser.com/'
-tags:
+categories:
   - undefined
 date: 2015-11-27T01:00:00.000Z
 comments: true

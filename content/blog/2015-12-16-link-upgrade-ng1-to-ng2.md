@@ -2,9 +2,9 @@
 type: post
 title: Upgrading Angular from 1.x
 link: 'https://angular.io/docs/ts/latest/guide/upgrade.html'
-tags:
+categories:
   - Angular
-  - Angular.js
+  - AngularJS
 date: 2015-12-16T01:00:00.000Z
 comments: true
 url: /blog/2015/12/link-upgrade-ng1-to-ng2

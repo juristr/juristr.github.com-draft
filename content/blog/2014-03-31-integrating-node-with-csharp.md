@@ -2,8 +2,8 @@
 title: 'Integrating Node.js with a C# dll'
 show_img_in_detail: false
 coverimage: false
-tags:
-  - .Net
+categories:
+  - DotNet
   - Node.js
   - JavaScript
 reposts:

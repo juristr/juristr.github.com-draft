@@ -3,7 +3,7 @@ type: post
 title: 12 Rules for Professional JavaScript in 2015
 link: >-
   https://medium.com/@housecor/12-rules-for-professional-javascript-in-2015-f158e7d3f0fc
-tags:
+categories:
   - JavaScript
 date: 2015-09-28T00:00:00.000Z
 comments: true

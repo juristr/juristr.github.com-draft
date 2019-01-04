@@ -2,7 +2,7 @@
 type: post
 title: The Sliding Scale of Giving a Fuck
 link: 'http://blog.capwatkins.com/the-sliding-scale-of-giving-a-fuck'
-tags:
+categories:
   - undefined
 date: 2015-10-02T00:00:00.000Z
 comments: true

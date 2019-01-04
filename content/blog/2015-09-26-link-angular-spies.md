@@ -2,7 +2,7 @@
 type: post
 title: Easy testing with angular-spies
 link: 'https://github.com/hirezio/angular-spies'
-tags:
+categories:
   - Angular
   - Testing
 date: 2015-09-26T00:00:00.000Z

@@ -6,10 +6,9 @@ lead: >-
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
+  - AngularJS
   - JavaScript
-  - learning-ng
-  - Angular.js
 reposts:
   - >-
     http://www.webcodegeeks.com/javascript/angular-js/learning-angular-useful-utility-functions/

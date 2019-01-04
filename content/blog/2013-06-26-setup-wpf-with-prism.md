@@ -2,8 +2,8 @@
 title: Setting up a WPF Application With PRISM
 description: ''
 category: ''
-tags:
-  - .Net
+categories:
+  - DotNet
   - WPF
 date: 2013-06-26T00:00:00.000Z
 comments: true

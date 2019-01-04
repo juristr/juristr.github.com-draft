@@ -6,10 +6,9 @@ lead: >-
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
+  - AngularJS
   - JavaScript
-  - learning-ng
-  - Angular.js
   - testing
 reposts:
   - 'http://dotnet.dzone.com/articles/learning-angular-unit-testing'

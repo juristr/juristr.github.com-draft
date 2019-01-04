@@ -3,7 +3,7 @@ title: Let's create your first Angular app
 lead: >-
   It's time to get started. In this video I will help you create your first
   Angular app
-tags:
+categories:
   - JavaScript
   - Angular
 reposts:

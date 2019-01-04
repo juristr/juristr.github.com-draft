@@ -2,8 +2,6 @@
 title: 'Gist: My New Devbook'
 description: ''
 category: null
-tags:
-  - Projects
 reposts:
   - 'http://java.dzone.com/articles/gist-my-new-devbook'
 date: 2012-12-18T01:00:00.000Z

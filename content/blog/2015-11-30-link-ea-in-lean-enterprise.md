@@ -2,7 +2,7 @@
 type: post
 title: Role of an Enterprise Architect in a Lean Organization
 link: 'http://martinfowler.com/articles/ea-in-lean-enterprise.html'
-tags:
+categories:
   - undefined
 date: 2015-11-30T01:00:00.000Z
 comments: true

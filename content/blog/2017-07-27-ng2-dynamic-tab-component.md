@@ -3,7 +3,7 @@ title: Create a dynamic tab component with Angular
 lead: >-
   Learn about advanced topics such as dynamic components,
   ComponentFactoryResolver, ViewContainerRef, ngTemplateOutlet and much more...
-tags:
+categories:
   - Angular
 date: 2017-07-27T00:00:00.000Z
 comments: true

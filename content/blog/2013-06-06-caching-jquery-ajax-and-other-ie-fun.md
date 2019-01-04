@@ -3,8 +3,7 @@ title: 'Caching, jQuery Ajax and Other IE Fun'
 description: ''
 show_img_in_detail: false
 category: null
-tags:
-  - WebDev
+categories:
   - JavaScript
 reposts:
   - 'http://css.dzone.com/articles/caching-jquery-ajax-and-other'

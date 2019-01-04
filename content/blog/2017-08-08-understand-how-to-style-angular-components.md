@@ -3,7 +3,7 @@ title: Understand How to Style Angular Components
 lead: >-
   My Egghead.io video course that teaches you everything you need to know about
   styling Angular components
-tags:
+categories:
   - Angular
 date: 2017-08-08T00:00:00.000Z
 comments: true

@@ -6,11 +6,9 @@ lead: >-
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
+  - AngularJS
   - JavaScript
-  - Angular.js
-  - learning-ng
-  - angular-databinding
 date: 2014-11-07T01:00:00.000Z
 comments: true
 url: /blog/2014/11/learning-ng-databinding-doesnt-work

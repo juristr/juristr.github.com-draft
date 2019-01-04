@@ -2,7 +2,7 @@
 title: 2nd Dan Yoseikan Budo
 description: ''
 category: null
-tags:
+categories:
   - Personal
 date: 2012-10-05T00:00:00.000Z
 comments: true

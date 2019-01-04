@@ -3,7 +3,7 @@ type: post
 title: Angular 2 survey results
 link: >-
   https://docs.google.com/presentation/d/1E9WXilCLpDuF34Ib-veRHuCNNksbDLyfY2y8wLVRYOU/edit
-tags:
+categories:
   - Angular
 date: 2015-09-25T00:00:00.000Z
 comments: true

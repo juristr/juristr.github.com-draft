@@ -1,7 +1,7 @@
 ---
 title: Tuning Angular's Change Detection
 lead: Videos and runnable code samples to play around with change detection
-tags:
+categories:
   - Angular
 date: 2017-03-15T01:00:00.000Z
 comments: true

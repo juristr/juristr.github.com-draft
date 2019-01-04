@@ -3,7 +3,7 @@ title: 'Talk: Testing with Angular - Some Recipes'
 lead: >-
   My talk for Angular Hamburg on demoing some recipes for testing Angular
   applications
-tags:
+categories:
   - Angular
   - Testing
   - Talks

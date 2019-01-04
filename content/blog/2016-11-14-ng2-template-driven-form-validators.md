@@ -3,7 +3,7 @@ title: Custom validators in template driven Angular forms
 lead: >-
   Learn what a validation factory function is and how to implement a validation
   directive to be added to your form controls
-tags:
+categories:
   - JavaScript
   - Angular
 reposts:

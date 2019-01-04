@@ -4,7 +4,7 @@ lead: Learn how to backup your windows computer to your external backup drive
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
   - Windows OS
   - HowTo
 date: 2015-01-18T01:00:00.000Z

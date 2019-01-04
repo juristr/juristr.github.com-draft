@@ -2,7 +2,7 @@
 title: 'Why $.extend(someObj, anotherObj) might be dangerous!'
 date: 2012-07-18T00:00:00.000Z
 comments: true
-tags:
+categories:
   - JavaScript
   - Web dev
 reposts:

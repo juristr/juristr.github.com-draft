@@ -1,7 +1,7 @@
 ---
 title: Learn Angular Router for Real-World Applications
 lead: My Egghead course on the Angular router
-tags:
+categories:
   - Angular
 date: 2018-12-06T01:00:00.000Z
 comments: true

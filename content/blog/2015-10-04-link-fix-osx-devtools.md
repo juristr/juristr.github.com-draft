@@ -3,7 +3,7 @@ type: post
 title: El Capitain Broke My Developer Stuff! Here's How to Fix It
 link: >-
   https://ohthehugemanatee.org/blog/2015/10/01/how-i-got-el-capitain-working-with-my-developer-tools/
-tags:
+categories:
   - osx
 date: 2015-10-04T00:00:00.000Z
 comments: true

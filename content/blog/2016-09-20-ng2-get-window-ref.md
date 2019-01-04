@@ -1,7 +1,7 @@
 ---
 title: 'Angular: How do I get a reference to the window object?'
 lead: Learn how to inject the window object into your Angular components
-tags:
+categories:
   - JavaScript
   - Angular
 reposts:

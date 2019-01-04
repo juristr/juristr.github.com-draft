@@ -3,9 +3,9 @@ title: Lazy Angular Modules
 lead: Modularization strategy for lazy Angular modules
 show_img_in_detail: false
 coverimage: false
-tags:
+categories:
   - JavaScript
-  - Angular.js
+  - AngularJS
 date: 2014-07-21T00:00:00.000Z
 comments: true
 url: /blog/2014/07/lazy-angular-modules

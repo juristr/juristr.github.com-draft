@@ -2,7 +2,7 @@
 title: Some kind of crazy
 date: 2007-03-16T01:00:00.000Z
 comments: true
-tags:
+categories:
   - Google
 url: /blog/2007/03/some-kind-of-crazy
 type: post

@@ -2,7 +2,7 @@
 type: post
 title: ES6 Features
 link: 'http://es6-features.org/'
-tags:
+categories:
   - JavaScript
 date: 2015-09-28T00:00:00.000Z
 comments: true

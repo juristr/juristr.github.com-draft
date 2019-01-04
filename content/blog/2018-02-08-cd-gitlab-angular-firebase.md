@@ -3,9 +3,8 @@ title: 'Create a CD pipeline with Angular, GitLab and Firebase'
 lead: >-
   Learn to create a continuous deployment pipeline to deploy an Angular app to
   Firebase using Gitlab's integrated CI server
-tags:
+categories:
   - Angular
-  - Angular CLI
   - continuous delivery
 lastupdated: '2018-09-01'
 date: 2018-02-08T01:00:00.000Z

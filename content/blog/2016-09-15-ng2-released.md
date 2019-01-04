@@ -1,7 +1,7 @@
 ---
 title: Angular version 2.0.0 released!!
 lead: After two years of intense development it has now been officially released
-tags:
+categories:
   - JavaScript
   - Angular
 date: 2016-09-15T00:00:00.000Z

@@ -1,7 +1,7 @@
 ---
 title: '[object ErrorEvent] thrown by Karma in Angular Unit Tests'
 lead: Learn how to get out of this cryptic error message
-tags:
+categories:
   - Angular
 date: 2018-07-26T00:00:00.000Z
 comments: true

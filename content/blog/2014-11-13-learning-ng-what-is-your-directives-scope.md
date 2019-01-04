@@ -6,11 +6,9 @@ lead: >-
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
+  - AngularJS
   - JavaScript
-  - Angular.js
-  - learning-ng
-  - angular-directives
 reposts:
   - >-
     http://www.webcodegeeks.com/javascript/angular-js/learning-angular-what-is-the-scope-of-your-directive/

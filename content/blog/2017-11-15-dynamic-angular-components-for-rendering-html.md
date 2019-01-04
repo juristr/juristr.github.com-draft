@@ -1,7 +1,7 @@
 ---
 title: Use Dynamic Components to render HTML for 3rd party libraries
 lead: Leverage dynamic components to render HTML for a Leaflet popup message
-tags:
+categories:
   - Angular
 date: 2017-11-15T01:00:00.000Z
 comments: true

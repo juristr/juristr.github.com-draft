@@ -4,7 +4,7 @@ lead: About the architect's role and social skills
 show_img_in_detail: true
 coverimage: false
 category: null
-tags: []
+categories: []
 date: 2015-06-06T00:00:00.000Z
 comments: true
 url: /blog/2015/06/guide-as-in-mountaineering

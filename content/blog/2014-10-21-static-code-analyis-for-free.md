@@ -8,7 +8,7 @@ coverimage: false
 category: null
 reposts:
   - 'http://architects.dzone.com/articles/static-code-analysis-free'
-tags:
+categories:
   - JavaScript
 date: 2014-10-21T00:00:00.000Z
 comments: true

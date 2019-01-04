@@ -3,7 +3,7 @@ title: Compile-time vs. Runtime configuration of your Angular App
 lead: >-
   Learn how to setup compile time as well as runtime configuration for your
   Angular application
-tags:
+categories:
   - Angular
 date: 2018-01-22T01:00:00.000Z
 comments: true

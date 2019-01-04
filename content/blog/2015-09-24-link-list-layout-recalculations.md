@@ -3,7 +3,7 @@ type: post
 title: What forces layout/reflow
 link: 'https://gist.github.com/paulirish/5d52fb081b3570c81e3a'
 category: null
-tags:
+categories:
   - JavaScript
 date: 2015-09-24T00:00:00.000Z
 comments: true

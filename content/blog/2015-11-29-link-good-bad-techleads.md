@@ -2,7 +2,7 @@
 type: post
 title: 'Good Tech Lead, Bad Tech Lead'
 link: 'https://medium.com/swlh/good-tech-lead-bad-tech-lead-948b2b806d86#.esc59a3oa'
-tags:
+categories:
   - undefined
 date: 2015-11-29T01:00:00.000Z
 comments: true

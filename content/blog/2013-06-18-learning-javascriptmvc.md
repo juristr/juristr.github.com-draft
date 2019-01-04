@@ -3,10 +3,8 @@ title: Learning JavaScriptMVC
 description: ''
 show_img_in_detail: true
 category: null
-tags:
-  - book review
+categories:
   - JavaScript
-  - WebDev
 reposts:
   - 'http://css.dzone.com/articles/learning-javascriptmvc'
 date: 2013-06-18T00:00:00.000Z

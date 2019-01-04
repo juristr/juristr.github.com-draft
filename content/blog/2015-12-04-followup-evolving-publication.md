@@ -3,7 +3,7 @@ title: 'Follow-up: EvolvingPublication'
 show_img_in_detail: true
 coverimage: false
 category: null
-tags: []
+categories: []
 date: 2015-12-04T01:00:00.000Z
 comments: true
 url: /blog/2015/12/followup-evolving-publication

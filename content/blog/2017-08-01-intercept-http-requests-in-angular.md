@@ -1,7 +1,7 @@
 ---
 title: Intercept HTTP Requests in Angular
 lead: Learn about the new interceptors introduced in Angular 4.3.1
-tags:
+categories:
   - Angular
   - Video Lesson
 date: 2017-08-01T00:00:00.000Z

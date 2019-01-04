@@ -4,10 +4,9 @@ lead: See how you can stub an async call and make it return a resolved promise
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
+  - AngularJS
   - JavaScript
-  - Angular.js
-  - learning-ng
   - testing
 date: 2015-06-30T00:00:00.000Z
 comments: true

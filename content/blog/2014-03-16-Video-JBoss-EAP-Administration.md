@@ -2,9 +2,8 @@
 title: 'Packt Video: JBoss EAP Configuration, Deployment and Administration'
 show_img_in_detail: false
 coverimage: false
-tags:
+categories:
   - Java
-  - sponsored
 date: 2014-03-16T01:00:00.000Z
 comments: true
 url: /blog/2014/03/Video-JBoss-EAP-Administration

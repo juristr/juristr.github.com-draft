@@ -4,10 +4,10 @@ lead: Treat your test code like your production code
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
   - JavaScript
   - testing
-  - Angular.js
+  - AngularJS
 reposts:
   - >-
     http://www.webcodegeeks.com/javascript/avoid-test-code-duplication-in-jasmine-tests/

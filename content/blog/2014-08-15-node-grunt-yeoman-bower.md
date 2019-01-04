@@ -4,7 +4,7 @@ lead: An introduction for ambitious newbies
 lastupdated: '2015-12-01'
 show_img_in_detail: false
 coverimage: false
-tags:
+categories:
   - JavaScript
   - Node.js
 reposts:

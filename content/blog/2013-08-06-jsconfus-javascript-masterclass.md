@@ -4,7 +4,7 @@ description: ''
 show_img_in_detail: false
 coverimage: false
 category: null
-tags:
+categories:
   - JavaScript
   - Web dev
 date: 2013-08-06T00:00:00.000Z

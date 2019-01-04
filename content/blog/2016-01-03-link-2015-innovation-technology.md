@@ -2,7 +2,7 @@
 type: post
 title: Innovative web technology in 2015
 link: 'http://www.2ality.com/2016/01/web-technologies-2015.html'
-tags:
+categories:
   - undefined
 date: 2016-01-03T01:00:00.000Z
 comments: true

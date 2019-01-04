@@ -3,7 +3,7 @@ type: post
 title: Why You Should Avoid a Canonical Data Model
 link: 'https://www.innoq.com/en/blog/thoughts-on-a-canonical-data-model/'
 category: null
-tags:
+categories:
   - architecture
 date: 2015-08-26T00:00:00.000Z
 comments: true

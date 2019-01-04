@@ -3,7 +3,7 @@ title: Extend the *ngIf Syntax to Create a Custom Permission Directive
 lead: >-
   Learn how to create a custom structural directive in Angular that checks
   against user permissions
-tags:
+categories:
   - Angular
 date: 2018-02-21T01:00:00.000Z
 comments: true

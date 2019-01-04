@@ -1,7 +1,7 @@
 ---
 title: Data bind radio button lists with Angular
 lead: Learn how to data bind radio buttons in Angular using unidirectional data flow
-tags:
+categories:
   - JavaScript
   - Angular
 date: 2016-11-10T01:00:00.000Z

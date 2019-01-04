@@ -2,9 +2,9 @@
 title: RxJS first steps - Subject and ReplaySubject
 lead: Let's get started with reactive programming
 category: angular2
-tags:
+categories:
   - JavaScript
-  - Angular.js
+  - AngularJS
   - Angular
 date: 2016-06-30T00:00:00.000Z
 comments: true

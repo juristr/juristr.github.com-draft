@@ -1,7 +1,7 @@
 ---
 title: Finishing my Blog Relocation
 description: ''
-tags: []
+categories: []
 date: 2012-09-27T00:00:00.000Z
 comments: true
 url: /blog/2012/09/im-relocating-my-domain-site-and-blog

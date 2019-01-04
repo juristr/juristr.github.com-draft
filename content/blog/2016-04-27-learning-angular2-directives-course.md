@@ -4,9 +4,9 @@ lead: >-
   Learn how to build efficient Angular 2 directives with this fast and
   interactive video course
 category: angular2
-tags:
+categories:
   - JavaScript
-  - Angular.js
+  - AngularJS
   - Angular
 date: 2016-04-27T00:00:00.000Z
 comments: true
@@ -26,9 +26,9 @@ image: /blog/assets/imgs/learning-angular2-directives/cover.jpg
 
 A new edition of this video course has been released. Head over for more infos:
 
-{% include article-link.html
+{{< article-link
 	url="/blog/2017/01/video-course-learning-ng-cmps/"
     title="Video Course: Learning Angular Components"
 	text="Your go-to guide when building successful Angular 2 components"
     imageurl="/blog/assets/imgs/learning-ng-cmps-cover.jpg"
-%}
+>}}

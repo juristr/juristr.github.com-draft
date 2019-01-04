@@ -3,7 +3,7 @@ title: Will I really Miss Google Reader??
 description: ''
 category: null
 show_img_in_detail: true
-tags:
+categories:
   - interesting apps
 date: 2013-03-19T01:00:00.000Z
 comments: true

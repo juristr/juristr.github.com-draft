@@ -4,9 +4,8 @@ lead: Make your app look awesome
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
   - JavaScript
-  - CSS
 date: 2013-12-06T01:00:00.000Z
 comments: true
 url: /blog/2013/12/nprogress-splash-screen

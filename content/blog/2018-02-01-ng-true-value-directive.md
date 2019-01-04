@@ -3,7 +3,7 @@ title: Create a ng-true-value & ng-false-value directive for Angular
 lead: >-
   Remember the ng-true-value that existed in AngularJS (v1.x)? Let's create one
   for Angular and learn how to hook into Angular's form API
-tags:
+categories:
   - Angular
 date: 2018-02-01T01:00:00.000Z
 comments: true

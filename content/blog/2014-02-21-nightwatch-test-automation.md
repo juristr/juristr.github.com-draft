@@ -4,7 +4,7 @@ lead: Automated UI testing awesomeness based on Node and Selenium
 show_img_in_detail: true
 coverimage: true
 category: null
-tags:
+categories:
   - testing
   - JavaScript
   - Node.js

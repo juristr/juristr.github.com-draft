@@ -1,7 +1,7 @@
 ---
 title: 'Angular: How do I register an event listener on document?'
 lead: Learn how to attach an event listener on the document object
-tags:
+categories:
   - JavaScript
   - Angular
 reposts:

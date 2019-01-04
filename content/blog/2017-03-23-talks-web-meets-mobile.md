@@ -3,7 +3,7 @@ title: 'Talks: Web meets Mobile powered by Angular'
 lead: >-
   Learn how to leverage Angular and web technology for creating compelling
   mobile apps
-tags:
+categories:
   - Angular
   - mobile
 date: 2017-03-23T01:00:00.000Z

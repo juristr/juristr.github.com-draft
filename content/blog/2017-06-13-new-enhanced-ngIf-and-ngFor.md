@@ -3,7 +3,7 @@ title: Enhanced *ngIf and *ngFor in Angular version 4.0.0
 lead: >-
   One of the main features added in Angular version 4 release are an enhanced
   *ngIf and *ngFor. Let's explore what they give us!
-tags:
+categories:
   - Angular
 date: 2017-06-13T00:00:00.000Z
 comments: true

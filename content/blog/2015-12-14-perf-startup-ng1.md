@@ -4,9 +4,9 @@ lead: A neat and simple trick to give your app some boost
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
   - JavaScript
-  - Angular.js
+  - AngularJS
 date: 2015-12-14T01:00:00.000Z
 comments: true
 url: /blog/2015/12/perf-startup-ng1

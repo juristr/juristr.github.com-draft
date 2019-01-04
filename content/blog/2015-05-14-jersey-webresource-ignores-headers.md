@@ -3,7 +3,7 @@ title: Jersey WebResource - Header don't get appended
 lead: WTF? Why does WebResource not send my headers??
 coverimage: false
 category: null
-tags:
+categories:
   - java
 reposts:
   - 'http://java.dzone.com/articles/jersey-webresource-header-dont'

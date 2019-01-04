@@ -4,7 +4,7 @@ lead: Fully automated semantic releases to npm and bower
 show_img_in_detail: true
 coverimage: true
 category: null
-tags:
+categories:
   - JavaScript
 date: 2015-10-08T00:00:00.000Z
 comments: true

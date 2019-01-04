@@ -8,7 +8,7 @@ description: >-
 show_img_in_detail: true
 lastupdated: '2015-06-12'
 category: article
-tags:
+categories:
   - Git
 reposts:
   - 'http://dotnet.dzone.com/articles/intro-git'

@@ -4,7 +4,7 @@ title: Ultimate AngularJS and Ionic performance cheat sheet
 link: >-
   http://julienrenaux.fr/2015/08/24/ultimate-angularjs-and-ionic-performance-cheat-sheet/
 category: null
-tags:
+categories:
   - Angular
 date: 2015-08-25T00:00:00.000Z
 comments: true

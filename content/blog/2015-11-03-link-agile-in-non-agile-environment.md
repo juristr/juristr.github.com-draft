@@ -2,7 +2,7 @@
 type: post
 title: How to be agile in a non-agile environment
 link: 'https://gds.blog.gov.uk/2015/10/09/how-to-be-agile-in-a-non-agile-environment/'
-tags:
+categories:
   - Agile
 date: 2015-11-03T01:00:00.000Z
 comments: true

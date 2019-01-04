@@ -6,8 +6,8 @@ lead: >-
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
-  - ASP.net
+categories:
+  - ASPnet
   - JavaScript
   - HowTo
 date: 2014-09-12T00:00:00.000Z

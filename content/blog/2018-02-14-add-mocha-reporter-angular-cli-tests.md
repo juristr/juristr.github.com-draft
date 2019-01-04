@@ -1,9 +1,8 @@
 ---
 title: Add Mocha reporter for Karma unit tests to your Angular CLI project
 lead: Change the default progress reporter to a nicer looking Mocha reporter
-tags:
+categories:
   - Angular
-  - Angular CLI
   - testing
 date: 2018-02-14T01:00:00.000Z
 comments: true

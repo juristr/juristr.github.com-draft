@@ -1,7 +1,7 @@
 ---
 title: Interviewing Igor Minar and Adam Bradley for AngularBeers
 lead: AMA with Igor Minar
-tags:
+categories:
   - JavaScript
   - Angular
 date: 2016-12-19T01:00:00.000Z

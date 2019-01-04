@@ -1,7 +1,7 @@
 ---
 title: 'HRT - Humility, Respect and Trust'
 lead: Software development is a team sport
-tags:
+categories:
   - book review
 date: 2012-10-15T00:00:00.000Z
 comments: true

@@ -2,8 +2,8 @@
 title: Visual Studio Tips
 description: Tips and tricks around using Visual Studio efficiently.
 category: article
-tags:
-  - Visual Studio
+categories:
+  - Tooling
   - tooling
 reposts:
   - 'http://dotnet.dzone.com/articles/visual-studio-tips'

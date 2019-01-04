@@ -1,7 +1,7 @@
 ---
 title: 'Safe Navigation Operator, RxJS and Async Pipe tinkering'
 lead: 'Learn how to use the async pipe to write elegant, RxJS powered async code'
-tags:
+categories:
   - JavaScript
   - Angular
 date: 2016-11-16T01:00:00.000Z

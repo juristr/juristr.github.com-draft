@@ -2,7 +2,7 @@
 type: post
 title: Modern Workflow and Tooling for Front-end Devs
 link: 'https://vimeo.com/145138873'
-tags:
+categories:
   - undefined
 date: 2015-11-27T01:00:00.000Z
 comments: true

@@ -3,7 +3,7 @@ title: 'Learning Angular: Conditionally add styles to an element'
 lead: Learn how to conditionally add styles to a DOM element in Angular
 lastupdated: '2017-03-30'
 category: angular2
-tags:
+categories:
   - JavaScript
   - Angular
 ads: false

@@ -6,7 +6,7 @@ lead: >-
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
   - Git
 date: 2015-03-25T01:00:00.000Z
 comments: true
@@ -89,7 +89,7 @@ If you accidentally already pushed them to your remote Git repository, this comm
 $ git ls-remote --tags origin | awk '/^(.*)(\s+)(.*[0-9])$/ {print ":" $2}' | xargs git push origin
 ```
 
-If you already happen to have other tags, you can adapt the command shown before to only catch the TFS tags:
+If you already happen to have other tags, you can adapt the command shown before to only catch the TFS categories:
 
 ```
 $ git ls-remote --tags origin | awk '/^(.*)(\s+)(.*TFS.*[0-9])$/ {print ":" $2}' | xargs git push origin

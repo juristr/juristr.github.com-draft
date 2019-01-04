@@ -3,7 +3,7 @@ title: DZone MVB Goodies Box
 description: ''
 category: null
 show_img_in_detail: true
-tags: []
+categories: []
 date: 2013-02-10T01:00:00.000Z
 comments: true
 url: /blog/2013/02/dzone-mvb-goodies-box

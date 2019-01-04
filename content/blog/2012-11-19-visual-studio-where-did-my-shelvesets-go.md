@@ -2,8 +2,8 @@
 title: 'Visual Studio: Where Did My Shelvesets Go?'
 description: ''
 category: null
-tags:
-  - Visual Studio
+categories:
+  - Tooling
 date: 2012-11-19T01:00:00.000Z
 comments: true
 url: /blog/2012/11/visual-studio-where-did-my-shelvesets-go

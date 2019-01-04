@@ -3,7 +3,7 @@ type: post
 title: Must See JavaScript Dev Tools That Put Other DevTools to Shame
 link: >-
   https://medium.com/javascript-scene/must-see-javascript-dev-tools-that-put-other-dev-tools-to-shame-aca6d3e3d925#.vy7grly9f
-tags:
+categories:
   - tooling
 date: 2015-12-03T01:00:00.000Z
 comments: true

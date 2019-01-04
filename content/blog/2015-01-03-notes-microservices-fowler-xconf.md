@@ -4,7 +4,7 @@ lead: My notes and thoughts on Martin Fowler's talk about Microservices at XConf
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
   - notes
   - architecture
 reposts:

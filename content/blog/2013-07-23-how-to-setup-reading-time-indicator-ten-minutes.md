@@ -4,7 +4,7 @@ description: ''
 show_img_in_detail: true
 coverimage: true
 category: null
-tags:
+categories:
   - JavaScript
   - Blogging
 reposts:

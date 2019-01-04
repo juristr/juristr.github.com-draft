@@ -3,7 +3,7 @@ title: 'Cerego - Learn Anything, Everywhere'
 description: ''
 category: null
 show_img_in_detail: true
-tags: []
+categories: []
 reposts:
   - 'http://www.dzone.com/articles/cerego-learn-anything-anywhere'
 date: 2012-12-17T01:00:00.000Z

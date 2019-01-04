@@ -3,7 +3,7 @@ title: >-
   Egghead Lesson: Avoid memory leaks when subscribing to RxJS Observables in
   Angular Components
 lead: A free Egghead lesson on avoiding memory leaks in Angular components
-tags:
+categories:
   - Angular
 date: 2018-10-29T01:00:00.000Z
 comments: true

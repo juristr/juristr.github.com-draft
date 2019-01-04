@@ -4,7 +4,7 @@ lead: Learn how to add your own kudos to your blog or website
 show_img_in_detail: true
 coverimage: true
 category: null
-tags:
+categories:
   - JavaScript
   - blogging
 date: 2014-12-29T01:00:00.000Z

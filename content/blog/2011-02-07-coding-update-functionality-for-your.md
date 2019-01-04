@@ -1,6 +1,6 @@
 ---
 title: Coding an Update Functionality for your Android App
-tags:
+categories:
   - Java
   - mobile dev
   - Android

@@ -3,7 +3,7 @@ title: Blog Like a Hacker with Jekyll and Nitrous.IO
 description: ''
 show_img_in_detail: false
 category: null
-tags:
+categories:
   - blogging
   - tooling
 reposts:

@@ -25,8 +25,7 @@
             {{ end }}
         </div>
         <div class="card-columns listrecent">
-            {{ $post_paginator := .Paginate (.Pages) 10 }}
-            {{ range $post_paginator.Pages }}
+            {{ range .Pages }}
 
             {{ if and (eq .Kind "taxonomy") (eq .Type "categories") }}
             {{- partial "list-partials/categorybox.html" . -}}
@@ -36,7 +35,6 @@
             {{end}}
         </div>
     </section>
-    {{- partial "list-partials/pagination.html" $post_paginator -}}
 </div>
 <!-- {{- partial "_shared/alertbar.html" . -}} -->
 {{ end }}

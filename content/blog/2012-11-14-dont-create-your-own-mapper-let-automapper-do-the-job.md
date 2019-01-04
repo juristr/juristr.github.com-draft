@@ -2,7 +2,7 @@
 title: 'Don''t Create Your Own Mapper, Let AutoMapper Do The Job!'
 description: ''
 category: null
-tags:
+categories:
   - 'C#'
 date: 2012-11-14T01:00:00.000Z
 comments: true

@@ -5,7 +5,7 @@ lead: >-
   your browser's console
 category: angular2
 lastupdated: '2016-04-17'
-tags:
+categories:
   - JavaScript
   - Angular
 reposts:

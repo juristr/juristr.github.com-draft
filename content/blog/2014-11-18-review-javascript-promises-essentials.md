@@ -3,7 +3,7 @@ title: JavaScript Promises Essentials
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
   - JavaScript
   - book review
 reposts:

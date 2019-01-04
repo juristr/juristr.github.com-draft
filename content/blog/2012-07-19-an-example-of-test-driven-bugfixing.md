@@ -2,7 +2,7 @@
 title: An Example of Test-Driven Bugfixing
 date: 2012-07-19T00:00:00.000Z
 comments: true
-tags:
+categories:
   - JavaScript
   - testing
 url: /blog/2012/07/an-example-of-test-driven-bugfixing

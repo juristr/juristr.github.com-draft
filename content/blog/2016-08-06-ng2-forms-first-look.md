@@ -1,7 +1,7 @@
 ---
 title: Angular Forms - a first look
 lead: A first quick look at the new Forms API in Angular
-tags:
+categories:
   - JavaScript
   - Angular
 date: 2016-08-06T00:00:00.000Z

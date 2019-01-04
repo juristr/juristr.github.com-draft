@@ -4,7 +4,7 @@ lead: How to properly contribute to a GitHub based open source project
 show_img_in_detail: true
 coverimage: true
 category: null
-tags:
+categories:
   - Git
 reposts:
   - 'http://java.dzone.com/articles/github-be-social-contribute'

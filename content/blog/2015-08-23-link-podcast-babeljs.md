@@ -3,7 +3,7 @@ type: post
 title: JavaScriptJabber - Babel with Sebastian McKenzie
 link: 'https://devchat.tv/js-jabber/171-jsj-babel-with-sebastian-mckenzie'
 category: null
-tags:
+categories:
   - podcast
   - JavaScript
 date: 2015-08-23T00:00:00.000Z

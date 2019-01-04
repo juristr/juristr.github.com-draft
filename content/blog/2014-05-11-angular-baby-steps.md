@@ -4,10 +4,9 @@ lead: Some of my notes from a recent AngularJS webinar
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
+  - AngularJS
   - JavaScript
-  - learning-ng
-  - Angular.js
 reposts:
   - 'http://juristr.com/blog/2014/05/angular-baby-steps/'
 date: 2014-05-11T00:00:00.000Z

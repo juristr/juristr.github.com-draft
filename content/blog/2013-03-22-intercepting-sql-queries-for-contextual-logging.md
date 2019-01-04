@@ -2,9 +2,8 @@
 title: 'Entity Framework: Intercepting SQL Queries for Contextual Logging'
 description: Using MiniProfiler to extract SQL queries for logging
 show_img_in_detail: true
-tags:
-  - .net
-  - Entity Framework
+categories:
+  - DotNet
 reposts:
   - 'http://sql.dzone.com/articles/entity-framework-intercepting'
 date: 2013-03-22T01:00:00.000Z

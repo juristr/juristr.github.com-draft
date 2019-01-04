@@ -1,7 +1,7 @@
 ---
 title: Interview with DZone
 lead: 5 questions from DZone
-tags:
+categories:
   - Personal
   - Blogging
   - JavaScript

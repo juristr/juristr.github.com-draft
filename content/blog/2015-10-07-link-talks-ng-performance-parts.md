@@ -2,7 +2,7 @@
 type: post
 title: 'AngularJS: The Performance Parts'
 link: 'https://speakerdeck.com/toddmotto/angularjs-the-performance-parts'
-tags:
+categories:
   - JavaScript
   - Angular
 date: 2015-10-07T00:00:00.000Z

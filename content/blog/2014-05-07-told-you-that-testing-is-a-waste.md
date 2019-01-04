@@ -6,7 +6,7 @@ lead: >-
 show_img_in_detail: true
 coverimage: false
 category: null
-tags:
+categories:
   - testing
 reposts:
   - 'http://java.dzone.com/articles/see-always-told-you-testing'

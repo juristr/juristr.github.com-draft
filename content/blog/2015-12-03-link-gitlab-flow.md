@@ -2,7 +2,7 @@
 type: post
 title: GitLab Flow
 link: 'https://about.gitlab.com/2014/09/29/gitlab-flow/'
-tags:
+categories:
   - Git
 date: 2015-12-03T01:00:00.000Z
 comments: true

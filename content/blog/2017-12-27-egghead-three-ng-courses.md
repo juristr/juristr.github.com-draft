@@ -2,7 +2,7 @@
 title: Three new Angular Courses to celebrate end of the Year 2017
 lead: 'Angular HTTP, Dynamic Components, Dynamic Forms'
 ads: false
-tags:
+categories:
   - Angular
 date: 2017-12-27T01:00:00.000Z
 comments: true
