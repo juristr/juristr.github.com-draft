@@ -1,16 +1,12 @@
 .article-link {
+    height: inherit;
+
     .title {
         font-weight: bold;
     }
 
     .description {
         font-size: smaller;
-    }
-
-    .share-link {
-        align-items: center;
-        display: flex;
-        justify-content: center;
     }
 
     .link {

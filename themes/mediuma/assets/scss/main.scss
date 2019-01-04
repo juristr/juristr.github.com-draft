@@ -224,3 +224,12 @@ span.navigation {
 .pagination {
    display:block;
 }
+
+.warn-notice {
+    border: 1px solid $supp_yellow_300;
+    background: $supp_yellow_200;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: $neutral_800;
+}

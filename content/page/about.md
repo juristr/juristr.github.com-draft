@@ -5,13 +5,46 @@ url: "/about"
 
 I'm Juri Strumpflohner, a <span id="age"></span> years old software developer. Currently I work as a software architect and frontend developer at [R3-GIS](https://www.r3-gis.com/), [here in beautiful South Tyrol (Italy)](https://www.youtube.com/watch?v=YVFzw9QJegk&fmt=22) where my main tasks are on the frontend, doing JavaScript, TypeScript, AngularJS and Angular. I'm a [Google Developer Expert in Web Technologies](https://developers.google.com/experts/people/juri-strumpflohner), an [Egghead Instructor](https://egghead.io/instructors/juri-strumpflohner) and happen to organize the [Software Craftsmanship Meetup](http://www.meetup.com/Software-Craftsmanship-SouthTyrol/).
 
-I'm also a freelance trainer and consultant, so feel free to <a href="#contact">contact me</a>.
-
 <figure class="image--full">
   <a href="/about/imgs/speaking.jpg" class="image--zoom">
     <img src="/about/imgs/speaking.jpg" />
   </a>
 </figure>
+
+## Contact
+<a name="contact"></a>
+
+Feel free to [ask me any question on my AMA repo](https://github.com/juristr/ama) or simply drop me a line at <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#106;&#117;&#114;&#105;&#115;&#116;&#114;&#046;&#099;&#111;&#109;" target="_blank">&#105;&#110;&#102;&#111;&#064;&#106;&#117;&#114;&#105;&#115;&#116;&#114;&#046;&#099;&#111;&#109;</a>.
+
+You can find me also on 
+
+- [Twitter](https://twitter.com/juristr)
+- [GitHub](https://github.com/juristr)
+- [LinkedIn](https://linkedin.com/in/juristr/)
+- [StackOverflow](http://stackoverflow.com/users/50109/juri)
+
+<!-- I'm also available on these social networks: {% include social_icons %} -->
+
+## Freelance Consulting
+
+I'm also a freelance trainer and consultant mostly around topics such as **frontend development**, **Angular** and **Git**. Interested? Feel free to <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#106;&#117;&#114;&#105;&#115;&#116;&#114;&#046;&#099;&#111;&#109;" target="_blank">reach out to me</a>.
+
+## Current Interests
+<a name="interests"></a>
+
+I have a variety of interests in the field of computer science. Right now I'm mostly focusing on the frontend web development, experimenting with the latest technology like web components, custom elements, progressive web apps and using frameworks like Angular.
+
+Another passion of mine have always been software architectures, which is why I closely also follow the world of Microservices, distributed architectures, containerization etc.
+
+## More?
+
+Go to the [main page](/) for more details on my articles, consulting, speaking and [Egghead](https://egghead.io) :smiley:.
+
+## Aside from software dev?
+
+I'm trying to spend as much quality time as possible with my family. Moreover I'm passionate about sports, especially calistenics and martial arts. I've been practicing Yoseikan Budo for roughly over 19 years now. I'm the owner of a 3rd Dan black belt and I also regularly teach martial arts classes.
+
+![](/about/imgs/katana.jpg)
 
 <script>
 (function() {
@@ -35,41 +68,3 @@ I'm also a freelance trainer and consultant, so feel free to <a href="#contact">
   document.getElementById('age').innerHTML = years;
 })();
 </script>
-
-## Contact
-<a name="contact"></a>
-
-Feel free to [ask me any question on my AMA repo](https://github.com/juristr/ama) or simply drop me a line at {% include email.html %}.
-
-I'm also available on these social networks: {% include social_icons %}
-
-
-## Current Interests
-<a name="interests"></a>
-
-I'm always learning and in search for new challenges. Here are some of my current fields of interest.
-
-{% assign interests = "Angular 1.x,Angular 2,Progressive Web Applications,Node.js,Docker,Microservices,Distributed architectures" | split: "," %}
-<div class="tags">
-  {% for tag in interests %}
-  <a href="javascript:;">{{ tag }}</a>
-  {% endfor %}
-</div>
-
-<a name="egghead"></a>
-
-## Egghead Instructor
-
-Starting with May 2017 I'm now officially an [Egghead.io Instructor](https://egghead.io/). Sharing my knowledge, engaging with the community and teaching has become a passion for me. That's ultimately the reason why I created this blog or why [I co-founded a Meetup group](http://www.meetup.com/Software-Craftsmanship-SouthTyrol/). Egghead gives me the flexibility to bring this to a completely new level, allowing me to reach an even broader audience.
-
-Check out [my video lessons](https://egghead.io/instructors/juri-strumpflohner).
-
-## Public Speaking
-
-Here are some of my public speaking events. Find more details [here](/page/speaking/).
-
-## Free time
-
-In my free time I'm a passionate martial arts practitioner. I've been practicing Yoseikan Budo for roughly over 17 years now. I'm the owner of a 3rd Dan black belt and I also regularly teach martial arts classes.
-
-![](/about/imgs/katana.jpg)
