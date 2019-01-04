@@ -10,13 +10,20 @@ general:
 jobs:
   build:
     docker:
-      - image: dettmering/hugo-build
+      - image: juristr/hugo-docker
     # working_directory: /srv/hugo
     steps:
       - checkout
-      - run: apk --no-cache add git openssh
+      - run: 
+          name: "Build hugo site"
+          command: hugo
       - run:
           name: Avoid hosts unknown for github
           command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run: 
+          name: "Install container dependencies for deploy"
+          command: apk --no-cache add git openssh
       # specify any bash command here prefixed with `run: `
-      - run: ./scripts/deploy.sh
+      - run: 
+          name: "Deploy to GitHub"
+          command: ./scripts/deploy.sh
