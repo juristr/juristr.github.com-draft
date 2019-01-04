@@ -18,6 +18,7 @@ hugo version
 hugo
   
 echo "Verifying GitHub keys"
+mkdir ~/.ssh
 if [ ! -n "$(grep "^github.com " ~/.ssh/known_hosts)" ]; then 
     ssh-keyscan github.com >> ~/.ssh/known_hosts 2>/dev/null; 
 fi; 
