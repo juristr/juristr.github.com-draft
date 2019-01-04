@@ -12,7 +12,6 @@ RUN set -x && \
     apk add --update wget ca-certificates libstdc++
 
 # Install glibc
-
 RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub \
     &&  wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/$GLIBC_VERSION/glibc-$GLIBC_VERSION.apk \
     &&  apk --no-cache add glibc-$GLIBC_VERSION.apk \
@@ -24,8 +23,9 @@ RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/s
     &&  apk --no-cache add glibc-i18n-$GLIBC_VERSION.apk \
     &&  rm glibc-i18n-$GLIBC_VERSION.apk
 
-# Install HUGO
+RUN apk --no-cache add git
 
+# Install HUGO
 RUN wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY} && \
     tar xzf ${HUGO_BINARY} && \
     rm -r ${HUGO_BINARY} && \
