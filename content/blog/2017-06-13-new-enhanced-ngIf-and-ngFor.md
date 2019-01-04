@@ -18,8 +18,8 @@ image: /blog/assets/imgs/ngIf-else-article.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >=4" %}
-{% include warn-notice.html %}
+{{<warn-notice message="Contents are based on Angular version >=4" >}}
+ 
 
 {{< toc >}}
 
@@ -118,12 +118,12 @@ We can directly assign the returned Observable to our `users$` variable and bind
 
 > Note, the “$” suffix in our variable name is simply a naming convention to communicate this variable holds an Observable.
 
-{% include article-link.html
+{{<article-link
     url="/blog/2016/11/safe-nav-operator-and-async-pipe/"
     imageurl="/blog/assets/imgs/angular2logo.svg"
     title="Safe Navigation Operator, RxJS and Async Pipe tinkering"
     text="Learn how to use the async pipe to write elegant, RxJS powered async code"
-%}
+>}}
 
 There’s one caveat though. **We cannot access the collection within our template.** Consider for instance if we wanted to enumerate the position of the rendered user entry in the collection with respect to the total number of entries. 
 
@@ -205,5 +205,5 @@ These two additions to the `ngIf` and `ngFor` directives makes working with Obse
 
 Try them out by yourself with this runnable Plunker.
 
-{% assign plunker_url = "https://embed.plnkr.co/yzvKoDHujvZLMUaveYFZ/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/yzvKoDHujvZLMUaveYFZ/">}}
+ 

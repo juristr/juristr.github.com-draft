@@ -43,7 +43,7 @@ What I mean with _explicit asserts_ is to use the correct asserts for the kind o
 
 ...and the corresponding result in the output window:
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/qunit_undescriptive_testresult.png" />
     <figcaption>This outcome isn't really descriptive...</figcaption>
 </figure>
@@ -60,7 +60,7 @@ Use the `equals` instead:
 
 ...and again, the outcome:
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/qunit_descriptive_testresult.png" />
     <figcaption>Oh, look there, a descriptive outcome.</figcaption>
 </figure>

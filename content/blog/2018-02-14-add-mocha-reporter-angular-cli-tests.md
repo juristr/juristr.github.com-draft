@@ -22,7 +22,7 @@ image: /blog/assets/imgs/karma-progress-reporter.png
 
 When you run the tests on a fresh Angular CLI setup using `npm test` (or `ng test`) you get a test run output similar to this:
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/karma-progress-reporter.png">
   <figcaption>Karma output using the progress reporter</figcaption>
 </figure>
@@ -69,7 +69,7 @@ module.exports = function (config) {
 
 That was it, if you now execute your test, you'll get a much nicer rendering:
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/karma-mocha-reporter.png">
   <figcaption>Tests executed with the Karma Mocha reporter</figcaption>
 </figure>

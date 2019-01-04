@@ -30,7 +30,7 @@ Simply follow these steps.
 **2. Open the sidebar and click on your profile name**  
 You should get an option for adding a new account. Click on it.
 
-<figure>
+<figure class="image--medium">
 	<img src="/blog/assets/imgs/inboxManageAccounts.png" 
 height="600px" />
   <figcaption>Add your friend's Google account</figcaption>

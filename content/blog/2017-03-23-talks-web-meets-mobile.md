@@ -19,8 +19,8 @@ image: /blog/assets/imgs/web-meets-mobile.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >=2" %}
-{% include warn-notice.html %}
+{{<warn-notice message="Contents are based on Angular version >=2" >}}
+ 
 
 Oh yes, Mike totally nailed it :fire: :fire:
 
@@ -35,8 +35,8 @@ And I'd like to again thank all three speakers for helping me make this happen. 
 
 Sani gave us a very funny and entertaining introduction to the power of Ionic and Angular.
 
-{% assign youtube_id = "p85xlAmbLHU" %}
-{% include youtube.html %}
+{{<youtube youtube_id="p85xlAmbLHU">}}
+ 
 
 ## Automatic Progressive Web Apps using the Angular Mobile Toolkit by Maxim Salnikov 
 
@@ -44,29 +44,29 @@ Sani gave us a very funny and entertaining introduction to the power of Ionic an
 
 And even though Maxim had his birthday at 21st of March (the day we had our meetup), he was willing to give us a talk and share his knowledge with us. Happy birthday Maxim!! :birthday:
 
-{% assign youtube_id = "QhGzR8Qbgps" %}
-{% include youtube.html %}
+{{<youtube youtube_id="QhGzR8Qbgps">}}
+ 
 
 ## Overview of NativeScript - Build native iOS/Android apps with Angular 
 
 I first got to know Nathan when he offered to [review my video course on "Learning Angular Components"](https://goo.gl/zrGX8K). An absolute amazing guy. [Nathan Walker](https://twitter.com/wwwalkerrun) is a Telerik Developer Expert for NativeScript and active Angular community contributor, known for his amazing NativeScript libraries, contributions to angular-seed as well as for being the author of angular-seed-advanced. He's also an Egghead author and published a series of courses:
 
-{% include article-link.html
+{{<article-link
     url="https://egghead.io/courses/create-native-mobile-apps-with-nativescript-for-angular"
     title="Create Native Mobile Apps with NativeScript for Angular"
     text="In this course, we will learn how to work with NativeScript for Angular."
     imageurl="https://d2eip9sf3oo6c2.cloudfront.net/series/covers/000/000/084/full/EGH_AngularNativeScript_Final-cover.png?1481827806"
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
     url="https://egghead.io/courses/use-objective-c-swift-and-java-api-s-in-nativescript-for-angular-ios-and-android-apps"
     title="Use Objective C, Swift and Java api’s in NativeScript for Angular iOS and Android apps"
     text="NativeScript has the ability to write Objective C, Swift and Java apis directly from JavaScript and TypeScript."
     imageurl="https://d2eip9sf3oo6c2.cloudfront.net/series/covers/000/000/106/full/EGH_AngularNS_Mobile_Final-cover.png?1490043610"
-%}
+>}}
 
 Unfortunately we had some connectivity issues during our live-broadcast with Nathan. But he was so kind to re-record his talk with super-crisp audio and give us the permission to share it with all of you :heart_eyes:. Watch this super insightful talk into the power of NativeScript.
 
-{% assign youtube_id = "xdoy51PTBpI" %}
-{% include youtube.html %}
+{{<youtube youtube_id="xdoy51PTBpI">}}
+ 
 

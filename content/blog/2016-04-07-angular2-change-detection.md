@@ -18,18 +18,18 @@ type: post
 {{< postad >}}
 
 {% assign message = "Contents are based on Angular version >=2" %}
-{% include warn-notice.html %}
+ 
 
 {{< toc >}}
 
 Before starting, Angular has implemented an awesome and very refined mechanism for detecting changes. As always, Thoughtram has an interesting article on their blog ["Angular Change Detection Explained"](http://blog.thoughtram.io/angular/2016/02/22/angular-2-change-detection-explained.html) which goes deep into this topic and is definitely worth reading.
 
-{% include article-link.html 
+{{<article-link 
    url="/blog/2017/03/angular-tuning-change-detection/" 
    title="Tuning Angular's Change Detection" 
    text="Videos and runnable code examples that demonstrate different tuning techniques for Angular's change detection." 
    imageurl="/blog/assets/imgs/linkpics/angular2logo.svg" 
-%}
+>}}
 
 ## The Setup
 
@@ -100,12 +100,8 @@ class ChildComponent implements OnChanges {
 
 Here's a Plunker that demoes how this works. Open your dev console to see according logs being printed out.
 
-<!--
-{% assign plunker_url="https://embed.plnkr.co/Uw9eFcBqfoOWyaEoVwsQ/" %}
-{% include plunker.html %}
--->
-{% assign uid = "edit/angular-finegrained-cd-docheck-p1" %}
-{% include stackblitz.html %}
+ {{<stackblitz uid="edit/angular-finegrained-cd-docheck-p1">}}
+ 
 
 ### So what's the matter?
 
@@ -134,13 +130,8 @@ class App {
 
 Note that, in our `changePerson()` function, we now **directly mutate the property** of our `person` object which we pass on to our child component. All of a sudden, while the data binding still works, `ngOnChanges` **is not being invoked any more**. Check out the source here on this Plunker:
 
-<!--
-{% assign plunker_url="https://embed.plnkr.co/NNdeurjvzKWTEDpbTCoF/" %}
-{% include plunker.html %}
--->
-
-{% assign uid = "edit/angular-finegrained-cd-docheck-p2" %}
-{% include stackblitz.html %}
+ {{<stackblitz uid="edit/angular-finegrained-cd-docheck-p2">}}
+ 
 
 Instead, **if we make our `person` object immutable**, it works just fine:
 
@@ -219,12 +210,9 @@ class ChildComponent implements DoCheck {
 ```
 
 Slick, isn't it :smiley:? Here's a Plunker to play around with it:
-
-{% assign plunker_url="https://embed.plnkr.co/hCKn9V1L8rzDPYzGc5HW/" %}
-{% include plunker.html %}
-
-{% assign uid = "edit/angular-finegrained-cd-docheck-p3" %}
-{% include stackblitz.html %}
+ 
+{{<stackblitz uid="edit/angular-finegrained-cd-docheck-p3">}}
+ 
 
 
 Note, if you get a list as `@Input`, you can use [IterableDiffers](https://angular.io/docs/ts/latest/api/core/IterableDiffers-class.html) rather than KeyValueDiffers.

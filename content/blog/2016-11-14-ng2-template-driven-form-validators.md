@@ -21,8 +21,8 @@ image: /blog/assets/imgs/customvalidator.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >=2" %}
-{% include warn-notice.html %}
+{{<warn-notice message="$1" >}}
+ 
 
 {{< toc >}}
 
@@ -57,12 +57,12 @@ Ok, before starting, let's take a look at our simple Angular, template driven fo
 
 So far so good, binding works. For more details on how to setup your initial form binding, take a look at my article on that topic:
 
-{% include article-link.html
+{{< article-link
     url="/blog/2016/08/ng2-forms-first-look/"
     title="Angular Forms - a first look"
     text="Learn about the reactive as well as template driven approach to forms in Angular"
     imageurl="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&d=identicon&r=PG"
-%}
+>}}
 
 ## Adding built-in validators
 
@@ -214,7 +214,7 @@ Finally we're now ready to add our validator to our form which is as simple as a
 
 Here's the final code in a easy to use Plunk:
 
-{% assign plunker_url = "https://embed.plnkr.co/jN8cL5mly1hMMVPlzCSw/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/jN8cL5mly1hMMVPlzCSw/">}}
+ 
 
 _Many thanks to [Sam Vloeberghs](https://twitter.com/samvloeberghs) for reviewing this article_

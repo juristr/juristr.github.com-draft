@@ -33,7 +33,7 @@ Why am I telling you all of this? Well, February this year I was lucky enough to
 
 During that time I met Anil Man Joshi, a young, cheerful Nepalese.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/helpanil/anil.jpg" />
   <figcaption>Anil Man Joshi</figcaption>
 </figure>
@@ -42,7 +42,7 @@ Anil didn’t hesitate to invite me to his home and his family, to show me some 
 
 Unfortunately, I am now here to tell you that - like many others - Anil lost his home and all of his belongings during the big earthquake. Together with his wife and children he’s now forced to live on the street facing an uncertain future.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/helpanil/house.jpg" />
   <figcaption>His destroyed home</figcaption>
 </figure>

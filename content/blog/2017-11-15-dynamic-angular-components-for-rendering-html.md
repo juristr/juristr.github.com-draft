@@ -16,8 +16,8 @@ image: /blog/assets/imgs/dyn-cmp-html/leaflet-marker.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >= 4.0.0" %}
-{% include warn-notice.html %}
+{{<warn-notice message="Contents are based on Angular version >= 4.0.0" >}}
+ 
 
 {{< toc >}}
 
@@ -25,7 +25,7 @@ image: /blog/assets/imgs/dyn-cmp-html/leaflet-marker.png
 
 Yesterday I got a question from a former workshop attendee about how to solve a given issue in Angular. He uses a [Leaflet](http://leafletjs.com/) map in his component where he wants to display a series of markers, which, when clicked on them, open a popup window displaying some HTML.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/dyn-cmp-html/leaflet-marker.png" />
   <figcaption>Render marker popup HTML with Angular components</figcaption>
 </figure>
@@ -97,12 +97,12 @@ export class AppModule { }
 
 Once we have registered our component, we can start and instantiate it. If you want to learn more about dynamic components you should definitely also take a look at this article:
 
-{% include article-link.html
+{{<article-link
     url="/blog/2017/07/ng2-dynamic-tab-component/"
     title="Create a dynamic tab component with Angular"
     text="Learn about advanced topics such as dynamic components, ComponentFactoryResolver, ViewContainerRef, ngTemplateOutlet and much more..."
     imageurl="/blog/assets/imgs/ng-dynamic-tabs/multi-tab-editing.png"
-%}
+>}}
 
 In our simple example, `AppComponent (app.component.ts)` is responsible for handling the interaction with Leaflet. The interesting part is the `addMarker()` function which is hooked to a button click event. Inside there I simulate the fetching of the data from some `DataService` which in a real world example would expose an observable of data to be displayed, fetched over HTTP.
 
@@ -261,9 +261,9 @@ Whenever you create dynamic components you should pay attention to
 
 If this was useful, also check out my other article on dynamic components:
 
-{% include article-link.html
+{{<article-link
     url="/blog/2017/07/ng2-dynamic-tab-component/"
     title="Create a dynamic tab component with Angular"
     text="Learn about advanced topics such as dynamic components, ComponentFactoryResolver, ViewContainerRef, ngTemplateOutlet and much more..."
     imageurl="/blog/assets/imgs/ng-dynamic-tabs/multi-tab-editing.png"
-%}
+>}}

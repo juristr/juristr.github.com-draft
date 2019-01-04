@@ -89,7 +89,7 @@ Re-executing the test shoukld make it pass now...**no, it doesn't..why??** The e
 
 I started to debug the test and inspected it in the Visual Studio debugger, and look there, the expected object shows up just fine, but any execution results in the above mentioned exception..(?!)
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/inspect_dynamic_return_type.png" />
     <figcaption>Inspecting in the debugger shows the expected object</figcaption>
 </figure>

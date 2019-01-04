@@ -196,14 +196,14 @@ angular.module('myApp', []);
 
 This example code shows the definition of the application in `myApp.js`. While there is no restriction on how an Angular application should be structured, a module/widget structure is suggested. Hence, rather than organizing your app in `controllers`, `models` and `views` folder...
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/angular-bad-organization.png" />
   <figcaption>Bad organization. <a href="http://trochette.github.io/Angular-Design-Patterns-Best-Practices/#/socks_drawer">Source</a></figcaption>
 </figure>
 
 ..structure it according to the functionalities or modules, like `calculator`, `contacts` etc., depending on the kind of application you're creating. 
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/angular-suggested-organization.png" />
   <figcaption>Suggested organization. Source: <a href="http://trochette.github.io/Angular-Design-Patterns-Best-Practices/#/socks_drawer">Source</a></figcaption>
 </figure>

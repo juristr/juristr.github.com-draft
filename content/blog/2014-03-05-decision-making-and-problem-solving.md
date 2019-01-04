@@ -29,7 +29,7 @@ Drinking water keeps your brain (and body) from de-hydrating. By having a glass 
 
 Developers should really sleep more. My Jawbone shows I'm sleeping about ~7h per night on average, a bit less on weekdays and a bit more on weekends usually. That's below the 7h30m global average, so I should definitely get more, I know :(.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/jawbonesleep.jpg" />
   <figcaption>My Up trends</figcaption>
 </figure>

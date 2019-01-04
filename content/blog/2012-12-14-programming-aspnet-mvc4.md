@@ -17,7 +17,7 @@ image: /blog/assets/imgs/coverprogrammingaspnet.gif
 
 This is one of the recent books I got from O'Reilly. It is probably the most comprehensive and detailed one I've encountered so far regarding ASP.net MVC development. More than 400 pages, from the very basics of the MVC pattern, client-side JavaScript and Mobile web development, application architecture to successfully deploying an ASP.net MVC application in production.
 
-<figure>
+<figure class="image--medium">
     <a href="http://oreillynet.com/pub/reviewproduct/874" rel="nofollow"><img src="/blog/assets/imgs/coverprogrammingaspnet.gif" /></a>
     <figcaption>Book cover; click to see other reviews</figcaption>
 </figure>
@@ -47,7 +47,7 @@ Here a little insight in some of the topics mentioned in the book.
 ### Web Application Architecture
 The book also dedicates an entire chapter to "web application architecture" treating topics and suggesting best practices related to the logical and physical design of the application.
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/webapp_logicalarchitecture.png" />
     <figcaption>A high-level architectural view of a potential web application's logical structure from the book</figcaption>
 </figure>

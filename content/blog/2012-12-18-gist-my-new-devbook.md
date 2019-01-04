@@ -20,7 +20,7 @@ I always had the idea of having some kind of organized store, some kind of very 
 ## Code Notebook aka Devbook was born
 When I started with my studies at the university about 7 years ago, we learned Java from ground up. And to be honest it was the first real programming language I learned, with all its concepts around object oriented programming and so on. Even though I had already created my personal utilities with VB and VBA at that time...That was when I started **Code Notebook**, a project to incorporate my need to store my code snippets and at the same time a very nice project for being able to directly apply the learned stuff.
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/codenotebookjava.png">
     <figcaption>1st version of Devbook, my 1st Java Swing client</figcaption>
 </figure>
@@ -39,7 +39,7 @@ Then there came the time for [Eclipse and its RCP platform](/blog/tags/index.htm
 ### The Fascination for Rich Web Clients
 Code Notebook worked just great and I used it a whole lot. But then came the time when I got fascinated for the web and the possibility to create rich client (GMail-like) web applications. I started to play around with GWT and it was when [Devbook](http://www.mydevbook.com/), the evolution of Code Notebook for the web, was born.
 
-<figure>
+<figure class="image--medium">
     <a href="/blog/assets/imgs/devbook_list.png"><img src="/blog/assets/imgs/devbook_list.png" width="50%"></a>
     <a href="/blog/assets/imgs/devbook_detail.png"><img src="/blog/assets/imgs/devbook_detail.png" width="50%"></a>
     <figcaption>Devbook - a web based rich client powered by GWT and App Engine</figcaption>

@@ -38,7 +38,7 @@ As such in this tutorial I'd like to take a look at how Git works by viewing a G
 
 Before starting here, I highly recommend to first go through the initial pages of the [Git Reference Manual](http://git-scm.com/doc), especially the ["Getting Started - Git Basics" part](http://git-scm.com/book/en/Getting-Started-Git-Basics).
 
-<figure>
+<figure class="image--medium">
     <img src="http://git-scm.com/figures/18333fig0106-tn.png" />
     <figcaption>Illustration of the main three states your Git versioned file's lifecycle</figcaption>
 </figure>
@@ -137,7 +137,7 @@ We can now **commit** it to the repository
 
 So if we now step back for a second and take a look at the tree we would have the following.
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/gitrepo_tree1.png" />
     <figcaption>State of the repo tree after 1st commit</figcaption>
 </figure>
@@ -241,7 +241,7 @@ git rebase -i HEAD~<num-commits>
 
 The following animated GIF shows how do do it:
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/git-clean-history.gif" />
     <figcaption>Demo on cleaning up your commit history (<a href="/blog/assets/imgs/git-clean-history.gif">enlarge</a>)</figcaption>
 </figure>
@@ -277,7 +277,7 @@ Lets resolve it:
 
 The tree reflects our merge.
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/gitrepo_tree5.png" />
     <figcaption>Fig 1: Tree state after the merge</figcaption>
 </figure>
@@ -339,7 +339,7 @@ Note the comment git prints out. What does that mean? **Detached head** means "h
 > You can think of the **HEAD** as the "current branch". When you switch branches with `git checkout`, the HEAD revision changes to point to the tip of the new branch. [...] It is possible for HEAD to refer to a specific revision that is not associated with a branch name. This situation is called a <a href="http://git-scm.com/docs/git-checkout#_detached_head">detached HEAD</a>. <cite><a href="http://stackoverflow.com/a/2304106/50109">Stackoverflow Post</a></cite>
 
 Basically when I now change hallo.txt and commit the change, the tree looks as follows:
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/gitrepo_tree6.png" />
     <figcaption>Detached head state</figcaption>
 </figure>
@@ -367,7 +367,7 @@ Undoing is probably the operation besides committing that's most useful about a 
 
 Also, "emmajane" has a nice diagram illustrating the actions that need to be taken when you want to undo changes on some file(s):
 
-<figure>
+<figure class="image--medium">
    <img src="https://raw.githubusercontent.com/emmajane/gitforteams/master/resources/workflow-undoing-changes.png">
    <figcaption>By <a href="http://www.gitforteams.com/">emmajane (gitforteams.com)</a>. (<a href="https://raw.githubusercontent.com/emmajane/gitforteams/master/resources/workflow-undoing-changes.png">Click for large version</a>)</figcaption>
 </figure>
@@ -381,7 +381,7 @@ Jumping back is nice, but what if we want to **undo** everything back to the sta
     $ git reset --hard c8616db
     HEAD is now at c8616db add line on hallo.txt
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/gitrepo_tree4.png"/>
     <figcaption>The tree after the reset</figcaption>
 </figure>

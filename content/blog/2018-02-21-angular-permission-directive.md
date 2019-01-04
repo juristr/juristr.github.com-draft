@@ -18,7 +18,7 @@ image: /blog/assets/imgs/angular-permission-directive-bg.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >= 2.0.0" %} {%
+{{<warn-notice message="Contents are based on Angular version >= 2.0.0" >}} {%
 include warn-notice.html %}
 
 {{< toc >}}

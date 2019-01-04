@@ -40,7 +40,7 @@ These points can basically be distilled into
 
 The problem is that all the decisions that have been taken in previous sprint plannings and/or stand-ups, are the enemy of future modifications and thus allocate to the so-called "elephant".
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/elephant-standup.png" />
   <figcaption>Russ presenting the "elephant" during his talk</figcaption>
 </figure>
@@ -80,7 +80,7 @@ Instead, start with the lowest possible decoupling like using simple programming
 
 From an architectural point of view you basically start with (what Russ called) a "pizza-box architecture" _(forgive the colors, but I'm currently trying out Evernote's hand drawing feature and Skitch)_:
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/pizzabox-architecture.png" />
   <figcaption>The classical three-layer diagram</figcaption>
 </figure>
@@ -92,21 +92,21 @@ Each area is nicely separated and decoupled through interfaces, probably with so
 In order to be able to switch the next level of decoupling, you first have to identify the problematic spots of our pizza-box architecture. Where is the coupling? What happens if one area needs to change, which ones will I be forced to adapt?  
 Assuming you already separate the layers through interfaces, then normally the **transversal parts of the classical three layer architecture are the most problematic ones**. For instance the domain objects or domain entities. They are touching every area and thus blur the boundaries between the layers, which might be bad when you want to decouple things. Also watch out for annotations, typically from your ORM. They cause coupling as well!
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/pizzabox-architecture-coupling.png" />
   <figcaption>Entities create a strong coupling</figcaption>
 </figure>
 
 Take for instance what happens if you change the database table?? You need to change the entities, which impacts on your data access layer (probably), your business layer and even your frontend layer where you (most probably) directly use the domain objects for the UI logic. I experienced these problems by myself when we switched to creating rich client JavaScript apps with a REST layer at the backend. Our initial "naive" approach to expose the [the Entity Framework entities directly to the JavaScript client](/blog/2012/10/lessions-learned-dont-expose-ef-entities-to-the-client-directly/) isn't so ideal in the end. So we ended up with some DTOs on the REST interface side which decouples it from changes on the domain entities.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/pizzabox-architecture-dtos.png" />
   <figcaption>Slight decoupling of the REST entities with DTOs</figcaption>
 </figure>
 
 Going forward, we started to build what Russ calls the **"Life preserver"**. In a first step this means reorganizing our pizza-box diagram into a circle, a cellular structure basically where the core, our busines logic, resides in the middle. All of the components that interact with this core are **integrations with the outside world**, which are drawn in a second outer circle. As such, our diagram from before might look like this:
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/pie-architecture.png" />
   <figcaption>Further decoupling</figcaption>
 </figure>

@@ -17,8 +17,8 @@ image: /blog/assets/imgs/radiobuttonsbinding.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >=2" %}
-{% include warn-notice.html %}
+{{<warn-notice message="$1" >}}
+ 
 
 {{< toc >}}
 
@@ -139,8 +139,8 @@ class App {
 
 Here's the final code in a easy to use Plunk:
 
-{% assign plunker_url = "https://embed.plnkr.co/J2T3ph056tvivTx2UXRq/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/J2T3ph056tvivTx2UXRq/">}}
+ 
 
 ## Conclusion
 

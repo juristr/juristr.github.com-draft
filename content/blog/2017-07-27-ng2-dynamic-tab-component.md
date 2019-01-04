@@ -18,11 +18,11 @@ image: /blog/assets/imgs/ng-dynamic-tabs/multi-tab-editing.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >=4" %}
-{% include warn-notice.html %}
+{{<warn-notice message="Contents are based on Angular version >=4" >}}
+ 
 
-{% assign message = "<strong>Update for Angular version 5:</strong> I just upgraded the article to match Angular version 5. You need to change <code>ngOutletContext</code> to <code>ngTemplateOutletContext</code>. Here's a very helpful app for upgrading btw: <a href='https://angular-update-guide.firebaseapp.com/'>Angular Update Guide</a>" %}
-{% include warn-notice.html %}
+{{<warn-notice message="<strong>Update for Angular version 5:</strong> I just upgraded the article to match Angular version 5. You need to change <code>ngOutletContext</code> to <code>ngTemplateOutletContext</code>. Here's a very helpful app for upgrading btw: <a href='https://angular-update-guide.firebaseapp.com/'>Angular Update Guide</a>" >}}
+ 
 
 {{< toc >}}
 
@@ -38,12 +38,12 @@ Learn about dynamic components in my newest **Egghead.io video course**. Check i
 
 This article is based on a previous one I’ve written where I built a tab component by leveraging Angular’s `@ContentChildren` and content projection. For a better understanding of this article here, I suggest reading that one first:
 
-{% include article-link.html
+{{<article-link
 url="/blog/2016/02/learning-ng2-creating-tab-component/"
 title="Learning Angular: Creating a tabs component"
 text="A follow up on thoughtram's excellent article on creating a tabs components with Angular"
 imageurl="/blog/assets/imgs/ng2-tabs.png"
-%}
+>}}
 
 Great, to get a quick overview, our tab component API currently looks as follows.
 
@@ -57,14 +57,14 @@ Great, to get a quick overview, our tab component API currently looks as follows
 As you can see, it is already possible to define tabs in a static manner, by using the `my-tab` component placed inside the `<my-tabs>`.
 We now want to extend this API in such a way that allows us to dynamically open new tab pages based on the user interaction. Assume for example that we have a first **statically** defined tab which contains a list of people.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/ng-dynamic-tabs/people-list.png" />
   <figcaption>Our setup: tab with people list</figcaption>
 </figure>
 
 Whenever we click the "Add new person" or "edit" button beneath an existing record, we want the editing to take place in a separate tab pages that gets added dynamically.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/ng-dynamic-tabs/people-list-edit-tab.png" />
   <figcaption>Our setup: editing a person from the list in a dedicated tab</figcaption>
 </figure>
@@ -385,7 +385,7 @@ Inside the template the `<person-edit>` component takes care of editing our pers
 
 > Note: this is not scope of this article, but feel free to check out its implementation in the linked Plunker
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/ng-dynamic-tabs/person-edit-component.png" />
   <figcaption>The person-edit component</figcaption>
 </figure>
@@ -394,7 +394,7 @@ The component takes an input binding `[person]` and has an outbound event `(save
 
 But what about our input binding `[person]="person"`? We could simply create a member variable `person` inside our `AppComponent` and assign it whenever we click on some person to edit. Sure, fair enough. But that wouldn’t allow us to edit multiple people simultaneously, such as:
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/ng-dynamic-tabs/multi-tab-editing.png" />
   <figcaption>Editing in multiple tabs at the same time</figcaption>
 </figure>
@@ -462,7 +462,7 @@ Obviously, there are some more details to make the whole tab component work prop
 
 Well, whenever you’re creating something, especially in a dynamic way, make sure to also think about how to destroy it again. In our example, the user has the possibility to close a tab by clicking the “X” on the tab header. Moreover whenever the save button is clicked, the tab also closes automatically.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/ng-dynamic-tabs/destroying-tabs.png" />
   <figcaption>Click the X to close the tab and destroy the component</figcaption>
 </figure>
@@ -490,10 +490,10 @@ Also take a look at the official docs for `ViewContainerRef`: https://angular.io
 
 Check out the full example in this Plunker here:
 
-<!-- {% assign plunker_url = "https://embed.plnkr.co/wWKnXzpm8V31wlvu64od/" %}
-{% include plunker.html %} -->
-{% assign uid = "edit/angular-dynamic-tabs" %}
-{% include stackblitz.html %}
+<!-- {{<plunker plunker_url="https://embed.plnkr.co/wWKnXzpm8V31wlvu64od/">}}
+  -->
+{{<stackblitz uid="edit/angular-dynamic-tabs" >}}
+ 
 
 ## Conclusion - Wrapping up
 

@@ -79,7 +79,7 @@ $ npm install grunt
 
 This installs the grunt node package into a folder called `node_modules`.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/node-grunt-yeoman/node-module-install-demo.gif" />
   <figcaption>Demo: installation of a node  module</figcaption>
 </figure>
@@ -88,7 +88,7 @@ The best practices approach though is to create a `package.json` file. Since the
 
 To create a new `package.json` file, simply execute `npm init` inside a clean folder. You'll have to answer a few questions but ultimately you will get a nice new package config file.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/node-grunt-yeoman/package-json.png"/>
   <figcaption>Example of a package.json file</figcaption>
 </figure>
@@ -185,7 +185,7 @@ $ npm install -g bower
 
 Then, similarly as you did with NPM, you execute `bower init` on your terminal to create a new `bower.json` configuration file (the equivalent of `package.json` for NPM).
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/node-grunt-yeoman/bowerjson.png" />
   <figcaption>Example of a bower.json file</figcaption>
 </figure>

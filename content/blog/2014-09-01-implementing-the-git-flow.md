@@ -33,7 +33,7 @@ Beside those, there are supporting branches:
 
 - **release branch** is a branch for preparing the next release. No new features will be developed on this branch but rather it contains some last fixes (also bugfixes) and adjustments for going into production. 
  
-<figure>
+<figure class="image--medium">
     <img src="http://nvie.com/img/2009/12/Screen-shot-2009-12-24-at-11.32.03.png" />
     <figcaption>Source: <a href="http://nvie.com/posts/a-successful-git-branching-model/">http://nvie.com/posts/a-successful-git-branching-model/</a></figcaption>
 </figure>
@@ -53,7 +53,7 @@ Supporting branches are:
 - **hotfix branches** (works like in the standard git-flow model)
 - **release branch** (works like in the standard git-flow model)
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/git-flow/git_prodoriented_flow.png"/>
   <figcaption>Production branch oriented flow variation</figcaption>
 </figure>

@@ -25,7 +25,7 @@ image: /blog/assets/imgs/portal.jpeg
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >= 5.0.0" %} {%
+{{<warn-notice message="Contents are based on Angular version >= 5.0.0" >}} {%
 include warn-notice.html %}
 
 {{< toc >}}
@@ -150,12 +150,12 @@ If you paid attention, then you've seen that we're creating the `EmbeddedViewRef
 
 It just happens, that in our case the nodes of the `EmbeddedViewRef` are rendered somewhere else on the page, namely inside our `outletElement`. Still, whenever Angular runs CD on our `PageActionsComponent`, it will execute it as well on our embedded view ref.
 
-{% include article-link.html
+{{<article-link
     url="https://blog.angularindepth.com/working-with-dom-in-angular-unexpected-consequences-and-optimization-techniques-682ac09f6866"
     title="Working with DOM in Angular: unexpected consequences and optimization techniques"
     text="Deep dive into working with DOM in Angular and learn about the difference between embedded views and host views"
     imageurl="https://cdn-images-1.medium.com/max/1600/1*vinkw-iFnRaDmoh69S530A.png"
-%}
+>}}
 
 ## Putting all together and attach it to the DOM
 
@@ -198,21 +198,21 @@ Wrapping up, I changed the adapted [the implementation from the previous article
 _Hint: open the `src/app/shared/page-actions/page-actions.component.ts` file._
 
 {% assign uid = "github/juristr/demo-cdk-portal-mobile-pageactions/tree/self-made-portals" %}
-{% include stackblitz.html %}
+ 
 
 ### Related Articles
 
-{% include article-link.html
+{{<article-link
     url="/blog/2017/11/dynamic-angular-components-for-rendering-html/"
     title="Use Dynamic Components to render HTML for 3rd party libraries"
     text="Leverage dynamic components to render HTML for a Leaflet popup message"
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
     url="/blog/2017/07/ng2-dynamic-tab-component/"
     title="Create a dynamic tab component with Angular"
     text="Learn about advanced topics such as dynamic components, ComponentFactoryResolver, ViewContainerRef, ngTemplateOutlet and much more..."
-%}
+>}}
 
 
 

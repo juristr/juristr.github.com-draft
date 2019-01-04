@@ -20,8 +20,8 @@ image: /blog/assets/imgs/conditional-add-styles.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >=2" %}
-{% include warn-notice.html %}
+{{<warn-notice message="$1" >}}
+ 
 
 {{< toc >}}
 
@@ -77,8 +77,8 @@ export class App {
 
 Note the `[style.background-color]` in the code above.
 
-{% assign plunker_url = "https://embed.plnkr.co/Zt051PhE8Kd03ksiF4K9/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/Zt051PhE8Kd03ksiF4K9/">}}
+ 
 
 ## Style Sanitization
 
@@ -182,8 +182,8 @@ export class App {
 }
 ```
 
-{% assign plunker_url = "https://embed.plnkr.co/yCalvA1OsC6w2VZUAHm6/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/yCalvA1OsC6w2VZUAHm6/">}}
+ 
 
 ## Adding a single class
 
@@ -227,8 +227,8 @@ export class App {
 }
 ```
 
-{% assign plunker_url = "https://embed.plnkr.co/WmrldzDHCib5ixsdL8R0/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/WmrldzDHCib5ixsdL8R0/">}}
+ 
 
 ## Using `:host(..)` and `@HostBinding`
 
@@ -322,8 +322,8 @@ In the `ngOnChanges` we the `style` input property changes, we properly adjust o
 
 Here's an example to play around with.
 
-{% assign plunker_url = "https://embed.plnkr.co/LfjCS6DMSi8d44O4Uhkj/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/LfjCS6DMSi8d44O4Uhkj/">}}
+ 
 
 ## Add a class to my component host
 
@@ -389,8 +389,8 @@ This way you can deliberately modify the properties of the native DOM element. S
 
 Check out this Plunk for the full code.
 
-{% assign plunker_url = "https://embed.plnkr.co/TqteblvISNtHObNbQAel/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/TqteblvISNtHObNbQAel/">}}
+ 
 
 ## More...
 

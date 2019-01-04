@@ -16,8 +16,8 @@ image: /blog/assets/imgs/change-detection-cover.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >=2" %}
-{% include warn-notice.html %}
+{{<warn-notice message="Contents are based on Angular version >=2" >}}
+ 
 
 I'm totally aware that there are already quite some good articles out there which go very deep into Angular's change detection. Here are some I highly recommend to go through:
 
@@ -89,14 +89,11 @@ So here are some strategies you can apply.
 
 ### Immutable Objects
 
-{% assign youtube_id = "8SImpeCg2ZU" %}
-{% include youtube.html %}
+{{<youtube youtube_id="8SImpeCg2ZU">}}
+ 
 
-<!-- {% assign plunker_url="https://embed.plnkr.co/G1QH0ZEML6bXm95bhC1J/" %}
-{% include plunker.html %} -->
-
-{% assign uid = "edit/angular-cd-onpush" %}
-{% include stackblitz.html %}
+{{<stackblitz uid="edit/angular-cd-onpush" >}}
+ 
 
 Before speaking about immutable objects, let's see what happens "normally". So we have an object, say..
 
@@ -142,14 +139,10 @@ this.data = { counter: this.data.counter + 1 };
 
 ### Observables
 
-{% assign youtube_id = "sYo9rla8Cz8" %}
-{% include youtube.html %}
-
-<!-- {% assign plunker_url="https://embed.plnkr.co/TLi6Us5CDz6yGWV4k34Y/" %}
-{% include plunker.html %} -->
-
-{% assign uid = "edit/angular-cd-observables" %}
-{% include stackblitz.html %}
+{{<youtube youtube_id="sYo9rla8Cz8">}}
+ 
+{{<stackblitz uid="edit/angular-cd-observables" >}}
+ 
 
 If the immutable approach is not enough for you, we can even get better. Instead of passing in a data object, **we pass in an `Observable`.**
 
@@ -222,14 +215,11 @@ As you can see, whenever we get a new value in our `subscribe(..)` we manually t
 
 ### Manually handling change Detection
 
-{% assign youtube_id = "n0UUIx2ASt0" %}
-{% include youtube.html %}
+{{<youtube youtube_id="n0UUIx2ASt0">}}
+ 
 
-<!-- {% assign plunker_url="https://embed.plnkr.co/5OM0A53GlHyWWyam4TRA/" %}
-{% include plunker.html %} -->
-
-{% assign uid = "edit/angular-cd-manual" %}
-{% include stackblitz.html %}
+{{<stackblitz uid="edit/angular-cd-manual" >}}
+ 
 
 Well, if you're still not satisfied, there's one more option. You can even manually enable/disable change detection. This could turn out to be useful if you get lots and lots of data repeatedly from some backend and you want to perform change detection only every second or so.
 

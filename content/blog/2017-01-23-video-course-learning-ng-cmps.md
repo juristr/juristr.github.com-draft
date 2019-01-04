@@ -15,19 +15,19 @@ image: /blog/assets/imgs/learning-ng-cmps-cover.png
   I just released the 2nd edition of my video course for PacktPub on "Learning Angular components".
 </div>
 
-{% assign message = "Contents are based on Angular version >=2" %}
-{% include warn-notice.html %}
+{{<warn-notice message="Contents are based on Angular version >=2" >}}
+ 
 
 {{< postad >}}
 
 The video course **focuses on one of the core parts of Angular: components**. During this course you will learn the fundamental concepts of Angular components by developing together with me a small sample application.
 
-{% include article-link.html
+{{<article-link
 	url="https://goo.gl/zrGX8K"
     title="Buy: Learning Angular Components (2nd ed.)"
 	text="Your go-to guide when building successful Angular 2 components"
     imageurl="/blog/assets/imgs/learning-ng-cmps-cover.jpg"
-%}
+>}}
 
 At the beginning of the course you will be given an introduction to the modern frontend tooling, including **TypeScript**, new ES2015+ features and SystemJS. You will be learning about **component based architectures** which is an important toolkit of every frontend developers. From section to section you will discover new concepts around Angular components such as **data flow, events, styling, content projection** and many more. Besides that, you will learn about unit **testing, debugging and end-to-end testing** of Angular components. Finally, you will get an outlook on the potential of Angular, but creating a small hybrid mobile application with **Ionic 2** and executing Angular on the server, using **Angular Universal**.
 
@@ -49,12 +49,12 @@ Great :smiley:. This video has been created by me in collaboration with [PacktPu
 
 That said, it also means this is a paid course, currently sold by PacktPub. Still interested? Then go ahead :smiley:
 
-{% include article-link.html
+{{<article-link
 	url="https://goo.gl/zrGX8K"
     title="Buy: Learning Angular Components (2nd ed.)"
 	text="Your go-to guide when building successful Angular 2 components"
     imageurl="/blog/assets/imgs/learning-ng-cmps-cover.jpg"
-%}
+>}}
 
 Thank you very much for your support :blush:.
 
@@ -67,6 +67,6 @@ Also, thanks to [Nathan Walker](https://twitter.com/wwwalkerrun) for doing the t
 
 Wanna get a grasp of what Angular (2+) is all about. Check out my free introductory video on Youtube:
 
-{% assign youtube_id = "fXHyqSIIF9Q" %}
-{% include youtube.html %}
+{{<youtube youtube_id="fXHyqSIIF9Q">}}
+ 
 

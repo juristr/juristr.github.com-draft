@@ -39,7 +39,7 @@ Martin Fowler really hits my view of the architect's role. I just accidentally c
 
 There is the _architectus reloadus_ which makes all of the important decisions because he thinks the team doesn't have the necessary skills to do so. In his view, all of them need to be made upfront s.t. everyone else has a plan to follow.
 
-<figure>
+<figure class="image--medium">
 	<img src="/blog/assets/imgs/architect-matrix.jpg" />
 	<figcaption>Architectus Reloadus. <i>Image source: cyberpunkreview.com</i></figcaption>
 </figure>

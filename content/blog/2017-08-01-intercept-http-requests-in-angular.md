@@ -15,8 +15,8 @@ image: /blog/assets/imgs/egghead-intercept-http-requests.png
 	Angular version 4.3.1 introduced one important new feature: the new HTTP client. Not only did it bring optimizations in how we can execute requests to backend APIs, but it made intercepting HTTP requests extremely easy.
 </div>
 
-{% assign message = "Contents are based on Angular version >= 4.3.1" %}
-{% include warn-notice.html %}
+{{<warn-notice message="Contents are based on Angular version >= 4.3.1" >}}
+ 
 
 Learn everything about the new Http client introduced in Angular 4.3 and now default in Angular 5 in my latest **Egghead.io video course on "Learn HTTP in Angular"**.
 
@@ -177,8 +177,8 @@ export class MyHttpLogInterceptor implements HttpInterceptor {
 
 That's it. **Check out the Egghead video lesson at the beginning of this article** or simply start playing straight away with this runnable Plunker. Just open it in another window and inspect the `console.log` statements on the your browser's devtools.
 
-{% assign plunker_url = "https://embed.plnkr.co/SCKXenesBaaYnYJYhWyY/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/SCKXenesBaaYnYJYhWyY/">}}
+ 
 
 ## Common mistakes/pitfalls
 

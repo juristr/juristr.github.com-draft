@@ -144,14 +144,14 @@ $ firebase login:ci
 
 The `$FIREBASE_TOKEN` needs to be registered on your GitLab repository’s `Settings > CI/CD Settings > Secret variables`.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-env-vars.png">
   <figcaption>Setting environment variables in GitLab</figcaption>
 </figure>
 
 When configuring the variable in GitLab, make sure to **not activate the "protected"** flag, otherwise you will have issues in reading these variables during the build.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-variables-protect.png">
   <figcaption>Adding the firebase token to GitLab</figcaption>
 </figure>
@@ -280,7 +280,7 @@ deploy-production:
 
 Once we have that and commit it to master, GitLab will automatically pick it up and execute our pipeline:
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-pipeline-1.png">
 </figure>
 
@@ -297,13 +297,13 @@ Our current setup directly deploys to production, which can be scary if you don�
 
 To add new environments in GitLab, first go to the web interface, navigate to your repository and then to `CI / CD > Environments`. There you can add 2 new entries, “development” and “production”.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-deploy-environment-staging.png">
 </figure>
 
 and finally our production environment:
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-deploy-environment-prod.png">
 </figure>
 
@@ -363,7 +363,7 @@ Before adjusting our pipeline configuration, let’s configure different Firebas
 
 Firebase projects don’t have specific environments, but rather you simply create a new project which works as your staging environment. Once you have that, you can add that staging environment to your existing Firebase project via the `firebase-tools` command line.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/firebase-tools-config.png">
 </figure>
 
@@ -395,13 +395,13 @@ Finally we also need to adjust the `package.json` to take advantage of the newly
 
 Note how the `predeploy` step chooses the corresponding environment that gets passed in via the GitLab `$CI_ENVIRONMENT_NAME` parameter.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-pipeline-2.png">
 </figure>
 
 GitLab also nicely keeps track which commit has been deployed to which environment, also showing the play button here as well, which allows us to promote a given build from staging into production.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-deployment-tracking.png">
 </figure>
 
@@ -425,7 +425,7 @@ check-formatting:
 
 Note we’re running this as part of the “test” stage, that way it gets parallelized with the unit tests.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-pipeline-3.png">
 </figure>
 
@@ -437,6 +437,6 @@ So in this article we’ve covered the basic setup of an automated pipeline usin
 
 **Build on every commit -** The main benefit of an automated pipeline is to get feedback as early as possible in the process. Thus, build every commit, regardless whether it’s to master, or a PR. Whenever something fails, GitLab (or every other CI server) will send the commit author some nicely formatted message about what happened, so that you can immediately react:
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-error-mails.png">
 </figure>

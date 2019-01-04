@@ -150,12 +150,12 @@ That was easy, right.
 
 Angular 1.5+ is the best Angular ever so far. Since [v1.5 they introduced the new `component` syntax](https://docs.angularjs.org/guide/component) which makes creating components super easy. Check out Todd Motto's article on the topic:
 
-{% include article-link.html
+{{<article-link
 	url="https://toddmotto.com/exploring-the-angular-1-5-component-method/"
 	title="Exploring the Angular 1.5 .component() method"
 	text="Angular 1.5 introduced the .component() helper method, which is much simpler than the .directive() definition and advocates best practices and common default behaviours."
 	imageurl="/blog/assets/imgs/linkpics/toddmotto.png"
-%}
+>}}
 
 So what does that mean for our app? Let's see.
 
@@ -263,12 +263,12 @@ bindings: {
 ...
 ```
 
-{% include article-link.html
+{{<article-link
 	url="https://toddmotto.com/one-way-data-binding-in-angular-1-5/"
 	title="One-way data-binding in Angular 1.5"
 	text="Angular is known for it’s powerful two-way data-binding, but with the new release of Angular 1.5, we’ve got one-way data binding (one-directional) binding capabilities inside our Components and Directives."
 	imageurl="/blog/assets/imgs/linkpics/toddmotto.png"
-%}
+>}}
 
 #### Lifecycle hooks
 
@@ -311,12 +311,12 @@ function HomeController() {
 
 There are other hooks, like `$onChange`, `$onDestroy` and so on. Rather than going into those details by myself, check out Todd Motto's awesome article on the matter:
 
-{% include article-link.html
+{{<article-link
 	url="https://toddmotto.com/angular-1-5-lifecycle-hooks"
 	title="Comprehensive dive into Angular 1.5 lifecycle hooks"
 	text="Lifecycle hooks are simply functions that get called at specific points of a component’s life in our Angular apps. They landed in Angular 1.5 and are to be used alongside the .component() method, and have slowly evolved over the last few versions to include some more powerful (and Angular 2 inspired) hooks..."
 	imageurl="/blog/assets/imgs/linkpics/toddmotto.png"
-%}
+>}}
 
 ## Component architecture
 
@@ -329,7 +329,7 @@ The main concept is to define isolated and autonomous components, with a given r
 
 What you end with, is a so-called **component tree**, a set of nested components, starting from a top-level app component or root component.
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/component-tree.png" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/component-tree.png"/>
 	</a>
@@ -363,36 +363,36 @@ And be used within our "smart components" `<home>` and `<about>` (big words here
 
 <iframe src="https://embed.plnkr.co/u9BaCzaM0xLqn6wIHqzw/" width="100%" height="400px"> </iframe>
 
-{% include article-link.html
+{{<article-link
 	url="https://github.com/toddmotto/angular-styleguide"
 	title="Angular styleguide for teams"
 	imageurl="/blog/assets/imgs/githublogo.svg"
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
 	url="http://teropa.info/blog/2016/02/22/dumb-components-and-visual-feedback-in-angular-apps.html"
 	title="Dumb Components and Visual Feedback in Angular Apps"
-%}
+>}}
 
 ## Interested what role components play in Angular 2?
 
 Then check out my video course with PacktPub which focuses on "Learning Angular components".
 
-{% include article-link.html
+{{<article-link
 	url="/blog/2017/01/video-course-learning-ng-cmps/"
 	title="Learning Angular components (2nd ed)"
 	text="The 2nd edition of my video course on Learning Angular Components"
 	imageurl="/blog/assets/imgs/learning-ng-cmps-cover.png"
-%}
+>}}
 
 Also, for a quick, 20 minute intro to Angular 2+ (especially for beginners), you may want to check out my other article:
 
-{% include article-link.html
+{{<article-link
 	url="/blog/2016/06/ng2-getting-started-for-beginners/"
 	title="Angular 2 - A Getting Started Guide for Beginners"
 	text="Since about half a year, I'm organizing a local Meetup group around Software Craftsmanship. I recently also published a video course on Learning Angular 2 directives and given Angular 2 finally released RC1, I decided to organize a Meetup session to introduce Angular 2 to our members."
 	imageurl="/blog/assets/imgs/meetup-intro-angular2/slide-deck.png"
-%}
+>}}
 
 ## Conclusion
 

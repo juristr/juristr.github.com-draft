@@ -56,7 +56,7 @@ We now need to modify the `CreateShell()` method to create the shell and add ano
 
 You might encounter the problem that `GetExportedValue<T>()` does not exist. This is because it is provided as an extension method by MEF which we still need to add as a reference to our project. Simply add `System.ComponentModel.Composition` to bring it in.
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/prism_compositiondependency.png" />
     <figcaption>Importing the dependency to MEF which is part of the .Net framework since v4</figcaption>
 </figure>

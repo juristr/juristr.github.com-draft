@@ -19,8 +19,8 @@ image: /blog/assets/imgs/ng2-jsonpipe-cardimg.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >=2" %}
-{% include warn-notice.html %}
+{{<warn-notice message="$1" >}}
+ 
 
 Especially when you have to debug your Angular templates it was particularly useful in Angular 1 to use the JSON filter.
 
@@ -84,6 +84,6 @@ Easy, isn't it :wink:.
 
 Here's a Plunker to play around with: [https://plnkr.co/edit/zA3ogWLGwg0raLyz1iVj?p=preview](https://plnkr.co/edit/zA3ogWLGwg0raLyz1iVj?p=preview)
 
-{% assign plunker_url = "https://embed.plnkr.co/zA3ogWLGwg0raLyz1iVj/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/zA3ogWLGwg0raLyz1iVj/">}}
+ 
 

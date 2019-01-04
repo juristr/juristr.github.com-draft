@@ -35,7 +35,7 @@ Then some time passed by and we got brave enough to try a bit of RxJS here and t
 
 One day, after submitting a new pull request, I got this comment in my code review: 
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/rx-to-promise-journey/01.png">
 </figure>
 

@@ -35,14 +35,14 @@ Things have changed over the years. I've always blogged about things I'm current
 
 Here some **mandatory stats** towards the end of the year :smiley:.
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/visits2017.png">
     <figcaption>Stats: Jan 01, 2017 - Dec 31, 2017</figcaption>
 </figure>
 
 I'm so happy to see I was able to (hopefully) help so many people. Also reading the feedback in blog comments, or emails I get is so encouraging. Also, this is a super improvement from last year with 60% more sessions and 50% more page views than last year:
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/visitorsComparison2016.png">
     <figcaption>Stats: comparison with 2016. 50-60% improvements in sessions, users and pageviews</figcaption>
 </figure>

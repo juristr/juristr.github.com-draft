@@ -188,8 +188,8 @@ In the end, what you need to do is to **run the semantic-release cli** which wil
 
 ### Bower support
 
-{% assign message = "Update: People tend to use NPM primarily even for web applications nowadays. I'm leaving the Bower section for completeness here." %}
-{% include warn-notice.html %}
+{{<warn-notice message="Update: People tend to use NPM primarily even for web applications nowadays. I'm leaving the Bower section for completeness here." >}}
+ 
 
 When you succeed to setup the before mentioned setups, you should now have
 

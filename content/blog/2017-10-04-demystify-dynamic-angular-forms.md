@@ -17,8 +17,8 @@ image: /blog/assets/imgs/dynamic-form-angular.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >= 2.0.0" %}
-{% include warn-notice.html %}
+{{<warn-notice message="Contents are based on Angular version >= 2.0.0" >}}
+ 
 
 {{< toc >}}
 

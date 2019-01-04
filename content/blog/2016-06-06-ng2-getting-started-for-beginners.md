@@ -45,12 +45,12 @@ This article is for those of you that are new to Angular 2 or even to web develo
 
 If you did already some coding examples in Angular 2, then I'm probably going to bore you :smiley:. But maybe you want to dive deeper with my [Learning Angular components video course](/blog/2017/01/video-course-learning-ng-cmps/) I recently published :wink:.
 
-{% include article-link.html
+{{<article-link
 	url="/blog/2016/04/learning-angular2-directives-course/"
 	title="Learning Angular 2 directives"
 	text="Learn how to build efficient Angular 2 directives with this fast and interactive video course"
 	imageurl="/blog/assets/imgs/learning-angular2-directives/cover.jpg"
-%}
+>}}
 
 ## Big Picture
 
@@ -60,7 +60,7 @@ Here's a simple classification of today's web application architectures.
 
 In server-side rendered applications, most of the application's logic resides on the server, and remains there. The user basically enters the URL, the request gets send to the server, which then produces the final HTML containing the requested data and sends that back to the browser which simply renders it out. When the user interacts with the page, that request gets again sent to the server, which in turn generates a new HTML page and serves it back to the browser.
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/server-side-rendering.png" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/server-side-rendering.png"/>
 	</a>
@@ -74,7 +74,7 @@ Modern web pages often require to work more like applications do on the desktop,
 
 When the user enters the URL, the web server responds with an HTML page, but also with a set of resources (JavaScript files and images) that make up our client-side application. The browser receives that, loads the JavaScript application and "boots it". Now it's the job of that application to dynamically generate the user interface (HTML) based on the data, right from within the browser. After that happens, every new user action doesn't reload the entire web site again, but rather the data for that specific user interaction is send to the server (usually by using the JSON format) and the server in turn responds with the just the amount of data requested by the JavaScript client, again using JSON (normally). The JavaScript application gets the data, parses it and dynamically generates HTML code which is shown to the user.
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/client-side-rendering.png" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/client-side-rendering.png" />
 	</a>
@@ -96,7 +96,7 @@ Ok, let's get to the meat. Why should you be interested in Angular 2? Here are a
 
 ### Angular 2 is a platform!
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/angular2-platform.jpeg" class="image--zoom" >
 		<img src="/blog/assets/imgs/meetup-intro-angular2/angular2-platform.jpeg"/>
 	</a>
@@ -115,7 +115,7 @@ Angular 2 is designed to be extremely fast. Well, every new JS library would pro
 
 First of all, ~~they're currently hardly working on a so-called "template compiler" or "offline compiler"~~ the so-called [Ahead-of-time (AoT) compilation](https://angular.io/docs/ts/latest/cookbook/aot-compiler.html). Many JavaScript frontend frameworks basically render the templates dynamically into the browser's DOM at runtime, which requires a templating engine of some kind. Angular 2 templates and it's components are made in a way that Angular 2 is able "to reason about your app's templates" and thus to generate an [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) and consequently to translate all of your templates into pure JavaScript code **at compile time**. This is huge IMHO :+1:.
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/templatecompiler.png" class="image--zoom" >
 		<img src="/blog/assets/imgs/meetup-intro-angular2/templatecompiler.png"/>
 	</a>
@@ -135,7 +135,7 @@ The library gets really, really small.
 
 By being able to strip out useless parts with the template/offline compiler, lots of stuff can already be dropped when deploying in production. Furthermore, the goal is to use a bundler that supports tree shaking and thus reduce the size of the final compiled JS files even more by eliminating everything that is not actively being used within your application. Frankly, if you don't use the routing module of angular, it simply won't get included in your final app.
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/angular2size.png" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/angular2size.png" class="image--medium"/>
 	</a>
@@ -150,7 +150,7 @@ Finally! Lazy loading has been a hot topic already for Angular 1.x and many othe
 
 Now with Angular 2 this is finally built-in right from the beginning, through the framework's router and so-called "lazy routes".
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/lazyloading.png" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/lazyloading.png" class="image--medium"/>
 	</a>
@@ -165,7 +165,7 @@ At the moment of writing this article, the router has been rewritten and thus [t
 
 This is Angular 2's answer to isomorphic JavaScript or server side pre-rendering. Again, it's all about performance, to get the app to the user as quickly as possible.
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/angular-universal.png" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/angular-universal.png"/>
 	</a>
@@ -192,7 +192,7 @@ Currently the angular-universal supported server frameworks are Node and ASP.net
 
 Something I'm particularly excited about is the approach of having a unified development model.
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/unified-development.png" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/unified-development.png"/>
 	</a>
@@ -201,7 +201,7 @@ Something I'm particularly excited about is the approach of having a unified dev
 
 #### Angular :heart: Mobile
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/angular-loves-mobile.png" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/angular-loves-mobile.png"/>
 	</a>
@@ -223,7 +223,7 @@ The trick is just to get the right one for your needs :wink:
 
 When talking about "installed desktop" we don't mean like running an Angular 2 app on a desktop browser, but rather to run it inside an installable application. This is powered by [Electron](http://electron.atom.io) and [Windows Universal (UWP)](https://developer.microsoft.com/en-US/windows/develop/build-apps-shared-code). Watch [what Brad Green had to say about it at NGConf 2016 :video_camera:](https://youtu.be/gdlpE9vPQFs?t=21m).
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/installeddesktop.png" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/installeddesktop.png"/>
 	</a>
@@ -231,15 +231,15 @@ When talking about "installed desktop" we don't mean like running an Angular 2 a
 
 A very important point here that's easy to miss: by running Angular 2 directly from within a Web Worker, not only you get an enormous performance boost as it runs in a separate thread, but you also get access to the underlying platform, Databases etc..
 
-{% include article-link.html
+{{<article-link
 	url="http://www.html5rocks.com/en/tutorials/workers/basics/"
 	title="The basics of web workers"
 	text="The Web Workers specification defines an API for spawning background scripts in your web application. Web Workers allow you to do things like fire up long-running scripts to handle computationally intensive tasks, but without blocking the UI or other scripts to handle user interactions."
-%}
+>}}
 
 Not convinced? Well, most probably you're already using an Electron app, like [VSCode](https://code.visualstudio.com/), or [Slack](https://slack.com/) or some of these:
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/electronapps.gif" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/electronapps.gif"/>
 	</a>
@@ -249,7 +249,7 @@ Not convinced? Well, most probably you're already using an Electron app, like [V
 
 At NGConf 2016, John Papa [had a slide in his talk](https://youtu.be/WAPQF_GA7Qg?t=1m25s) describing the **seven main key concepts** behind Angular 2. These really nail it.
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/seven-concepts-ng2.png" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/seven-concepts-ng2.png"/>
 	</a>
@@ -362,7 +362,7 @@ Also, check out the [article on Thoughtram on this topic](http://blog.thoughtram
 
 **So, can I use all of this in the browser right now?** No, unfortunately not. What you need is a compiler or transpiler. Currently [Babel](https://babeljs.io/) and [TypeScript](https://www.typescriptlang.org/) are the most popular ones.
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/transpiling.png" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/transpiling.png"/>
 	</a>
@@ -370,7 +370,7 @@ Also, check out the [article on Thoughtram on this topic](http://blog.thoughtram
 
 The Angular team decided to go with TypeScript and has written its entire codebase with it. TypeScript has been created by Microsoft already in 2010 and then went first public in 2012. It really kicked off only recently, though, with Angular 2. The main difference to other transpilers is that it adds optional type support to JavaScript. First of all, this allows to discover and prevent nasty errors at compile time and second it opens up numerous possibilities for better tooling support.
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/typescriptdemo.gif" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/typescriptdemo.gif"/>
 	</a>
@@ -380,11 +380,11 @@ The Angular team decided to go with TypeScript and has written its entire codeba
 
 **Long story short**, you should get accustomed to the new features of ES2015. Browse the web or [check out my article](/blog/2015/08/jump-start-es2015/) which gives you a quick intro and links to many other useful resources.
 
-{% include article-link.html
+{{<article-link
 	url="/blog/2015/08/jump-start-es2015/"
 	title="ES2015 - Jump Start"
 	text="ES6: Get introduced to the next generation JavaScript"
-%}
+>}}
 
 ### <(web)-components>
 
@@ -400,12 +400,12 @@ It's a powerful way to express semantics, isn't it? By simply looking at this HT
 
 You may also want to check out [Polymer](https://www.polymer-project.org/1.0/) and [webcomponents.org](http://webcomponents.org/)
 
-{% include article-link.html
+{{<article-link
 	title="Learning Angular 2 directives: All about Components"
 	url="https://player.oreilly.com/videos/9781785884702"
 	text="Free sample from my video course where I explain different ways of creating components"
 	imageurl="https://cdnapisec.kaltura.com/p/1681692/thumbnail/entry_id/0_3ef0ihhz/height/500/vid_sec/3/quality/100/thumb.jpg"
-%}
+>}}
 
 **Angular 2 fully embraces this component based development** style. In fact, already since the beginning of Angular 1.x, allowing the user to define custom HTML elements with behavior was one of the core philosophies of the framework. A simple component in Angular 2 looks like this:
 
@@ -433,7 +433,7 @@ Now with **components being a 1st class citizen in Angular 2**, there's the **co
 
 For example:
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/component-tree.png" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/component-tree.png"/>
 	</a>
@@ -441,7 +441,7 @@ For example:
 
 And this could then be mapped to HTML code like as follows.
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/component-tree-mapping.png" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/component-tree-mapping.png"/>
 	</a>
@@ -450,11 +450,11 @@ And this could then be mapped to HTML code like as follows.
 
 The component tree is of major importance in Angular 2 and you will always again come across it. For example, this is how you compose your application, and the arcs from one component to the other are the way data is assumed to flow through your application as well as what Angular uses for performing change detection.
 
-{% include article-link.html
+{{<article-link
 	url="http://blog.thoughtram.io/angular/2016/02/22/angular-2-change-detection-explained.html"
 	title="Change Detection Explained"
 	text="Excellent article by Pascal Precht on how change detection works in Angular 2"
-%}
+>}}
 
 > "Change detection" is the mechanism by which Angular determines which components need to be refreshed as a result of changes in the data of the application.
 
@@ -530,11 +530,11 @@ Nice, we get a reference to `PersonService` from within our component. But wait,
 - add the `@Injectable` annotation
 - register `PersonService` as a provider either on the app, the top level component or from the part of the component tree (downwards) where you want to have the service injectable
 
-{% include article-link.html
+{{<article-link
 	url="http://blog.thoughtram.io/angular/2015/05/18/dependency-injection-in-angular-2.html"
 	title="Dependency Injection in Angular 2"
 	text="Awesome introduction to how dependency injection works in Angular 2 by Pascal Precht on the Thoughtram blog."
-%}
+>}}
 
 <a name="rxjs"></a>
 
@@ -551,29 +551,29 @@ This pattern is not new at all, and gained a lot of popularity recently in moder
 
 Here are some good articles to get started :smiley:
 
-{% include article-link.html
+{{<article-link
 	url="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754"
 	title="The introduction to Reactive Programming you've been missing"
 	text="André Staltz introduces the very basics of what reactive programming is all about."
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
 	url="https://gist.github.com/btroncone/d6cf141d6f2c00dc6b35"
 	title="RxJS 5 Operators By Example"
 	text="A complete list of RxJS 5 operators with easy to understand explanations and runnable examples."
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
 	url="https://medium.com/google-developer-experts/angular-introduction-to-reactive-extensions-rxjs-a86a7430a61f#.bknbea8ny"
 	title="Angular - Introduction to Reactive Extensions (RxJS)"
 	text="How to use observable sequences in AngularJS, an introduction by Gerard Sans."
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
 	url="https://coryrylan.com/blog/intro-to-rxjs-observables-and-angular-2"
 	title="Intro to RxJS Observables and Angular 2"
 	text="Screencast from Cory Rylan where he demoes RxJS with Angular 2."
-%}
+>}}
 
 We will also briefly touch it in the screencast at the end of the article.
 
@@ -581,7 +581,7 @@ We will also briefly touch it in the screencast at the end of the article.
 
 In recent years, getting started quickly with frontend development got notably more difficult. Just creating some `index.html` with a couple of `<script>` tags is by far no more enough. What you need is some transpiler and a build tool that transpiles the code and serves it up, not to mention then optimizations like minification, inclusion of HTML templates, CSS compilation etc..
 
-<figure>
+<figure class="image--medium">
 	<a href="/blog/assets/imgs/meetup-intro-angular2/tooling-landscape.png" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/tooling-landscape.png"/>
 	</a>
@@ -590,7 +590,7 @@ In recent years, getting started quickly with frontend development got notably m
 
 Some build tools/module bundlers you should definitely take a closer look at is **SystemJS and Webpack**. These are currently at the base of most Angular 2 projects. To make this easier, the [Angular CLI project](https://cli.angular.io) has been created. Mike Brocchi, core contributor of the CLI project [demoed it at NGConf 2016](https://www.youtube.com/watch?v=wHZe6gGI5RY).
 
-<figure>
+<figure class="image--medium">
 	<a href="https://cli.angular.io" class="image--zoom">
 		<img src="/blog/assets/imgs/meetup-intro-angular2/angular-cli.png"/>
 	</a>
@@ -610,19 +610,19 @@ Angular CLI is still under heavy development and has still some way to go till i
 
 Other popular starters you definitely also want to take a look at are these. They are community based, have lots of best practices bundled and have been around for quite a while now.
 
-{% include article-link.html
+{{<article-link
 	url="https://github.com/AngularClass/angular2-webpack-starter"
 	title="github/angular2-webpack-starter"
 	text="An Angular 2 Starter kit featuring Angular 2 (Router, Http, Forms, Services, Tests, E2E, Dev/Prod), Material Design, Karma, Protractor, Jasmine, Istanbul, TypeScript, TsLint, Codelyzer, Hot Module Replacement, Typings, and Webpack by @AngularClass"
 	imageurl="/blog/assets/imgs/githublogo.svg"
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
 	url="https://github.com/mgechev/angular2-seed"
 	title="github/angular2-seed"
 	text="Modular seed project for Angular 2 apps with fast, statically typed build"
 	imageurl="/blog/assets/imgs/githublogo.svg"
-%}
+>}}
 
 ## Okay..we're now all set up I guess. Time to code!
 <a name="screencast"></a>

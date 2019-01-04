@@ -52,7 +52,7 @@ Based on the above assumptions we currently create **one Jenkins job per environ
 
 Before starting, make sure you **have the Jenkins [Git plugin](https://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin)**. Then create a new Jenkins job, and in the "Source Code Management" section configure your Git repository like in the img example below.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/jenkins-gitconfig.png" />
   <figcaption>Git configuration</figcaption>
 </figure>
@@ -65,7 +65,7 @@ The next step is to add a **web hook to GitLab**. This is needed s.t. GitLab is 
 
 Just go to your repository settings and then to _Web Hooks_.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/gitlab-webhook.png" />
   <figcaption>Gitlab hook for communicating with Jenkins</figcaption>
 </figure>
@@ -80,7 +80,7 @@ The final step is to setup polling. Hä? Sorry, didn't you just mention previous
 
 However, in the polling configuration you don't have to specify any kind of interval, meaning that it won't start by its own. You simply tick the checkbox "Poll SCM" to give your consent (somehow).
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/jenkins-gitpolling.png" />
   <figcaption>Git polling configuration</figcaption>
 </figure>
@@ -91,7 +91,7 @@ That's it, now your Jenkins jobs should start based on the branch you configured
 
 In case you just need to trigger the build of a branch from GitLab, you can also simply configure Jenkin's **remote trigger** and add that as a Web Hook to your GitLab repo
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/jenkins-gitremote-trigger.png" />
   <figcaption>Remote trigger configuration</figcaption>
 </figure>
@@ -112,7 +112,7 @@ Not only with Git flow, but in general when you work with feature branches and M
 
 One possibility is to **establish a naming convention** for feature branches like a common prefix, i.e. `feat-<name>` or `fix-<name>`. In that way it is possible to selectively create Jenkins build jobs that monitor those branches:
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/jenkins-build-dedicatedbranch.png" />
     <figcaption>Only build branches that have the prefix "userstory/&lt;name&gt;"</figcaption>
 </figure>
@@ -122,7 +122,7 @@ The other strategy is to **simply build all branches other than master** (probab
 1. Under "Source Code Management" choose Git
 2. Click the "Add" button towards the end of the plugin section and choose "Strategy for choosing what to build"
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/jenkins-build-otherthanmaster.png" />
     <figcaption>build all branches other than master</figcaption>
 </figure>

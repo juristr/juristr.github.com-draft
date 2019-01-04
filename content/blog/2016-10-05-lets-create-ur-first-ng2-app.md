@@ -52,49 +52,49 @@ If you rather want to first learn what Angular is all about and why it is so spe
   title="The Angular revolution is here!"
   text="Awesome intro slides to Angular by Gerard Sans"
   imageurl="/blog/assets/imgs/linkpics/gerardsans.jpg"
-%}
+>}}
 
 
 ## Further Links
 
-{% include article-link.html
+{{<article-link
     url="/blog/collections/angular-2/"
     title="Collection of Angular articles"
     text="A collection of Angular related articles on my blog here"
     imageurl="/blog/assets/imgs/linkpics/angular2logo.svg"
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
     url="/blog/2016/08/ng2-forms-first-look/"
     title="Angular Forms - A First Look"
     text="A first quick look at the new Forms API in Angular"
     imageurl="/blog/assets/imgs/linkpics/angular2logo.svg"
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
     url="https://angular.io"
     title="Official Angular site"
     text="Check out the docs and guides on the official Angular site"
     imageurl="/blog/assets/imgs/linkpics/angular2logo.svg"
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
     url="https://toddmotto.com/"
     title="Todd Motto's blog"
     text="Todd has top of the notch articles on Angular 1 and Angular. Check them out!"
     imageurl="/blog/assets/imgs/linkpics/toddmotto.png"
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
     url="http://victorsavkin.com/"
     title="Victor Savkin's blog"
     text="Victor Savkin is a core member of the Angular team and has a bunch of super interesting, in depth articles on his blog"
     imageurl="/blog/assets/imgs/linkpics/victorsavkin.jpg"
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
     url="http://thoughtram.io/blog"
     title="Thoughtram"
     text="Awesome training articles by Pascal Precht, Christoph Burgdorf and Thomas Burleson"
     imageurl="/blog/assets/imgs/linkpics/thoughtramlogo.png"
-%}
+>}}

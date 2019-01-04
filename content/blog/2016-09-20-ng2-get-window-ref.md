@@ -31,11 +31,11 @@ Referencing global browser objects like `document` or `window` directly from wit
 
 You want to register only events on `window` or `document`? Then  you may want to read this also:
 
-{% include article-link.html
+{{<article-link
   url="/blog/2016/09/ng2-event-registration-document/"
   title="Angular: How do I register an event listener on document?"
   text="Learn about @HostListener and host binding properties to register event listeners on the document object"
-%}
+>}}
 
 ---
 
@@ -103,13 +103,13 @@ Great, we're ready. You can now inject the `WindowRef` into your Angular compone
 
 Here's a Plunker to play around with: [https://plnkr.co/edit/9qmBCVrmBZj3mPQjM0Zc?p=preview](https://plnkr.co/edit/9qmBCVrmBZj3mPQjM0Zc?p=preview)
 
-{% assign plunker_url = "https://embed.plnkr.co/9qmBCVrmBZj3mPQjM0Zc/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/9qmBCVrmBZj3mPQjM0Zc/">}}
+ 
 
 You want to register only events on `window` or `document`? Then  you may want to read this also:
 
-{% include article-link.html
+{{<article-link
   url="/blog/2016/09/ng2-event-registration-document/"
   title="Angular: How do I register an event listener on document?"
   text="Learn about @HostListener and host binding properties to register event listeners on the document object"
-%}
+>}}

@@ -24,12 +24,12 @@ image: /blog/assets/imgs/asyncpipe-bg.png
 
 If you already played with Angular, I'm pretty sure you came across <a href="http://reactivex.io/rxjs/" target="window">RxJS</a>. It plays a big role in Angular, especially in Http, Forms, Async Pipes, Routing and also in application architecture patterns like [ngrx/store](https://github.com/ngrx/store). 
 
-{% include article-link.html
+{{<article-link
     url="/blog/2016/06/rxjs-1st-steps-subject/"
     title="RxJS first steps - Subject and ReplaySubject"
     text="Get started with reactive programming with this introductory video"
     imageurl="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&d=identicon&r=PG"
-%}
+>}}
 
 [Rob Wormald's (Angular Developer Evangelist @ Google)](https://twitter.com/robwormald) showed some impressive usage of RxJS with Angular during his talk at NgEurope on ["Angular & RxJS"](https://www.youtube.com/watch?v=WWR9nxVx1ec). Some involved using the Safe Navigation Operator and how it can be replaced via async pipes.
 
@@ -155,8 +155,8 @@ Simply speaking, this special operator allows us to bind data to our template th
 
 ### Try yourself
 
-{% assign plunker_url = "https://embed.plnkr.co/YAxbIsJ7YUcxRXX2GSWb/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/YAxbIsJ7YUcxRXX2GSWb/">}}
+ 
 
 ## Option 2: Using async pipes
 
@@ -208,8 +208,8 @@ export class PersonDetailComponent {
 
 Try it out yourself.
 
-{% assign plunker_url = "https://embed.plnkr.co/QzXdWoDOlqMHU0QH9YnJ/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/QzXdWoDOlqMHU0QH9YnJ/">}}
+ 
 
 ### Variant 2: Async pipe in the parent component
 
@@ -287,8 +287,8 @@ Note, for some (to me) unknown reason, this has to be done in the `ngOnInit` lif
 
 ### Try yourself
 
-{% assign plunker_url = "https://embed.plnkr.co/LqHTN07HSWPOv0nfMxnT/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/LqHTN07HSWPOv0nfMxnT/">}}
+ 
 
 
 ## Option 3: Lists
@@ -316,8 +316,8 @@ export class PeopleComponent {
 }
 ```
 
-{% assign plunker_url = "https://embed.plnkr.co/wquhUC340TAgxG6vZJsw/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/wquhUC340TAgxG6vZJsw/">}}
+ 
 
 ## Conclusion
 
@@ -333,11 +333,11 @@ Don't forget to check out Rob's talk.
 
 ### Related articles
 
-{% include article-link.html
+{{<article-link
     url="http://blog.kwintenp.com/how-share()-can-reduce-network-requests/"
     title="How share() can reduce network requests"
     text="Learn about hot vs cold observables and how .share() can reduce your network load."
     imageurl="/blog/assets/imgs/linkpics/kwintenp.jpg"
-%}
+>}}
 
 _Many thanks to [Brecht Billiet](https://twitter.com/brechtbilliet) and [Dominic Elm](https://twitter.com/elmd_) for reviewing this article._

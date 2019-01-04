@@ -14,7 +14,7 @@ type: post
 
 Many critics against writing automated tests directly address the additional time that is needed for coding them, which alternatively could have been invested in writing new functionality. Writing tests definitely needs time, and especially developers that are new to unit testing will need to invest more. While the methodology (test-first or test-last) plays a major role in the efficiency of the invested time and resulting quality of the tests, in this post I'd like to highlight some of the immediately visible improvements that automated testing strategies introduce with regards to development speed.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/need-for-speed-nitro.jpg" />
   <figcaption>Boost your development speed</figcaption>
 </figure>

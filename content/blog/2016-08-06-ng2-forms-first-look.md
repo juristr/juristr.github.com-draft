@@ -103,11 +103,11 @@ export class AppModule {}
 
 To learn more about `NgModule` check out [the guide on the official Angular site](https://angular.io/docs/ts/latest/guide/ngmodule.html).
 
-{% include article-link.html
+{{<article-link
     url="https://angular.io/docs/ts/latest/guide/ngmodule.html"
     title="Angular Modules (NgModule)"
     text="Learn how to bundle Angular modules using the NgModule API"
-%}
+>}}
 
 Now we should be good to go. **Here's a runnable Plunker** which you can use to test out the various concepts as we quickly go over them.
 
@@ -342,9 +342,9 @@ And finally, we need to map the group and form controls using `formControlName` 
 
 Great, so I hope I was able to give you a first overview of what the Forms API looks like in Angular. Obviously there's much more to explore!
 
-{% include article-link.html
+{{<article-link
     url="http://blog.thoughtram.io/angular/2016/07/27/custom-form-controls-in-angular-2.html"
     title="Custom Form Controls in Angular"
     text="Learn how to create custom form controls with Pascal Precht from Thoughtram"
-%}
+>}}
 

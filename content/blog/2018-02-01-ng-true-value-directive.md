@@ -18,7 +18,7 @@ image: /blog/assets/imgs/true-false-directive-bg.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >= 2.0.0" %} {%
+{{<warn-notice message="Contents are based on Angular version >= 2.0.0" >}} {%
 include warn-notice.html %}
 
 {{< toc >}}
@@ -44,8 +44,8 @@ In AngularJS (v1.x) you can use the `ng-true-value` and `ng-false-value` to map 
                ng-true-value="'YES'" ng-false-value="'NO'">
 ```
 
-{% assign plunker_url = "https://embed.plnkr.co/LckwNBeRL2A0Ao9TS2oc/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/LckwNBeRL2A0Ao9TS2oc/">}}
+ 
 
 ## Angular Forms Primer
 
@@ -56,12 +56,12 @@ Angular (2+) has two different kind of form flavors:
 
 While the 1st one is much easier to get started with probably, especially if you're coming from AngularJS, the latter is the preferred one [and much more powerful](/blog/2017/10/demystify-dynamic-angular-forms/). Here are some articles:
 
-{% include article-link.html
+{{<article-link
     url="/blog/2016/08/ng2-forms-first-look/"
     title="Angular Forms - a first look"
     text="A first quick look at the new Forms API in Angular"
     imageurl="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&d=identicon&r=PG"
-%}
+>}}
 
 ## Creating Custom Form Controls
 

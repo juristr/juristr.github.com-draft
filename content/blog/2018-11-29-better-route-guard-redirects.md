@@ -16,12 +16,12 @@ image: /blog/assets/imgs/better-route-guards/route-guard-sketch.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >= 7.1.0" %}
-{% include warn-notice.html %}
+{{<warn-notice message="Contents are based on Angular version >= 7.1.0" >}}
+ 
 
 {{< toc >}}
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/better-route-guards/route-guard-sketch.png" />
     <figcaption>Yes, I'm trying to do some sketches. Beginner here :D</figcaption>
 </figure>
@@ -29,7 +29,7 @@ image: /blog/assets/imgs/better-route-guards/route-guard-sketch.png
 
 Here is the release changelog of the features added in **Angular version 7.1.0**.
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/better-route-guards/changelog.png" />
     <figcaption><a href="https://github.com/angular/angular/blob/master/CHANGELOG.md#features">Angular 7.1 Changelog</a></figcaption>
 </figure>
@@ -157,8 +157,8 @@ Another benefit is the possibility to cancel all other navigation events. Whenev
 
 Also, here's a running Stackblitz example.
 
-{% assign uid = "edit/blog-router-redirects" %}
-{% include stackblitz.html %}
+{{<stackblitz uid="edit/blog-router-redirects" >}}
+ 
 
 
 ## Conclusion

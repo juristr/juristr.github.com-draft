@@ -80,10 +80,10 @@ Try it out yourself:
 
 <!-- <iframe src="https://embed.plnkr.co/2UuSqSQt2CCRyhul1aNr/" width="100%" height="400px"> </iframe> -->
 
-{% assign uid = "edit/angular-multi-contentprojection" %}
-{% include stackblitz.html %}
+ {{<stackblitz uid="edit/angular-multi-contentprojection">}}
+ 
 
 Another example of a **collapsible panel** component:
 
-{% assign uid = "edit/angular-contentprojection-collapsiblepanel" %}
-{% include stackblitz.html %}
+ {{<stackblitz uid="edit/angular-contentprojection-collapsiblepanel">}}
+ 

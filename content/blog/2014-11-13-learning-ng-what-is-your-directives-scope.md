@@ -66,21 +66,21 @@ Nothing strange, right? Each of them defines a directive controller which sets a
 
 Hmm..not really, right? Clearly you would expect to get two different messages, "Hi" and "Hello World". If you open the inspector (of your Chrome Devtools) you might understand why:
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/learning_angular/directives-nonisolated-scopes.png" />
   <figcaption>There's just one scope (ng-scope) defined</figcaption>
 </figure>
 
 As you can see, there's only one scope defined. Take a look at the `<html>` tag at the very top: Angular nicely marks the scope with the `ng-scope` class. You can also visualize it with [Batarang](https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk?hl=en), the Angular.js Chrome Devtools extension.
  
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/learning_angular/batarang-scopes-directives.png" />
   <figcaption>Scopes being highlighted by Batarang</figcaption>
 </figure>
 
 To do so, simply activate the according "Show scope" option.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/learning_angular/batarang-showscopes.png" />
   <figcaption>Activate the "Show scope" property on Batarang</figcaption>
 </figure>
@@ -111,7 +111,7 @@ And voilá..
 
 Also the HTML reflects the change, now having three different scopes.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/learning_angular/directives-isolated-scopes.png" />
   <figcaption>Directives are now isolated, having their own scope</figcaption>
 </figure>

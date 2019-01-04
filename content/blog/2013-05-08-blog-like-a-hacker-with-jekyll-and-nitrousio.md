@@ -35,7 +35,7 @@ And it is _literally_ set up in seconds.
 
 Nitrous has the concept of boxes
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/nitrousio_boxes.png" />
     <figcaption>Nitrous Boxes</figcaption>
 </figure>

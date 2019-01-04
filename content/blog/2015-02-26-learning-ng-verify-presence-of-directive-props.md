@@ -128,13 +128,13 @@ angular.module('someModule', [])
 
 Each function that is passed into the isolated scope of a directive is wrapped like this:
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/learning-ng/directive-scope-fn-isolateBindingContext.png" />
 </figure>
 
 Here's the source of `parentGet`
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/learning-ng/directive-scope-fn-parentGet.png" />
 </figure>
 

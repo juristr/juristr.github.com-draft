@@ -24,7 +24,7 @@ Beside automated tests, often a good indicator might also be the personal percep
 
 Couple of days ago I got inspired by a Tweet between [Addy Osmani](https://twitter.com/addyosmani) and [Sindre Sorhus](https://twitter.com/sindresorhus):
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/addy_sindre_tweetnetspeed.png" />
     <figcaption><a href="https://twitter.com/sindresorhus/status/291537387975229440">Tweet</a> between Addy and Sindre about speed throttling tools</figcaption>
 </figure>
@@ -39,7 +39,7 @@ Modern web applications provide a lot of possibilities for bandwidth optimizatio
 ### On Windows
 There are several tools available for windows. Probably the simplest approach is to use [Fiddler2](http://www.fiddler2.com/fiddler2/), a tool which you should have installed anyway as a web developer. Just download and start it. In the menu, there's an entry called "Rules", open it and navigate to "Performance". There you should see an item called **"Simulate Modem Speeds"**.
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/fiddler2modemspeed.png" />
     <figcaption>Fiddler2</figcaption>
 </figure>
@@ -54,7 +54,7 @@ OSX has a tool called **Network Link Conditioner** which allows you to do a simi
 1. Navigate the menu XCode > Open Developer Tool > More Developer Tools. This will open Apple's website
 1. Download the "Hardware IO Tools for XCode"
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/hardwareIoTools.png"/>
   <figcaption>Download the Hardware IO Tools</figcaption>
 </figure>

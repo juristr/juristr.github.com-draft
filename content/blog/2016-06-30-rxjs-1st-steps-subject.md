@@ -109,7 +109,7 @@ var someSubscriber = broadcast
 
 That was easy right? Obviously we can broadcast any kind of value we need. Great! But now we're going to make things a bit more interesting and realistic. In our app subscribers may come in and go at different times. So I created a simple UI that allows to simulate such behavior. Something like this:
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/rxjs-first-steps/rxjs-demo-ui.png">
     <figcaption>Our testing UI</figcaption>
 </figure>
@@ -208,37 +208,37 @@ Also, I've not yet tried it, but the above described approach could be a very va
 
 Here are some further, related links.
 
-{% include article-link.html
+{{<article-link
     url="/blog/2016/06/ng2-getting-started-for-beginners/#rxjs"
     imageurl="/blog/assets/imgs/angular2logo.svg"
     title="Angular - A Getting Started Guide for Beginners"
     text="Reactive Programming with RxJs 5 and Http in Angular"
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
     url="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754"
     title="The introduction to Reactive Programming you've been missing"
     text="André Staltz introduces the very basics of what reactive programming is all about."
 		imageurl="https://avatars3.githubusercontent.com/u/90512?v=3&s=200"
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
     url="https://gist.github.com/btroncone/d6cf141d6f2c00dc6b35"
     title="RxJS 5 Operators By Example"
     text="A complete list of RxJS 5 operators with easy to understand explanations and runnable examples."
 		imageurl="https://avatars0.githubusercontent.com/u/5085101?v=3&s=200"
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
     url="https://youtu.be/zAWB3lPixtk"
     title="Video: Extreme Streams: The What, How and Why of Observables"
     text="Observables are great for building UIs and RxJS is an amazing implementation of them. Despite the library's awesome power, it’s relatively underutilized mostly due to it being hard. This talk gives a high level overview of what observables are, how you use them, and why they are useful, through a basic implementation and a real world example (searching reddit for cute animals)."
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
     url="http://victorsavkin.com/post/146359880996/the-taxonomy-of-reactive-programming"
     title="THE TAXONOMY OF REACTIVE PROGRAMMING"
 		text="In this article I will introduce four independent dimensions of reactive programming"
 		imageurl="https://avatars3.githubusercontent.com/u/35996?v=3&s=200"
-%}
+>}}
 

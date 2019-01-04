@@ -16,8 +16,8 @@ image: /blog/assets/imgs/ajax-splash.png
 
 While single-page JavaScript apps tend to be more dynamic and usually more interactive from the user point of view, they also most often have a longer startup time compared to more classic, server-side rendered apps. That's usually where progress indicators and splash screens come into play.
 
-{% assign message = "IMPORTANT: I was naive. Using progress bars is an antipattern and should be avoided. Rather try to optimize startup using strategies such as code splitting, lazy loading, caching with service workers, or even pre-rendering on the server." %} 
-{% include warn-notice.html %}
+{{<warn-notice message="IMPORTANT: I was naive. Using progress bars is an antipattern and should be avoided. Rather try to optimize startup using strategies such as code splitting, lazy loading, caching with service workers, or even pre-rendering on the server." >}} 
+ 
 
 Obviously, the focus should clearly lie in optimizing the startup time to the maximum possible in order to avoid having the need for a splash screen at all. But as we all know that doesn't always work out.
 
@@ -33,14 +33,14 @@ What I usually do when starting up my SPA (Single Page App) is to..
 
 See - for instance - how GMail does it:
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/ajax-gmail.png" />
   <figcaption>GMail progress indicator</figcaption>
 </figure>
 
 In the simplest case you show an animated gif and that's it. In a more sophisticated approach you might want to show the user some degree of real-time progress as the app loads. **[NProgress](http://ricostacruz.com/nprogress/)** ([GitHub](https://github.com/rstacruz/nprogress)) might be a nice option in that case.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/nprogress-demo.gif" />
   <figcaption>NProgress demo</figcaption>
 </figure>
@@ -120,7 +120,7 @@ _(Don't take that too serious...I'm not a designer, nor did I optimize it)_
 
 ...and voilá, the result:
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/splash-demo.gif" />
   <figcaption>Splash screen demo</figcaption>
 </figure>

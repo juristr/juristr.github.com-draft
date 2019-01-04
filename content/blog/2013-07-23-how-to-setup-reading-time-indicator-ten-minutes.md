@@ -74,7 +74,7 @@ Now it really becomes quite easy. The **calculation of the minutes** is done as 
 
 That's it. 
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/reading_time.png" />
     <figcaption>Screenshot of the reading time indicator on this blog here</figcaption>
 </figure>

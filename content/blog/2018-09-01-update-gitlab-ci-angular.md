@@ -13,7 +13,7 @@ Specifically I run into issues where the CI server wasn't able to connect to Fir
 
 In the end the solution was to **not protect the FIREBASE_DEPLOY_KEY** variable in GitLab, which doesn't mean it will be exposed on the CI server log (which I thought).
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-variables-protect.png">
   <figcaption>Adding the firebase token to GitLab</figcaption>
 </figure>

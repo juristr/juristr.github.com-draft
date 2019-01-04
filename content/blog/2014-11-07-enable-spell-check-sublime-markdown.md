@@ -31,7 +31,7 @@ MarkdownEditing not only allows you to quickly navigate through the document str
 
 But there's one thing that puzzled me: **no spell checking**. Or is there one??
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/sublime-spellcheck-inaction.png" />
     <figcaption>Spell checking in action</figcaption>
 </figure>
@@ -40,7 +40,7 @@ But there's one thing that puzzled me: **no spell checking**. Or is there one??
 
 Here's how you activate it.
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/sublime-enable-spellcheck.gif" />
     <figcaption>How to enable spell checking in sublime</figcaption>
 </figure>

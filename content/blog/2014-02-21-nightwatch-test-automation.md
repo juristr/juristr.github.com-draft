@@ -30,7 +30,7 @@ Yesterday I then saw a tweet on my timeline mentioning Selenium, Node and a proj
 
 About 15 minutes later this was the result. A fully automated front-end test that (as of now), logs into our portal and verifies whether the different webapps respond as expected.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/nightwatchtests.gif" />
   <figcaption>Example of automating UI testing of our Citizen portal</figcaption>
 </figure>
@@ -105,7 +105,7 @@ The `egovLogin(...)` you see in my tests is simply our login process I factored 
 
 Under the hood, the [Nightwatch test runner](http://nightwatchjs.org/guide#test-runner) communicates with the Selenium server over the [Selenium WebDriver Wire protocol](https://code.google.com/p/selenium/wiki/JsonWireProtocol).
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/nightwatch-components.png" />
   <figcaption>Diagram illustrating how everything works behind the scenes: Source: Nightwatch.js documentation</figcaption>
 </figure>
@@ -133,14 +133,14 @@ First of all you need to have the same installation setup on the server where Je
 For convenience reasons you should place your Nightwatch setup into a Git repository and then connect it with Jenkins. See [how I did it with GitLab](/blog/2014/01/git-flow-jenkins-gitlab/).  
 Running nightwatch is done by simply invoking it from a batch command.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/jenkins-nightwatch-config.png" />
   <figcaption>Running Nightwatch on Jenkins</figcaption>
 </figure>
 
 The runner will produce a nice JUnit compatible XML file which can be taken by Jenkins for presenting the results and eventual failures to us.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/jenkins-nightwatch-integration.png" />
   <figcaption>Jenkins running our Nightwatch tests</figcaption>
 </figure>
@@ -149,7 +149,7 @@ The runner will produce a nice JUnit compatible XML file which can be taken by J
 
 Automated UI tests can be very helpful but don't overestimate them. They're usually on the top of the automated testing pyramid and thus you should **write a few significative ones**.
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/testingpyramid.png" />
   <figcaption>Test automation pyramid by Martin Fowler</figcaption>
 </figure>

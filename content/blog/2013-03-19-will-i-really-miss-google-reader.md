@@ -42,7 +42,7 @@ Feedly has a bunch of "native" clients, for Chrome, Firefox, Safari, iOS and And
 
 The Chrome Extension adds a nice share button directly in the lower right corner for quickly subscribing to a new feed or for saving it to read it later.
 
-<figure>
+<figure class="image--medium">
 	<img src="/blog/assets/imgs/feedlybutton.png" />
 	<img src="/blog/assets/imgs/feedlybutton_expanded.png" />
 	<figcaption>Feedly button (collapsed and expanded)</figcaption>
@@ -64,7 +64,7 @@ It has tons of customization possibilities. Starting from the background, font o
 
 > **No two feedlies are the same.** We all have unique appetites when it comes to feeding our minds. Add the sources that inspire you and the news that matters to you. Pick your layout and your theme. Feedly is your web. <cite><a href="http://feedly.com/about.html">Feedly About</a></cite>
 
-<figure>
+<figure class="image--medium">
 	<img src="/blog/assets/imgs/feedly_cust1.png" />
 	<img src="/blog/assets/imgs/feedly_cust2.png" />
 	<img src="/blog/assets/imgs/feedly_cust3.png" />

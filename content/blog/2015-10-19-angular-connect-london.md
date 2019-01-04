@@ -16,8 +16,8 @@ image: /blog/assets/imgs/ngconnect/ngconnect_bg.png
 
 I'm lucky enough to be able to attend [AngularConnect](http://angularconnect.com/) here in London. This article is going to be my notebook while attending the conference. Also take a look at my [notes from day 2](/blog/2015/10/angular-connect-london-day2/)!
 
-{% assign message = "Contents are based on Angular version >=2" %}
-{% include warn-notice.html %}
+{{<warn-notice message="Contents are based on Angular version >=2" >}}
+ 
 
 Here are my **notes from day 1** of the conference. Btw, **videos for track 1 are out**: [YouTube](https://www.youtube.com/channel/UCzrskTiT_ObAk3xBkVxMz5g)
 
@@ -209,7 +209,7 @@ Ionic is exciting technology. I was trying hybrid apps about a couple of years a
 
 **Big announcement:** [Ionic 2 is now public alpha](http://ionic.io/2).
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/ngconnect/ionic2logo.png" width="50%" height="50%"/>
 </figure>
 

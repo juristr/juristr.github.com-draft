@@ -30,15 +30,15 @@ In this article I'm not going to deep dive into it, there are lots of articles o
 
 ## The Video Lesson
 
-{% assign uid = "lessons/angular-cache-data-in-angular-services-using-rxjs" %}
-{% include egghead-lesson.html %}
+{{<egghead-lesson uid="lessons/angular-cache-data-in-angular-services-using-rxjs">}}
+ 
 
 ## Running Stackblitz example
 
 Also, here's a running Stackblitz example.
 
-{% assign uid = "edit/angular-egghead-rxjs-caching" %}
-{% include stackblitz.html %}
+{{<stackblitz uid="edit/angular-egghead-rxjs-caching" >}}
+ 
 
 ## Like the video?
 

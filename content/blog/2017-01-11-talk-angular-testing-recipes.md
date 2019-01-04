@@ -18,8 +18,8 @@ image: /blog/assets/imgs/testing-with-angular.png
   I recently wanted to dive deeper into testing Angular applications, in specific on how to write proper unit tests for some common scenarious you might encounter. <a href="https://twitter.com/webdave_de" target="_blank">Dave</a>, the organizer of <a href="https://twitter.com/angular_hamburg" target="_blank">the Angular Hamburg Meetup group</a> asked me whether I'd be interested in doing a talk. So here we are, read on for the slides, GitHub repo and video of the talk :wink:.
 </div>
 
-{% assign message = "Contents are based on Angular version >=2" %}
-{% include warn-notice.html %}
+{{<warn-notice message="Contents are based on Angular version >=2" >}}
+ 
 
 {{< postad >}}
 
@@ -31,28 +31,28 @@ image: /blog/assets/imgs/testing-with-angular.png
 
 ## Slides and recorded talk
 
-{% include article-link.html
+{{<article-link
 	url="https://goo.gl/W5WyHd"
 	title="Testing with Angular! Some Recipes"
 	text="Slides from my talk for Angular Hamburg."
     imageurl="/blog/assets/imgs/linkpics/googleslides.png"
-%}
+>}}
 
 Here's the video of my talk:
 
-{% assign youtube_id = "Uw_XomCJaGQ" %}
-{% include youtube.html %}
+{{<youtube youtube_id="Uw_XomCJaGQ">}}
+ 
 
 ## Code Repository
 
 I setup a dedicated code repository with the purpose of collecting **testing recipes for various scenarious** you might encounter while testing your Angular applications.
 
-{% include article-link.html
+{{<article-link
 	url="https://github.com/juristr/angular-testing-recipes"
 	title="GitHub: angular-testing-recipes"
 	text="A code repository full of testing recipes. Check them out and help me create more!"
     imageurl="/blog/assets/imgs/githublogo.svg"
-%}
+>}}
 
 You have some more? Share them with me and contribute them to the repository :+1:
 

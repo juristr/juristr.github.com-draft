@@ -16,8 +16,8 @@ image: /blog/assets/imgs/angular-modules/postbg.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >=2" %}
-{% include warn-notice.html %}
+{{<warn-notice message="Contents are based on Angular version >=2" >}}
+ 
 
 To start straight away: **Angular Modules are different from ES6 Modules!**
 

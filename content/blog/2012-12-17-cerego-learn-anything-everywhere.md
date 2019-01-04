@@ -44,18 +44,18 @@ Recently Cerego appeared on my Twitter feed. And while I'm no more actively usin
 
 ### Find
 The interesting thing about Cerego is that it has already social features build-in (a must). That means you can find courses created by others
-<figure>
+<figure class="image--medium">
 	<img src="/blog/assets/imgs/findcourses.png" class="noborder"/>
 </figure>
 
 ### Learn
 That means you can even learn things like the ASL alphabet.
-<figure>
+<figure class="image--medium">
 	<img src="/blog/assets/imgs/aslalphabet.png" class="noborder"/>
 </figure>
 
 ### Create
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/newcourse_details.png" class="noborder">
 </figure>
 Creating new courses is as easy as
@@ -66,7 +66,7 @@ Creating new courses is as easy as
 - entering the questions + answers
 
 The editor for entering the questions is very handy. You just enter the question, <kbd>Tab</kbd> the corresponding answer, <kbd>Enter</kbd> and the focus will jump downwards to continue entering the next one. Win!
-<figure>
+<figure class="image--medium">
 	<img src="/blog/assets/imgs/newcourse_questions.png" class="noborder"/>
 </figure>
 

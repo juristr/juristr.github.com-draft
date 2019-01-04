@@ -99,11 +99,11 @@ The videos give a preview of how the upcoming release of JavaScriptMVC v3.3 furt
 
 ### Part 1 - MVC Architecture and the Observer Pattern
 
-{% assign youtube_id = "NZi5Ru4KVug" %}
-{% include youtube.html %}
+{{<youtube youtube_id="NZi5Ru4KVug">}}
+ 
 
 ### Part 2 - Development process
 
 
-{% assign youtube_id = "yFxDY5SQQp4" %}
-{% include youtube.html %}
+{{<youtube youtube_id="yFxDY5SQQp4">}}
+ 

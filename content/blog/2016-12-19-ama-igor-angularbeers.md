@@ -17,8 +17,8 @@ image: /blog/assets/imgs/ama-angularbeers.png
 
 {{< postad >}}
 
-{% assign youtube_url = "https://www.youtube.com/embed/i2XloM6Q5wc" %}
-{% include youtube.html %}
+ {{<youtube youtube_id="i2XloM6Q5wc">}}
+ 
 
 There have been a lot of questions and unfortunately we didn't have the time to ask them all. Below are the ones that were posed to Igor and Adam, with a link to the according position in the video. Hopefully this helps to pick those answers you're most interested in :smiley:.
 
@@ -39,12 +39,12 @@ There have been a lot of questions and unfortunately we didn't have the time to 
 
 ## Related
 
-{% include article-link.html
+{{<article-link
 	url="/blog/2016/12/let-me-explain-angular-release-cycles/"
 	title="Ok.. let me explain: it's going to be Angular 4.0, or simply Angular"
 	text="Learn about Angular's release cycles and how the team plans to move forward from now on."
 	imageurl="/blog/assets/imgs/angular4announcement.png"
-%}
+>}}
 
 
 

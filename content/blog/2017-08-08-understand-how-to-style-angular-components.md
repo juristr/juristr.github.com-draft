@@ -16,17 +16,17 @@ image: /blog/assets/imgs/egghead-artwork-styling-components.png
 	Here it is!!! :fire: :fire: :fire: My very first <a href="https://egghead.io/instructors/juri-strumpflohner">Egghead.io</a> course :smiley:. Learn everything you need to know about styling Angular components.
 </div>
 
-{% assign message = "Contents are based on Angular version >=2" %}
-{% include warn-notice.html %}
+{{<warn-notice message="Contents are based on Angular version >=2" >}}
+ 
 
 Last year I wrote an in depth article on how to conditionally style Angular components:
 
-{% include article-link.html
+{{<article-link
     url="/blog/2016/01/learning-ng2-dynamic-styles/"
     title="Learning Angular: Conditionally add styles to an element"
     text="Learn how to conditionally add styles to a DOM element in Angular"
     imageurl="/blog/assets/imgs/conditional-add-styles.png"
-%}
+>}}
 
 The article walks through different kind of possibilities Angular offers and helps decide which approach might be the best for your current scenario or use case.
 

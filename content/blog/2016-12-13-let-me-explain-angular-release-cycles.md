@@ -145,8 +145,8 @@ So you can see that **major versions will be released approximately every 6 mont
 
 ## Video: See the announcement yourself
 
-{% assign youtube_url = "https://www.youtube.com/embed/aJIMoLgqU_o" %}
-{% include youtube.html %}
+{{< youtube youtube_id="aJIMoLgqU_o" >}}
+ 
 
 ## Conclusion
 

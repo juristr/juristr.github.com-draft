@@ -16,7 +16,7 @@ image: /blog/assets/imgs/scan-operator-marble.png
 
 {{< postad >}}
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/scan-operator-marble.png">
     <figcaption>RxJS marble diagram for scan</figcaption>
 </figure>
@@ -143,8 +143,8 @@ state$ = this.stateSubject.asObservable().pipe(
 
 ## Running Stackblitz example
 
-{% assign uid = "edit/angular-state-mgmnt-scan" %}
-{% include stackblitz.html %}
+{{<stackblitz uid="edit/angular-state-mgmnt-scan" >}}
+ 
 
 ## Conclusion
 

@@ -19,8 +19,8 @@ image: /blog/assets/imgs/ng2-register-event-cardimg.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >=2" %}
-{% include warn-notice.html %}
+{{<warn-notice message="$1" >}}
+ 
 
 So, naively you could start and write something like this:
 
@@ -84,7 +84,7 @@ Note, that **both of these methods work for the `window` object** as well :+1:.
 
 Here's a Plunker to play around with: [https://plnkr.co/edit/n20EtGiB9trW0M5EkIfH?p=preview](https://plnkr.co/edit/n20EtGiB9trW0M5EkIfH?p=preview)
 
-{% assign plunker_url = "https://embed.plnkr.co/n20EtGiB9trW0M5EkIfH/" %}
-{% include plunker.html %}
+{{<plunker plunker_url="https://embed.plnkr.co/n20EtGiB9trW0M5EkIfH/">}}
+ 
 
 Hope this was helpful :smiley:!

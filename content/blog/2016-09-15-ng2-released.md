@@ -110,37 +110,37 @@ Here's [the official announcement](http://angularjs.blogspot.com/2016/09/angular
 
 Here are some starter links.
 
-{% include article-link.html
+{{<article-link
     url="/blog/2016/06/ng2-getting-started-for-beginners/"
     title="Angular 2 - A Getting Started Guide for Beginners"
     text="A gentle introduction to what Angular 2 is all about, targeted especially to beginners."
     imageurl="/blog/assets/imgs/linkpics/angular2logo.svg"
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
     url="/blog/collections/angular-2/"
     title="Collection of Angular 2 articles"
     text="A collection of Angular 2 related articles on my blog here"
     imageurl="/blog/assets/imgs/linkpics/angular2logo.svg"
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
     url="https://angular.io"
     title="Official Angular 2 site"
     text="Check out the docs and guides on the official Angular 2 site"
     imageurl="/blog/assets/imgs/linkpics/angular2logo.svg"
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
     url="http://victorsavkin.com/"
     title="Victor Savkin's blog"
     text="Victor Savkin is a core member of the Angular team and has a bunch of super interesting, in depth articles on his blog"
     imageurl="/blog/assets/imgs/linkpics/victorsavkin.jpg"
-%}
+>}}
 
-{% include article-link.html
+{{<article-link
     url="http://thoughtram.io/blog"
     title="Thoughtram"
     text="Awesome training articles by Pascal Precht, Christoph Burgdorf and Thomas Burleson"
     imageurl="/blog/assets/imgs/linkpics/thoughtramlogo.png"
-%}
+>}}

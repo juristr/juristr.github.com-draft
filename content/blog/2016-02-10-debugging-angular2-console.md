@@ -23,14 +23,14 @@ image: /blog/assets/imgs/ng2-console-debugging/debugging-ng2-apps.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >=2" %}
-{% include warn-notice.html %}
+{{<warn-notice message="$1" >}}
+ 
 
 {{< toc >}}
 
 I always found it quite neat how to debug my Angular 1.x applications directly from my browser's console. Take Chrome's devtools for instance. You can open the Elements tab and click on your Angular component. The nice thing about the Chrome devtools is that it'll keep a reference to the selected DOM node in the variable `$0` which you can then directly access from the console.
 
-<figure>
+<figure class="image--medium">
     <a href="/blog/assets/imgs/ng2-console-debugging/devtools-elements-tab.gif" class="image--zoom">
         <img src="/blog/assets/imgs/ng2-console-debugging/devtools-elements-tab.gif" />
     </a>
@@ -83,7 +83,7 @@ Expand the result object in the devtools and navigate through it. There are are 
 
 Once we have that instance, we can interact with it, like changing the name property in the case of our simple hello world component example.
 
-<figure>
+<figure class="image--medium">
     <a href="/blog/assets/imgs/ng2-console-debugging/debug-componentinstance.gif" class="image--zoom">
         <img src="/blog/assets/imgs/ng2-console-debugging/debug-componentinstance.gif" />
     </a>
@@ -101,7 +101,7 @@ Not sure if you noticed, but we invoked the change detector on our selected Angu
 
 Here's the result of executing the change detector:
 
-<figure>
+<figure class="image--medium">
     <a href="/blog/assets/imgs/ng2-console-debugging/debug-detectchanges.gif" class="image--zoom">
         <img src="/blog/assets/imgs/ng2-console-debugging/debug-detectchanges.gif" />
     </a>
@@ -109,7 +109,7 @@ Here's the result of executing the change detector:
 
 ## Augury (formerly: Batarangle)
 
-<figure>
+<figure class="image--medium">
     <a href="https://augury.angular.io/">
         <img src="/blog/assets/imgs/ng2-console-debugging/augury.png" />
     </a>
@@ -117,7 +117,7 @@ Here's the result of executing the change detector:
 
 If you're not the console type of guy, you may appreciate the visual debugging tool [Augury from Rangle.io](https://augury.angular.io/), which is now also the officially supported Chrome devtool extension for Angular :smiley:.
 
-<figure>
+<figure class="image--medium">
     <a href="/blog/assets/imgs/ng2-console-debugging/augury-screenloop.gif" class="image--zoom">
         <img src="/blog/assets/imgs/ng2-console-debugging/augury-screenloop.gif" />
     </a>

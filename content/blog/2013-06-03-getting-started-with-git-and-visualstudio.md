@@ -45,14 +45,14 @@ You find this checklist when opening the Git Extensions application, and then by
 
 If you have successfully setup Git (following the procedure mentioned before), you can go ahead and install the Git Source Control Provider extension for Visual Studio. The easiest way is probably through its "Extensions and Updates" dialog where you have to simply search for "git source control".
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/vsgit/vsgit_gallery.png" />
     <figcaption>Installation through the Visual Studio Extensions and Updates mechanism</figcaption>
 </figure>
 
 As one of the next steps you need to correctly **set the source code provider** within Visual Studio as you might have more of them (i.e TFS). This is done in Visual Studio's preferences in the "Source Control" section:
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/vsgit/set_vcs_provider.png"/>
     <figcaption>Configuring the source control provider</figcaption>
 </figure>
@@ -88,7 +88,7 @@ After that operation you should see the repository to be setup successfully:
 
 Moreover, you should see some files listed in Git's pending changes window:
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/vsgit/git_pending_changes.png" />
     <figcaption>Pending changes listed by the Git Source Control Provider</figcaption>
 </figure>
@@ -130,14 +130,14 @@ Our tree after the commit looks like this:
 
 To create a new branch, select the **Git Extensions** button on the pending changes window and then **Create branch**
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/vsgit/gscm_createbranch.png" />
     <figcaption>Create a new branch</figcaption>
 </figure>
 
 This action will open a new dialog window, allowing you to first of all select the point in history from which you'd like to branch and then to specify its name:
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/vsgit/gscm_createbranch_dialog.png" />
     <figcaption>Selecting the new branch's details</figcaption>
 </figure>
@@ -150,14 +150,14 @@ A confirmation dialog shows the success of the operation and the executed comman
 
 Moreover, in the Pending Changes window we now see the current branch we're on, which is the just created "my-feature-branch".
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/vsgit/gscm_createbranch_branchname.png" />
     <figcaption>The pending changes window visualizes the currently active branch in its title</figcaption>
 </figure>
 
 We can now **modify** an existing file - say our `Person.cs` - and commit it. The Pending Changes window exactly shows the diff of the changes before we commit them
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/vsgit/gscm_pendingchanges_diff.png" />
     <figcaption>Diff of the changes shown in the Pending Changes window</figcaption>
 </figure>
@@ -222,7 +222,7 @@ Git SCP will ask you on whether to solve or ignore the conflicts. If you answer 
 
 Click on "Start mergetool" to open your configured merge tool. In my case this openes "kdiff3". This might vary on your system, depending on how you configured your Git installation.
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/vsgit/gscm_merge_kdiff.png" />
     <figcaption>Merge process in kdiff3</figcaption>
 </figure>
@@ -245,7 +245,7 @@ Jumping to a certain commit is quite easy and can be done by using the **Browse*
 
 From there you can use the context menu and click on **Checkout a selected revision**.
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/vsgit/gscm_checkoutrevision_detachedhead.png" />
     <figcaption>Detached head mode</figcaption>
 </figure>
@@ -270,7 +270,7 @@ Undoing local changes that have not yet been committed is quite easy and can be 
 
 If you have already committed a change to your repository and you recognize that you have forgotten something to include in that same commit (like the comment on that line of code)...
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/vsgit/gittree_acommitedchange.png" />
     <figcaption>A committed change we want to undo..</figcaption>
 </figure>

@@ -16,7 +16,7 @@ image: /blog/assets/imgs/markus-spiske-666904-unsplash.jpg
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >= 6.0.0" %} {%
+{{<warn-notice message="Contents are based on Angular version >= 6.0.0" >}} {%
 include warn-notice.html %}
 
 {{< toc >}}

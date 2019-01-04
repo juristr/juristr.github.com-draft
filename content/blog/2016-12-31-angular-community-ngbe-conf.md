@@ -26,7 +26,7 @@ The two conference organizers [Jurgen](https://twitter.com/jvandemo) and [Sam](h
 Just watch the conference intro video:
 
 {% assign youtube_id = "dJIeeoaGqZQ" %}
-{% include youtube.html %}
+ 
 
 <!--<figure class="image--medium">
     <a href="/blog/assets/imgs/ngbe-intro-letter.jpg" class="image--zoom">
@@ -103,17 +103,17 @@ One of the highlights of the conference was for sure the announcement of "Angula
 
 If you've been following the whole development of Angular recently, this wasn't that big of a news. The team had already announced their switch to semantic versioning. But still, not everyone heard about it, and the fact they were skipping version 3 was kind of a surprise. Later, I wrote down the main important parts of the announcement, which got then reviewed by Igor and the Angular core team and published on their blog. Read everything about it here:
 
-{% include article-link.html
+{{<article-link
 	url="/blog/2016/12/let-me-explain-angular-release-cycles/"
 	title="Ok.. let me explain: it's going to be Angular 4.0, or simply Angular"
 	text="Learn about Angular's release cycles and how the team plans to move forward from now on."
 	imageurl="/blog/assets/imgs/angular4announcement.png"
-%}
+>}}
 
 Or simply watch the talk :smiley:
 
 {% assign youtube_id = "aJIMoLgqU_o" %}
-{% include youtube.html %}
+ 
 
 ### Other personal highlights
 
@@ -130,18 +130,18 @@ Here are some talks I really enjoyed.
 
 But there have been a lot of other interesting talks, like the intro to GraphQL by Gerard or on scalable Angular application architectures by Minko. Well, have a look yourself and on the official NG-BE Youtube channel.
 
-{% include article-link.html
+{{<article-link
 	url="https://www.youtube.com/channel/UCnMfZM2S3QgbFvOyet5PMmQ/videos"
 	title="Youtube: NG-BE"
 	text="All of the conference sessions at NG-BE 2016"
-%}
+>}}
 
 ## Conclusion
 
 I've been doing frontend development, even with Angular 1, for a longer time now. But it's been roughly since November last year when I started to be more active, on Twitter, by contributing to Angular open source projects, [and obviously by blogging more Angular specific stuff](/blog/collections/angular). It's been overwhelming how welcoming, friendly and open the community is.
 
 {% assign youtube_id = "lX7XLRzkkJQ" %}
-{% include youtube.html %}
+ 
 
 For me NG-BE was exemplary in that it embraced and reflected this kind of community experience :+1:. So make sure to watch out for the 2017 edition which is going to happen in December again :wink:.
 
