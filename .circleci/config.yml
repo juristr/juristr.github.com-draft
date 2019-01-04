@@ -13,10 +13,10 @@ jobs:
       - image: dettmering/hugo-build
     # working_directory: /srv/hugo
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8"
       - checkout
       - run: apk --no-cache add git openssh
+      - run:
+          name: Avoid hosts unknown for github
+          command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       # specify any bash command here prefixed with `run: `
       - run: ./scripts/deploy.sh
