@@ -3,7 +3,7 @@ type: post
 title: Breaking apart conceptions by Ayende Rahien
 link: 'https://www.youtube.com/watch?v=0tlMTJDKiug&feature=youtu.be'
 categories:
-  - DotNet
+  - ".Net"
   - Software Architecture
 date: 2015-10-11T00:00:00.000Z
 comments: true

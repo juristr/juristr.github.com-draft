@@ -4,9 +4,9 @@ description: ''
 category: null
 categories:
   - book review
-  - ASPnet MVC
+  - ASP.net MVC
   - 'C#'
-  - DotNet
+  - ".Net"
 date: 2012-12-14T01:00:00.000Z
 comments: true
 url: /blog/2012/12/programming-aspnet-mvc4

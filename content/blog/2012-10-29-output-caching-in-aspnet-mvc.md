@@ -6,7 +6,7 @@ description: >-
   approaches on how to implement them.
 category: article
 categories:
-  - ASPnet MVC
+  - ASP.net MVC
   - 'C#'
 reposts:
   - 'http://dotnet.dzone.com/articles/output-caching-aspnet-mvc'

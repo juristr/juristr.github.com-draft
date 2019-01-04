@@ -7,7 +7,7 @@ show_img_in_detail: true
 coverimage: false
 category: null
 categories:
-  - ASPnet
+  - ASP.net
   - JavaScript
   - HowTo
 date: 2014-09-12T00:00:00.000Z

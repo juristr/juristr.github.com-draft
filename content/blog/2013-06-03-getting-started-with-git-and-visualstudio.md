@@ -5,7 +5,7 @@ headline: Git meets Visual Studio
 description: Step by step guid on how to use Git within Visual Studio.
 show_img_in_detail: true
 categories:
-  - DotNet
+  - ".Net"
 reposts:
   - 'http://agile.dzone.com/articles/git-visual-studio-and-net'
 date: 2013-06-03T00:00:00.000Z

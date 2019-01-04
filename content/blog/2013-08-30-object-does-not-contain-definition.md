@@ -5,7 +5,7 @@ show_img_in_detail: false
 coverimage: false
 category: null
 categories:
-  - DotNet
+  - ".Net"
   - 'C#'
   - testing
 reposts:

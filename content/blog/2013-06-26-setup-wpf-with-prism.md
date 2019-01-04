@@ -3,7 +3,7 @@ title: Setting up a WPF Application With PRISM
 description: ''
 category: ''
 categories:
-  - DotNet
+  - ".Net"
   - WPF
 date: 2013-06-26T00:00:00.000Z
 comments: true

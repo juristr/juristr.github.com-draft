@@ -6,8 +6,8 @@ categories:
   - JavaScript
   - lessons learned
   - 'C#'
-  - DotNet
-  - ASPnet MVC
+  - ".Net"
+  - ASP.net MVC
   - Web dev
 reposts:
   - 'http://dotnet.dzone.com/articles/lessions-learned-dont-expose'
