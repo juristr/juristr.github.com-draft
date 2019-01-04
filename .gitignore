@@ -1,4 +1,4 @@
 _gen/
-content/blog/*.md
-content/blog/*.html
+# content/blog/*.md
+# content/blog/*.html
 # public/
