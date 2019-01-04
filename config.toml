@@ -15,10 +15,16 @@ disqusShortname = "juristr"
 [permalinks]
   blog = "/blog/:year/:month/:title/"
 
-# [params]
-#   logo = "/images/logo.png"
-#   description ="the clean blog!"
+[params]
+  icon = "/assets/images/sitelogo.jpeg"
+  # logo = "/images/sitelogo.jpeg"
+  description ="the clean blog!"
 #   #mailchimp = "you can provide a mailchimp-link here"
+
+[outputFormats]
+[outputFormats.RSS]
+  mediatype = "application/rss"
+  baseName = "atom"
 
 [params.author]
   name = "Juri Strumpflohner"
