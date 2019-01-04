@@ -11,12 +11,9 @@ jobs:
   build:
     docker:
       - image: juristr/hugo-docker
-    # working_directory: /srv/hugo
+    working_directory: /srv/hugo
     steps:
       - checkout
-      - run: 
-          name: "Build hugo site"
-          command: hugo
       - run:
           name: Avoid hosts unknown for github
           command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
@@ -25,5 +22,5 @@ jobs:
           command: apk --no-cache add git openssh
       # specify any bash command here prefixed with `run: `
       - run: 
-          name: "Deploy to GitHub"
+          name: "Build and deploy to GitHub"
           command: ./scripts/deploy.sh
