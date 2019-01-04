@@ -17,8 +17,8 @@ image: /blog/assets/imgs/webpack_proxy_config.png
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >=2" %}
-{% include warn-notice.html %}
+{{<warn-notice message="$1" >}}
+ 
 
 {{< toc >}}
 
@@ -41,7 +41,7 @@ As such, when you execute `npm start`, `ng serve` will be invoked which is a com
 
 Things get a bit more interesting in a more real world setup where you have your Angular CLI development server running on `http://localhost:4200` and your backend API (in whichever technology you like) running on some other port or even host, let's say `http://localhost:3000` (this could also be `http://dev-123.mycompany.com` or something else ofc).
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/ngdevserver-noproxy.png">
     <figcaption>Local Angular CLI dev server without proxy</figcaption>
 </figure>
@@ -73,7 +73,7 @@ this.http.get('/api/v1/people')
 
 With the proxy, our initial diagram would change to something like this:
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/ngdevserver-proxy.png">
     <figcaption>Local Angular CLI dev server with active proxy</figcaption>
 </figure>
@@ -132,9 +132,9 @@ You prefer to watch a video how to configure the proxy? Here you go :smiley:
 
 You didn't yet have the chance to create an Angular application, but you're eager to learn it? Watch my introductory video which learns you how to build your first Angular application using the Angular CLI in under one hour. 
 
-{% include article-link.html
+{{< article-link
     url="/blog/2016/10/lets-create-ur-first-ng2-app/"
     title="Let's create your first Angular app"
     text="It's time to get started. In this video I will help you create your first Angular app"
     imageurl="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&d=identicon&r=PG"
-%}
+>}}

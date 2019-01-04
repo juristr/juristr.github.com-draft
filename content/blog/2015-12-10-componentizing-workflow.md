@@ -17,8 +17,8 @@ type: post
 
 {{< postad >}}
 
-{% assign message = "Contents are based on Angular version >=2" %}
-{% include warn-notice.html %}
+{{<warn-notice message="$1" >}}
+ 
 
 Yesterday I wrote a tweet about how I usually create components.
 
@@ -150,7 +150,7 @@ Neat, right. Well, **no, you're just hiding the crap** :wink:.
 
 For a first high level overview, the best is to look at the static HTML page of our huge `app-main` component.
 
-<figure>
+<figure class="image--medium">
 	<img src="/blog/assets/imgs/angular2-componentizing.png" />
 	<figcaption>Example of the getmdl.io Dashboard template</figcaption>
 </figure>
