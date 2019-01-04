@@ -3,12 +3,11 @@ title: 'Notes: Microservices by Martin Fowler'
 lead: My notes and thoughts on Martin Fowler's talk about Microservices at XConf
 show_img_in_detail: true
 coverimage: false
-category: null
 categories:
-  - notes
-  - architecture
-reposts:
-  - 'http://java.dzone.com/articles/notes-microservices-martin'
+  - Software Design
+tags:
+  - software architecture
+  - microservices
 date: 2015-01-03T01:00:00.000Z
 comments: true
 url: /blog/2015/01/notes-microservices-fowler-xconf
