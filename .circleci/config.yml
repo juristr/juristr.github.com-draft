@@ -14,6 +14,6 @@ jobs:
     # working_directory: /srv/hugo
     steps:
       - checkout
-      - run: apk --no-cache add git
+      - run: apk --no-cache add git openssh
       # specify any bash command here prefixed with `run: `
       - run: ./scripts/deploy.sh
