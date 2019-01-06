@@ -4,16 +4,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Hugo 0.53" />
 	
+	<link rel="shortcut icon" href="/assets/images/sitelogo.jpeg">
+	
 	<title>Repeater looses its data collection. ViewState problem? | juri.strumpflohner</title>
 	
 	
 
+	
+	<meta name="author" content="Juri Strumpflohner">
+	<link rel="me" href="https://profiles.google.com/104904743888756261987" />
+	<link rel="publisher" href='https://plus.google.com/104904743888756261987' />
+	<meta property="twitter:account_id" content="14407063" />
+
+
+	
+	<meta name="google-site-verification" content="0_vyoIaeMG1kXR0h-48gy3OaGl8xoiSJsFDxxCTIBMs" />
+	<meta name="google-site-verification" content="AvmssSjl_nchNXIqBW8Agb_UjGqvvLP7HXSxBZ9d0cg" />
+
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@juristr" />
+	<meta name="twitter:title" content="Repeater looses its data collection. ViewState problem?" />
+	
+
+	
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Juri Strumpflohner" href="//feeds.feedburner.com/juristrumpflohner">
+	
 
 	
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<link href='//fonts.googleapis.com/css?family=Righteous|Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
 	 rel='stylesheet' type='text/css'>
 	
@@ -23,7 +47,7 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/main.min.fd753432185db38bfbc183a977ed14f8e3ed314f4f938904d908bcfea775813a.css" integrity="sha256-/XU0Mhhds4v7wYOpd&#43;0U&#43;OPtMU9Pk4kE2Qi8/qd1gTo=" media="screen">
+	<link rel="stylesheet" href="/scss/main.min.788d84de2ded58913e22cf1f7e9d98fdc99ae669c17cd186aa46fa3ba6378fbe.css" integrity="sha256-eI2E3i3tWJE&#43;Is8ffp2Y/cma5mnBfNGGqkb6O6Y3j74=" media="screen">
 
 	
 
@@ -31,7 +55,7 @@
 
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/article.min.5023ef17f0d1b321f33a6554cd0526640c24a5a17cb68af2a8dfd9debd02e2ee.css" integrity="sha256-UCPvF/DRsyHzOmVUzQUmZAwkpaF8toryqN/Z3r0C4u4=" media="screen">
+	<link rel="stylesheet" href="/scss/article.min.39d2631fa244d3442d50500346a96e007f4d6ad56aaebadc6c4e5371731d6a0e.css" integrity="sha256-OdJjH6JE00QtUFADRqluAH9NatVqrrrcbE5TcXMdag4=" media="screen">
 	
 
 	
@@ -42,7 +66,7 @@
         
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -62,7 +86,7 @@
                 
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -73,11 +97,8 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                
+                <div id="bs4navbar" class="navbar-collapse">
                     
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         
@@ -193,29 +214,72 @@
             
             <div class="article-post">
                 
-A while back I experienced a really strange problem in one of our ASP.net applications, namely my repeater control which was loosing its data collection after a postback to the server. I got some minutes of time and thought to quickly post about the problem for you guys out there. I created a small demo app which reproduces the problem very clearly.<br /><br />Consider the following ASPX page:<br /><pre class="prettyprint">&lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="RepeaterViewstateProblem._Default" %&gt;<br />&lt;%@ Register src="Controls/RecursiveIterateControl.ascx" tagname="RecursiveIterateControl" tagprefix="uc1" %&gt;<br />&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;<br />&lt;html xmlns="http://www.w3.org/1999/xhtml" &gt;<br />&lt;head runat="server"&gt;<br />    &lt;title&gt;&lt;/title&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br />    &lt;form id="form1" runat="server"&gt;<br />    &lt;div&gt;<br />        &lt;h2&gt;List of Persons&lt;/h2&gt;<br />        &lt;asp:Repeater ID="repeaterPersons" runat="server"&gt;<br />            &lt;HeaderTemplate&gt;<br />                &lt;ul&gt;<br />            &lt;/HeaderTemplate&gt;<br />            &lt;ItemTemplate&gt;<br />                &lt;li&gt;&lt;%# Eval("Firstname") %&gt; &lt;%# Eval("Surname") %&gt;&lt;/li&gt;<br />            &lt;/ItemTemplate&gt;<br />            &lt;FooterTemplate&gt;<br />                &lt;/ul&gt;<br />            &lt;/FooterTemplate&gt;<br />        &lt;/asp:Repeater&gt;<br />        <br />        &lt;asp:Button ID="buttonSubmit" runat="server" Text="Provocate a postback!" <br />            onclick="buttonSubmit_Click" /&gt;<br />    &lt;/div&gt;<br />    &lt;/form&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</pre>It's quite simple. There is a Repeater control and a button for creating a postback to the server. In the codebehind I write the following<br /><pre class="prettyprint">using System;<br />using System.Collections.Generic;<br />using System.Linq;<br />using System.Web;<br />using System.Web.UI;<br />using System.Web.UI.WebControls;<br /><br />namespace RepeaterViewstateProblem<br />{<br />    public partial class _Default : System.Web.UI.Page<br />    {<br />        protected void Page_Load(object sender, EventArgs e)<br />        {<br />            if (!IsPostBack)<br />            {<br />                repeaterPersons.DataSource = CreateDummyPersonList();<br />                repeaterPersons.DataBind();<br />            }<br />        }<br /><br />        private IList&lt;Person&gt; CreateDummyPersonList()<br />        {<br />            return new List&lt;Person&gt;{<br />                new Person { Firstname = "Juri", Surname="Strumpflohner"},<br />                new Person { Firstname = "Jack", Surname="XYZ"}<br />            };<br />        }<br /><br />        protected void buttonSubmit_Click(object sender, EventArgs e)<br />        {<br /><br />        }<br />    }<br /><br />    class Person<br />    {<br />        public string Firstname { get; set; }<br />        public string Surname { get; set; }<br />    }<br />}</pre>I have a dummy class Person which is used for data binding. For that purpose I create a simple collection of Person objects which are being bound to the Repeater control. I'm doing this just once, when a GET request is done to the page. During POSTs the ASP.net ViewState mechansim will keep the bound data collection for me. Running the example, you should get the following output:<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_tF6XjsUy87k/St2r6-haj9I/AAAAAAAACdw/HzZW1PsRMRY/s1600-h/repeaterViewstate.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/_tF6XjsUy87k/St2r6-haj9I/AAAAAAAACdw/HzZW1PsRMRY/s320/repeaterViewstate.jpg" /></a><br /></div><br /><div class="separator" style="clear: both; text-align: center;"><br /></div>When clicking on the button, a postback to the server will be done and the ViewState will still maintain the elements of your Repeater control. So everything fine till now.<br /><br />A functionality which is often needed in web apps is to dynamically search for control instances at runtime when you just have the corresponding IDs. This can be achieved through the <a href="http://msdn.microsoft.com/en-us/library/486wc64h.aspx">Control.FindControl(...)</a> method, but often I found that you have the need for a recursive version which traverses the Control hierarchy starting from a certain root. I've implemented <a href="http://blog.js-development.com/2008/06/recursive-version-of-findcontrol-method.html">such a recursive method</a>. There's nothing bad with this except that you have to pay attention which root you provide such that you don't traverse the whole hierarchy which, on large sites, may cause some performance problems. So let's implement such a recursive find in a UserControl which is then placed on the main page I've shown above.<br /><b>RecursiveIterateControl.ascx.cs</b><br /><pre class="prettyprint">using System;<br />using System.Collections.Generic;<br />using System.Linq;<br />using System.Web;<br />using System.Web.UI;<br />using System.Web.UI.WebControls;<br />using System.Collections;<br /><br />namespace RepeaterViewstateProblem.Controls<br />{<br />    public partial class RecursiveIterateControl : System.Web.UI.UserControl<br />    {<br />        public string ControlIDToSearch { get; set; }<br /><br />        protected override void OnInit(EventArgs e)<br />        {<br />            Control ctrl = FindControlRecursive(this.Page, ControlIDToSearch);<br />        }<br /><br />        /// &lt;summary&gt;<br />        /// Recursive version of the FindControl method.<br />        /// &lt;/summary&gt;<br />        /// &lt;param name="parent"&gt;Parent to where to start the search for the control&lt;/param&gt;<br />        /// &lt;param name="controlId"&gt;ID of the control to search for&lt;/param&gt;<br />        /// &lt;returns&gt;&lt;/returns&gt;<br />        private Control FindControlRecursive(Control parent, string controlId)<br />        {<br />            if (controlId == parent.ID)<br />                return parent;<br /><br />            foreach (Control ctrl in parent.Controls)<br />            {<br />                Control tmp = FindControlRecursive(ctrl, controlId);<br />                if (tmp != null)<br />                    return tmp;<br />            }<br /><br />            return null;<br />        }<br />    }<br />}</pre>On the main page I include the UserControl and pass it the ID of - say - the button "buttonSubmit":<br /><pre class="prettyprint">&lt;uc1:RecursiveIterateControl ID="RecursiveIterateControl1" ControlIDToSearch="buttonSubmit" <br />                runat="server" /&gt;</pre><br />Now re-run the application and hit the button to launch the postback. You'll notice that your repeater is empty, getting the following screen:<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_tF6XjsUy87k/St2r_BcU5NI/AAAAAAAACd4/-pJMpP8Q9no/s1600-h/repeaterViewstateBroken.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/_tF6XjsUy87k/St2r_BcU5NI/AAAAAAAACd4/-pJMpP8Q9no/s320/repeaterViewstateBroken.jpg" /></a><br /></div>So why did this happen? The only thing we have added is the method for recursively iterating through the control hierarchy which doesn't contain any objectionable code. I'll tell what the problem is.<br /><br />There are a few things here you have to consider. First of all about the ASP.net page lifecycle and how the ViewState is being handled. The <a href="http://msdn.microsoft.com/en-us/library/ms972976.aspx">following diagram</a> shows it:<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://i.msdn.microsoft.com/ms972976.viewstate_fig02%28en-us,MSDN.10%29.gif" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="256" src="http://i.msdn.microsoft.com/ms972976.viewstate_fig02%28en-us,MSDN.10%29.gif" width="320" /></a><br /></div>Note, the ViewState is deserialized and loaded back on the controls after the OnInit and before the PageLoad event. Actually the FindControlRecursive() is called during the OnInit event but we are doing nothing with the ViewState, so that should be fine.<br /><br />The next thing I looked at was at the Repeater code directly using the <a href="http://www.red-gate.com/products/reflector/">Reflector</a>. The only thing that's being accessed on the Repeater is its Control property when it is being traversed during the execution of the FindControlRecursive. The Repeater control actually overrides that property and defines it as follows:<br /><pre class="prettyprint">public override ControlCollection Controls<br />    {<br />        get<br />        {<br />            this.EnsureChildControls();<br />            return base.Controls;<br />        }<br />    }<br /></pre><br />The "EnsureChildControls()"  will trigger a call to the CreateChildControls() which is usually overridden by composite server controls. If you continue to search that on the Repeater control you get this code...<br /><pre class="prettyprint">protected internal override void CreateChildControls()<br />    {<br />        this.Controls.Clear();<br />        if (<b>this.ViewState["_!ItemCount"] != null</b>)<br />        {<br />            this.CreateControlHierarchy(false);<br />        }<br />        else<br />        {<br />            <b>this.itemsArray = new ArrayList();</b><br />        }<br />        <b>base.ClearChildViewState();</b><br />    }<br /></pre>...and here is the problem. According to the ASP.net page lifecycle we know that the ViewState will be loaded after the OnInit event of the page. However our call of the FindControlRecursive(..) method inside the OnInit will trigger down till the CreateChildControls() method of the Repeater control is being called. And since the ViewState is not yet loaded back, the condition <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">(this.ViewState["_!ItemCount"] != null)</span> will evaluate to false with the effect that a new empty collection is being created and the ViewState of the childs is being cleared. In fact, every call to the "Control" property of the Repeater during a state in the page lifecycle where the ViewState has not yet been loaded back, will result in loosing all of its values.<br /><br />Now imagine you notice this problem in a big web app, probably days or even weeks after you or even someone else in the team has added that FindControlRecursive(..) call somewhere in the codebase. It actually took me two days to figure out this problem!<br /><br />As a solution you may pay attention to just call the FindControlRecursive(..) method during the PageLoad event or later. Alternatively you could implement a SafeFindControlRecursive(..) which takes care of this problem. This could look like the following:<br /><pre class="prettyprint">private Control SafeFindControlRecursive(Control parent, string controlId)<br />{<br />    if (controlId == parent.ID)<br />        return parent;<br /><br />    foreach (Control ctrl in GetControlCollection(parent))<br />    {<br />        Control tmp = SafeFindControlRecursive(ctrl, controlId);<br />        if (tmp != null)<br />            return tmp;<br />    }<br /><br />    return null;<br />}<br /><br />private ICollection GetControlCollection(Control parent)<br />{<br />    if (parent is Repeater)<br />    {<br />        return new Control[0];<br />    }<br />    else<br />    {<br />        return parent.Controls;<br />    }<br />}</pre>This takes care of not accessing the Control collection of a Repeater control which is normally also not needed to be traversed.<br /><br />You can download the Visual Studio project showing this problem <a href="http://juri-strumpflohner-projects.googlecode.com/files/RepeaterProblem1.0.zip">here</a>.
-
+A while back I experienced a really strange problem in one of our ASP.net applications, namely my repeater control
+which was loosing its data collection after a postback to the server. I got some minutes of time and thought to quickly
+post about the problem for you guys out there. I created a small demo app which reproduces the problem very clearly.<br /><br />Consider
+the following ASPX page:<br />
+<pre class="prettyprint">&lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="RepeaterViewstateProblem._Default" %&gt;<br />&lt;%@ Register src="Controls/RecursiveIterateControl.ascx" tagname="RecursiveIterateControl" tagprefix="uc1" %&gt;<br />&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;<br />&lt;html xmlns="http://www.w3.org/1999/xhtml" &gt;<br />&lt;head runat="server"&gt;<br />    &lt;title&gt;&lt;/title&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br />    &lt;form id="form1" runat="server"&gt;<br />    &lt;div&gt;<br />        &lt;h2&gt;List of Persons&lt;/h2&gt;<br />        &lt;asp:Repeater ID="repeaterPersons" runat="server"&gt;<br />            &lt;HeaderTemplate&gt;<br />                &lt;ul&gt;<br />            &lt;/HeaderTemplate&gt;<br />            &lt;ItemTemplate&gt;<br />                &lt;li&gt;&lt;%# Eval("Firstname") %&gt; &lt;%# Eval("Surname") %&gt;&lt;/li&gt;<br />            &lt;/ItemTemplate&gt;<br />            &lt;FooterTemplate&gt;<br />                &lt;/ul&gt;<br />            &lt;/FooterTemplate&gt;<br />        &lt;/asp:Repeater&gt;<br />        <br />        &lt;asp:Button ID="buttonSubmit" runat="server" Text="Provocate a postback!" <br />            onclick="buttonSubmit_Click" /&gt;<br />    &lt;/div&gt;<br />    &lt;/form&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</pre>It's
+quite simple. There is a Repeater control and a button for creating a postback to the server. In the codebehind I write
+the following<br />
+<pre class="prettyprint">using System;<br />using System.Collections.Generic;<br />using System.Linq;<br />using System.Web;<br />using System.Web.UI;<br />using System.Web.UI.WebControls;<br /><br />namespace RepeaterViewstateProblem<br />{<br />    public partial class _Default : System.Web.UI.Page<br />    {<br />        protected void Page_Load(object sender, EventArgs e)<br />        {<br />            if (!IsPostBack)<br />            {<br />                repeaterPersons.DataSource = CreateDummyPersonList();<br />                repeaterPersons.DataBind();<br />            }<br />        }<br /><br />        private IList&lt;Person&gt; CreateDummyPersonList()<br />        {<br />            return new List&lt;Person&gt;{<br />                new Person { Firstname = "Juri", Surname="Strumpflohner"},<br />                new Person { Firstname = "Jack", Surname="XYZ"}<br />            };<br />        }<br /><br />        protected void buttonSubmit_Click(object sender, EventArgs e)<br />        {<br /><br />        }<br />    }<br /><br />    class Person<br />    {<br />        public string Firstname { get; set; }<br />        public string Surname { get; set; }<br />    }<br />}</pre>I
+have a dummy class Person which is used for data binding. For that purpose I create a simple collection of Person
+objects which are being bound to the Repeater control. I'm doing this just once, when a GET request is done to the
+page. During POSTs the ASP.net ViewState mechansim will keep the bound data collection for me. Running the example, you
+should get the following output:<br />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_tF6XjsUy87k/St2r6-haj9I/AAAAAAAACdw/HzZW1PsRMRY/s1600-h/repeaterViewstate.jpg"
+    imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/_tF6XjsUy87k/St2r6-haj9I/AAAAAAAACdw/HzZW1PsRMRY/s320/repeaterViewstate.jpg" /></a><br /></div><br />
+<div class="separator" style="clear: both; text-align: center;"><br /></div>When clicking on the button, a postback to
+the server will be done and the ViewState will still maintain the elements of your Repeater control. So everything fine
+till now.<br /><br />A functionality which is often needed in web apps is to dynamically search for control instances
+at runtime when you just have the corresponding IDs. This can be achieved through the <a href="http://msdn.microsoft.com/en-us/library/486wc64h.aspx">Control.FindControl(...)</a>
+method, but often I found that you have the need for a recursive version which traverses the Control hierarchy starting
+from a certain root. I've implemented <a href="http://blog.js-development.com/2008/06/recursive-version-of-findcontrol-method.html">such
+  a recursive method</a>. There's nothing bad with this except that you have to pay attention which root you provide
+such that you don't traverse the whole hierarchy which, on large sites, may cause some performance problems. So let's
+implement such a recursive find in a UserControl which is then placed on the main page I've shown above.<br /><b>RecursiveIterateControl.ascx.cs</b><br />
+<pre class="prettyprint">using System;<br />using System.Collections.Generic;<br />using System.Linq;<br />using System.Web;<br />using System.Web.UI;<br />using System.Web.UI.WebControls;<br />using System.Collections;<br /><br />namespace RepeaterViewstateProblem.Controls<br />{<br />    public partial class RecursiveIterateControl : System.Web.UI.UserControl<br />    {<br />        public string ControlIDToSearch { get; set; }<br /><br />        protected override void OnInit(EventArgs e)<br />        {<br />            Control ctrl = FindControlRecursive(this.Page, ControlIDToSearch);<br />        }<br /><br />        /// &lt;summary&gt;<br />        /// Recursive version of the FindControl method.<br />        /// &lt;/summary&gt;<br />        /// &lt;param name="parent"&gt;Parent to where to start the search for the control&lt;/param&gt;<br />        /// &lt;param name="controlId"&gt;ID of the control to search for&lt;/param&gt;<br />        /// &lt;returns&gt;&lt;/returns&gt;<br />        private Control FindControlRecursive(Control parent, string controlId)<br />        {<br />            if (controlId == parent.ID)<br />                return parent;<br /><br />            foreach (Control ctrl in parent.Controls)<br />            {<br />                Control tmp = FindControlRecursive(ctrl, controlId);<br />                if (tmp != null)<br />                    return tmp;<br />            }<br /><br />            return null;<br />        }<br />    }<br />}</pre>On
+the main page I include the UserControl and pass it the ID of - say - the button "buttonSubmit":<br />
+<pre class="prettyprint">&lt;uc1:RecursiveIterateControl ID="RecursiveIterateControl1" ControlIDToSearch="buttonSubmit" <br />                runat="server" /&gt;</pre><br />Now
+re-run the application and hit the button to launch the postback. You'll notice that your repeater is empty, getting
+the following screen:<br />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_tF6XjsUy87k/St2r_BcU5NI/AAAAAAAACd4/-pJMpP8Q9no/s1600-h/repeaterViewstateBroken.jpg"
+    imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/_tF6XjsUy87k/St2r_BcU5NI/AAAAAAAACd4/-pJMpP8Q9no/s320/repeaterViewstateBroken.jpg" /></a><br /></div>So
+why did this happen? The only thing we have added is the method for recursively iterating through the control hierarchy
+which doesn't contain any objectionable code. I'll tell what the problem is.<br /><br />There are a few things here you
+have to consider. First of all about the ASP.net page lifecycle and how the ViewState is being handled. The <a href="http://msdn.microsoft.com/en-us/library/ms972976.aspx">following
+  diagram</a> shows it:<br />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://i.msdn.microsoft.com/ms972976.viewstate_fig02%28en-us,MSDN.10%29.gif"
+    imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="256" src="http://i.msdn.microsoft.com/ms972976.viewstate_fig02%28en-us,MSDN.10%29.gif"
+      width="320" /></a><br /></div>Note, the ViewState is deserialized and loaded back on the controls after the
+OnInit and before the PageLoad event. Actually the FindControlRecursive() is called during the OnInit event but we are
+doing nothing with the ViewState, so that should be fine.<br /><br />The next thing I looked at was at the Repeater
+code directly using the <a href="http://www.red-gate.com/products/reflector/">Reflector</a>. The only thing that's
+being accessed on the Repeater is its Control property when it is being traversed during the execution of the
+FindControlRecursive. The Repeater control actually overrides that property and defines it as follows:<br />
+<pre class="prettyprint">public override ControlCollection Controls<br />    {<br />        get<br />        {<br />            this.EnsureChildControls();<br />            return base.Controls;<br />        }<br />    }<br /></pre><br />The
+"EnsureChildControls()" will trigger a call to the CreateChildControls() which is usually overridden by composite
+server controls. If you continue to search that on the Repeater control you get this code...<br />
+<pre class="prettyprint">protected internal override void CreateChildControls()<br />    {<br />        this.Controls.Clear();<br />        if (<b>this.ViewState["_!ItemCount"] != null</b>)<br />        {<br />            this.CreateControlHierarchy(false);<br />        }<br />        else<br />        {<br />            <b>this.itemsArray = new ArrayList();</b><br />        }<br />        <b>base.ClearChildViewState();</b><br />    }<br /></pre>...and
+here is the problem. According to the ASP.net page lifecycle we know that the ViewState will be loaded after the OnInit
+event of the page. However our call of the FindControlRecursive(..) method inside the OnInit will trigger down till the
+CreateChildControls() method of the Repeater control is being called. And since the ViewState is not yet loaded back,
+the condition <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">(this.ViewState["_!ItemCount"] !=
+  null)</span> will evaluate to false with the effect that a new empty collection is being created and the ViewState of
+the childs is being cleared. In fact, every call to the "Control" property of the Repeater during a state in the page
+lifecycle where the ViewState has not yet been loaded back, will result in loosing all of its values.<br /><br />Now
+imagine you notice this problem in a big web app, probably days or even weeks after you or even someone else in the
+team has added that FindControlRecursive(..) call somewhere in the codebase. It actually took me two days to figure out
+this problem!<br /><br />As a solution you may pay attention to just call the FindControlRecursive(..) method during
+the PageLoad event or later. Alternatively you could implement a SafeFindControlRecursive(..) which takes care of this
+problem. This could look like the following:<br />
+<pre class="prettyprint">private Control SafeFindControlRecursive(Control parent, string controlId)<br />{<br />    if (controlId == parent.ID)<br />        return parent;<br /><br />    foreach (Control ctrl in GetControlCollection(parent))<br />    {<br />        Control tmp = SafeFindControlRecursive(ctrl, controlId);<br />        if (tmp != null)<br />            return tmp;<br />    }<br /><br />    return null;<br />}<br /><br />private ICollection GetControlCollection(Control parent)<br />{<br />    if (parent is Repeater)<br />    {<br />        return new Control[0];<br />    }<br />    else<br />    {<br />        return parent.Controls;<br />    }<br />}</pre>This
+takes care of not accessing the Control collection of a Repeater control which is normally also not needed to be
+traversed.<br /><br />You can download the Visual Studio project showing this problem <a href="http://juri-strumpflohner-projects.googlecode.com/files/RepeaterProblem1.0.zip">here</a>.
             </div>
 
             
             <div class="after-post-tags">
                 <ul class="tags">
-                    
-                    <li>
-                        <a href="/tags/annotated">annotated</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/asp.net">ASP.net</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/web-dev">Web dev</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/.net">.Net</a>
-                    </li>
                     
                 </ul>
             </div>
@@ -241,131 +305,6 @@ A while back I experienced a really strange problem in one of our ASP.net applic
 <div class="related-container">
     <div class="container">
         <div class="row listrecent listrelated">
-            
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2009/09/microsoft-ajax-cdn">Microsoft Ajax CDN</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Sep 16, 2009</span><span class="dot"></span><span
-                                class="post-read">2 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2009/08/controlling-rendered-html-tag-on-your">HowTo: Control the rendered Html tag on your custom, composite server controls</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Aug 11, 2009</span><span class="dot"></span><span
-                                class="post-read">1 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2009/07/server-error-validation-of-viewstate">Server Error: Validation of viewstate MAC failed.</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Jul 31, 2009</span><span class="dot"></span><span
-                                class="post-read">1 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
             
 
         </div>
@@ -428,7 +367,7 @@ A while back I experienced a really strange problem in one of our ASP.net applic
 
 
 
-<script type="text/javascript" src="https://juristr.com/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
+<script type="text/javascript" src="/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
 
 
 <script src="/js/jquery.fluidbox.min.js"></script>

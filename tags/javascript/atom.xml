@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/javascript/</link>
+    <description>Recent content in Javascript on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Thu, 26 Apr 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/javascript/atom.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HTML5 vs Android: Apps or Web for mobile development??</title>
+      <link>https://juristr.com/blog/2012/04/html5-version-android-apps-or-web-for/</link>
+      <pubDate>Thu, 26 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/04/html5-version-android-apps-or-web-for/</guid>
+      <description>This is a hotly discussed topic recently. The web is now a fully-capable platform and it&#39;s getting better and better as the HTML5 standard advances.</description>
+    </item>
+    
+  </channel>
+</rss>

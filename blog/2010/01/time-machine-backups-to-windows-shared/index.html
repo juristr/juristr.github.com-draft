@@ -4,16 +4,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Hugo 0.53" />
 	
+	<link rel="shortcut icon" href="/assets/images/sitelogo.jpeg">
+	
 	<title>Time Machine backups to Windows shared network drive | juri.strumpflohner</title>
 	
 	
 
+	
+	<meta name="author" content="Juri Strumpflohner">
+	<link rel="me" href="https://profiles.google.com/104904743888756261987" />
+	<link rel="publisher" href='https://plus.google.com/104904743888756261987' />
+	<meta property="twitter:account_id" content="14407063" />
+
+
+	
+	<meta name="google-site-verification" content="0_vyoIaeMG1kXR0h-48gy3OaGl8xoiSJsFDxxCTIBMs" />
+	<meta name="google-site-verification" content="AvmssSjl_nchNXIqBW8Agb_UjGqvvLP7HXSxBZ9d0cg" />
+
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@juristr" />
+	<meta name="twitter:title" content="Time Machine backups to Windows shared network drive" />
+	
+
+	
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Juri Strumpflohner" href="//feeds.feedburner.com/juristrumpflohner">
+	
 
 	
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<link href='//fonts.googleapis.com/css?family=Righteous|Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
 	 rel='stylesheet' type='text/css'>
 	
@@ -23,7 +47,7 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/main.min.fd753432185db38bfbc183a977ed14f8e3ed314f4f938904d908bcfea775813a.css" integrity="sha256-/XU0Mhhds4v7wYOpd&#43;0U&#43;OPtMU9Pk4kE2Qi8/qd1gTo=" media="screen">
+	<link rel="stylesheet" href="/scss/main.min.788d84de2ded58913e22cf1f7e9d98fdc99ae669c17cd186aa46fa3ba6378fbe.css" integrity="sha256-eI2E3i3tWJE&#43;Is8ffp2Y/cma5mnBfNGGqkb6O6Y3j74=" media="screen">
 
 	
 
@@ -31,7 +55,7 @@
 
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/article.min.5023ef17f0d1b321f33a6554cd0526640c24a5a17cb68af2a8dfd9debd02e2ee.css" integrity="sha256-UCPvF/DRsyHzOmVUzQUmZAwkpaF8toryqN/Z3r0C4u4=" media="screen">
+	<link rel="stylesheet" href="/scss/article.min.39d2631fa244d3442d50500346a96e007f4d6ad56aaebadc6c4e5371731d6a0e.css" integrity="sha256-OdJjH6JE00QtUFADRqluAH9NatVqrrrcbE5TcXMdag4=" media="screen">
 	
 
 	
@@ -42,7 +66,7 @@
         
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -62,7 +86,7 @@
                 
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -73,11 +97,8 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                
+                <div id="bs4navbar" class="navbar-collapse">
                     
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         
@@ -193,8 +214,58 @@
             
             <div class="article-post">
                 
-As some of you may have already read I <a href="http://blog.js-development.com/2009/05/my-new-macbook-pro.html">acquired a MacBook Pro</a> about half a year ago and I love it ;) . Now one of the really cool things OS X provides is Time Machine backups.<br /><object height="344" width="425"><param name="movie" value="http://www.youtube.com/v/n055CqFnjyo&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/n055CqFnjyo&hl=en_US&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object><br /><br />It's so great because you simple don't have to do anything. If at all, you can specify the folders which should be excluded from the backup, but the rest is a completely automated process. Time Machine takes care of creating backups that contain the best possible coverage, starting from hourly, weekly to monthly backups, depending on the remaining space on your backup drive.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://images.apple.com/timecapsule/images/overview_timecapsule_20091202.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="140" src="http://images.apple.com/timecapsule/images/overview_timecapsule_20091202.png" width="320" /></a></div>Now, Apple wouldn't be Apple if they wouldn't have a business model behind this thing.They call it <a href="http://www.apple.com/timecapsule/">Time Capsule</a> and it is the device which is intented to be the backup drive on the other side of Time Machine. It is more than just a simple external (network capable) HD: it may also function as print server and router.<br /><br />Anyway, I already bought an external HD about 1 1/2 years ago (I guess). Unfortunately it cannot be attached to the network, but just over USB. So for a while I used to do my backups by manually attaching my HD to the USB port of my MacBook and let Time Machine do its work. However this is cumbersome and you often forget to attach it regularly and moreover, the HD usually stands at some place in your&nbsp;apartment. You're not going to take it around and again, it's nerving to take your notebook there, attach it just for the purpose of doing backups.<br /><br />So the idea came to my mind of sharing my HD over the network through another computer. I still have my very first notebook, an Acer which is about 6 years old now, I guess. I usually use it as some kind of server, also for sharing my non-network printer to the home wireless. So why shouldn't I also expose my HD?<br />A <a href="http://superuser.com/questions/95005/any-experiences-using-time-machine-backup-to-windows-network-drive">post on Superuser</a> pointed me <a href="http://adamcohenrose.blogspot.com/2008/02/time-machine-wireless-backup-without.html">to</a> <a href="http://serverfault.com/questions/20768/using-whs-for-a-mac-time-machine-backup">some</a> <a href="http://www.stocksy.co.uk/articles/Mac/getting_time_machine_to_work_how_i_want/">interesting</a> <a href="http://www.macosxhints.com/article.php?story=20080420211034137">pages</a>&nbsp;(<a href="http://www.levelofindirection.com/journal/2009/10/10/using-a-networked-drive-for-time-machine-backups-on-a-mac.html">this one is another good one</a>). I'm not going to repeat everything since you can get more informations on the linked pages. The main steps are the following:<br /><ol><li>Activate 'unsupported' network drives for backup<br /><pre class="code">defaults write com.apple.systempreferences TMShowUnsupportedNetworkVolumes 1</pre><br /></li><li>Create a sparsebundle which will be used by TimeMachine for doing its job. This sparsebundle has to be created <i>locally</i><br /><pre class="code">sudo hdiutil create -size 320g -type SPARSEBUNDLE -nospotlight -volname "Backup of &lt;computer_name&gt;" -fs "Case-sensitive Journaled HFS+" -verbose ~/Desktop/&lt;computer_name&gt;_&lt;mac address&gt;.sparsebundle<br /></pre><br /></li><li>Share the external HD on your Windows server (or notebook as in my case) and make sure you have the necessary user rights for writing/reading.<br /><br /></li><li>Mount the network drive and copy the created sparsebundle on it<br /><br /></li><li>Configure the network drive for backups by referencing it from within the Time Machine configuration</li></ol><div>You have to pay attention that the hostname you indicate in the .sparsebundle name matches exactly your Mac's hostname. Spaces and strange characters may create problems.<br />Moreover I'd suggest to do the first backup directly over a wired network connection since the 1st backup may take quite a while.<br /><br /><div class="notebox warn"><b>Note</b>, if you use your ethernet card for doing the initial backup which is highly recommended, you have to use the MAC address of your that ethernet card, otherwise Time Machine won't recognize your sparsebundle.</div><br />I'm now using this backup mechanism for about three weeks and it works&nbsp;seamlessly. When my Mac is within the home wireless network it automatically connects to the shared backup drive and starts creating his hourly backups. Just great :)</div>
-
+As some of you may have already read I <a href="http://blog.js-development.com/2009/05/my-new-macbook-pro.html">acquired
+  a MacBook Pro</a> about half a year ago and I love it ;) . Now one of the really cool things OS X provides is Time
+Machine backups.<br /><object height="344" width="425">
+  <param name="movie" value="http://www.youtube.com/v/n055CqFnjyo&hl=en_US&fs=1&">
+  </param>
+  <param name="allowFullScreen" value="true">
+  </param>
+  <param name="allowscriptaccess" value="always">
+  </param><embed src="http://www.youtube.com/v/n055CqFnjyo&hl=en_US&fs=1&" type="application/x-shockwave-flash"
+    allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object><br /><br />It's so
+great because you simple don't have to do anything. If at all, you can specify the folders which should be excluded
+from the backup, but the rest is a completely automated process. Time Machine takes care of creating backups that
+contain the best possible coverage, starting from hourly, weekly to monthly backups, depending on the remaining space
+on your backup drive.<br /><br />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://images.apple.com/timecapsule/images/overview_timecapsule_20091202.png"
+    imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="140"
+      src="http://images.apple.com/timecapsule/images/overview_timecapsule_20091202.png" width="320" /></a></div>Now,
+Apple wouldn't be Apple if they wouldn't have a business model behind this thing.They call it <a href="http://www.apple.com/timecapsule/">Time
+  Capsule</a> and it is the device which is intented to be the backup drive on the other side of Time Machine. It is
+more than just a simple external (network capable) HD: it may also function as print server and router.<br /><br />Anyway,
+I already bought an external HD about 1 1/2 years ago (I guess). Unfortunately it cannot be attached to the network,
+but just over USB. So for a while I used to do my backups by manually attaching my HD to the USB port of my MacBook and
+let Time Machine do its work. However this is cumbersome and you often forget to attach it regularly and moreover, the
+HD usually stands at some place in your&nbsp;apartment. You're not going to take it around and again, it's nerving to
+take your notebook there, attach it just for the purpose of doing backups.<br /><br />So the idea came to my mind of
+sharing my HD over the network through another computer. I still have my very first notebook, an Acer which is about 6
+years old now, I guess. I usually use it as some kind of server, also for sharing my non-network printer to the home
+wireless. So why shouldn't I also expose my HD?<br />A <a href="http://superuser.com/questions/95005/any-experiences-using-time-machine-backup-to-windows-network-drive">post
+  on Superuser</a> pointed me <a href="http://adamcohenrose.blogspot.com/2008/02/time-machine-wireless-backup-without.html">to</a>
+<a href="http://serverfault.com/questions/20768/using-whs-for-a-mac-time-machine-backup">some</a> <a href="http://www.stocksy.co.uk/articles/Mac/getting_time_machine_to_work_how_i_want/">interesting</a>
+<a href="http://www.macosxhints.com/article.php?story=20080420211034137">pages</a>&nbsp;(<a href="http://www.levelofindirection.com/journal/2009/10/10/using-a-networked-drive-for-time-machine-backups-on-a-mac.html">this
+  one is another good one</a>). I'm not going to repeat everything since you can get more informations on the linked
+pages. The main steps are the following:<br />
+<ol>
+  <li>Activate 'unsupported' network drives for backup<br />
+    <pre class="code">defaults write com.apple.systempreferences TMShowUnsupportedNetworkVolumes 1</pre><br /></li>
+  <li>Create a sparsebundle which will be used by TimeMachine for doing its job. This sparsebundle has to be created <i>locally</i><br />
+    <pre class="code">sudo hdiutil create -size 320g -type SPARSEBUNDLE -nospotlight -volname "Backup of &lt;computer_name&gt;" -fs "Case-sensitive Journaled HFS+" -verbose ~/Desktop/&lt;computer_name&gt;_&lt;mac address&gt;.sparsebundle<br /></pre><br /></li>
+  <li>Share the external HD on your Windows server (or notebook as in my case) and make sure you have the necessary
+    user rights for writing/reading.<br /><br /></li>
+  <li>Mount the network drive and copy the created sparsebundle on it<br /><br /></li>
+  <li>Configure the network drive for backups by referencing it from within the Time Machine configuration</li>
+</ol>
+<div>You have to pay attention that the hostname you indicate in the .sparsebundle name matches exactly your Mac's
+  hostname. Spaces and strange characters may create problems.<br />Moreover I'd suggest to do the first backup
+  directly over a wired network connection since the 1st backup may take quite a while.<br /><br />
+  <div class="notebox warn"><b>Note</b>, if you use your ethernet card for doing the initial backup which is highly
+    recommended, you have to use the MAC address of your that ethernet card, otherwise Time Machine won't recognize
+    your sparsebundle.</div><br />I'm now using this backup mechanism for about three weeks and it
+  works&nbsp;seamlessly. When my Mac is within the home wireless network it automatically connects to the shared backup
+  drive and starts creating his hourly backups. Just great :)
+</div>
             </div>
 
             
@@ -202,15 +273,11 @@ As some of you may have already read I <a href="http://blog.js-development.com/2
                 <ul class="tags">
                     
                     <li>
-                        <a href="/tags/windows-os">Windows OS</a>
+                        <a href="/tags/windows">Windows</a>
                     </li>
                     
                     <li>
-                        <a href="/tags/osx">OSX</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/mac">Mac</a>
+                        <a href="/tags/apple">Apple</a>
                     </li>
                     
                 </ul>
@@ -241,6 +308,7 @@ As some of you may have already read I <a href="http://blog.js-development.com/2
             
 
             <div class="col-md-4">
+
 <div class="card">
     
     <div class="card-block">
@@ -268,87 +336,33 @@ As some of you may have already read I <a href="http://blog.js-development.com/2
                     </div>
                     <div class="col-2">
                         
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2010/01/howto-use-your-iphone-as-remote-control">HowTo: Use your iPhone as a remote control for presentations</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Jan 28, 2010</span><span class="dot"></span><span
-                                class="post-read">2 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
                         
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                        
+                        <span class="post-category-icon">
+                            
+                            <div class="svgicon">
+    
 
     
-</div>
 
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
     
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2009/11/howto-run-iis-7-on-vista-64bit-os-in">HowTo: Run IIS 7 on Vista 64bit OS in 32bit mode</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
+
+    
+
+    
+
+    
+
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 mr-4 icon-cog"><path class="primary" d="M6.8 3.45c.87-.52 1.82-.92 2.83-1.17a2.5 2.5 0 0 0 4.74 0c1.01.25 1.96.65 2.82 1.17a2.5 2.5 0 0 0 3.36 3.36c.52.86.92 1.8 1.17 2.82a2.5 2.5 0 0 0 0 4.74c-.25 1.01-.65 1.96-1.17 2.82a2.5 2.5 0 0 0-3.36 3.36c-.86.52-1.8.92-2.82 1.17a2.5 2.5 0 0 0-4.74 0c-1.01-.25-1.96-.65-2.82-1.17a2.5 2.5 0 0 0-3.36-3.36 9.94 9.94 0 0 1-1.17-2.82 2.5 2.5 0 0 0 0-4.74c.25-1.01.65-1.96 1.17-2.82a2.5 2.5 0 0 0 3.36-3.36zM12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path><circle cx="12" cy="12" r="2" class="secondary"></circle></svg>
+    
+
+    
+
+</div><div class="svgicon clean_code"></div>
+                            
                         </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Nov 10, 2009</span><span class="dot"></span><span
-                                class="post-read">1 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
+                        
                         
                     </div>
                 </div>
@@ -424,7 +438,7 @@ As some of you may have already read I <a href="http://blog.js-development.com/2
 
 
 
-<script type="text/javascript" src="https://juristr.com/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
+<script type="text/javascript" src="/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
 
 
 <script src="/js/jquery.fluidbox.min.js"></script>

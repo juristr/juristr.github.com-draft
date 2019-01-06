@@ -4,16 +4,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Hugo 0.53" />
 	
+	<link rel="shortcut icon" href="/assets/images/sitelogo.jpeg">
+	
 	<title>Lazy Angular Modules | juri.strumpflohner</title>
 	
 	
 
+	
+	<meta name="author" content="Juri Strumpflohner">
+	<link rel="me" href="https://profiles.google.com/104904743888756261987" />
+	<link rel="publisher" href='https://plus.google.com/104904743888756261987' />
+	<meta property="twitter:account_id" content="14407063" />
+
+
+	
+	<meta name="google-site-verification" content="0_vyoIaeMG1kXR0h-48gy3OaGl8xoiSJsFDxxCTIBMs" />
+	<meta name="google-site-verification" content="AvmssSjl_nchNXIqBW8Agb_UjGqvvLP7HXSxBZ9d0cg" />
+
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@juristr" />
+	<meta name="twitter:title" content="Lazy Angular Modules" />
+	
+	<meta name="twitter:description" content="Modularization strategy for lazy Angular modules" />
+	
+
+	
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Juri Strumpflohner" href="//feeds.feedburner.com/juristrumpflohner">
+	
 
 	
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<link href='//fonts.googleapis.com/css?family=Righteous|Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
 	 rel='stylesheet' type='text/css'>
 	
@@ -23,7 +49,7 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/main.min.fd753432185db38bfbc183a977ed14f8e3ed314f4f938904d908bcfea775813a.css" integrity="sha256-/XU0Mhhds4v7wYOpd&#43;0U&#43;OPtMU9Pk4kE2Qi8/qd1gTo=" media="screen">
+	<link rel="stylesheet" href="/scss/main.min.788d84de2ded58913e22cf1f7e9d98fdc99ae669c17cd186aa46fa3ba6378fbe.css" integrity="sha256-eI2E3i3tWJE&#43;Is8ffp2Y/cma5mnBfNGGqkb6O6Y3j74=" media="screen">
 
 	
 
@@ -31,7 +57,7 @@
 
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/article.min.5023ef17f0d1b321f33a6554cd0526640c24a5a17cb68af2a8dfd9debd02e2ee.css" integrity="sha256-UCPvF/DRsyHzOmVUzQUmZAwkpaF8toryqN/Z3r0C4u4=" media="screen">
+	<link rel="stylesheet" href="/scss/article.min.39d2631fa244d3442d50500346a96e007f4d6ad56aaebadc6c4e5371731d6a0e.css" integrity="sha256-OdJjH6JE00QtUFADRqluAH9NatVqrrrcbE5TcXMdag4=" media="screen">
 	
 
 	
@@ -42,7 +68,7 @@
         
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -62,7 +88,7 @@
                 
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -73,11 +99,8 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                
+                <div id="bs4navbar" class="navbar-collapse">
                     
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         
@@ -198,9 +221,6 @@
 
 <p>Startup time is crucial for a proper user experience and that&rsquo;s where many JavaScript SPA really fail. Even though you might (and definitely should) apply code minification and bundling mechanisms, you wouldn&rsquo;t want to load your entire application right upfront. It simply isn&rsquo;t useful nor required. Unfortunately, as of now Angular doesn&rsquo;t natively support any kind of lazy loading approach. Thus, many devs started to create custom implementations and workarounds to circumvent such lack. This article aims to explore those implementations as well as to combine them with another interesting and hotly-debated topic: proper modularization.</p>
 
-<p>{% assign topics=&lsquo;Updates will include existing approaches from other devs as well as source code samples and a detailed explanation of the implementation details.&rsquo; %}
-{% include mycustoms/next-up %}</p>
-
 <h2 id="feature-based-vs-mvc-based-organization">Feature based vs MVC based organization</h2>
 
 <p>Not only Angular but other frameworks as well propose the typical MVC kind of structuring and organization of your code, having a</p>
@@ -215,7 +235,7 @@
 <p>While this might seem to be a clean and well organized structure initially, you soon discover that it isn&rsquo;t quite as useful as it could be during development nor maintenance. When did you last open your project and say &ldquo;let&rsquo;s add a controller&rdquo;?? Instead, you normally implement or modify some feature.<br />
 Having a MVC structure implies a continuous, tedious searching for the corresponding controller, the model and view that belong to the feature in these three separate folders.</p>
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/lazy-angular/mvc-based-org.png" />
   <figcaption>Contrary: MVC based structuring generated by the official Angular Yeoman generator</figcaption>
 </figure>
@@ -227,7 +247,7 @@ That seems to change, though. The latest official <a href="https://github.com/an
 
 <p>The projects to take a look at for a proper feature-based organization is the source for the Angular book: <a href="https://github.com/angular-app/angular-app/tree/master/client/src/app">GitHub link</a>. The image below illustrates this further.</p>
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/lazy-angular/feature-based-org.png" />
   <figcaption>Feature based code organization by the angular-app sample.</figcaption>
 </figure>
@@ -245,7 +265,7 @@ That seems to change, though. The latest official <a href="https://github.com/an
 
 <p>Furthermore, <a href="https://github.com/johnpapa/ng-demos/tree/master/modular/client/app/dashboard">John Papa</a> structures each module to reside in its own folder..</p>
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/lazy-angular/module-structure-papa.png" />
   <figcaption>Example: a module's internal structure (by John Papa)</figcaption>
 </figure>
@@ -258,7 +278,7 @@ That seems to change, though. The latest official <a href="https://github.com/an
 </code></pre></div>
 <p>The <a href="https://github.com/angular-app/angular-app/tree/master/client/src/app">official angular demo</a> <a href="https://github.com/angular-app/angular-app/tree/master/client/src/app/admin">follows a nearly identical approach</a>, but instead of having a file named <code>&lt;modulename&gt;.module.js</code> it defines it like <code>&lt;modulename&gt;.js</code>.</p>
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/lazy-angular/module-structure-angapp.png" />
   <figcaption>Example: a module's internal structure (by official Angular-app demo)</figcaption>
 </figure>
@@ -363,14 +383,6 @@ That seems to change, though. The latest official <a href="https://github.com/an
 <li><a href="http://marcoslin.github.io/angularAMD/#/home">angularAMD</a> - a project that combines AngularJS+RequireJS in a library for better reusability.</li>
 </ul>
 
-<p>{% comment %}</p>
-
-<h2 id="implementation">Implementation</h2>
-
-<h2 id="conclusion">Conclusion</h2>
-
-<p>{% endcomment %}</p>
-
 <h2 id="references">References</h2>
 
 <ul>
@@ -387,14 +399,6 @@ That seems to change, though. The latest official <a href="https://github.com/an
             
             <div class="after-post-tags">
                 <ul class="tags">
-                    
-                    <li>
-                        <a href="/tags/javascript">JavaScript</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/angular.js">Angular.js</a>
-                    </li>
                     
                 </ul>
             </div>
@@ -420,131 +424,6 @@ That seems to change, though. The latest official <a href="https://github.com/an
 <div class="related-container">
     <div class="container">
         <div class="row listrecent listrelated">
-            
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2014/05/angular-baby-steps">First baby steps with Angular.js</a>
-        </h2>
-        <h4 class="card-text">
-            Some of my notes from a recent AngularJS webinar
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">May 11, 2014</span><span class="dot"></span><span
-                                class="post-read">6 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2014/03/integrating-node-with-csharp">Integrating Node.js with a C# dll</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Mar 31, 2014</span><span class="dot"></span><span
-                                class="post-read">4 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2014/02/nightwatch-test-automation">Automate your UI testing with Nightwatch</a>
-        </h2>
-        <h4 class="card-text">
-            Automated UI testing awesomeness based on Node and Selenium
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Feb 21, 2014</span><span class="dot"></span><span
-                                class="post-read">5 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
             
 
         </div>
@@ -607,7 +486,7 @@ That seems to change, though. The latest official <a href="https://github.com/an
 
 
 
-<script type="text/javascript" src="https://juristr.com/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
+<script type="text/javascript" src="/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
 
 
 <script src="/js/jquery.fluidbox.min.js"></script>

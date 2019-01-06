@@ -4,16 +4,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Hugo 0.53" />
 	
+	<link rel="shortcut icon" href="/assets/images/sitelogo.jpeg">
+	
 	<title>ASP.net MVC3: Doesn&#39;t Deserialize Nullable Properties from Json | juri.strumpflohner</title>
 	
 	
 
+	
+	<meta name="author" content="Juri Strumpflohner">
+	<link rel="me" href="https://profiles.google.com/104904743888756261987" />
+	<link rel="publisher" href='https://plus.google.com/104904743888756261987' />
+	<meta property="twitter:account_id" content="14407063" />
+
+
+	
+	<meta name="google-site-verification" content="0_vyoIaeMG1kXR0h-48gy3OaGl8xoiSJsFDxxCTIBMs" />
+	<meta name="google-site-verification" content="AvmssSjl_nchNXIqBW8Agb_UjGqvvLP7HXSxBZ9d0cg" />
+
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@juristr" />
+	<meta name="twitter:title" content="ASP.net MVC3: Doesn&#39;t Deserialize Nullable Properties from Json" />
+	
+
+	
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Juri Strumpflohner" href="//feeds.feedburner.com/juristrumpflohner">
+	
 
 	
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<link href='//fonts.googleapis.com/css?family=Righteous|Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
 	 rel='stylesheet' type='text/css'>
 	
@@ -23,7 +47,7 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/main.min.fd753432185db38bfbc183a977ed14f8e3ed314f4f938904d908bcfea775813a.css" integrity="sha256-/XU0Mhhds4v7wYOpd&#43;0U&#43;OPtMU9Pk4kE2Qi8/qd1gTo=" media="screen">
+	<link rel="stylesheet" href="/scss/main.min.788d84de2ded58913e22cf1f7e9d98fdc99ae669c17cd186aa46fa3ba6378fbe.css" integrity="sha256-eI2E3i3tWJE&#43;Is8ffp2Y/cma5mnBfNGGqkb6O6Y3j74=" media="screen">
 
 	
 
@@ -31,7 +55,7 @@
 
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/article.min.5023ef17f0d1b321f33a6554cd0526640c24a5a17cb68af2a8dfd9debd02e2ee.css" integrity="sha256-UCPvF/DRsyHzOmVUzQUmZAwkpaF8toryqN/Z3r0C4u4=" media="screen">
+	<link rel="stylesheet" href="/scss/article.min.39d2631fa244d3442d50500346a96e007f4d6ad56aaebadc6c4e5371731d6a0e.css" integrity="sha256-OdJjH6JE00QtUFADRqluAH9NatVqrrrcbE5TcXMdag4=" media="screen">
 	
 
 	
@@ -42,7 +66,7 @@
         
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -62,7 +86,7 @@
                 
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -73,11 +97,8 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                
+                <div id="bs4navbar" class="navbar-collapse">
                     
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         
@@ -193,35 +214,37 @@
             
             <div class="article-post">
                 
-<p>A couple of days ago I noticed that the <code>Nullable</code> properties of a C# object were not properly deserialized when posting back a Json object to an MVC3 action. It seems like this is a bug in the <code><a href="http://msdn.microsoft.com/en-us/library/system.web.script.serialization.javascriptserializer.aspx" target="_blank">JavaScriptSerializer</a></code> used by MVC3 to serialize/deserialize Json data.</p>
+<p>A couple of days ago I noticed that the <code>Nullable</code> properties of a C# object were not properly
+  deserialized when posting back a Json object to an MVC3 action. It seems like this is a bug in the <code><a href="http://msdn.microsoft.com/en-us/library/system.web.script.serialization.javascriptserializer.aspx" target="_blank">JavaScriptSerializer</a></code>
+  used by MVC3 to serialize/deserialize Json data.</p>
 
-This behavior is quite nerving as you probably have a lot of nullable properties, often resulting directly from the underlying data structure in the DB (especially in a data-base first case with EF). So one solution might be to create your separate ViewModels and somehow handle the mapping of the nullable properties through those. Extremely smelly!<br /><br />While browsing for a potential solution I came across <a href="http://syper-blogger.blogspot.com/2011/07/hello-world.html" rel="nofollow" target="_blank">this blogpost</a>. According to the author of the post, apparently the <code>DataContractSerializer</code> doesn't have this problem. So what he does is to create an MVC3 ActionFilter for intercepting the call to the Action method and then to deserialize the arriving Json data using the <code>DataContractSerializer</code>.<br /><pre class="brush:csharp">public class JsonModelBinder : ActionFilterAttribute<br />{<br />    public JsonModelBinder()<br />    {}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />    public Type ActionParameterType { get; set; }<br />    public string ActionParameterName { get; set; }<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />    public override void OnActionExecuting(ActionExecutingContext filterContext)<br />    {<br />        HttpRequestBase request = filterContext.HttpContext.Request;<br />        Stream stream = request.InputStream;<br />        stream.Position = 0;<br />        filterContext.ActionParameters[ActionParameterName] =<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(new DataContractJsonSerializer(ActionParameterType)).ReadObject(stream);<br />    }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />}</pre>The real action method then looks as follows:<br /><pre class="brush:csharp">[HttpPost]<br />[JsonModelBinder(ActionParameterName="student", ActionParameterType=typeof(Student)]<br />public ActionResult Save(Student student)<br />{<br />    // save the student <br />    return View();<br />}</pre>Now, I didn't try "Syper blogger"'s approach, also because I don't really want all of the devs to require to put those attributes on every action method they write. This is a huge <b>overhead</b> and introduces <b>redundancy </b>in the type definition etc.<br /><br />So I aimed for a <b>more clean approach</b> by implementing a custom <code>IModelBinder</code> and by using the popular (and even more performant) <a href="http://nuget.org/packages/Newtonsoft.Json">Json.net</a> library for deserializing my entities. So the result looked like<br /><pre class="brush:csharp;highlight:[12,14,30]">public class MyCustomModelBinder: IModelBinder<br />{<br />    private IModelBinder fallbackModelBinder;<br /><br />    public MyCustomModelBinder(IModelBinder fallbackModelBinder)<br />    {<br />        this.fallbackModelBinder = fallbackModelBinder;<br />    }<br /><br />    public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)<br />    {<br />        if (controllerContext.HttpContext.Request.HttpMethod.Equals("GET", StringComparison.InvariantCultureIgnoreCase))<br />        {<br />            return this.fallbackModelBinder.BindModel(controllerContext, bindingContext);<br />        }<br />        else<br />        {<br />            //ONLY do this for POST,PUT,DELETE requests that transmit application/json<br />            string bodyText;<br />            using (var stream = controllerContext.HttpContext.Request.InputStream)<br />            {<br />                stream.Seek(0, SeekOrigin.Begin);<br />                using (var reader = new StreamReader(stream))<br />                    bodyText = reader.ReadToEnd();<br />            }<br /><br />            if (string.IsNullOrEmpty(bodyText))<br />                return (null);<br /><br />            return JsonConvert.DeserializeObject(bodyText, bindingContext.ModelType);<br />        }<br />    }<br />}</pre>Inside global.asax you have then to register the <code>IModelBinder</code> as follows: <br /><pre class="brush:csharp">protected void Application_Start()<br />{<br />   ...<br />   ModelBinders.Binders.DefaultBinder = new MyCustomModelBinder(ModelBinders.Binders.DefaultBinder);<br />   ...<br />}</pre><b>Note</b> that I'm only touching POST,PUT or DELETE requests that post Json data to my MVC3 webapp. All other requests are directly forwarded to the default model binder.<br /><br />I prefer this solution of the registration of ActionFilter attributes on each action method because in this way the deserialization process is completely transparent. Let me know if any better solution comes to your mind for solving this issue.
-
+This behavior is quite nerving as you probably have a lot of nullable properties, often resulting directly from the
+underlying data structure in the DB (especially in a data-base first case with EF). So one solution might be to create
+your separate ViewModels and somehow handle the mapping of the nullable properties through those. Extremely smelly!<br /><br />While
+browsing for a potential solution I came across <a href="http://syper-blogger.blogspot.com/2011/07/hello-world.html"
+  rel="nofollow" target="_blank">this blogpost</a>. According to the author of the post, apparently the <code>DataContractSerializer</code>
+doesn't have this problem. So what he does is to create an MVC3 ActionFilter for intercepting the call to the Action
+method and then to deserialize the arriving Json data using the <code>DataContractSerializer</code>.<br />
+<pre class="brush:csharp">public class JsonModelBinder : ActionFilterAttribute<br />{<br />    public JsonModelBinder()<br />    {}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />    public Type ActionParameterType { get; set; }<br />    public string ActionParameterName { get; set; }<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />    public override void OnActionExecuting(ActionExecutingContext filterContext)<br />    {<br />        HttpRequestBase request = filterContext.HttpContext.Request;<br />        Stream stream = request.InputStream;<br />        stream.Position = 0;<br />        filterContext.ActionParameters[ActionParameterName] =<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(new DataContractJsonSerializer(ActionParameterType)).ReadObject(stream);<br />    }&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />}</pre>The
+real action method then looks as follows:<br />
+<pre class="brush:csharp">[HttpPost]<br />[JsonModelBinder(ActionParameterName="student", ActionParameterType=typeof(Student)]<br />public ActionResult Save(Student student)<br />{<br />    // save the student <br />    return View();<br />}</pre>Now,
+I didn't try "Syper blogger"'s approach, also because I don't really want all of the devs to require to put those
+attributes on every action method they write. This is a huge <b>overhead</b> and introduces <b>redundancy </b>in the
+type definition etc.<br /><br />So I aimed for a <b>more clean approach</b> by implementing a custom <code>IModelBinder</code>
+and by using the popular (and even more performant) <a href="http://nuget.org/packages/Newtonsoft.Json">Json.net</a>
+library for deserializing my entities. So the result looked like<br />
+<pre class="brush:csharp;highlight:[12,14,30]">public class MyCustomModelBinder: IModelBinder<br />{<br />    private IModelBinder fallbackModelBinder;<br /><br />    public MyCustomModelBinder(IModelBinder fallbackModelBinder)<br />    {<br />        this.fallbackModelBinder = fallbackModelBinder;<br />    }<br /><br />    public object BindModel(ControllerContext controllerContext, ModelBindingContext bindingContext)<br />    {<br />        if (controllerContext.HttpContext.Request.HttpMethod.Equals("GET", StringComparison.InvariantCultureIgnoreCase))<br />        {<br />            return this.fallbackModelBinder.BindModel(controllerContext, bindingContext);<br />        }<br />        else<br />        {<br />            //ONLY do this for POST,PUT,DELETE requests that transmit application/json<br />            string bodyText;<br />            using (var stream = controllerContext.HttpContext.Request.InputStream)<br />            {<br />                stream.Seek(0, SeekOrigin.Begin);<br />                using (var reader = new StreamReader(stream))<br />                    bodyText = reader.ReadToEnd();<br />            }<br /><br />            if (string.IsNullOrEmpty(bodyText))<br />                return (null);<br /><br />            return JsonConvert.DeserializeObject(bodyText, bindingContext.ModelType);<br />        }<br />    }<br />}</pre>Inside
+global.asax you have then to register the <code>IModelBinder</code> as follows: <br />
+<pre class="brush:csharp">protected void Application_Start()<br />{<br />   ...<br />   ModelBinders.Binders.DefaultBinder = new MyCustomModelBinder(ModelBinders.Binders.DefaultBinder);<br />   ...<br />}</pre><b>Note</b>
+that I'm only touching POST,PUT or DELETE requests that post Json data to my MVC3 webapp. All other requests are
+directly forwarded to the default model binder.<br /><br />I prefer this solution of the registration of ActionFilter
+attributes on each action method because in this way the deserialization process is completely transparent. Let me know
+if any better solution comes to your mind for solving this issue.
             </div>
 
             
             <div class="after-post-tags">
                 <ul class="tags">
-                    
-                    <li>
-                        <a href="/tags/javascript">JavaScript</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/c">C#</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/asp.net-mvc">ASP.net MVC</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/web-dev">Web dev</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/.net">.Net</a>
-                    </li>
                     
                 </ul>
             </div>
@@ -247,131 +270,6 @@ This behavior is quite nerving as you probably have a lot of nullable properties
 <div class="related-container">
     <div class="container">
         <div class="row listrecent listrelated">
-            
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2011/05/basta-on-tour-wrap-up-day-2-ef-best">Basta-On-Tour Wrap Up Day 2: EF Best Practices, JavaScript, MVC</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">May 24, 2011</span><span class="dot"></span><span
-                                class="post-read">3 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2011/10/similarity-of-c-and-javascript-syntax">The Similarity of C# and JavaScript Syntax</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Oct 3, 2011</span><span class="dot"></span><span
-                                class="post-read">1 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2011/08/why-did-it-have-to-be-so-complicated">Why Did it Have to Be So Complicated Before??</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Aug 26, 2011</span><span class="dot"></span><span
-                                class="post-read">2 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
             
 
         </div>
@@ -434,7 +332,7 @@ This behavior is quite nerving as you probably have a lot of nullable properties
 
 
 
-<script type="text/javascript" src="https://juristr.com/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
+<script type="text/javascript" src="/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
 
 
 <script src="/js/jquery.fluidbox.min.js"></script>

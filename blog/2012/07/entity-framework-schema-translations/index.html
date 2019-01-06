@@ -4,16 +4,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Hugo 0.53" />
 	
+	<link rel="shortcut icon" href="/assets/images/sitelogo.jpeg">
+	
 	<title>Entity Framework Schema Translations | juri.strumpflohner</title>
 	
 	
 
+	
+	<meta name="author" content="Juri Strumpflohner">
+	<link rel="me" href="https://profiles.google.com/104904743888756261987" />
+	<link rel="publisher" href='https://plus.google.com/104904743888756261987' />
+	<meta property="twitter:account_id" content="14407063" />
+
+
+	
+	<meta name="google-site-verification" content="0_vyoIaeMG1kXR0h-48gy3OaGl8xoiSJsFDxxCTIBMs" />
+	<meta name="google-site-verification" content="AvmssSjl_nchNXIqBW8Agb_UjGqvvLP7HXSxBZ9d0cg" />
+
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@juristr" />
+	<meta name="twitter:title" content="Entity Framework Schema Translations" />
+	
+
+	
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Juri Strumpflohner" href="//feeds.feedburner.com/juristrumpflohner">
+	
 
 	
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<link href='//fonts.googleapis.com/css?family=Righteous|Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
 	 rel='stylesheet' type='text/css'>
 	
@@ -23,7 +47,7 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/main.min.fd753432185db38bfbc183a977ed14f8e3ed314f4f938904d908bcfea775813a.css" integrity="sha256-/XU0Mhhds4v7wYOpd&#43;0U&#43;OPtMU9Pk4kE2Qi8/qd1gTo=" media="screen">
+	<link rel="stylesheet" href="/scss/main.min.788d84de2ded58913e22cf1f7e9d98fdc99ae669c17cd186aa46fa3ba6378fbe.css" integrity="sha256-eI2E3i3tWJE&#43;Is8ffp2Y/cma5mnBfNGGqkb6O6Y3j74=" media="screen">
 
 	
 
@@ -31,7 +55,7 @@
 
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/article.min.5023ef17f0d1b321f33a6554cd0526640c24a5a17cb68af2a8dfd9debd02e2ee.css" integrity="sha256-UCPvF/DRsyHzOmVUzQUmZAwkpaF8toryqN/Z3r0C4u4=" media="screen">
+	<link rel="stylesheet" href="/scss/article.min.39d2631fa244d3442d50500346a96e007f4d6ad56aaebadc6c4e5371731d6a0e.css" integrity="sha256-OdJjH6JE00QtUFADRqluAH9NatVqrrrcbE5TcXMdag4=" media="screen">
 	
 
 	
@@ -42,7 +66,7 @@
         
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -62,7 +86,7 @@
                 
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -73,11 +97,8 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                
+                <div id="bs4navbar" class="navbar-collapse">
                     
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         
@@ -193,29 +214,65 @@
             
             <div class="article-post">
                 
-<p>You should have <a href="http://blog.js-development.com/2008/09/best-practices-deploying-webapps.html" target="_blank">different setup environments</a>, right. Normally something like dev, test (or staging) and production. This implies to have different DBs as well. At work we have Oracle databases and there we don't really have different DB "instances" but different schemas, depending on the environment we deploy to. This post presents an approach of allowing to dynamically "rewrite" the schema defined in the EF mappings in an easy to use way.</p>
+<p>You should have <a href="http://blog.js-development.com/2008/09/best-practices-deploying-webapps.html" target="_blank">different
+    setup environments</a>, right. Normally something like dev, test (or staging) and production. This implies to have
+  different DBs as well. At work we have Oracle databases and there we don't really have different DB "instances" but
+  different schemas, depending on the environment we deploy to. This post presents an approach of allowing to
+  dynamically "rewrite" the schema defined in the EF mappings in an easy to use way.</p>
 
-<h2>The Problem</h2><div>When you define a mapping in Entity Framework (I'm talking about <b>database first</b>, don't know whether this applies to code first as well) you'll get an EntitySet section which looks something like this:</div><pre class="brush:xml;highlight:[4]">&lt;EntitySet Name="ADDRESSES" <br />    EntityType="Siag.IAM.Transversal.Entities.Store.ADDRESSES" <br />    store:Type="Tables" <br />    Schema="MYSCHEMA" <br />    Table="ADDRESSES" /&gt;</pre>Note that this is the xml file generated by the <a href="http://www.devart.com/entitydeveloper/" target="_blank">DevArt Entity Developer </a>as we use that one since it has some nice features. The problem here is the hard-coded schema definition in&nbsp;<b>line 4</b>. Why? Because in the connection string you have to specify the schema name as the <code>User Id</code> like <br /><pre class="brush:xml">&lt;connectionStrings&gt;<br />    &lt;add name="Entities" <br />         connectionString="metadata=res...connection string='User Id=MYSCHEMA;Password=...'"<br />         providerName="System.Data.EntityClient" /&gt;<br />&lt;connectionStrings&gt;<br /></pre>So normally, when we deploy to a different environment, a web.config transformation adapts the <code>User Id</code> for that specific environment like changing <code>MYSCHEMA</code> to <code>MYSCHEMA_TEST</code>. Unfortunately that doesn't work because - remember - the EF configuration file has still <code>MYSCHEMA</code> hardcoded in the configuration file. <br /><h2>    Option 1: Alter session</h2>One option is to execute a command on each connection opening, altering the used session. In Oracle <br /><pre>ALTER SESSION SET CURRENT_SCHEMA=MYSCHEMA_TEST;<br /></pre>The drawback: you execute one additional command on each connection opening. Not probably a big overhead, but still. DevArt supports this starting from version 7 of their dotConnect driver. In there, they added an <code>Initialization Command</code> property defined on the connection string and which lets you specify exactly this alter session command. We currently have v 6.something ... Although we're planning to upgrade probably, I continued to search.<br /><h2>    Option 2: Dynamically adapt the EF Metadata</h2>The idea: Before establishing the connection, load the Entity Framework metadata and exchange the schema name.<br />Browsing around, I found the <a href="http://efmodeladapter.codeplex.com/" target="_blank">Entity Framework Runtime Model Adapter</a> project on Codeplex. That sounds promising. I inspected the code, and it even had a SchemaAdapter which did the job I was looking for. But not exactly. First of all, the project seemed abandoned, with the latest update back in 2010. As a result, it only had support for the (now considered obsolete) <code>ObjectContext</code> rather than <code>DbContext</code> and finally, it adapted an approach of substituting <b>all </b>schema definitions which is not necessarily always desired. <br /><h2> Resulting Solution: Schema Translations</h2><div>So I decided to adapt the code from codeplex s.t. one could define a Schema Translations property in the connection string that looked like</div><pre>Schema Translations=MYSCHEMA-&gt;MYSCHEMA_TEST,ANOTHERSCHEMA-&gt;ANOTHERSCHEMA_STAGING<br /></pre>Advantages of this approach: <br /><ul><li><span style="background-color: white;">Only those schema definitions that have been explicitly specified get substituted while others remain unchanged</span></li><li><span style="background-color: white;">No scary if conditions in the source code to map schema definitions</span></li><li><span style="background-color: white;">Fully configuration based, wherefore web.config transformations work just great</span></li></ul><div>I asked the author of the EFModelAdapter for the permission to publish the modified code on GitHub. Once I get a reply I'll update this post here, detailing my implementation approach. In the mean time, if you have any questions, feel free to leave a comment or contact me.</div>
+<h2>The Problem</h2>
+<div>When you define a mapping in Entity Framework (I'm talking about <b>database first</b>, don't know whether this
+  applies to code first as well) you'll get an EntitySet section which looks something like this:</div>
+<pre class="brush:xml;highlight:[4]">&lt;EntitySet Name="ADDRESSES" <br />    EntityType="Siag.IAM.Transversal.Entities.Store.ADDRESSES" <br />    store:Type="Tables" <br />    Schema="MYSCHEMA" <br />    Table="ADDRESSES" /&gt;</pre>Note
+that this is the xml file generated by the <a href="http://www.devart.com/entitydeveloper/" target="_blank">DevArt
+  Entity Developer </a>as we use that one since it has some nice features. The problem here is the hard-coded schema
+definition in&nbsp;<b>line 4</b>. Why? Because in the connection string you have to specify the schema name as the
+<code>User Id</code> like <br />
+<pre class="brush:xml">&lt;connectionStrings&gt;<br />    &lt;add name="Entities" <br />         connectionString="metadata=res...connection string='User Id=MYSCHEMA;Password=...'"<br />         providerName="System.Data.EntityClient" /&gt;<br />&lt;connectionStrings&gt;<br /></pre>So
+normally, when we deploy to a different environment, a web.config transformation adapts the <code>User Id</code> for
+that specific environment like changing <code>MYSCHEMA</code> to <code>MYSCHEMA_TEST</code>. Unfortunately that doesn't
+work because - remember - the EF configuration file has still <code>MYSCHEMA</code> hardcoded in the configuration
+file. <br />
+<h2> Option 1: Alter session</h2>One option is to execute a command on each connection opening, altering the used
+session. In Oracle <br />
+<pre>ALTER SESSION SET CURRENT_SCHEMA=MYSCHEMA_TEST;<br /></pre>The drawback: you execute one additional command on
+each connection opening. Not probably a big overhead, but still. DevArt supports this starting from version 7 of their
+dotConnect driver. In there, they added an <code>Initialization Command</code> property defined on the connection
+string and which lets you specify exactly this alter session command. We currently have v 6.something ... Although
+we're planning to upgrade probably, I continued to search.<br />
+<h2> Option 2: Dynamically adapt the EF Metadata</h2>The idea: Before establishing the connection, load the Entity
+Framework metadata and exchange the schema name.<br />Browsing around, I found the <a href="http://efmodeladapter.codeplex.com/"
+  target="_blank">Entity Framework Runtime Model Adapter</a> project on Codeplex. That sounds promising. I inspected
+the code, and it even had a SchemaAdapter which did the job I was looking for. But not exactly. First of all, the
+project seemed abandoned, with the latest update back in 2010. As a result, it only had support for the (now considered
+obsolete) <code>ObjectContext</code> rather than <code>DbContext</code> and finally, it adapted an approach of
+substituting <b>all </b>schema definitions which is not necessarily always desired. <br />
+<h2> Resulting Solution: Schema Translations</h2>
+<div>So I decided to adapt the code from codeplex s.t. one could define a Schema Translations property in the
+  connection string that looked like</div>
+<pre>Schema Translations=MYSCHEMA-&gt;MYSCHEMA_TEST,ANOTHERSCHEMA-&gt;ANOTHERSCHEMA_STAGING<br /></pre>Advantages of
+this approach: <br />
+<ul>
+  <li><span style="background-color: white;">Only those schema definitions that have been explicitly specified get
+      substituted while others remain unchanged</span></li>
+  <li><span style="background-color: white;">No scary if conditions in the source code to map schema definitions</span></li>
+  <li><span style="background-color: white;">Fully configuration based, wherefore web.config transformations work just
+      great</span></li>
+</ul>
+<div>I asked the author of the EFModelAdapter for the permission to publish the modified code on GitHub. Once I get a
+  reply I'll update this post here, detailing my implementation approach. In the mean time, if you have any questions,
+  feel free to leave a comment or contact me.</div>
 
 <h2>//Edit: Uploaded on GitHub</h2>
 <p>
-I've just uploaded the project on GitHub: <a href="https://github.com/juristr/dbcontext-utils">https://github.com/juristr/dbcontext-utils</a>
+  I've just uploaded the project on GitHub: <a href="https://github.com/juristr/dbcontext-utils">https://github.com/juristr/dbcontext-utils</a>
 </p>
 <p>Feel free to submit any comments or pull requests :)</p>
-
             </div>
 
             
             <div class="after-post-tags">
                 <ul class="tags">
-                    
-                    <li>
-                        <a href="/tags/entity-framework">Entity Framework</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/.net">.Net</a>
-                    </li>
                     
                 </ul>
             </div>
@@ -241,131 +298,6 @@ I've just uploaded the project on GitHub: <a href="https://github.com/juristr/db
 <div class="related-container">
     <div class="container">
         <div class="row listrecent listrelated">
-            
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2011/05/basta-on-tour-wrap-up-day-2-ef-best">Basta-On-Tour Wrap Up Day 2: EF Best Practices, JavaScript, MVC</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">May 24, 2011</span><span class="dot"></span><span
-                                class="post-read">3 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2011/05/basta-on-tour-wrap-up-day-1-entity">Basta-On-Tour Wrap Up Day 1: Entity Framework</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">May 20, 2011</span><span class="dot"></span><span
-                                class="post-read">3 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2012/04/using-nuget-to-distribute-our-company">Using NuGet to Distribute Our Company Internal DLLs</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Apr 19, 2012</span><span class="dot"></span><span
-                                class="post-read">3 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
             
 
         </div>
@@ -428,7 +360,7 @@ I've just uploaded the project on GitHub: <a href="https://github.com/juristr/db
 
 
 
-<script type="text/javascript" src="https://juristr.com/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
+<script type="text/javascript" src="/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
 
 
 <script src="/js/jquery.fluidbox.min.js"></script>

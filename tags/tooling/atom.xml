@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tooling on juri.strumpflohner</title>
+    <link>https://juristr.com/tags/tooling/</link>
+    <description>Recent content in Tooling on juri.strumpflohner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Juri Strumpflohner - All rights reserved</copyright>
+    <lastBuildDate>Thu, 05 Jul 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://juristr.com/tags/tooling/atom.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting up my Developer Machine</title>
+      <link>https://juristr.com/blog/2012/07/setting-up-my-developer-machine/</link>
+      <pubDate>Thu, 05 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2012/07/setting-up-my-developer-machine/</guid>
+      <description>Developers need to have fast&amp;nbsp;machines!&amp;nbsp;Today I just returned from a week of holidays at Kos (Greece). Amazing! So you might imagine that returning to work is usually less pleasant ;), but that changed when I opened Outlook and saw the email from our systems department that my new developer machine setup was ready.</description>
+    </item>
+    
+    <item>
+      <title>Best practices: Tracking information on the source code with Visual Studio and TFS</title>
+      <link>https://juristr.com/blog/2009/01/best-practices-tracking-information-on/</link>
+      <pubDate>Thu, 08 Jan 2009 01:00:00 +0000</pubDate>
+      
+      <guid>https://juristr.com/blog/2009/01/best-practices-tracking-information-on/</guid>
+      <description>An issue in managing a code base is not only to guide different developers through the development process, preventing that they overwrite each others modifications on the source code (which would for sure happen when just sharing the code files over the normal file system.</description>
+    </item>
+    
+  </channel>
+</rss>

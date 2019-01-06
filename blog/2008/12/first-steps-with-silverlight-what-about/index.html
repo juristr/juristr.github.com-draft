@@ -4,16 +4,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Hugo 0.53" />
 	
+	<link rel="shortcut icon" href="/assets/images/sitelogo.jpeg">
+	
 	<title>First steps with Silverlight. What about GWT? | juri.strumpflohner</title>
 	
 	
 
+	
+	<meta name="author" content="Juri Strumpflohner">
+	<link rel="me" href="https://profiles.google.com/104904743888756261987" />
+	<link rel="publisher" href='https://plus.google.com/104904743888756261987' />
+	<meta property="twitter:account_id" content="14407063" />
+
+
+	
+	<meta name="google-site-verification" content="0_vyoIaeMG1kXR0h-48gy3OaGl8xoiSJsFDxxCTIBMs" />
+	<meta name="google-site-verification" content="AvmssSjl_nchNXIqBW8Agb_UjGqvvLP7HXSxBZ9d0cg" />
+
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@juristr" />
+	<meta name="twitter:title" content="First steps with Silverlight. What about GWT?" />
+	
+
+	
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Juri Strumpflohner" href="//feeds.feedburner.com/juristrumpflohner">
+	
 
 	
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<link href='//fonts.googleapis.com/css?family=Righteous|Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
 	 rel='stylesheet' type='text/css'>
 	
@@ -23,7 +47,7 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/main.min.fd753432185db38bfbc183a977ed14f8e3ed314f4f938904d908bcfea775813a.css" integrity="sha256-/XU0Mhhds4v7wYOpd&#43;0U&#43;OPtMU9Pk4kE2Qi8/qd1gTo=" media="screen">
+	<link rel="stylesheet" href="/scss/main.min.788d84de2ded58913e22cf1f7e9d98fdc99ae669c17cd186aa46fa3ba6378fbe.css" integrity="sha256-eI2E3i3tWJE&#43;Is8ffp2Y/cma5mnBfNGGqkb6O6Y3j74=" media="screen">
 
 	
 
@@ -31,7 +55,7 @@
 
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/article.min.5023ef17f0d1b321f33a6554cd0526640c24a5a17cb68af2a8dfd9debd02e2ee.css" integrity="sha256-UCPvF/DRsyHzOmVUzQUmZAwkpaF8toryqN/Z3r0C4u4=" media="screen">
+	<link rel="stylesheet" href="/scss/article.min.39d2631fa244d3442d50500346a96e007f4d6ad56aaebadc6c4e5371731d6a0e.css" integrity="sha256-OdJjH6JE00QtUFADRqluAH9NatVqrrrcbE5TcXMdag4=" media="screen">
 	
 
 	
@@ -42,7 +66,7 @@
         
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -62,7 +86,7 @@
                 
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -73,11 +97,8 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                
+                <div id="bs4navbar" class="navbar-collapse">
                     
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         
@@ -176,7 +197,7 @@
                             Dec 23, 2008
                         </time></span>
                     <span class="dot"></span>
-                    <span class="post-read">6 min read</span>
+                    <span class="post-read">7 min read</span>
                 </p>
             </div>
 
@@ -193,8 +214,99 @@
             
             <div class="article-post">
                 
-Last week I had some time which allowed me to do some experiments with Microsoft Silverlight. I had to give it a try since you hear so much on the web about it, so I was quite curious, how it works out.<br />When searching for a tutorial, I watched a couple of videos and finally ended on Scott Guthrie's blog where he presents a <a href="http://weblogs.asp.net/scottgu/pages/silverlight-2-end-to-end-tutorial-building-a-digg-search-client.aspx">"End-to-End tutorial" of creating a Digg search client with Silverlight 2</a>. I followed the tutorial and it's great, since it gives you quite a good feeling of the environment. The tutorial consists of the following eight parts:<br /><ul><li><a href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-1-creating-quot-hello-world-quot-with-silverlight-2-and-vs-2008.aspx" mce_href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-1-creating-quot-hello-world-quot-with-silverlight-2-and-vs-2008.aspx" style="color: #3399ff;" target="_blank">Part 1: Creating "Hello World" with Silverlight 2 and VS 2008</a></li><li><a href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-2-using-layout-management.aspx" mce_href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-2-using-layout-management.aspx" style="color: #3399ff;" target="_blank">Part 2: Using Layout Management</a></li><li><a href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-3-using-networking-to-retrieve-data-and-populate-a-datagrid.aspx" mce_href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-3-using-networking-to-retrieve-data-and-populate-a-datagrid.aspx" style="color: #3399ff;" target="_blank">Part 3: Using Networking to Retrieve Data and Populate a DataGrid</a></li><li><a href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-4-using-style-elements-to-better-encapsulate-look-and-feel.aspx" mce_href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-4-using-style-elements-to-better-encapsulate-look-and-feel.aspx" style="color: #3399ff;" target="_blank">Part 4: Using Style Elements to Better Encapsulate Look and Feel</a></li><li><a href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-5-using-the-listbox-and-databinding-to-display-list-data.aspx" mce_href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-5-using-the-listbox-and-databinding-to-display-list-data.aspx" style="color: #3399ff;" target="_blank">Part 5: Using the ListBox and DataBinding to Display List Data</a></li><li><a href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-6-using-user-controls-to-implement-master-detail-scenarios.aspx" mce_href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-6-using-user-controls-to-implement-master-detail-scenarios.aspx" style="color: #3399ff;" target="_blank">Part 6: Using User Controls to Implement Master/Details Scenarios</a></li><li><a href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-7-using-control-templates-to-customize-a-control-s-look-and-feel.aspx" mce_href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-7-using-control-templates-to-customize-a-control-s-look-and-feel.aspx" style="color: #3399ff;" target="_blank">Part 7: Using Templates to Customize Control Look and Feel</a></li><li><a href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-8-creating-a-digg-desktop-application-using-wpf.aspx" mce_href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-8-creating-a-digg-desktop-application-using-wpf.aspx" style="color: #3399ff;" target="_blank">Part 8: Creating a Digg Desktop Version of our Application using WPF</a></li></ul>And here's a screenshot of my outcome (basically the same as on Scott's tutorial obviously :) ):<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_tF6XjsUy87k/SUEvnXV-lCI/AAAAAAAABqU/40FdqPz79gQ/s1600-h/silverlightFirstSteps.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/_tF6XjsUy87k/SUEvnXV-lCI/AAAAAAAABqU/40FdqPz79gQ/s320/silverlightFirstSteps.jpg" /></a></div>I was really impressed of the environment. And you know...as most of us probably do, I'm personally always aiming to build highly user-friendly applications because at the end that's what counts, since that's the point where your users interact with your application. When we talk about web applications and user-friendliness, most often we have to speak about high-responsiveness of the web application, which again - on the web - is strongly connected with Ajax. Traditional Asp.net applications don't give you this value. Having the page refreshing on each action is somehow annoying because the user has to continuously wait till he sees the user interface again for being able to continue and this is somehow distracting.<br /><br />What regards Ajax technologies, Google is for sure one of the leaders in that field. They are able to build highly-interactive web applications (i.e. <a href="http://www.gmail.com/">Gmail</a> , <a href="http://maps.google.com/">Google Maps</a> ,...) which don't feel any more like web applications but more like normal desktop apps. I did a couple of experiments also with the <a href="http://code.google.com/webtoolkit/">GWT (Google Web Toolkit)</a> which allows you to program (quite) normal Java code which then gets translated into pure JavaScript by the GWT-compiler. Again these applications are great. GWT allows you to build desktop-like applications running on the browser that communicate with some server over web service calls (using XML, Json,...) or even with RPC (remote procedure calls). Programming GWT is cool and there are a couple of good online tutorials. Everything is perfectly integrated into <a href="http://www.eclipse.org/">Eclipse</a> , and you can even debug (!!) your application, your written Java code in Eclipse, which is not that straightforward if you think of debugging JavaScript code. Also the deployment process is easy, you've just to copy the compiled (generated) set of HTML and JavaScript files on your webserver. If you then combine your GWT client with advanced web frameworks like the Spring Web MVC framework you get even more benefits out of it. Although it is possible, that process of letting GWT communicate with your Spring application framework through GWT RPC calls is not that easy (I may post a short tutorial on that on some later posts). The point with GWT, as with most Java technologies, is the learning curve. You need to investigate quite a lot initially to really become productive (especially in designing good user-interfaces and user-interface components).<br />Now why did I mention GWT? Well because Silverlight seems to be somehow Microsoft's answer to it. Well not exactly because it is more similar to Flash than the GWT, but it is Microsoft's trial to provide a framework for easily developing highly interactive web applications. You can build Silverlight applications by using XAML files and the .Net framework. So you don't have to learn anything new and that will be one of the major advantages. Another point which is really cool, is how easily you can bind object properties on your interface (inside the XAML file). Scott Guthrie's tutorial points this out. The best is that you try the tutorial to get a feeling of Silverlight.<br /><br />If you compare Silverlight with GWT from the point of the prerequisites which you need to run the different kind of applications, GWT is for sure the winner. It uses the standard JavaScript which is supported by all of the commonly used browsers. The produced JavaScript is performance and cross-browser optimized. For being able to run Silverlight applications you need to download the framework to the client first (similar to Flash, where you first have to install the Flash Player).<br />From a "productivity" point of view, I think Silverlight will be better, but it very much depends on the situation. If you start from scratch, Silverlight will for sure be better, due to the Microsoft "visual" way of programming. You have your designer, where you can quickly compose several predefined components. By using Microsoft Expression Blend, designing UI's will even be more easy. Also the rendering of the object-data on the UI is straightforward due to the implemented data-binding mechanism. Moreover you can nearly continue programming like you were accustomed when building normal Asp.net apps. Here, GWT is (initially) a bit more complicated. For programming you can only use a subset of the Java programming language. This is due to the fact that GWT "compiles" Java into JavaScript and so the GWT team has to continuously implement the new Java features into their compiler. Designing the UI is a bit awkward. You have to keep a good overview and impose a good structure, by creating UI components which again you combine on the UI s.t. everything remains flexible and exchangeable. As I mentioned, this will produce some overhead, since initially you spend quite a lot of time in producing good UI's. Once you have your components, you may reuse them however on your other GWT apps. Unfortunately there don't exist any predefined "visual editors" for GWT integrated in Eclipse. <a href="http://www.instantiations.com/prods/docs/ajax.html">Instantiations</a> however provides one (you have to pay it), but I never tried it out. Another "disadvantage" is the databinding mechanism (binding your object-data to the UI). You have to create a data-binding mechanism yourself. There doesn't exist anything like in Silverlight. <a href="http://blog.js-development.com/2008/03/logical-separation-with-mvc.html">MVC</a> works out well here, and again, if you design your components in an intelligent and smart way, you're able to reuse them. The prerequisite here is that you have a good understanding of such design patterns as MVC, observer, mediator etc...everything it includes basically. In Silverlight you can get rid of these details which from a productive point of view may be an advantage, from a learning point of view however you loose some interesting aspects.<br /><br />Don't take this comparison too seriously, it's just a really informal description of what I experienced somehow...to do a better job, one would have to really program the same sample app with Silverlight and GWT and extract some metrics.<br /><br />Generally speaking, I think that Silverlight is as most of Microsofts technologies. Microsoft provides you with great and powerful tools, where you can quickly build and set-up a  running application, possibly already connected to some datasource. But that may be also a dangerous part, these "fast" solutions may not always be optimal from an architectural point of view, but again that would be enough stuff for another post (which may come :) ).<br />But I'm concluding this post now, it already became too long...btw with this post is number 100 for this year :D<br />I wish you Merry Christmas!!<br /><br /><span style="text-decoration: underline;">References:</span><br /><a href="http://www.microsoft.com/silverlight/resources/install.aspx">Install Silverlight</a><br /><a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=c22d6a7b-546f-4407-8ef6-d60c8ee221ed&amp;DisplayLang=en">Silverlight tools for Visual Studio 2008</a><br /><a href="http://code.google.com/webtoolkit/">GWT main site</a><br /><a href="http://code.google.com/webtoolkit/app_gallery.html">http://code.google.com/webtoolkit/app_gallery.html</a>
-
+Last week I had some time which allowed me to do some experiments with Microsoft Silverlight. I had to give it a try
+since you hear so much on the web about it, so I was quite curious, how it works out.<br />When searching for a
+tutorial, I watched a couple of videos and finally ended on Scott Guthrie's blog where he presents a <a href="http://weblogs.asp.net/scottgu/pages/silverlight-2-end-to-end-tutorial-building-a-digg-search-client.aspx">"End-to-End
+  tutorial" of creating a Digg search client with Silverlight 2</a>. I followed the tutorial and it's great, since it
+gives you quite a good feeling of the environment. The tutorial consists of the following eight parts:<br />
+<ul>
+  <li><a href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-1-creating-quot-hello-world-quot-with-silverlight-2-and-vs-2008.aspx"
+      mce_href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-1-creating-quot-hello-world-quot-with-silverlight-2-and-vs-2008.aspx"
+      style="color: #3399ff;" target="_blank">Part 1: Creating "Hello World" with Silverlight 2 and VS 2008</a></li>
+  <li><a href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-2-using-layout-management.aspx" mce_href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-2-using-layout-management.aspx"
+      style="color: #3399ff;" target="_blank">Part 2: Using Layout Management</a></li>
+  <li><a href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-3-using-networking-to-retrieve-data-and-populate-a-datagrid.aspx"
+      mce_href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-3-using-networking-to-retrieve-data-and-populate-a-datagrid.aspx"
+      style="color: #3399ff;" target="_blank">Part 3: Using Networking to Retrieve Data and Populate a DataGrid</a></li>
+  <li><a href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-4-using-style-elements-to-better-encapsulate-look-and-feel.aspx"
+      mce_href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-4-using-style-elements-to-better-encapsulate-look-and-feel.aspx"
+      style="color: #3399ff;" target="_blank">Part 4: Using Style Elements to Better Encapsulate Look and Feel</a></li>
+  <li><a href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-5-using-the-listbox-and-databinding-to-display-list-data.aspx"
+      mce_href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-5-using-the-listbox-and-databinding-to-display-list-data.aspx"
+      style="color: #3399ff;" target="_blank">Part 5: Using the ListBox and DataBinding to Display List Data</a></li>
+  <li><a href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-6-using-user-controls-to-implement-master-detail-scenarios.aspx"
+      mce_href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-6-using-user-controls-to-implement-master-detail-scenarios.aspx"
+      style="color: #3399ff;" target="_blank">Part 6: Using User Controls to Implement Master/Details Scenarios</a></li>
+  <li><a href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-7-using-control-templates-to-customize-a-control-s-look-and-feel.aspx"
+      mce_href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-7-using-control-templates-to-customize-a-control-s-look-and-feel.aspx"
+      style="color: #3399ff;" target="_blank">Part 7: Using Templates to Customize Control Look and Feel</a></li>
+  <li><a href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-8-creating-a-digg-desktop-application-using-wpf.aspx"
+      mce_href="http://weblogs.asp.net/scottgu/pages/silverlight-tutorial-part-8-creating-a-digg-desktop-application-using-wpf.aspx"
+      style="color: #3399ff;" target="_blank">Part 8: Creating a Digg Desktop Version of our Application using WPF</a></li>
+</ul>And here's a screenshot of my outcome (basically the same as on Scott's tutorial obviously :) ):<br />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_tF6XjsUy87k/SUEvnXV-lCI/AAAAAAAABqU/40FdqPz79gQ/s1600-h/silverlightFirstSteps.jpg"
+    imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/_tF6XjsUy87k/SUEvnXV-lCI/AAAAAAAABqU/40FdqPz79gQ/s320/silverlightFirstSteps.jpg" /></a></div>I
+was really impressed of the environment. And you know...as most of us probably do, I'm personally always aiming to
+build highly user-friendly applications because at the end that's what counts, since that's the point where your users
+interact with your application. When we talk about web applications and user-friendliness, most often we have to speak
+about high-responsiveness of the web application, which again - on the web - is strongly connected with Ajax.
+Traditional Asp.net applications don't give you this value. Having the page refreshing on each action is somehow
+annoying because the user has to continuously wait till he sees the user interface again for being able to continue and
+this is somehow distracting.<br /><br />What regards Ajax technologies, Google is for sure one of the leaders in that
+field. They are able to build highly-interactive web applications (i.e. <a href="http://www.gmail.com/">Gmail</a> , <a
+  href="http://maps.google.com/">Google Maps</a> ,...) which don't feel any more like web applications but more like
+normal desktop apps. I did a couple of experiments also with the <a href="http://code.google.com/webtoolkit/">GWT
+  (Google Web Toolkit)</a> which allows you to program (quite) normal Java code which then gets translated into pure
+JavaScript by the GWT-compiler. Again these applications are great. GWT allows you to build desktop-like applications
+running on the browser that communicate with some server over web service calls (using XML, Json,...) or even with RPC
+(remote procedure calls). Programming GWT is cool and there are a couple of good online tutorials. Everything is
+perfectly integrated into <a href="http://www.eclipse.org/">Eclipse</a> , and you can even debug (!!) your application,
+your written Java code in Eclipse, which is not that straightforward if you think of debugging JavaScript code. Also
+the deployment process is easy, you've just to copy the compiled (generated) set of HTML and JavaScript files on your
+webserver. If you then combine your GWT client with advanced web frameworks like the Spring Web MVC framework you get
+even more benefits out of it. Although it is possible, that process of letting GWT communicate with your Spring
+application framework through GWT RPC calls is not that easy (I may post a short tutorial on that on some later posts).
+The point with GWT, as with most Java technologies, is the learning curve. You need to investigate quite a lot
+initially to really become productive (especially in designing good user-interfaces and user-interface components).<br />Now
+why did I mention GWT? Well because Silverlight seems to be somehow Microsoft's answer to it. Well not exactly because
+it is more similar to Flash than the GWT, but it is Microsoft's trial to provide a framework for easily developing
+highly interactive web applications. You can build Silverlight applications by using XAML files and the .Net framework.
+So you don't have to learn anything new and that will be one of the major advantages. Another point which is really
+cool, is how easily you can bind object properties on your interface (inside the XAML file). Scott Guthrie's tutorial
+points this out. The best is that you try the tutorial to get a feeling of Silverlight.<br /><br />If you compare
+Silverlight with GWT from the point of the prerequisites which you need to run the different kind of applications, GWT
+is for sure the winner. It uses the standard JavaScript which is supported by all of the commonly used browsers. The
+produced JavaScript is performance and cross-browser optimized. For being able to run Silverlight applications you need
+to download the framework to the client first (similar to Flash, where you first have to install the Flash Player).<br />From
+a "productivity" point of view, I think Silverlight will be better, but it very much depends on the situation. If you
+start from scratch, Silverlight will for sure be better, due to the Microsoft "visual" way of programming. You have
+your designer, where you can quickly compose several predefined components. By using Microsoft Expression Blend,
+designing UI's will even be more easy. Also the rendering of the object-data on the UI is straightforward due to the
+implemented data-binding mechanism. Moreover you can nearly continue programming like you were accustomed when building
+normal Asp.net apps. Here, GWT is (initially) a bit more complicated. For programming you can only use a subset of the
+Java programming language. This is due to the fact that GWT "compiles" Java into JavaScript and so the GWT team has to
+continuously implement the new Java features into their compiler. Designing the UI is a bit awkward. You have to keep a
+good overview and impose a good structure, by creating UI components which again you combine on the UI s.t. everything
+remains flexible and exchangeable. As I mentioned, this will produce some overhead, since initially you spend quite a
+lot of time in producing good UI's. Once you have your components, you may reuse them however on your other GWT apps.
+Unfortunately there don't exist any predefined "visual editors" for GWT integrated in Eclipse. <a href="http://www.instantiations.com/prods/docs/ajax.html">Instantiations</a>
+however provides one (you have to pay it), but I never tried it out. Another "disadvantage" is the databinding
+mechanism (binding your object-data to the UI). You have to create a data-binding mechanism yourself. There doesn't
+exist anything like in Silverlight. <a href="http://blog.js-development.com/2008/03/logical-separation-with-mvc.html">MVC</a>
+works out well here, and again, if you design your components in an intelligent and smart way, you're able to reuse
+them. The prerequisite here is that you have a good understanding of such design patterns as MVC, observer, mediator
+etc...everything it includes basically. In Silverlight you can get rid of these details which from a productive point
+of view may be an advantage, from a learning point of view however you loose some interesting aspects.<br /><br />Don't
+take this comparison too seriously, it's just a really informal description of what I experienced somehow...to do a
+better job, one would have to really program the same sample app with Silverlight and GWT and extract some metrics.<br /><br />Generally
+speaking, I think that Silverlight is as most of Microsofts technologies. Microsoft provides you with great and
+powerful tools, where you can quickly build and set-up a  running application, possibly already connected to some
+datasource. But that may be also a dangerous part, these "fast" solutions may not always be optimal from an
+architectural point of view, but again that would be enough stuff for another post (which may come :) ).<br />But I'm
+concluding this post now, it already became too long...btw with this post is number 100 for this year :D<br />I wish
+you Merry Christmas!!<br /><br /><span style="text-decoration: underline;">References:</span><br /><a href="http://www.microsoft.com/silverlight/resources/install.aspx">Install
+  Silverlight</a><br /><a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=c22d6a7b-546f-4407-8ef6-d60c8ee221ed&amp;DisplayLang=en">Silverlight
+  tools for Visual Studio 2008</a><br /><a href="http://code.google.com/webtoolkit/">GWT main site</a><br /><a href="http://code.google.com/webtoolkit/app_gallery.html">http://code.google.com/webtoolkit/app_gallery.html</a>
             </div>
 
             
@@ -202,19 +314,7 @@ Last week I had some time which allowed me to do some experiments with Microsoft
                 <ul class="tags">
                     
                     <li>
-                        <a href="/tags/gwt">GWT</a>
-                    </li>
-                    
-                    <li>
                         <a href="/tags/silverlight">Silverlight</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/google">Google</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/web-dev">Web dev</a>
                     </li>
                     
                 </ul>
@@ -241,131 +341,6 @@ Last week I had some time which allowed me to do some experiments with Microsoft
 <div class="related-container">
     <div class="container">
         <div class="row listrecent listrelated">
-            
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2008/06/testing-ajax-applications">Testing Ajax applications</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Jun 27, 2008</span><span class="dot"></span><span
-                                class="post-read">1 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2008/11/strange-focus-behavior-on-firefox-3">Strange focus behavior on Firefox 3&#43;</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Nov 6, 2008</span><span class="dot"></span><span
-                                class="post-read">1 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2008/10/building-better-query">Building a better query</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Oct 23, 2008</span><span class="dot"></span><span
-                                class="post-read">1 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
             
 
         </div>
@@ -428,7 +403,7 @@ Last week I had some time which allowed me to do some experiments with Microsoft
 
 
 
-<script type="text/javascript" src="https://juristr.com/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
+<script type="text/javascript" src="/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
 
 
 <script src="/js/jquery.fluidbox.min.js"></script>

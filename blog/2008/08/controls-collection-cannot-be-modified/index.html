@@ -4,16 +4,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Hugo 0.53" />
 	
+	<link rel="shortcut icon" href="/assets/images/sitelogo.jpeg">
+	
 	<title>The Controls collection cannot be modified because... | juri.strumpflohner</title>
 	
 	
 
+	
+	<meta name="author" content="Juri Strumpflohner">
+	<link rel="me" href="https://profiles.google.com/104904743888756261987" />
+	<link rel="publisher" href='https://plus.google.com/104904743888756261987' />
+	<meta property="twitter:account_id" content="14407063" />
+
+
+	
+	<meta name="google-site-verification" content="0_vyoIaeMG1kXR0h-48gy3OaGl8xoiSJsFDxxCTIBMs" />
+	<meta name="google-site-verification" content="AvmssSjl_nchNXIqBW8Agb_UjGqvvLP7HXSxBZ9d0cg" />
+
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@juristr" />
+	<meta name="twitter:title" content="The Controls collection cannot be modified because..." />
+	
+
+	
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Juri Strumpflohner" href="//feeds.feedburner.com/juristrumpflohner">
+	
 
 	
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<link href='//fonts.googleapis.com/css?family=Righteous|Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
 	 rel='stylesheet' type='text/css'>
 	
@@ -23,7 +47,7 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/main.min.fd753432185db38bfbc183a977ed14f8e3ed314f4f938904d908bcfea775813a.css" integrity="sha256-/XU0Mhhds4v7wYOpd&#43;0U&#43;OPtMU9Pk4kE2Qi8/qd1gTo=" media="screen">
+	<link rel="stylesheet" href="/scss/main.min.788d84de2ded58913e22cf1f7e9d98fdc99ae669c17cd186aa46fa3ba6378fbe.css" integrity="sha256-eI2E3i3tWJE&#43;Is8ffp2Y/cma5mnBfNGGqkb6O6Y3j74=" media="screen">
 
 	
 
@@ -31,7 +55,7 @@
 
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/article.min.5023ef17f0d1b321f33a6554cd0526640c24a5a17cb68af2a8dfd9debd02e2ee.css" integrity="sha256-UCPvF/DRsyHzOmVUzQUmZAwkpaF8toryqN/Z3r0C4u4=" media="screen">
+	<link rel="stylesheet" href="/scss/article.min.39d2631fa244d3442d50500346a96e007f4d6ad56aaebadc6c4e5371731d6a0e.css" integrity="sha256-OdJjH6JE00QtUFADRqluAH9NatVqrrrcbE5TcXMdag4=" media="screen">
 	
 
 	
@@ -42,7 +66,7 @@
         
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -62,7 +86,7 @@
                 
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -73,11 +97,8 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                
+                <div id="bs4navbar" class="navbar-collapse">
                     
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         
@@ -193,29 +214,69 @@
             
             <div class="article-post">
                 
-Programming on the web (JSP, ASP.net, etc..) is quite different than programming a desktop client. On the web, everything is characterized by the request/response paradigm due to the structure of the HTTP protocol. But still some customers desire to have desktop-client-like behavior such as for instance showing/hiding fields depending on the content of other fields (or even manipulate their content dynamically).<br />Here is where the request/response paradigm comes into play. The problem is that once the page is sent back to the client you have no control what the user changes unless you send the page back to the server (autopostback in ASP.net) s.t. you can check for changes. But that's "ugly" and may impact on the user-friendliness of your app since it causes a complete page refresh (your customer wouldn't be happy for sure).  <a href="http://en.wikipedia.org/wiki/Ajax_%28programming%29">Ajax</a> is a must in that case. Google is an expert in that field. Just take a look at some of its services like <a href="http://www.gmail.com/">Gmail</a>, <a href="http://reader.google.com/">GReader </a>or <a href="http://docs.google.com/">GDocs</a>, just to mention some of them or the <a href="http://code.google.com/">Google Code</a> pages.<br />Of course also Microsoft has an answer to it: the <a href="http://atlas.asp.net/">AjaxControlToolkit</a>, an open source collection of Ajax-enabled controls. Probably the most popular among them is the UpdatePanel. Programming Ajax is easier than ever, you don't even have to know anything about Ajax. Just take the UpdatePanel control from the toolbox and drag&amp;drop it into your webpage, start your app and see there, everything updates magically within the UpdatePanel without any page refresh. Nice, isn't it? Well not really. I don't really like these drag&amp;drop solutions which apply some "magic" and solve your problem but you don't really know what's going on behind the scene. If you use Firebug to inspect the requests sent by the UpdatePanel to the server and the resulting responses you'll notice that it doesn't actually do any Ajax as it would be done normally, meaning to use an XMLHttpRequest object, send a request to the server and to process the response inside a callback function. Of course the UpdatePanel does an asynchronous postback and it uses a callback function somewhere, but the server answers not just with the plain data but with the complete rendered HTML code. What is done, is to just replace the whole HTML code inside the UpdatePanel with the new one returned from the server. The problem with this is mainly performance since for the first all the HTML code has to be send from the client to the server and vice versa and moreover also the whole viewstate is carried as well. On a page with just a few controls it may not pose any problem, but if you have an immense web-form with about 50 controls on it, carrying all of the control's viewstate may represent quite a huge amount of data to carry. I'll maybe write another post to demonstrate how you can bypass this problem by querying a web-service from JavaScript and by doing the data exchange with Json.<br />But back to the original problem (wherefore I'm writing this post :) ): if you have to show/hide controls on your UI, you usually won't need any Ajax (unless the conditions are complex and are calculated by some business logic on the server-side). The temptation however is big ;) , doing it with an UpdatePanel would be a matter of a minute. Just put the involved controls inside it and add the appropriate event-handlers and server-side code for showing/hiding your fields. And still I strongly discourage this for the above mentioned reasons.<br />Instead, what you can do is to manipulate the DOM with JavaScript. That sounds pretty straightforward, just query the document object model for the control to retrieve its value. So on an ASP.net page you'll do something like var element = document.getElementById('ddlContracts') where "ddlContracts" is the name of the drop-down list containing some values you need to query in order to understand whether to display some other fields. That won't work however. The reason is that ASP.net assigns unique id's to all of it's controls in order to avoid naming conflicts. So on the client-side your "ddlContracts" will be named something like "UserControl1_ddlContracts" or something similar, depending on how deep it is nested. I searched for a while on the web whether there exists some kind of mechanism for retrieving the id of the control on the client-side but it seems as if the only possibility or better the most commonly used one is to directly retrieve the client-side id by embedding server-tags inside your aspx code like the following:<br /><pre class="prettyprint">&lt;script type="text/javascript"&gt;<br />function doSomething(){<br />  var ddlContract = document.getElementById('&lt;%= ddlContract.ClientID %&gt;');<br />  ...<br />}<br />&lt;/script&gt;<br /></pre>The part between the angle brackets is evaluated on the server-side and returns the client id of the drop down list. In this way everything works fine, although embedding such server-tags is a style of coding which I don't really like :( . Anyway, after embedding those tags, I started the application but then the following message appeared:<br /><blockquote class="tr_bq">The Controls collection cannot be modified because the control contains code blocks (i.e. &lt;% ... %&gt;)</blockquote>Damn...but actually, the error message is completely justified. On the project I'm currently working, validation controls are assigned dynamically to the UI depending on rules defined in the business logic. That's why that error appears.<br />After informing myself on the web I came up with basically two workarounds:<br /><ol><li><b>using <span class="code">&lt;%# ... %&gt;</span> instead of <span class="code">&lt;%= ... &gt;</span></b><br />The difference between the two is that <span class="code">&lt;%# ... %&gt;</span> tags are embedded at runtime whereas <span class="code">&lt;%= ... %&gt;</span> is embedded as a part of the generated ASP.net parse tree class. &lt;%#...%&gt; works however only on databound fields.</li><li><b>Force your scripts to run on a server-control</b>...<br />...and removing it in this way from the content container where the controls (in my case the validators) are added dynamically at runtime.</li></ol>I've chosen the 2nd solution. You've just to do something like the following:<br /><pre class="prettyprint">...<br />   &lt;div runat="server"&gt;<br />      &lt;script type="text/javascript"&gt;<br />            function someJavaScript(){<br />                var dropDownElement = document.getElementById('&lt;%= ddlContractType.ClientID %&gt;');<br />                //do some actions<br />                ...<br />            }  <br />      &lt;/script&gt;<br />   &lt;/div&gt;<br /></pre>
-
+Programming on the web (JSP, ASP.net, etc..) is quite different than programming a desktop client. On the web,
+everything is characterized by the request/response paradigm due to the structure of the HTTP protocol. But still some
+customers desire to have desktop-client-like behavior such as for instance showing/hiding fields depending on the
+content of other fields (or even manipulate their content dynamically).<br />Here is where the request/response
+paradigm comes into play. The problem is that once the page is sent back to the client you have no control what the
+user changes unless you send the page back to the server (autopostback in ASP.net) s.t. you can check for changes. But
+that's "ugly" and may impact on the user-friendliness of your app since it causes a complete page refresh (your
+customer wouldn't be happy for sure). <a href="http://en.wikipedia.org/wiki/Ajax_%28programming%29">Ajax</a> is a must
+in that case. Google is an expert in that field. Just take a look at some of its services like <a href="http://www.gmail.com/">Gmail</a>,
+<a href="http://reader.google.com/">GReader </a>or <a href="http://docs.google.com/">GDocs</a>, just to mention some of
+them or the <a href="http://code.google.com/">Google Code</a> pages.<br />Of course also Microsoft has an answer to it:
+the <a href="http://atlas.asp.net/">AjaxControlToolkit</a>, an open source collection of Ajax-enabled controls.
+Probably the most popular among them is the UpdatePanel. Programming Ajax is easier than ever, you don't even have to
+know anything about Ajax. Just take the UpdatePanel control from the toolbox and drag&amp;drop it into your webpage,
+start your app and see there, everything updates magically within the UpdatePanel without any page refresh. Nice, isn't
+it? Well not really. I don't really like these drag&amp;drop solutions which apply some "magic" and solve your problem
+but you don't really know what's going on behind the scene. If you use Firebug to inspect the requests sent by the
+UpdatePanel to the server and the resulting responses you'll notice that it doesn't actually do any Ajax as it would be
+done normally, meaning to use an XMLHttpRequest object, send a request to the server and to process the response inside
+a callback function. Of course the UpdatePanel does an asynchronous postback and it uses a callback function somewhere,
+but the server answers not just with the plain data but with the complete rendered HTML code. What is done, is to just
+replace the whole HTML code inside the UpdatePanel with the new one returned from the server. The problem with this is
+mainly performance since for the first all the HTML code has to be send from the client to the server and vice versa
+and moreover also the whole viewstate is carried as well. On a page with just a few controls it may not pose any
+problem, but if you have an immense web-form with about 50 controls on it, carrying all of the control's viewstate may
+represent quite a huge amount of data to carry. I'll maybe write another post to demonstrate how you can bypass this
+problem by querying a web-service from JavaScript and by doing the data exchange with Json.<br />But back to the
+original problem (wherefore I'm writing this post :) ): if you have to show/hide controls on your UI, you usually won't
+need any Ajax (unless the conditions are complex and are calculated by some business logic on the server-side). The
+temptation however is big ;) , doing it with an UpdatePanel would be a matter of a minute. Just put the involved
+controls inside it and add the appropriate event-handlers and server-side code for showing/hiding your fields. And
+still I strongly discourage this for the above mentioned reasons.<br />Instead, what you can do is to manipulate the
+DOM with JavaScript. That sounds pretty straightforward, just query the document object model for the control to
+retrieve its value. So on an ASP.net page you'll do something like var element =
+document.getElementById('ddlContracts') where "ddlContracts" is the name of the drop-down list containing some values
+you need to query in order to understand whether to display some other fields. That won't work however. The reason is
+that ASP.net assigns unique id's to all of it's controls in order to avoid naming conflicts. So on the client-side your
+"ddlContracts" will be named something like "UserControl1_ddlContracts" or something similar, depending on how deep it
+is nested. I searched for a while on the web whether there exists some kind of mechanism for retrieving the id of the
+control on the client-side but it seems as if the only possibility or better the most commonly used one is to directly
+retrieve the client-side id by embedding server-tags inside your aspx code like the following:<br />
+<pre class="prettyprint">&lt;script type="text/javascript"&gt;<br />function doSomething(){<br />  var ddlContract = document.getElementById('&lt;%= ddlContract.ClientID %&gt;');<br />  ...<br />}<br />&lt;/script&gt;<br /></pre>The
+part between the angle brackets is evaluated on the server-side and returns the client id of the drop down list. In
+this way everything works fine, although embedding such server-tags is a style of coding which I don't really like :( .
+Anyway, after embedding those tags, I started the application but then the following message appeared:<br />
+<blockquote class="tr_bq">The Controls collection cannot be modified because the control contains code blocks (i.e.
+  &lt;% ... %&gt;)</blockquote>Damn...but actually, the error message is completely justified. On the project I'm
+currently working, validation controls are assigned dynamically to the UI depending on rules defined in the business
+logic. That's why that error appears.<br />After informing myself on the web I came up with basically two workarounds:<br />
+<ol>
+  <li><b>using <span class="code">&lt;%# ... %&gt;</span> instead of <span class="code">&lt;%= ... &gt;</span></b><br />The
+    difference between the two is that <span class="code">&lt;%# ... %&gt;</span> tags are embedded at runtime whereas
+    <span class="code">&lt;%= ... %&gt;</span> is embedded as a part of the generated ASP.net parse tree class.
+    &lt;%#...%&gt; works however only on databound fields.</li>
+  <li><b>Force your scripts to run on a server-control</b>...<br />...and removing it in this way from the content
+    container where the controls (in my case the validators) are added dynamically at runtime.</li>
+</ol>I've chosen the 2nd solution. You've just to do something like the following:<br />
+<pre class="prettyprint">...<br />   &lt;div runat="server"&gt;<br />      &lt;script type="text/javascript"&gt;<br />            function someJavaScript(){<br />                var dropDownElement = document.getElementById('&lt;%= ddlContractType.ClientID %&gt;');<br />                //do some actions<br />                ...<br />            }  <br />      &lt;/script&gt;<br />   &lt;/div&gt;<br /></pre>
             </div>
 
             
             <div class="after-post-tags">
                 <ul class="tags">
-                    
-                    <li>
-                        <a href="/tags/javascript">JavaScript</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/asp.net">ASP.net</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/web-dev">Web dev</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/.net">.Net</a>
-                    </li>
                     
                 </ul>
             </div>
@@ -241,131 +302,6 @@ Programming on the web (JSP, ASP.net, etc..) is quite different than programming
 <div class="related-container">
     <div class="container">
         <div class="row listrecent listrelated">
-            
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2008/06/attaching-client-side-event-handler-to">Attaching client-side event handler to radio button list</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Jun 6, 2008</span><span class="dot"></span><span
-                                class="post-read">2 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2008/06/specifying-size-of-fileupload-control">Specifying the size of a FileUpload control on Firefox</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Jun 27, 2008</span><span class="dot"></span><span
-                                class="post-read">1 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2008/06/viewstate-hell-controls-loosing-their">The ViewState hell: controls loosing their values</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Jun 12, 2008</span><span class="dot"></span><span
-                                class="post-read">3 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
             
 
         </div>
@@ -428,7 +364,7 @@ Programming on the web (JSP, ASP.net, etc..) is quite different than programming
 
 
 
-<script type="text/javascript" src="https://juristr.com/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
+<script type="text/javascript" src="/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
 
 
 <script src="/js/jquery.fluidbox.min.js"></script>

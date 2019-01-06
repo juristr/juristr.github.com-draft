@@ -4,16 +4,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Hugo 0.53" />
 	
+	<link rel="shortcut icon" href="/assets/images/sitelogo.jpeg">
+	
 	<title>Writing IoC Supported Integration Tests using AutoFac | juri.strumpflohner</title>
 	
 	
 
+	
+	<meta name="author" content="Juri Strumpflohner">
+	<link rel="me" href="https://profiles.google.com/104904743888756261987" />
+	<link rel="publisher" href='https://plus.google.com/104904743888756261987' />
+	<meta property="twitter:account_id" content="14407063" />
+
+
+	
+	<meta name="google-site-verification" content="0_vyoIaeMG1kXR0h-48gy3OaGl8xoiSJsFDxxCTIBMs" />
+	<meta name="google-site-verification" content="AvmssSjl_nchNXIqBW8Agb_UjGqvvLP7HXSxBZ9d0cg" />
+
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@juristr" />
+	<meta name="twitter:title" content="Writing IoC Supported Integration Tests using AutoFac" />
+	
+
+	
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Juri Strumpflohner" href="//feeds.feedburner.com/juristrumpflohner">
+	
 
 	
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<link href='//fonts.googleapis.com/css?family=Righteous|Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
 	 rel='stylesheet' type='text/css'>
 	
@@ -23,7 +47,7 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/main.min.fd753432185db38bfbc183a977ed14f8e3ed314f4f938904d908bcfea775813a.css" integrity="sha256-/XU0Mhhds4v7wYOpd&#43;0U&#43;OPtMU9Pk4kE2Qi8/qd1gTo=" media="screen">
+	<link rel="stylesheet" href="/scss/main.min.788d84de2ded58913e22cf1f7e9d98fdc99ae669c17cd186aa46fa3ba6378fbe.css" integrity="sha256-eI2E3i3tWJE&#43;Is8ffp2Y/cma5mnBfNGGqkb6O6Y3j74=" media="screen">
 
 	
 
@@ -31,7 +55,7 @@
 
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/article.min.5023ef17f0d1b321f33a6554cd0526640c24a5a17cb68af2a8dfd9debd02e2ee.css" integrity="sha256-UCPvF/DRsyHzOmVUzQUmZAwkpaF8toryqN/Z3r0C4u4=" media="screen">
+	<link rel="stylesheet" href="/scss/article.min.39d2631fa244d3442d50500346a96e007f4d6ad56aaebadc6c4e5371731d6a0e.css" integrity="sha256-OdJjH6JE00QtUFADRqluAH9NatVqrrrcbE5TcXMdag4=" media="screen">
 	
 
 	
@@ -42,7 +66,7 @@
         
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -62,7 +86,7 @@
                 
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -73,11 +97,8 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                
+                <div id="bs4navbar" class="navbar-collapse">
                     
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         
@@ -193,32 +214,35 @@
             
             <div class="article-post">
                 
-<p>Using a dependency injection framework can <a href="http://blog.js-development.com/2010/12/smelly-code-direct-object-instantiation.html" target="_blank">greatly facilitate</a> your <a href="http://blog.js-development.com/2010/03/tackle-software-dependencies-with-ioc.html" target="_blank">code's testability</a>&nbsp;in that you don't have any "glue" code for managing a classes' dependency that needs to be mocked (if even possible) when writing unit tests. But what about when writing <b>integration tests</b>? In such case you'd probably want to use your IoC container's configuration for resolving types in order to also verify the proper <i>integration </i>of your components, frankly your dependency injection configuration, right?
+<p>Using a dependency injection framework can <a href="http://blog.js-development.com/2010/12/smelly-code-direct-object-instantiation.html"
+    target="_blank">greatly facilitate</a> your <a href="http://blog.js-development.com/2010/03/tackle-software-dependencies-with-ioc.html"
+    target="_blank">code's testability</a>&nbsp;in that you don't have any "glue" code for managing a classes'
+  dependency that needs to be mocked (if even possible) when writing unit tests. But what about when writing <b>integration
+    tests</b>? In such case you'd probably want to use your IoC container's configuration for resolving types in order
+  to also verify the proper <i>integration </i>of your components, frankly your dependency injection configuration,
+  right?
 </p>
 
-<div class="separator" style="clear: both; text-align: center;"><a href="http://code.google.com/p/autofac/logo?cct=1304973969" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://code.google.com/p/autofac/logo?cct=1304973969" /></a></div>With AutoFac it is actually quite simple. What your integration test needs to do is to himself create the <code>ContainerBuilder()</code> and accordingly register the dependencies. What you should do is the following. Assume you have a Visual Studio project that encapsulates your business logic called "BusinessLogic". Then the best strategy is to <b>create a so-called Autofac module per project </b>(and hence dll) to configure the dependencies within that specific project. This is done by extending the abstract class <code>Autofac.Module</code> like<br /><pre class="brush:csharp">public class BusinessLogicModule : Module<br />{<br />    protected override void Load(ContainerBuilder builder)<br />    {<br />        //register other modules/dependencies here<br />    }<br />}<br /></pre><br />When you now want to write a test for the BusinessLogic project, you might create a <code>BusinessLogic.IntegrationTests</code> project, adding the project under test as a reference.<br />A possible approach to this could be the following: create ageneric class for instantiating the Autofac IoC container with the BusinessLogicModule created before. Let's call this class&nbsp;<b>"IoCSupportedTest"</b>:<br /><pre class="brush:csharp">using Autofac;<br />using Autofac.Core;<br /><br />namespace BusinessLogic.IntegrationTest.Utils<br />{<br />    public class IoCSupportedTest&lt;TModule&gt; where TModule : IModule, new()<br />    {<br />        private IContainer container;<br /><br />        public IoCSupportedTest()<br />        {<br />            var builder = new ContainerBuilder();<br /><br />            builder.RegisterModule(new TModule());<br /><br />            container = builder.Build();<br />        }<br /><br />        protected TEntity Resolve&lt;TEntity&gt;()<br />        {<br />            return container.Resolve&lt;TEntity&gt;();<br />        }<br /><br />        protected void ShutdownIoC()<br />        {<br />            container.Dispose();<br />        }<br />    }<br />}</pre>A specific test case might then look as follows:<br /><pre class="brush:csharp">[TestClass]<br />public class UserRepositoryTest : IoCSupportedTest&lt;BusinessLogicModule&gt;<br />{<br />    private IUserRepository userRepo;<br /><br />    [TestInitialize]<br />    public void Setup()<br />    {<br />        this.userRepo = Resolve&lt;IUserRepository&gt;();<br />    }<br /><br />    [TestCleanup]<br />    public void TearDown()<br />    {<br />        userRepo = null;<br />        ShutdownIoC();<br />    }<br /><br />    //the tests<br />}</pre><br />
-
+<div class="separator" style="clear: both; text-align: center;"><a href="http://code.google.com/p/autofac/logo?cct=1304973969"
+    imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://code.google.com/p/autofac/logo?cct=1304973969" /></a></div>With
+AutoFac it is actually quite simple. What your integration test needs to do is to himself create the <code>ContainerBuilder()</code>
+and accordingly register the dependencies. What you should do is the following. Assume you have a Visual Studio project
+that encapsulates your business logic called "BusinessLogic". Then the best strategy is to <b>create a so-called
+  Autofac module per project </b>(and hence dll) to configure the dependencies within that specific project. This is
+done by extending the abstract class <code>Autofac.Module</code> like<br />
+<pre class="brush:csharp">public class BusinessLogicModule : Module<br />{<br />    protected override void Load(ContainerBuilder builder)<br />    {<br />        //register other modules/dependencies here<br />    }<br />}<br /></pre><br />When
+you now want to write a test for the BusinessLogic project, you might create a <code>BusinessLogic.IntegrationTests</code>
+project, adding the project under test as a reference.<br />A possible approach to this could be the following: create
+ageneric class for instantiating the Autofac IoC container with the BusinessLogicModule created before. Let's call this
+class&nbsp;<b>"IoCSupportedTest"</b>:<br />
+<pre class="brush:csharp">using Autofac;<br />using Autofac.Core;<br /><br />namespace BusinessLogic.IntegrationTest.Utils<br />{<br />    public class IoCSupportedTest&lt;TModule&gt; where TModule : IModule, new()<br />    {<br />        private IContainer container;<br /><br />        public IoCSupportedTest()<br />        {<br />            var builder = new ContainerBuilder();<br /><br />            builder.RegisterModule(new TModule());<br /><br />            container = builder.Build();<br />        }<br /><br />        protected TEntity Resolve&lt;TEntity&gt;()<br />        {<br />            return container.Resolve&lt;TEntity&gt;();<br />        }<br /><br />        protected void ShutdownIoC()<br />        {<br />            container.Dispose();<br />        }<br />    }<br />}</pre>A
+specific test case might then look as follows:<br />
+<pre class="brush:csharp">[TestClass]<br />public class UserRepositoryTest : IoCSupportedTest&lt;BusinessLogicModule&gt;<br />{<br />    private IUserRepository userRepo;<br /><br />    [TestInitialize]<br />    public void Setup()<br />    {<br />        this.userRepo = Resolve&lt;IUserRepository&gt;();<br />    }<br /><br />    [TestCleanup]<br />    public void TearDown()<br />    {<br />        userRepo = null;<br />        ShutdownIoC();<br />    }<br /><br />    //the tests<br />}</pre><br />
             </div>
 
             
             <div class="after-post-tags">
                 <ul class="tags">
-                    
-                    <li>
-                        <a href="/tags/best-practices">Best Practices</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/c">C#</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/testing">testing</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/.net">.Net</a>
-                    </li>
                     
                 </ul>
             </div>
@@ -244,131 +268,6 @@
 <div class="related-container">
     <div class="container">
         <div class="row listrecent listrelated">
-            
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2010/12/smelly-code-direct-object-instantiation">Smelly Code: Direct Object Instantiation as a Testability Killer</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Dec 9, 2010</span><span class="dot"></span><span
-                                class="post-read">3 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2011/11/use-var-keyword-to-have-more">Use The &#34;var&#34; Keyword to Have More Maintainable Tests!?</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Nov 18, 2011</span><span class="dot"></span><span
-                                class="post-read">2 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2011/08/how-often-did-you-use-yield-keyword">How often did you use the Yield keyword??</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Aug 8, 2011</span><span class="dot"></span><span
-                                class="post-read">1 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
             
 
         </div>
@@ -431,7 +330,7 @@
 
 
 
-<script type="text/javascript" src="https://juristr.com/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
+<script type="text/javascript" src="/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
 
 
 <script src="/js/jquery.fluidbox.min.js"></script>

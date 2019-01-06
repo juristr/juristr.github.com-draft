@@ -4,16 +4,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Hugo 0.53" />
 	
+	<link rel="shortcut icon" href="/assets/images/sitelogo.jpeg">
+	
 	<title>What? Model-View-Controller in JavaScript? | juri.strumpflohner</title>
 	
 	
 
+	
+	<meta name="author" content="Juri Strumpflohner">
+	<link rel="me" href="https://profiles.google.com/104904743888756261987" />
+	<link rel="publisher" href='https://plus.google.com/104904743888756261987' />
+	<meta property="twitter:account_id" content="14407063" />
+
+
+	
+	<meta name="google-site-verification" content="0_vyoIaeMG1kXR0h-48gy3OaGl8xoiSJsFDxxCTIBMs" />
+	<meta name="google-site-verification" content="AvmssSjl_nchNXIqBW8Agb_UjGqvvLP7HXSxBZ9d0cg" />
+
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@juristr" />
+	<meta name="twitter:title" content="What? Model-View-Controller in JavaScript?" />
+	
+
+	
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Juri Strumpflohner" href="//feeds.feedburner.com/juristrumpflohner">
+	
 
 	
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<link href='//fonts.googleapis.com/css?family=Righteous|Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
 	 rel='stylesheet' type='text/css'>
 	
@@ -23,7 +47,7 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/main.min.fd753432185db38bfbc183a977ed14f8e3ed314f4f938904d908bcfea775813a.css" integrity="sha256-/XU0Mhhds4v7wYOpd&#43;0U&#43;OPtMU9Pk4kE2Qi8/qd1gTo=" media="screen">
+	<link rel="stylesheet" href="/scss/main.min.788d84de2ded58913e22cf1f7e9d98fdc99ae669c17cd186aa46fa3ba6378fbe.css" integrity="sha256-eI2E3i3tWJE&#43;Is8ffp2Y/cma5mnBfNGGqkb6O6Y3j74=" media="screen">
 
 	
 
@@ -31,7 +55,7 @@
 
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/article.min.5023ef17f0d1b321f33a6554cd0526640c24a5a17cb68af2a8dfd9debd02e2ee.css" integrity="sha256-UCPvF/DRsyHzOmVUzQUmZAwkpaF8toryqN/Z3r0C4u4=" media="screen">
+	<link rel="stylesheet" href="/scss/article.min.39d2631fa244d3442d50500346a96e007f4d6ad56aaebadc6c4e5371731d6a0e.css" integrity="sha256-OdJjH6JE00QtUFADRqluAH9NatVqrrrcbE5TcXMdag4=" media="screen">
 	
 
 	
@@ -42,7 +66,7 @@
         
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -62,7 +86,7 @@
                 
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -73,11 +97,8 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                
+                <div id="bs4navbar" class="navbar-collapse">
                     
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         
@@ -192,32 +213,231 @@
 
             
             <div class="article-post">
-                
-<p>At work I'm currently working on a new web architecture composed of a rich client written in JavaScript and an ASP.net MVC server-side backend exposing a REST-like JSON api. An important part of that work is to also train developers on that, quite new way of programming web-apps. <br /><div class="separator" style="clear: both; text-align: center;"><a href="http://advertisements.2291090.n4.nabble.com/file/n3524722/QUESTION.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="200" src="http://advertisements.2291090.n4.nabble.com/file/n3524722/QUESTION.jpg" width="171" /></a></div>And actually, devs are quite surprised when I mention the term MVC and JavaScript in one sentence?</p>
+                <div class="article-intro">
+At work I'm currently working on a new web architecture composed of a rich client written in JavaScript and an ASP.net MVC server-side backend exposing a REST-like JSON api. An important part of that work is to also train developers on that, quite new way of programming web-apps. 
+</div>
 
-<blockquote>"Ok...I understand the MVC concept now and the benefits are clear..but JavaScript?"</blockquote>I fully understand their doubts or astonishment. That's the problem with JavaScript and web developers. For many years (and even now) JavaScript has been purely used as a scripting language, for quickly hacking in some dynamic behavior in your web application that was mainly rendered by some "fat" (IIS ASP.net / Apache JBoss) server. How did that look like??<br /><pre class="brush:javascript">&lt;html&gt;<br />&lt;head&gt;<br />&lt;script type="text/javascript"&gt;<br />function performAction(){<br />   var dropdown = document.getElementById("myDropdown");<br />   if(dropdown.selectedIndex == .....)<br />       document.getElementById("theDiv").style.display = "none";<br />   ...<br />}<br />&lt;/script&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br />   ...<br />   &lt;input type="button" value="doAction" onClick="performAction()"/&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</pre>Something like this, right? I'm speaking out of experience. That's JavaScript used as a "scripting language", fully procedural, hooked in globally on the window object far away from any best practice or object oriented approach (nor to speak about testability).<br /><br />Enough, let's talk about MVC.<br /><br /><span style="font-size: large;"><b>The "messy", structureless codebase</b></span><br /><pre class="brush:javascript highlight:[5]">function showOutput(){<br />  var name = "Juri";<br />  var age = 26;<br />  <br />  var output = "Hi, my name is <i>" + name + "</i> and I'm <i>" + age + "</i> years old.";<br />  $(".output").html(output);<br />}<br /></pre>and the according HTML page <br /><div style="text-align: right;"><span style="font-size: x-small;"><a href="http://jsbin.com/oyazib/3/edit">http://jsbin.com/oyazib/3/edit</a></span></div><pre class="brush:html highlight:[12]">&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;head&gt;<br />&lt;script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"&gt;&lt;/script&gt;<br />&lt;meta charset=utf-8 /&gt;<br />&lt;title&gt;JS Bin&lt;/title&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br />  &lt;div id="view"&gt;<br />    &lt;strong&gt;Output:&lt;/strong&gt;<br />    &lt;div class="output"&gt;&lt;/div&gt;<br />    &lt;input id="btnClickMe" type="button" value="Click me" onClick="showOutput()"/&gt;<br />  &lt;/div&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</pre>I guess this is what might seem most familiar to you. The "onClick" event is directly registered on the button (line 12) which invokes a global function "showOutput" which in turn processes the embedded output and sets it to a given div element.<br /><br /><b><span style="font-size: large;">Converting the example to be more MVC-like</span></b><br /><u><b>Step 1: Remove the event registering code from the HTML code.</b></u><br />In a first step we remove the event registering code from the above example s.t. the code looks as follows:<br /><pre class="brush:javascript highlight:[10]">function showOutput(){<br />  var name = "Juri";<br />  var age = 26;<br />  <br />  var output = "Hi, my name is <i>" + name + "</i> and I'm <i>" + age + "</i> years old.";<br />  $(".output").html(output);<br />}<br /><br />$(document).ready(function(){<br />  $("#btnClickMe").click(showOutput);<br />});</pre>and the HTML code doesn't have any knowledge about the JavaScript behind, now. <br /><div style="text-align: right;"><span style="font-size: x-small;"><a href="http://jsbin.com/oyazib/4/edit">http://jsbin.com/oyazib/4/edit</a></span></div><pre class="brush:html">&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;head&gt;<br />&lt;script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"&gt;&lt;/script&gt;<br />&lt;meta charset=utf-8 /&gt;<br />&lt;title&gt;JS Bin&lt;/title&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br />  &lt;div id="view"&gt;<br />    &lt;strong&gt;Output:&lt;/strong&gt;<br />    &lt;div class="output"&gt;&lt;/div&gt;<br />    &lt;input id="btnClickMe" type="button" value="Click me"/&gt;<br />  &lt;/div&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</pre><u><br /></u><br /><u><b>Step 2: Extracting the model</b></u><br />So far the "model" wasn't really visible but rather represented by the two variables "name" and "age". Let's create a simple JavaScript object that encapsulates this data: <br /><div style="text-align: right;"><span style="font-size: x-small;"><a href="http://jsbin.com/oyazib/5/edit">http://jsbin.com/oyazib/5/edit</a></span></div><pre class="brush:javascript">var Person = function(firstname, age){<br />  this.firstname = firstname;<br />  this.age = age;<br />};<br /><br />function showOutput(){<br />  var aPerson = new Person("Juri", 26);  <br />  <br />  var output = "Hi, my name is <i>" + aPerson.firstname + "</i> and I'm <i>" + aPerson.age + "</i> years old.";<br />  $(".output").html(output);<br />}<br /><br />$(document).ready(function(){<br />  $("#btnClickMe").click(showOutput);<br />});</pre>The HTML code remains unchanged.<br /><br /><u><b>Step 3: Moving the presentation logic where it belongs to</b></u><br />The major thing that still disturbs in the above code is the presentation logic that is encoded in line 9. This is pure presentation logic. To solve this problem we use a templating engine. For simplicity reasons I've chosen <a href="http://api.jquery.com/jquery.tmpl/">jQuery tmpl</a>&nbsp;but there are numerous others like <a href="http://aefxx.com/jquery-plugins/jqote2/">jQote</a> and <a href="http://embeddedjs.com/">EJS templates</a>.<br />First, the view: <br /><pre class="brush:html">&lt;script type="text/x-jquery-tmpl" id="personView"&gt;<br />  Hi, my name is &lt;i&gt;${firstname}&lt;/i&gt; and I'm &lt;i&gt;${age}&lt;/i&gt; old.<br />&lt;/script&gt;</pre>The strange <code>${...}</code> are the jQuery tmpl placeholders. The according JavaScript code now looks as follows: <br /><div style="text-align: right;"><span style="font-size: x-small;"><a href="http://jsbin.com/oyazib/7/edit">http://jsbin.com/oyazib/7/edit</a></span></div><pre class="brush:javascript highlight:[9,10]">var Person = function(firstname, age){<br />  this.firstname = firstname;<br />  this.age = age;<br />};<br /><br />function showOutput(){<br />  var aPerson = new Person("Juri", 26);  <br />  <br />  var output = $("#personView").tmpl(aPerson);<br />  $(".output").html(output);<br />}<br /><br />$(document).ready(function(){<br />  $("#btnClickMe").click(showOutput);<br />});</pre>Note the highlighted lines 9 and 10. There is no view-related code any more, but rather we invoke jQuery tmpl with the given view and pass in the data. The HTML code remains unchanged, except the jQuery tmpl view which is added at the end of the <code>&lt;head&gt;</code> section. Now that we have the model and the view extracted, where's the controller??<br /><br /><b><u>Step 4: The controller, refining the big picture</u></b><br />The controller is nothing else but the glue that keeps together the model and the view. It knows from where to the fetch the model and which view to use. In fact, it is already present in the JavaScript code that has been shown so far. Have a look at the big picture:<br /><b>The Model:</b><br /><pre class="brush:javascript">var Person = function(firstname, age){<br />  this.firstname = firstname;<br />  this.age = age;<br />};</pre><br /><b>The View:</b><br /><pre class="brush:html">&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;head&gt;<br />&lt;script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"&gt;&lt;/script&gt;<br />&lt;script src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"&gt;&lt;/script&gt;<br />&lt;meta charset=utf-8 /&gt;<br />&lt;title&gt;JS Bin&lt;/title&gt;<br /><br />&lt;script type="text/x-jquery-tmpl" id="personView"&gt;<br />  Hi, my name is &lt;i&gt;${firstname}&lt;/i&gt; and I'm &lt;i&gt;${age}&lt;/i&gt; old.<br />&lt;/script&gt;<br />  <br />&lt;/head&gt;<br />&lt;body&gt;<br />  &lt;div id="view"&gt;<br />    &lt;strong&gt;Output:&lt;/strong&gt;<br />    &lt;div class="output"&gt;&lt;/div&gt;<br />    &lt;input id="btnClickMe" type="button" value="Click me"/&gt;<br />  &lt;/div&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</pre><br /><b>The Controller:</b><br /><pre class="brush:javascript">$(document).ready(function(){<br />  $("#btnClickMe").click(function(){<br />    var aPerson = new Person("Juri", 26);  <br />  <br />    var output = $("#personView").tmpl(aPerson);<br />    $(".output").html(output); <br />  });<br />});</pre><br /><b><span style="font-size: large;">Conclusion</span></b><br />The example mentioned in this post is very basic and simple but still, I think it perfectly reflects what the MVC pattern is about and how a possible implementation in JavaScript could look like.<br />Obviously this is a simple example with the purpose of understanding the concepts. In a real-world application you would probably rely on the numerous JavaScript MVC frameworks that are available.<br /><br /><span style="font-size: large;"><b>Now for the advanced among you</b></span><br />For the more JavaScript-literate guys among you, I'd even go a step further and make the MVC model more clear by extracting the controller's logic into a reusable jQuery plugin. <br />The controller is now encapsulated into a jQuery plugin which takes a view and a model to handle. <br /><pre class="brush:javascript">//Controller<br />(function($){<br />  <br />  $.fn.personcontroller = function(model){ <br /><br />    //register events<br />    $("input[type=button]", this).click(function(){ <br />      var output = $("#personView").tmpl(model);<br />      $(".output").html(output); <br />    });<br />    <br />  };<br />  <br />})(jQuery);<br /></pre>Finally, there is the application entry code which hooks up the controller: <br /><pre class="brush:javascript">//Main of the "application"<br />$(document).ready(function(){<br />  var aPerson = new Person("Juri", 26);<br />  $("#view").personcontroller(aPerson);<br />});</pre>I guess now the separation is perfectly visible. The controller registers itself on a view where it hooks on the click event and visualizes the model that has been passed.<br /><br />The live code can be found here:&nbsp;<a href="http://jsbin.com/oyazib/11/edit">http://jsbin.com/oyazib/latest/edit</a>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9669473064376287" data-ad-slot="2496274486"
+    data-ad-format="auto"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
+<p>And actually, devs are quite surprised when I mention the term MVC and JavaScript in one sentence?</p></p>
+
+<blockquote>"Ok...I understand the MVC concept now and the benefits are clear..but JavaScript?"</blockquote>
+
+<p>I fully understand their doubts or astonishment. That&rsquo;s the problem with JavaScript and web developers. For many years (and even now) JavaScript has been purely used as a scripting language, for quickly hacking in some dynamic behavior in your web application that was mainly rendered by some &ldquo;fat&rdquo; (IIS ASP.net / Apache JBoss) server. How did that look like??</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">“text/javascript”</span><span class="p">&gt;</span>
+<span class="kd">function</span> <span class="nx">performAction</span><span class="p">(){</span>
+   <span class="kd">var</span> <span class="nx">dropdown</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="err">“</span><span class="nx">myDropdown</span><span class="err">”</span><span class="p">);</span>
+   <span class="k">if</span><span class="p">(</span><span class="nx">dropdown</span><span class="p">.</span><span class="nx">selectedIndex</span> <span class="o">===</span> <span class="p">...)</span>
+       <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="err">“</span><span class="nx">theDiv</span><span class="err">”</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="err">“</span><span class="nx">none</span><span class="err">”</span><span class="p">;</span>
+   <span class="p">...</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+   …
+   <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">“button”</span> <span class="na">value</span><span class="o">=</span><span class="s">“doAction”</span> <span class="na">onClick</span><span class="o">=</span><span class="s">“performAction()”/</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></div>
+<p><a href="http://jsbin.com/oyazib/3/edit">Try it out here</a></p>
+
+<hr />
+
+<p>Something like this, right? I&rsquo;m speaking out of experience. That&rsquo;s JavaScript used as a &ldquo;scripting language&rdquo;, fully procedural, hooked in globally on the window object far away from any best practice or object oriented approach (nor to speak about testability).</p>
+
+<p>Enough, let&rsquo;s talk about MVC.</p>
+
+<h2 id="the-messy-structureless-codebase">The &ldquo;messy&rdquo;, structureless codebase</h2>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">showOutput</span><span class="p">(){</span>
+  <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="err">“</span><span class="nx">Juri</span><span class="err">”</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">26</span><span class="p">;</span>
+  
+  <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="err">“</span><span class="nx">Hi</span><span class="p">,</span> <span class="nx">my</span> <span class="nx">name</span> <span class="nx">is</span> <span class="err">”</span> <span class="o">+</span> <span class="nx">name</span> <span class="o">+</span> <span class="err">“</span> <span class="nx">and</span> <span class="nx">I</span><span class="err">’</span><span class="nx">m</span> <span class="err">”</span> <span class="o">+</span> <span class="nx">age</span> <span class="o">+</span> <span class="err">“</span> <span class="nx">years</span> <span class="nx">old</span><span class="p">.</span><span class="err">“</span><span class="p">;</span>
+  <span class="nx">$</span><span class="p">(</span><span class="err">“</span><span class="p">.</span><span class="nx">output</span><span class="err">”</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">output</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><a href="http://jsbin.com/oyazib/3/edit">Try it out here</a>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">class</span><span class="o">=</span><span class="s">“jsbin”</span> <span class="na">src</span><span class="o">=</span><span class="s">“http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">utf-8</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>JS Bin<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">“view”</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>Output:<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">“output”</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">“btnClickMe”</span> <span class="na">type</span><span class="o">=</span><span class="s">“button”</span> <span class="na">value</span><span class="o">=</span><span class="s">“Click</span> <span class="na">me</span><span class="err">”</span> <span class="na">onClick</span><span class="o">=</span><span class="s">“showOutput()”/</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></div>
+<p>I guess this is what might seem most familiar to you. The &ldquo;onClick&rdquo; event is directly registered on the button (line 12) which invokes a global function &ldquo;showOutput&rdquo; which in turn processes the embedded output and sets it to a given div element.</p>
+
+<h2 id="converting-the-example-to-be-more-mvc-like">Converting the example to be more MVC-like</h2>
+
+<p><strong>Step 1:</strong> Remove the event registering code from the HTML code.</p>
+
+<p>In a first step we remove the event registering code from the above example s.t. the code looks as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">showOutput</span><span class="p">(){</span>
+  <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="err">“</span><span class="nx">Juri</span><span class="err">”</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">age</span> <span class="o">=</span> <span class="mi">26</span><span class="p">;</span>
+  
+  <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="err">“</span><span class="nx">Hi</span><span class="p">,</span> <span class="nx">my</span> <span class="nx">name</span> <span class="nx">is</span> <span class="err">”</span> <span class="o">+</span> <span class="nx">name</span> <span class="o">+</span> <span class="err">“</span> <span class="nx">and</span> <span class="nx">I</span><span class="err">’</span><span class="nx">m</span> <span class="err">”</span> <span class="o">+</span> <span class="nx">age</span> <span class="o">+</span> <span class="err">“</span> <span class="nx">years</span> <span class="nx">old</span><span class="p">.</span><span class="err">“</span><span class="p">;</span>
+  <span class="nx">$</span><span class="p">(</span><span class="err">“</span><span class="p">.</span><span class="nx">output</span><span class="err">”</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">output</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="err">“#</span><span class="nx">btnClickMe</span><span class="err">”</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="nx">showOutput</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>and the HTML code doesn&rsquo;t have any knowledge about the JavaScript behind, now. <a href="http://jsbin.com/oyazib/4/edit">Try here</a>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">class</span><span class="o">=</span><span class="s">“jsbin”</span> <span class="na">src</span><span class="o">=</span><span class="s">“http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">utf-8</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>JS Bin<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">“view”</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>Output:<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">“output”</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">“btnClickMe”</span> <span class="na">type</span><span class="o">=</span><span class="s">“button”</span> <span class="na">value</span><span class="o">=</span><span class="s">“Click</span> <span class="na">me</span><span class="err">”</span><span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></div>
+<p><strong>Step 2:</strong> Extracting the model</p>
+
+<p>So far the &ldquo;model&rdquo; wasn&rsquo;t really visible but rather represented by the two variables &ldquo;name&rdquo; and &ldquo;age&rdquo;. Let&rsquo;s create a simple JavaScript object that encapsulates this data:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">Person</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">firstname</span><span class="p">,</span> <span class="nx">age</span><span class="p">){</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">firstname</span> <span class="o">=</span> <span class="nx">firstname</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kd">function</span> <span class="nx">showOutput</span><span class="p">(){</span>
+  <span class="kd">var</span> <span class="nx">aPerson</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="err">“</span><span class="nx">Juri</span><span class="err">”</span><span class="p">,</span> <span class="mi">26</span><span class="p">);</span>  
+  
+  <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="err">“</span><span class="nx">Hi</span><span class="p">,</span> <span class="nx">my</span> <span class="nx">name</span> <span class="nx">is</span> <span class="err">”</span> <span class="o">+</span> <span class="nx">aPerson</span><span class="p">.</span><span class="nx">firstname</span> <span class="o">+</span> <span class="err">“</span> <span class="nx">and</span> <span class="nx">I</span><span class="err">’</span><span class="nx">m</span> <span class="err">”</span> <span class="o">+</span> <span class="nx">aPerson</span><span class="p">.</span><span class="nx">age</span> <span class="o">+</span> <span class="err">“</span> <span class="nx">years</span> <span class="nx">old</span><span class="p">.</span><span class="err">“</span><span class="p">;</span>
+  <span class="nx">$</span><span class="p">(</span><span class="err">“</span><span class="p">.</span><span class="nx">output</span><span class="err">”</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">output</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="err">“#</span><span class="nx">btnClickMe</span><span class="err">”</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="nx">showOutput</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>The HTML code remains unchanged. <a href="http://jsbin.com/oyazib/5/edit">See here</a></p>
+
+<p><strong>Step 3:</strong> Moving the presentation logic where it belongs to</p>
+
+<p>The major thing that still disturbs in the above code is the presentation logic that is encoded in line 9. This is pure presentation logic. To solve this problem we use a templating engine. For simplicity reasons I&rsquo;ve chosen <a href="http://api.jquery.com/jquery.tmpl/">jQuery tmpl</a>&nbsp;but there are numerous others like <a href="http://aefxx.com/jquery-plugins/jqote2/">jQote</a> and <a href="http://embeddedjs.com/">EJS templates</a>.<br />First, the view:</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"> <span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">“text/x-jquery-tmpl”</span> <span class="na">id</span><span class="o">=</span><span class="s">“personView”</span><span class="p">&gt;</span>
+  <span class="nx">Hi</span><span class="p">,</span> <span class="nx">my</span> <span class="nx">name</span> <span class="nx">is</span> <span class="o">&lt;</span><span class="nx">i</span><span class="o">&gt;</span><span class="nx">$</span><span class="p">{</span><span class="nx">firstname</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/i&gt; and I’m &lt;i&gt;${age}&lt;/i</span><span class="o">&gt;</span> <span class="nx">old</span><span class="p">.</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></div>
+<p>The strange <code>${&hellip;}</code> are the jQuery tmpl placeholders. The according JavaScript code now looks as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"> <span class="kd">var</span> <span class="nx">Person</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">firstname</span><span class="p">,</span> <span class="nx">age</span><span class="p">){</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">firstname</span> <span class="o">=</span> <span class="nx">firstname</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="kd">function</span> <span class="nx">showOutput</span><span class="p">(){</span>
+  <span class="kd">var</span> <span class="nx">aPerson</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="err">“</span><span class="nx">Juri</span><span class="err">”</span><span class="p">,</span> <span class="mi">26</span><span class="p">);</span>  
+  
+  <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="err">“#</span><span class="nx">personView</span><span class="err">”</span><span class="p">).</span><span class="nx">tmpl</span><span class="p">(</span><span class="nx">aPerson</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="err">“</span><span class="p">.</span><span class="nx">output</span><span class="err">”</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">output</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="err">“#</span><span class="nx">btnClickMe</span><span class="err">”</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="nx">showOutput</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><a href="http://jsbin.com/oyazib/7/edit">Heres a live demo</a>.</p>
+
+<p>Note the highlighted lines 9 and 10. There is no view-related code any more, but rather we invoke jQuery tmpl with the given view and pass in the data. The HTML code remains unchanged, except the jQuery tmpl view which is added at the end of the <code>&lt;head&gt;</code> section. Now that we have the model and the view extracted, where&rsquo;s the controller??</p>
+
+<p><strong>Step 4:</strong> The controller, refining the big picture</p>
+
+<p>The controller is nothing else but the glue that keeps together the model and the view. It knows from where to the fetch the model and which view to use. In fact, it is already present in the JavaScript code that has been shown so far. Have a look at the big picture:</p>
+
+<p><strong>The Model:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">Person</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">firstname</span><span class="p">,</span> <span class="nx">age</span><span class="p">){</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">firstname</span> <span class="o">=</span> <span class="nx">firstname</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+<p><strong>The View:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">class</span><span class="o">=</span><span class="s">“jsbin”</span> <span class="na">src</span><span class="o">=</span><span class="s">“http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">“http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">utf-8</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>JS Bin<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">“text/x-jquery-tmpl”</span> <span class="na">id</span><span class="o">=</span><span class="s">“personView”</span><span class="p">&gt;</span>
+  <span class="nx">Hi</span><span class="p">,</span> <span class="nx">my</span> <span class="nx">name</span> <span class="nx">is</span> <span class="o">&lt;</span><span class="nx">i</span><span class="o">&gt;</span><span class="nx">$</span><span class="p">{</span><span class="nx">firstname</span><span class="p">}</span><span class="o">&lt;</span><span class="sr">/i&gt; and I’m &lt;i&gt;${age}&lt;/i</span><span class="o">&gt;</span> <span class="nx">old</span><span class="p">.</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">“view”</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>Output:<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">“output”</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">id</span><span class="o">=</span><span class="s">“btnClickMe”</span> <span class="na">type</span><span class="o">=</span><span class="s">“button”</span> <span class="na">value</span><span class="o">=</span><span class="s">“Click</span> <span class="na">me</span><span class="err">”</span><span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></div>
+<p><strong>The Controller:</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"> <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">$</span><span class="p">(</span><span class="err">“#</span><span class="nx">btnClickMe</span><span class="err">”</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">aPerson</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="err">“</span><span class="nx">Juri</span><span class="err">”</span><span class="p">,</span> <span class="mi">26</span><span class="p">);</span>  
+  
+    <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="err">“#</span><span class="nx">personView</span><span class="err">”</span><span class="p">).</span><span class="nx">tmpl</span><span class="p">(</span><span class="nx">aPerson</span><span class="p">);</span>
+    <span class="nx">$</span><span class="p">(</span><span class="err">“</span><span class="p">.</span><span class="nx">output</span><span class="err">”</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">output</span><span class="p">);</span> 
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div>
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The example mentioned in this post is very basic and simple but still, I think it perfectly reflects what the MVC pattern is about and how a possible implementation in JavaScript could look like. Obviously this is a simple example with the purpose of understanding the concepts. In a real-world application you would probably rely on the numerous JavaScript MVC frameworks that are available.</p>
+
+<p><strong>One step further?</strong></p>
+
+<p>I&rsquo;d even go a step further and make the MVC model more clear by extracting the controller&rsquo;s logic into a reusable jQuery plugin. The controller is now encapsulated into a jQuery plugin which takes a view and a model to handle.</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//Controller
+</span><span class="c1"></span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">$</span><span class="p">){</span>
+  
+  <span class="nx">$</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">personcontroller</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">model</span><span class="p">){</span> 
+
+    <span class="c1">//register events
+</span><span class="c1"></span>    <span class="nx">$</span><span class="p">(</span><span class="err">“</span><span class="nx">input</span><span class="p">[</span><span class="nx">type</span><span class="o">=</span><span class="nx">button</span><span class="p">]</span><span class="err">“</span><span class="p">,</span> <span class="k">this</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span> 
+      <span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="err">“#</span><span class="nx">personView</span><span class="err">”</span><span class="p">).</span><span class="nx">tmpl</span><span class="p">(</span><span class="nx">model</span><span class="p">);</span>
+      <span class="nx">$</span><span class="p">(</span><span class="err">“</span><span class="p">.</span><span class="nx">output</span><span class="err">”</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">output</span><span class="p">);</span> 
+    <span class="p">});</span>
+    
+  <span class="p">};</span>
+  
+<span class="p">})(</span><span class="nx">jQuery</span><span class="p">);</span>
+</code></pre></div>
+<p>Finally, there is the application entry code which hooks up the controller:</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//Main of the “application”
+</span><span class="c1"></span><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="kd">var</span> <span class="nx">aPerson</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="err">“</span><span class="nx">Juri</span><span class="err">”</span><span class="p">,</span> <span class="mi">26</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="err">“#</span><span class="nx">view</span><span class="err">”</span><span class="p">).</span><span class="nx">personcontroller</span><span class="p">(</span><span class="nx">aPerson</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>I guess now the separation is perfectly visible. The controller registers itself on a view where it hooks on the click event and visualizes the model that has been passed.<br /><br />The live code can be found here: <a href="http://jsbin.com/oyazib/11/edit">http://jsbin.com/oyazib/latest/edit</a></p>
             </div>
 
             
             <div class="after-post-tags">
                 <ul class="tags">
-                    
-                    <li>
-                        <a href="/tags/javascript">JavaScript</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/mvc">MVC</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/design-patterns">Design Patterns</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/web-dev">Web dev</a>
-                    </li>
                     
                 </ul>
             </div>
@@ -243,131 +463,6 @@
 <div class="related-container">
     <div class="container">
         <div class="row listrecent listrelated">
-            
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2011/08/why-did-it-have-to-be-so-complicated">Why Did it Have to Be So Complicated Before??</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Aug 26, 2011</span><span class="dot"></span><span
-                                class="post-read">2 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2011/08/javascriptserializer-circular-reference">JavaScriptSerializer: Circular Reference was Detected While Serializing an Object of Type...</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Aug 12, 2011</span><span class="dot"></span><span
-                                class="post-read">2 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2011/08/posting-json-data-to-aspnet-mvc-3-web">Posting JSON Data to an ASP.net MVC 3 Web Application</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Aug 4, 2011</span><span class="dot"></span><span
-                                class="post-read">3 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
             
 
         </div>
@@ -430,7 +525,7 @@
 
 
 
-<script type="text/javascript" src="https://juristr.com/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
+<script type="text/javascript" src="/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
 
 
 <script src="/js/jquery.fluidbox.min.js"></script>

@@ -4,16 +4,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Hugo 0.53" />
 	
+	<link rel="shortcut icon" href="/assets/images/sitelogo.jpeg">
+	
 	<title>C# refresher | juri.strumpflohner</title>
 	
 	
 
+	
+	<meta name="author" content="Juri Strumpflohner">
+	<link rel="me" href="https://profiles.google.com/104904743888756261987" />
+	<link rel="publisher" href='https://plus.google.com/104904743888756261987' />
+	<meta property="twitter:account_id" content="14407063" />
+
+
+	
+	<meta name="google-site-verification" content="0_vyoIaeMG1kXR0h-48gy3OaGl8xoiSJsFDxxCTIBMs" />
+	<meta name="google-site-verification" content="AvmssSjl_nchNXIqBW8Agb_UjGqvvLP7HXSxBZ9d0cg" />
+
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@juristr" />
+	<meta name="twitter:title" content="C# refresher" />
+	
+
+	
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Juri Strumpflohner" href="//feeds.feedburner.com/juristrumpflohner">
+	
 
 	
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<link href='//fonts.googleapis.com/css?family=Righteous|Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
 	 rel='stylesheet' type='text/css'>
 	
@@ -23,7 +47,7 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/main.min.fd753432185db38bfbc183a977ed14f8e3ed314f4f938904d908bcfea775813a.css" integrity="sha256-/XU0Mhhds4v7wYOpd&#43;0U&#43;OPtMU9Pk4kE2Qi8/qd1gTo=" media="screen">
+	<link rel="stylesheet" href="/scss/main.min.788d84de2ded58913e22cf1f7e9d98fdc99ae669c17cd186aa46fa3ba6378fbe.css" integrity="sha256-eI2E3i3tWJE&#43;Is8ffp2Y/cma5mnBfNGGqkb6O6Y3j74=" media="screen">
 
 	
 
@@ -31,7 +55,7 @@
 
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/article.min.5023ef17f0d1b321f33a6554cd0526640c24a5a17cb68af2a8dfd9debd02e2ee.css" integrity="sha256-UCPvF/DRsyHzOmVUzQUmZAwkpaF8toryqN/Z3r0C4u4=" media="screen">
+	<link rel="stylesheet" href="/scss/article.min.39d2631fa244d3442d50500346a96e007f4d6ad56aaebadc6c4e5371731d6a0e.css" integrity="sha256-OdJjH6JE00QtUFADRqluAH9NatVqrrrcbE5TcXMdag4=" media="screen">
 	
 
 	
@@ -42,7 +66,7 @@
         
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -62,7 +86,7 @@
                 
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -73,11 +97,8 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                
+                <div id="bs4navbar" class="navbar-collapse">
                     
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         
@@ -193,21 +214,25 @@
             
             <div class="article-post">
                 
-Recently I changed work and am now employed at the <a href="http://www.siag.it/">SIAG</a>, a local informatics company which operates mainly for the public administration sector. Today was my 3rd working day and I'm currently getting some intensive training for being able to join the project team as fast as possible. Since today I started to do some C# experiments for refreshing my knowledge, I thought that the following exercise (I did) may be interesting for someone of you. I - as a Java developer - had some difficulties initially, but the exercise is very useful for understanding how the inheritance etc. works  in C#. The exercise is the following:<br /><span style="font-style: italic;">You have the following classes which </span><span style="font-weight: bold; font-style: italic;">MUST NOT</span><span style="font-style: italic;"> be modified. In the main method of the class AgentSmith, produce the output "Never send a human to do a machine's job." by instantiating or invoking the available methods of the given classes.</span><br /><span style="font-weight: bold;">Available classes:</span><br /><pre class="prettyprint">using System;<br /><br />public interface IWord {<br />void Print();<br />}<br /><br />public interface IWord2 : IWord {<br />new void Print();<br />}<br /><br />public abstract class Base {<br />protected static string msg = "send ";<br /><br />public Base() {<br />    Console.Write(this.GetString());<br />}<br /><br />static Base() {<br />    Console.Write("Never ");<br />}<br /><br />public virtual void Print() {<br />    Console.Write("to ");<br />}<br /><br />protected virtual string GetString() {<br />    return "llama ";<br />}<br />}<br /><br />public class Derived : Base, IWord {<br /><br />static Derived() {<br />    Console.Write(Derived.msg);<br />}<br /><br />public new virtual void Print() {<br />    Console.Write("do ");<br />}<br /><br />protected override string GetString() {<br />    return "a ";<br />}<br />}<br /><br />public sealed class MoreDerived : Derived, IWord {<br />public override void Print() {<br />    Console.Write("mach");<br />}<br /><br />void IWord.Print() {<br />    Console.Write("a ");<br />}<br /><br />protected override string GetString() {<br />    return "do ";<br />}<br />}<br /><br />public sealed class MoreDerived2 : Derived, IWord2 {<br /><br />static MoreDerived2() {<br />    Console.Write("ine");<br />}<br /><br />public new void Print() {<br />    Console.Write("job. ");<br />}<br /><br />void IWord2.Print() {<br />    Console.Write("job.");<br />}<br /><br />protected override string GetString() {<br />    return "'s ";<br />}<br />}<br /><br />public abstract class Unfinished : Base {<br />protected new void Print() {<br />    Console.Write("camel ");<br />}<br /><br />protected override string GetString() {<br />    return "human ";<br />}<br />}<br /><br />public class Finished: Unfinished {<br />}<br /></pre>Put your solution inside the main method of the following class:<br /><pre class="prettyprint">using System;<br /><br />public class AgentSmith {<br />//Never send a human to do a machine's job.<br />public static void Main() {<br /><br />//put your code here<br /><br />Console.ReadLine();<br /><br />}<br /><br />}<br /></pre>Try it out, it's funny :)
-
+Recently I changed work and am now employed at the <a href="http://www.siag.it/">SIAG</a>, a local informatics company
+which operates mainly for the public administration sector. Today was my 3rd working day and I'm currently getting some
+intensive training for being able to join the project team as fast as possible. Since today I started to do some C#
+experiments for refreshing my knowledge, I thought that the following exercise (I did) may be interesting for someone
+of you. I - as a Java developer - had some difficulties initially, but the exercise is very useful for understanding
+how the inheritance etc. works in C#. The exercise is the following:<br /><span style="font-style: italic;">You have
+  the following classes which </span><span style="font-weight: bold; font-style: italic;">MUST NOT</span><span style="font-style: italic;">
+  be modified. In the main method of the class AgentSmith, produce the output "Never send a human to do a machine's
+  job." by instantiating or invoking the available methods of the given classes.</span><br /><span style="font-weight: bold;">Available
+  classes:</span><br />
+<pre class="prettyprint">using System;<br /><br />public interface IWord {<br />void Print();<br />}<br /><br />public interface IWord2 : IWord {<br />new void Print();<br />}<br /><br />public abstract class Base {<br />protected static string msg = "send ";<br /><br />public Base() {<br />    Console.Write(this.GetString());<br />}<br /><br />static Base() {<br />    Console.Write("Never ");<br />}<br /><br />public virtual void Print() {<br />    Console.Write("to ");<br />}<br /><br />protected virtual string GetString() {<br />    return "llama ";<br />}<br />}<br /><br />public class Derived : Base, IWord {<br /><br />static Derived() {<br />    Console.Write(Derived.msg);<br />}<br /><br />public new virtual void Print() {<br />    Console.Write("do ");<br />}<br /><br />protected override string GetString() {<br />    return "a ";<br />}<br />}<br /><br />public sealed class MoreDerived : Derived, IWord {<br />public override void Print() {<br />    Console.Write("mach");<br />}<br /><br />void IWord.Print() {<br />    Console.Write("a ");<br />}<br /><br />protected override string GetString() {<br />    return "do ";<br />}<br />}<br /><br />public sealed class MoreDerived2 : Derived, IWord2 {<br /><br />static MoreDerived2() {<br />    Console.Write("ine");<br />}<br /><br />public new void Print() {<br />    Console.Write("job. ");<br />}<br /><br />void IWord2.Print() {<br />    Console.Write("job.");<br />}<br /><br />protected override string GetString() {<br />    return "'s ";<br />}<br />}<br /><br />public abstract class Unfinished : Base {<br />protected new void Print() {<br />    Console.Write("camel ");<br />}<br /><br />protected override string GetString() {<br />    return "human ";<br />}<br />}<br /><br />public class Finished: Unfinished {<br />}<br /></pre>Put
+your solution inside the main method of the following class:<br />
+<pre class="prettyprint">using System;<br /><br />public class AgentSmith {<br />//Never send a human to do a machine's job.<br />public static void Main() {<br /><br />//put your code here<br /><br />Console.ReadLine();<br /><br />}<br /><br />}<br /></pre>Try
+it out, it's funny :)
             </div>
 
             
             <div class="after-post-tags">
                 <ul class="tags">
-                    
-                    <li>
-                        <a href="/tags/c">C#</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/.net">.Net</a>
-                    </li>
                     
                 </ul>
             </div>
@@ -295,7 +320,7 @@ Recently I changed work and am now employed at the <a href="http://www.siag.it/"
 
 
 
-<script type="text/javascript" src="https://juristr.com/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
+<script type="text/javascript" src="/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
 
 
 <script src="/js/jquery.fluidbox.min.js"></script>

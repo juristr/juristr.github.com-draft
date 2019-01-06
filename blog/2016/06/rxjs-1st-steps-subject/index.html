@@ -4,16 +4,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Hugo 0.53" />
 	
+	<link rel="shortcut icon" href="/assets/images/sitelogo.jpeg">
+	
 	<title>RxJS first steps - Subject and ReplaySubject | juri.strumpflohner</title>
 	
 	
 
+	
+	<meta name="author" content="Juri Strumpflohner">
+	<link rel="me" href="https://profiles.google.com/104904743888756261987" />
+	<link rel="publisher" href='https://plus.google.com/104904743888756261987' />
+	<meta property="twitter:account_id" content="14407063" />
+
+
+	
+	<meta name="google-site-verification" content="0_vyoIaeMG1kXR0h-48gy3OaGl8xoiSJsFDxxCTIBMs" />
+	<meta name="google-site-verification" content="AvmssSjl_nchNXIqBW8Agb_UjGqvvLP7HXSxBZ9d0cg" />
+
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@juristr" />
+	<meta name="twitter:title" content="RxJS first steps - Subject and ReplaySubject" />
+	
+	<meta name="twitter:description" content="Let&#39;s get started with reactive programming" />
+	
+
+	
+	<meta name="twitter:image:src" content="https://juristr.com/blog/assets/imgs/rxjs-first-steps/rxjsintro.gif" />
+	
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Juri Strumpflohner" href="//feeds.feedburner.com/juristrumpflohner">
+	
 
 	
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<link href='//fonts.googleapis.com/css?family=Righteous|Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
 	 rel='stylesheet' type='text/css'>
 	
@@ -23,7 +51,7 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/main.min.fd753432185db38bfbc183a977ed14f8e3ed314f4f938904d908bcfea775813a.css" integrity="sha256-/XU0Mhhds4v7wYOpd&#43;0U&#43;OPtMU9Pk4kE2Qi8/qd1gTo=" media="screen">
+	<link rel="stylesheet" href="/scss/main.min.788d84de2ded58913e22cf1f7e9d98fdc99ae669c17cd186aa46fa3ba6378fbe.css" integrity="sha256-eI2E3i3tWJE&#43;Is8ffp2Y/cma5mnBfNGGqkb6O6Y3j74=" media="screen">
 
 	
 
@@ -31,7 +59,7 @@
 
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/article.min.5023ef17f0d1b321f33a6554cd0526640c24a5a17cb68af2a8dfd9debd02e2ee.css" integrity="sha256-UCPvF/DRsyHzOmVUzQUmZAwkpaF8toryqN/Z3r0C4u4=" media="screen">
+	<link rel="stylesheet" href="/scss/article.min.39d2631fa244d3442d50500346a96e007f4d6ad56aaebadc6c4e5371731d6a0e.css" integrity="sha256-OdJjH6JE00QtUFADRqluAH9NatVqrrrcbE5TcXMdag4=" media="screen">
 	
 
 	
@@ -42,7 +70,7 @@
         
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -62,7 +90,7 @@
                 
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -73,11 +101,8 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                
+                <div id="bs4navbar" class="navbar-collapse">
                     
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         
@@ -309,7 +334,7 @@ RxJS is the JavaScript implementation of [ReactiveX](http://reactivex.io/).
 
 <p>That was easy right? Obviously we can broadcast any kind of value we need. Great! But now we&rsquo;re going to make things a bit more interesting and realistic. In our app subscribers may come in and go at different times. So I created a simple UI that allows to simulate such behavior. Something like this:</p>
 
-<figure>
+<figure class="image--medium">
     <img src="/blog/assets/imgs/rxjs-first-steps/rxjs-demo-ui.png">
     <figcaption>Our testing UI</figcaption>
 </figure>
@@ -392,57 +417,111 @@ RxJS is the JavaScript implementation of [ReactiveX](http://reactivex.io/).
 
 <p>Here are some further, related links.</p>
 
-<p>{% include article-link.html
-    url=&ldquo;/blog/2016/06/ng2-getting-started-for-beginners/#rxjs&rdquo;
-    imageurl=&ldquo;/blog/assets/imgs/angular2logo.svg&rdquo;
-    title=&ldquo;Angular - A Getting Started Guide for Beginners&rdquo;
-    text=&ldquo;Reactive Programming with RxJs 5 and Http in Angular&rdquo;
-%}</p>
+<div class="article-link card">
+    <div class="row">
+        <div class="col-2 share-link">
+            <a href="/blog/2016/06/ng2-getting-started-for-beginners/#rxjs" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 mr-4 icon-external-window">
+                    <path class="primary" d="M12 8a1 1 0 0 1-1 1H5v10h10v-6a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9c0-1.1.9-2 2-2h6a1 1 0 0 1 1 1z"></path>
+                    <path class="secondary" d="M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="col-10">
+            <div class="title"><a href="/blog/2016/06/ng2-getting-started-for-beginners/#rxjs" target="_blank">Angular - A Getting Started Guide for Beginners</a></div>
+            <div class="description">Reactive Programming with RxJs 5 and Http in Angular</div>
+            <div class="link">
+                /blog/2016/06/ng2-getting-started-for-beginners/#rxjs
+            </div>
+        </div>
+    </div>
+</div>
 
-<p>{% include article-link.html
-    url=&ldquo;<a href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754&quot;">https://gist.github.com/staltz/868e7e9bc2a7b8c1f754&quot;</a>
-    title=&ldquo;The introduction to Reactive Programming you&rsquo;ve been missing&rdquo;
-    text=&ldquo;André Staltz introduces the very basics of what reactive programming is all about.&rdquo;
-        imageurl=&ldquo;<a href="https://avatars3.githubusercontent.com/u/90512?v=3&amp;s=200&quot;">https://avatars3.githubusercontent.com/u/90512?v=3&amp;s=200&quot;</a>
-%}</p>
+<div class="article-link card">
+    <div class="row">
+        <div class="col-2 share-link">
+            <a href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 mr-4 icon-external-window">
+                    <path class="primary" d="M12 8a1 1 0 0 1-1 1H5v10h10v-6a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9c0-1.1.9-2 2-2h6a1 1 0 0 1 1 1z"></path>
+                    <path class="secondary" d="M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="col-10">
+            <div class="title"><a href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754" target="_blank">The introduction to Reactive Programming you&#39;ve been missing</a></div>
+            <div class="description">André Staltz introduces the very basics of what reactive programming is all about.</div>
+            <div class="link">
+                https://gist.github.com/staltz/868e7e9bc2a7b8c1f754
+            </div>
+        </div>
+    </div>
+</div>
 
-<p>{% include article-link.html
-    url=&ldquo;<a href="https://gist.github.com/btroncone/d6cf141d6f2c00dc6b35&quot;">https://gist.github.com/btroncone/d6cf141d6f2c00dc6b35&quot;</a>
-    title=&ldquo;RxJS 5 Operators By Example&rdquo;
-    text=&ldquo;A complete list of RxJS 5 operators with easy to understand explanations and runnable examples.&rdquo;
-        imageurl=&ldquo;<a href="https://avatars0.githubusercontent.com/u/5085101?v=3&amp;s=200&quot;">https://avatars0.githubusercontent.com/u/5085101?v=3&amp;s=200&quot;</a>
-%}</p>
+<div class="article-link card">
+    <div class="row">
+        <div class="col-2 share-link">
+            <a href="https://gist.github.com/btroncone/d6cf141d6f2c00dc6b35" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 mr-4 icon-external-window">
+                    <path class="primary" d="M12 8a1 1 0 0 1-1 1H5v10h10v-6a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9c0-1.1.9-2 2-2h6a1 1 0 0 1 1 1z"></path>
+                    <path class="secondary" d="M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="col-10">
+            <div class="title"><a href="https://gist.github.com/btroncone/d6cf141d6f2c00dc6b35" target="_blank">RxJS 5 Operators By Example</a></div>
+            <div class="description">A complete list of RxJS 5 operators with easy to understand explanations and runnable examples.</div>
+            <div class="link">
+                https://gist.github.com/btroncone/d6cf141d6f2c00dc6b35
+            </div>
+        </div>
+    </div>
+</div>
 
-<p>{% include article-link.html
-    url=&ldquo;<a href="https://youtu.be/zAWB3lPixtk&quot;">https://youtu.be/zAWB3lPixtk&quot;</a>
-    title=&ldquo;Video: Extreme Streams: The What, How and Why of Observables&rdquo;
-    text=&ldquo;Observables are great for building UIs and RxJS is an amazing implementation of them. Despite the library&rsquo;s awesome power, it’s relatively underutilized mostly due to it being hard. This talk gives a high level overview of what observables are, how you use them, and why they are useful, through a basic implementation and a real world example (searching reddit for cute animals).&rdquo;
-%}</p>
+<div class="article-link card">
+    <div class="row">
+        <div class="col-2 share-link">
+            <a href="https://youtu.be/zAWB3lPixtk" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 mr-4 icon-external-window">
+                    <path class="primary" d="M12 8a1 1 0 0 1-1 1H5v10h10v-6a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9c0-1.1.9-2 2-2h6a1 1 0 0 1 1 1z"></path>
+                    <path class="secondary" d="M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="col-10">
+            <div class="title"><a href="https://youtu.be/zAWB3lPixtk" target="_blank">Video: Extreme Streams: The What, How and Why of Observables</a></div>
+            <div class="description">Observables are great for building UIs and RxJS is an amazing implementation of them. Despite the library&#39;s awesome power, it’s relatively underutilized mostly due to it being hard. This talk gives a high level overview of what observables are, how you use them, and why they are useful, through a basic implementation and a real world example (searching reddit for cute animals).</div>
+            <div class="link">
+                https://youtu.be/zAWB3lPixtk
+            </div>
+        </div>
+    </div>
+</div>
 
-<p>{% include article-link.html
-    url=&ldquo;<a href="http://victorsavkin.com/post/146359880996/the-taxonomy-of-reactive-programming&quot;">http://victorsavkin.com/post/146359880996/the-taxonomy-of-reactive-programming&quot;</a>
-    title=&ldquo;THE TAXONOMY OF REACTIVE PROGRAMMING&rdquo;
-        text=&ldquo;In this article I will introduce four independent dimensions of reactive programming&rdquo;
-        imageurl=&ldquo;<a href="https://avatars3.githubusercontent.com/u/35996?v=3&amp;s=200&quot;">https://avatars3.githubusercontent.com/u/35996?v=3&amp;s=200&quot;</a>
-%}</p>
+<div class="article-link card">
+    <div class="row">
+        <div class="col-2 share-link">
+            <a href="http://victorsavkin.com/post/146359880996/the-taxonomy-of-reactive-programming" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 mr-4 icon-external-window">
+                    <path class="primary" d="M12 8a1 1 0 0 1-1 1H5v10h10v-6a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9c0-1.1.9-2 2-2h6a1 1 0 0 1 1 1z"></path>
+                    <path class="secondary" d="M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="col-10">
+            <div class="title"><a href="http://victorsavkin.com/post/146359880996/the-taxonomy-of-reactive-programming" target="_blank">THE TAXONOMY OF REACTIVE PROGRAMMING</a></div>
+            <div class="description">In this article I will introduce four independent dimensions of reactive programming</div>
+            <div class="link">
+                http://victorsavkin.com/post/146359880996/the-taxonomy-of-reactive-programming
+            </div>
+        </div>
+    </div>
+</div>
 
             </div>
 
             
             <div class="after-post-tags">
                 <ul class="tags">
-                    
-                    <li>
-                        <a href="/tags/javascript">JavaScript</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/angular.js">Angular.js</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/angular">Angular</a>
-                    </li>
                     
                 </ul>
             </div>
@@ -468,131 +547,6 @@ RxJS is the JavaScript implementation of [ReactiveX](http://reactivex.io/).
 <div class="related-container">
     <div class="container">
         <div class="row listrecent listrelated">
-            
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2016/06/ng2-getting-started-for-beginners">Angular 2&#43; - A Getting Started Guide for Beginners</a>
-        </h2>
-        <h4 class="card-text">
-            A gentle introduction to a local Meetup group
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Jun 6, 2016</span><span class="dot"></span><span
-                                class="post-read">23 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2016/04/learning-angular2-directives-course">Learning Angular 2 Directives</a>
-        </h2>
-        <h4 class="card-text">
-            Learn how to build efficient Angular 2 directives with this fast and interactive video course
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Apr 27, 2016</span><span class="dot"></span><span
-                                class="post-read">1 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2016/06/from-ngcontroller-to-components">From ng-controller to components with Angular 1.5</a>
-        </h2>
-        <h4 class="card-text">
-            Driving your Angular frontend architecture to a new level
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Jun 27, 2016</span><span class="dot"></span><span
-                                class="post-read">8 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
             
 
         </div>
@@ -655,7 +609,7 @@ RxJS is the JavaScript implementation of [ReactiveX](http://reactivex.io/).
 
 
 
-<script type="text/javascript" src="https://juristr.com/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
+<script type="text/javascript" src="/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
 
 
 <script src="/js/jquery.fluidbox.min.js"></script>

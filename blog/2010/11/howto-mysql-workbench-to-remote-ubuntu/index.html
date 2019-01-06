@@ -4,16 +4,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Hugo 0.53" />
 	
+	<link rel="shortcut icon" href="/assets/images/sitelogo.jpeg">
+	
 	<title>HowTo: MySQL Workbench to Remote Ubuntu Production Server Using SSH Port Forwarding | juri.strumpflohner</title>
 	
 	
 
+	
+	<meta name="author" content="Juri Strumpflohner">
+	<link rel="me" href="https://profiles.google.com/104904743888756261987" />
+	<link rel="publisher" href='https://plus.google.com/104904743888756261987' />
+	<meta property="twitter:account_id" content="14407063" />
+
+
+	
+	<meta name="google-site-verification" content="0_vyoIaeMG1kXR0h-48gy3OaGl8xoiSJsFDxxCTIBMs" />
+	<meta name="google-site-verification" content="AvmssSjl_nchNXIqBW8Agb_UjGqvvLP7HXSxBZ9d0cg" />
+
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@juristr" />
+	<meta name="twitter:title" content="HowTo: MySQL Workbench to Remote Ubuntu Production Server Using SSH Port Forwarding" />
+	
+
+	
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Juri Strumpflohner" href="//feeds.feedburner.com/juristrumpflohner">
+	
 
 	
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<link href='//fonts.googleapis.com/css?family=Righteous|Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
 	 rel='stylesheet' type='text/css'>
 	
@@ -23,7 +47,7 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/main.min.fd753432185db38bfbc183a977ed14f8e3ed314f4f938904d908bcfea775813a.css" integrity="sha256-/XU0Mhhds4v7wYOpd&#43;0U&#43;OPtMU9Pk4kE2Qi8/qd1gTo=" media="screen">
+	<link rel="stylesheet" href="/scss/main.min.788d84de2ded58913e22cf1f7e9d98fdc99ae669c17cd186aa46fa3ba6378fbe.css" integrity="sha256-eI2E3i3tWJE&#43;Is8ffp2Y/cma5mnBfNGGqkb6O6Y3j74=" media="screen">
 
 	
 
@@ -31,7 +55,7 @@
 
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/article.min.5023ef17f0d1b321f33a6554cd0526640c24a5a17cb68af2a8dfd9debd02e2ee.css" integrity="sha256-UCPvF/DRsyHzOmVUzQUmZAwkpaF8toryqN/Z3r0C4u4=" media="screen">
+	<link rel="stylesheet" href="/scss/article.min.39d2631fa244d3442d50500346a96e007f4d6ad56aaebadc6c4e5371731d6a0e.css" integrity="sha256-OdJjH6JE00QtUFADRqluAH9NatVqrrrcbE5TcXMdag4=" media="screen">
 	
 
 	
@@ -42,7 +66,7 @@
         
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -62,7 +86,7 @@
                 
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -73,11 +97,8 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                
+                <div id="bs4navbar" class="navbar-collapse">
                     
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         
@@ -193,28 +214,38 @@
             
             <div class="article-post">
                 
-<p>Before starting, I'm totally not the Linux command line guru, unfortunately. It feels like years of just using Windows base OS makes you a wizard-click-through guy ;). My recent (well, a year ago) acquisition of a MacBook Pro made this a little better, but still I feel quite naked when it comes to good old command line knowledge.
+<p>Before starting, I'm totally not the Linux command line guru, unfortunately. It feels like years of just using
+  Windows base OS makes you a wizard-click-through guy ;). My recent (well, a year ago) acquisition of a MacBook Pro
+  made this a little better, but still I feel quite naked when it comes to good old command line knowledge.
 </p>
 
-Yesterday I was about setting up my Linux Ubuntu based production server which was kindly provided to me by the university to deploy my MSc thesis project. Actually theres not much to set up, a Tomcat webserver and an according MySQL database server. The university admin gave me a VPN client and credentials to get access over SSH. After installing Tomcat and MySQL I tried to get access from the MySQL workbench installed on my local OSX machine to the remote Ubuntu MySQL server. I mean, this is not strictly necessary, but nevertheless very comfortable for synchronizing your database model based on your ER schema design.<br /><br />After hours of reading me through tutorials and serverfault posts I got it to work, and actually it turned out to be pretty simple - after you understood the mechanics behind. Open a ssh connection, by typing the following in your shell<br /><pre>ssh -L 3310:127.0.0.1:3306 myusername@remote.ubuntu.prodserver.com<br /></pre>Then start your MySQL workbench (v 5.2) and click on the appropriate link to create a new server instance.<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_tF6XjsUy87k/TOBE790U9mI/AAAAAAAACx8/GT5lGzxFvaU/s1600/mysql_screen1.png" imageanchor="1" rel="zoombox" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="219" src="http://1.bp.blogspot.com/_tF6XjsUy87k/TOBE790U9mI/AAAAAAAACx8/GT5lGzxFvaU/s320/mysql_screen1.png" width="320" /></a></div><div class="separator" style="clear: both; text-align: left;">Leave the localhost flag (remember, you're ssh&nbsp;tunneling).</div><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_tF6XjsUy87k/TOBFNoJ0cyI/AAAAAAAACyA/epuZyc130jI/s1600/mysql_screen2.png" imageanchor="1" rel="zoombox" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="222" src="http://2.bp.blogspot.com/_tF6XjsUy87k/TOBFNoJ0cyI/AAAAAAAACyA/epuZyc130jI/s320/mysql_screen2.png" width="320" /></a></div><div class="separator" style="clear: both; text-align: left;">..finally</div><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_tF6XjsUy87k/TOBFZJN9LSI/AAAAAAAACyE/rwOw2H8wVE0/s1600/mysql_screen3.png" imageanchor="1" rel="zoombox" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="223" src="http://3.bp.blogspot.com/_tF6XjsUy87k/TOBFZJN9LSI/AAAAAAAACyE/rwOw2H8wVE0/s320/mysql_screen3.png" width="320" /></a></div><br />It should work now.<br /><br /><b>Related links:</b><br /><a href="http://serverfault.com/questions/128923/forwarding-port-3306-on-mac-os-x-in-order-to-connect-to-a-remote-mysql-database">http://serverfault.com/questions/128923/forwarding-port-3306-on-mac-os-x-in-order-to-connect-to-a-remote-mysql-database</a>
-
+Yesterday I was about setting up my Linux Ubuntu based production server which was kindly provided to me by the
+university to deploy my MSc thesis project. Actually theres not much to set up, a Tomcat webserver and an according
+MySQL database server. The university admin gave me a VPN client and credentials to get access over SSH. After
+installing Tomcat and MySQL I tried to get access from the MySQL workbench installed on my local OSX machine to the
+remote Ubuntu MySQL server. I mean, this is not strictly necessary, but nevertheless very comfortable for synchronizing
+your database model based on your ER schema design.<br /><br />After hours of reading me through tutorials and
+serverfault posts I got it to work, and actually it turned out to be pretty simple - after you understood the mechanics
+behind. Open a ssh connection, by typing the following in your shell<br />
+<pre>ssh -L 3310:127.0.0.1:3306 myusername@remote.ubuntu.prodserver.com<br /></pre>Then start your MySQL workbench (v
+5.2) and click on the appropriate link to create a new server instance.<br />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/_tF6XjsUy87k/TOBE790U9mI/AAAAAAAACx8/GT5lGzxFvaU/s1600/mysql_screen1.png"
+    imageanchor="1" rel="zoombox" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="219" src="http://1.bp.blogspot.com/_tF6XjsUy87k/TOBE790U9mI/AAAAAAAACx8/GT5lGzxFvaU/s320/mysql_screen1.png"
+      width="320" /></a></div>
+<div class="separator" style="clear: both; text-align: left;">Leave the localhost flag (remember, you're
+  ssh&nbsp;tunneling).</div>
+<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_tF6XjsUy87k/TOBFNoJ0cyI/AAAAAAAACyA/epuZyc130jI/s1600/mysql_screen2.png"
+    imageanchor="1" rel="zoombox" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="222" src="http://2.bp.blogspot.com/_tF6XjsUy87k/TOBFNoJ0cyI/AAAAAAAACyA/epuZyc130jI/s320/mysql_screen2.png"
+      width="320" /></a></div>
+<div class="separator" style="clear: both; text-align: left;">..finally</div>
+<div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_tF6XjsUy87k/TOBFZJN9LSI/AAAAAAAACyE/rwOw2H8wVE0/s1600/mysql_screen3.png"
+    imageanchor="1" rel="zoombox" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="223" src="http://3.bp.blogspot.com/_tF6XjsUy87k/TOBFZJN9LSI/AAAAAAAACyE/rwOw2H8wVE0/s320/mysql_screen3.png"
+      width="320" /></a></div><br />It should work now.<br /><br /><b>Related links:</b><br /><a href="http://serverfault.com/questions/128923/forwarding-port-3306-on-mac-os-x-in-order-to-connect-to-a-remote-mysql-database">http://serverfault.com/questions/128923/forwarding-port-3306-on-mac-os-x-in-order-to-connect-to-a-remote-mysql-database</a>
             </div>
 
             
             <div class="after-post-tags">
                 <ul class="tags">
-                    
-                    <li>
-                        <a href="/tags/howto">HowTo</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/osx">OSX</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/linux">Linux</a>
-                    </li>
                     
                 </ul>
             </div>
@@ -240,131 +271,6 @@ Yesterday I was about setting up my Linux Ubuntu based production server which w
 <div class="related-container">
     <div class="container">
         <div class="row listrecent listrelated">
-            
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2010/01/howto-use-your-iphone-as-remote-control">HowTo: Use your iPhone as a remote control for presentations</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Jan 28, 2010</span><span class="dot"></span><span
-                                class="post-read">2 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2009/03/floating-figures-and-tables-with-latex">Floating figures and tables with Latex</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Mar 15, 2009</span><span class="dot"></span><span
-                                class="post-read">2 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2010/08/howto-teach-visual-studio-to-remember">HowTo: Teach Visual Studio to Remember Your TFS Password</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Aug 11, 2010</span><span class="dot"></span><span
-                                class="post-read">2 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
             
 
         </div>
@@ -427,7 +333,7 @@ Yesterday I was about setting up my Linux Ubuntu based production server which w
 
 
 
-<script type="text/javascript" src="https://juristr.com/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
+<script type="text/javascript" src="/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
 
 
 <script src="/js/jquery.fluidbox.min.js"></script>

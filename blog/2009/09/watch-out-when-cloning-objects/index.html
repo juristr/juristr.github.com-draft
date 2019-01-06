@@ -4,16 +4,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Hugo 0.53" />
 	
+	<link rel="shortcut icon" href="/assets/images/sitelogo.jpeg">
+	
 	<title>Watch out when cloning objects | juri.strumpflohner</title>
 	
 	
 
+	
+	<meta name="author" content="Juri Strumpflohner">
+	<link rel="me" href="https://profiles.google.com/104904743888756261987" />
+	<link rel="publisher" href='https://plus.google.com/104904743888756261987' />
+	<meta property="twitter:account_id" content="14407063" />
+
+
+	
+	<meta name="google-site-verification" content="0_vyoIaeMG1kXR0h-48gy3OaGl8xoiSJsFDxxCTIBMs" />
+	<meta name="google-site-verification" content="AvmssSjl_nchNXIqBW8Agb_UjGqvvLP7HXSxBZ9d0cg" />
+
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@juristr" />
+	<meta name="twitter:title" content="Watch out when cloning objects" />
+	
+
+	
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Juri Strumpflohner" href="//feeds.feedburner.com/juristrumpflohner">
+	
 
 	
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<link href='//fonts.googleapis.com/css?family=Righteous|Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
 	 rel='stylesheet' type='text/css'>
 	
@@ -23,7 +47,7 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/main.min.fd753432185db38bfbc183a977ed14f8e3ed314f4f938904d908bcfea775813a.css" integrity="sha256-/XU0Mhhds4v7wYOpd&#43;0U&#43;OPtMU9Pk4kE2Qi8/qd1gTo=" media="screen">
+	<link rel="stylesheet" href="/scss/main.min.788d84de2ded58913e22cf1f7e9d98fdc99ae669c17cd186aa46fa3ba6378fbe.css" integrity="sha256-eI2E3i3tWJE&#43;Is8ffp2Y/cma5mnBfNGGqkb6O6Y3j74=" media="screen">
 
 	
 
@@ -31,7 +55,7 @@
 
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/article.min.5023ef17f0d1b321f33a6554cd0526640c24a5a17cb68af2a8dfd9debd02e2ee.css" integrity="sha256-UCPvF/DRsyHzOmVUzQUmZAwkpaF8toryqN/Z3r0C4u4=" media="screen">
+	<link rel="stylesheet" href="/scss/article.min.39d2631fa244d3442d50500346a96e007f4d6ad56aaebadc6c4e5371731d6a0e.css" integrity="sha256-OdJjH6JE00QtUFADRqluAH9NatVqrrrcbE5TcXMdag4=" media="screen">
 	
 
 	
@@ -42,7 +66,7 @@
         
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -62,7 +86,7 @@
                 
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -73,11 +97,8 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                
+                <div id="bs4navbar" class="navbar-collapse">
                     
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         
@@ -193,21 +214,37 @@
             
             <div class="article-post">
                 
-Cloning is never a good thing. I would say in most cases there is a better alternative for reaching your goal, but now and then it happens that you need it. But in such a case, be careful. Assume you have something like this:<br /><pre class="prettyprint">class Person<br />{<br />    public string Name { get; set; }<br />    public Address Address { get; set; }<br /><br />    public Person Clone()<br />    {<br />        return MemberwiseClone() as Person;<br />    }<br />}<br /><br />class Address<br />{<br />    public string Street { get; set; }<br />    public string Country { get; set; }<br />}<br /></pre>Note, to clone I have to use the inherited method "MemberwiseClone()" from Object and expose it publicly. This creates a shallow copy, meaning copying just the surface. So if you then have somewhere<br /><pre class="prettyprint">Person p = new Person<br />{<br />    Name = "Juri",<br />    Address = new Address<br />    {<br />        Street = "Bolzano",<br />        Country = "Italy"<br />    }<br />};<br /></pre>(using inline initialization just for the purpose of this demo) and then cloning the object by calling<br /><pre class="prettyprint">Person clone = p.Clone();<br /></pre>...you'll have the situation that the following statement will be true<br /><pre class="prettyprint">clone.Address == p.Address;</pre>If you read the documentation on MSDN it will also be clear why this is the case:<br /><blockquote>The MemberwiseClone method creates a <b>shallow copy</b> by creating a new object, and then copying the nonstatic fields of the current object to the new object. If a field is a value type, a bit-by-bit copy of the field is performed. If a field is a reference type, the reference is copied but the referred object is not; therefore, the original object and its clone refer to the same object.</blockquote><br />One has to pay particular attention to this. If you ignore this and you expect to have different Address objects you may get weird behavior in your program which may be difficult to debug later on.<br /><br />So basically what would be expected above is to not do a shallow copy, but a <b>deep copy</b>. In such a case you shouldn't expose the Clone() method yourself but rather implement the ICloneable interface. The deep copy logic has to be implemented by yourself. The example above could then look like this<br /><pre class="prettyprint">public class Person : ICloneable<br />{<br />    public string Name { get; set; }<br />    public Address Address { get; set; }<br /><br />    #region ICloneable Members<br /><br />    public object Clone()<br />    {<br />        Person clone = MemberwiseClone() as Person;<br />        if (this.Address != null)<br />        {<br />            this.Address = this.Address.Clone() as Address;<br />        }<br /><br />        return clone;<br />    }<br /><br />    #endregion<br />}<br /><br />public class Address : ICloneable<br />{<br />    public string Street { get; set; }<br />    public string Country { get; set; }<br /><br />    #region ICloneable Members<br /><br />    public object Clone()<br />    {<br />        return MemberwiseClone();<br />    }<br /><br />    #endregion<br />}<br /></pre>This could be one way of doing it. However be sure that you have the control of the whole object hierarchy. Cloning customer server controls (that inherit from the standard web controls) won't be such a good idea since there are too much dependencies among the object hierarchy which could lead to strange side effects. I was experiencing some of them, but I'll post an update as soon as I found the exact reason.<br /><br /><a href="http://blogs.msdn.com/brada/archive/2003/04/09/49935.aspx">Brad Abrams</a> mentions some comments on implementing the ICloneable interface which may be worth looking at.
-
+Cloning is never a good thing. I would say in most cases there is a better alternative for reaching your goal, but now
+and then it happens that you need it. But in such a case, be careful. Assume you have something like this:<br />
+<pre class="prettyprint">class Person<br />{<br />    public string Name { get; set; }<br />    public Address Address { get; set; }<br /><br />    public Person Clone()<br />    {<br />        return MemberwiseClone() as Person;<br />    }<br />}<br /><br />class Address<br />{<br />    public string Street { get; set; }<br />    public string Country { get; set; }<br />}<br /></pre>Note,
+to clone I have to use the inherited method "MemberwiseClone()" from Object and expose it publicly. This creates a
+shallow copy, meaning copying just the surface. So if you then have somewhere<br />
+<pre class="prettyprint">Person p = new Person<br />{<br />    Name = "Juri",<br />    Address = new Address<br />    {<br />        Street = "Bolzano",<br />        Country = "Italy"<br />    }<br />};<br /></pre>(using
+inline initialization just for the purpose of this demo) and then cloning the object by calling<br />
+<pre class="prettyprint">Person clone = p.Clone();<br /></pre>...you'll have the situation that the following statement
+will be true<br />
+<pre class="prettyprint">clone.Address == p.Address;</pre>If you read the documentation on MSDN it will also be clear
+why this is the case:<br />
+<blockquote>The MemberwiseClone method creates a <b>shallow copy</b> by creating a new object, and then copying the
+  nonstatic fields of the current object to the new object. If a field is a value type, a bit-by-bit copy of the field
+  is performed. If a field is a reference type, the reference is copied but the referred object is not; therefore, the
+  original object and its clone refer to the same object.</blockquote><br />One has to pay particular attention to
+this. If you ignore this and you expect to have different Address objects you may get weird behavior in your program
+which may be difficult to debug later on.<br /><br />So basically what would be expected above is to not do a shallow
+copy, but a <b>deep copy</b>. In such a case you shouldn't expose the Clone() method yourself but rather implement the
+ICloneable interface. The deep copy logic has to be implemented by yourself. The example above could then look like
+this<br />
+<pre class="prettyprint">public class Person : ICloneable<br />{<br />    public string Name { get; set; }<br />    public Address Address { get; set; }<br /><br />    #region ICloneable Members<br /><br />    public object Clone()<br />    {<br />        Person clone = MemberwiseClone() as Person;<br />        if (this.Address != null)<br />        {<br />            this.Address = this.Address.Clone() as Address;<br />        }<br /><br />        return clone;<br />    }<br /><br />    #endregion<br />}<br /><br />public class Address : ICloneable<br />{<br />    public string Street { get; set; }<br />    public string Country { get; set; }<br /><br />    #region ICloneable Members<br /><br />    public object Clone()<br />    {<br />        return MemberwiseClone();<br />    }<br /><br />    #endregion<br />}<br /></pre>This
+could be one way of doing it. However be sure that you have the control of the whole object hierarchy. Cloning customer
+server controls (that inherit from the standard web controls) won't be such a good idea since there are too much
+dependencies among the object hierarchy which could lead to strange side effects. I was experiencing some of them, but
+I'll post an update as soon as I found the exact reason.<br /><br /><a href="http://blogs.msdn.com/brada/archive/2003/04/09/49935.aspx">Brad
+  Abrams</a> mentions some comments on implementing the ICloneable interface which may be worth looking at.
             </div>
 
             
             <div class="after-post-tags">
                 <ul class="tags">
-                    
-                    <li>
-                        <a href="/tags/c">C#</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/.net">.Net</a>
-                    </li>
                     
                 </ul>
             </div>
@@ -233,131 +270,6 @@ Cloning is never a good thing. I would say in most cases there is a better alter
 <div class="related-container">
     <div class="container">
         <div class="row listrecent listrelated">
-            
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2009/08/nullsafeget-extension-method-simplicity">NullsafeGet extension method? Simplicity for the cost of readability??</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Aug 14, 2009</span><span class="dot"></span><span
-                                class="post-read">2 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2009/08/controlling-rendered-html-tag-on-your">HowTo: Control the rendered Html tag on your custom, composite server controls</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Aug 11, 2009</span><span class="dot"></span><span
-                                class="post-read">1 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2009/07/automatically-find-label-associated-to">Automatically find the Label associated to a WebControl through the AssociatedControlID</a>
-        </h2>
-        <h4 class="card-text">
-            
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Jul 24, 2009</span><span class="dot"></span><span
-                                class="post-read">2 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
             
 
         </div>
@@ -420,7 +332,7 @@ Cloning is never a good thing. I would say in most cases there is a better alter
 
 
 
-<script type="text/javascript" src="https://juristr.com/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
+<script type="text/javascript" src="/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
 
 
 <script src="/js/jquery.fluidbox.min.js"></script>

@@ -4,16 +4,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Hugo 0.53" />
 	
+	<link rel="shortcut icon" href="/assets/images/sitelogo.jpeg">
+	
 	<title>Create a CD pipeline with Angular, GitLab and Firebase | juri.strumpflohner</title>
 	
 	
 
+	
+	<meta name="author" content="Juri Strumpflohner">
+	<link rel="me" href="https://profiles.google.com/104904743888756261987" />
+	<link rel="publisher" href='https://plus.google.com/104904743888756261987' />
+	<meta property="twitter:account_id" content="14407063" />
+
+
+	
+	<meta name="google-site-verification" content="0_vyoIaeMG1kXR0h-48gy3OaGl8xoiSJsFDxxCTIBMs" />
+	<meta name="google-site-verification" content="AvmssSjl_nchNXIqBW8Agb_UjGqvvLP7HXSxBZ9d0cg" />
+
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@juristr" />
+	<meta name="twitter:title" content="Create a CD pipeline with Angular, GitLab and Firebase" />
+	
+	<meta name="twitter:description" content="Learn to create a continuous deployment pipeline to deploy an Angular app to Firebase using Gitlab&#39;s integrated CI server" />
+	
+
+	
+	<meta name="twitter:image:src" content="https://juristr.com/blog/assets/imgs/cd-gitlab-firebase/gitlab-pipeline-1.png" />
+	
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Juri Strumpflohner" href="//feeds.feedburner.com/juristrumpflohner">
+	
 
 	
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<link href='//fonts.googleapis.com/css?family=Righteous|Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
 	 rel='stylesheet' type='text/css'>
 	
@@ -23,7 +51,7 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/main.min.fd753432185db38bfbc183a977ed14f8e3ed314f4f938904d908bcfea775813a.css" integrity="sha256-/XU0Mhhds4v7wYOpd&#43;0U&#43;OPtMU9Pk4kE2Qi8/qd1gTo=" media="screen">
+	<link rel="stylesheet" href="/scss/main.min.788d84de2ded58913e22cf1f7e9d98fdc99ae669c17cd186aa46fa3ba6378fbe.css" integrity="sha256-eI2E3i3tWJE&#43;Is8ffp2Y/cma5mnBfNGGqkb6O6Y3j74=" media="screen">
 
 	
 
@@ -31,7 +59,7 @@
 
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/article.min.5023ef17f0d1b321f33a6554cd0526640c24a5a17cb68af2a8dfd9debd02e2ee.css" integrity="sha256-UCPvF/DRsyHzOmVUzQUmZAwkpaF8toryqN/Z3r0C4u4=" media="screen">
+	<link rel="stylesheet" href="/scss/article.min.39d2631fa244d3442d50500346a96e007f4d6ad56aaebadc6c4e5371731d6a0e.css" integrity="sha256-OdJjH6JE00QtUFADRqluAH9NatVqrrrcbE5TcXMdag4=" media="screen">
 	
 
 	
@@ -42,7 +70,7 @@
         
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -62,7 +90,7 @@
                 
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -73,11 +101,8 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                
+                <div id="bs4navbar" class="navbar-collapse">
                     
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         
@@ -336,14 +361,14 @@ On the CI server however, we don’t have any UI running: we need a <strong>head
 
 <p>The <code>$FIREBASE_TOKEN</code> needs to be registered on your GitLab repository’s <code>Settings &gt; CI/CD Settings &gt; Secret variables</code>.</p>
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-env-vars.png">
   <figcaption>Setting environment variables in GitLab</figcaption>
 </figure>
 
 <p>When configuring the variable in GitLab, make sure to <strong>not activate the &ldquo;protected&rdquo;</strong> flag, otherwise you will have issues in reading these variables during the build.</p>
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-variables-protect.png">
   <figcaption>Adding the firebase token to GitLab</figcaption>
 </figure>
@@ -465,7 +490,7 @@ stages:
 
 <p>Once we have that and commit it to master, GitLab will automatically pick it up and execute our pipeline:</p>
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-pipeline-1.png">
 </figure>
 
@@ -484,13 +509,13 @@ stages:
 
 <p>To add new environments in GitLab, first go to the web interface, navigate to your repository and then to <code>CI / CD &gt; Environments</code>. There you can add 2 new entries, “development” and “production”.</p>
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-deploy-environment-staging.png">
 </figure>
 
 <p>and finally our production environment:</p>
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-deploy-environment-prod.png">
 </figure>
 
@@ -544,7 +569,7 @@ deploy-production:
 
 <p>Firebase projects don’t have specific environments, but rather you simply create a new project which works as your staging environment. Once you have that, you can add that staging environment to your existing Firebase project via the <code>firebase-tools</code> command line.</p>
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/firebase-tools-config.png">
 </figure>
 
@@ -568,13 +593,13 @@ deploy-production:
 <span class="p">}</span></code></pre></div>
 <p>Note how the <code>predeploy</code> step chooses the corresponding environment that gets passed in via the GitLab <code>$CI_ENVIRONMENT_NAME</code> parameter.</p>
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-pipeline-2.png">
 </figure>
 
 <p>GitLab also nicely keeps track which commit has been deployed to which environment, also showing the play button here as well, which allows us to promote a given build from staging into production.</p>
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-deployment-tracking.png">
 </figure>
 
@@ -595,7 +620,7 @@ deploy-production:
 
 <p>Note we’re running this as part of the “test” stage, that way it gets parallelized with the unit tests.</p>
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-pipeline-3.png">
 </figure>
 
@@ -607,7 +632,7 @@ deploy-production:
 
 <p><strong>Build on every commit -</strong> The main benefit of an automated pipeline is to get feedback as early as possible in the process. Thus, build every commit, regardless whether it’s to master, or a PR. Whenever something fails, GitLab (or every other CI server) will send the commit author some nicely formatted message about what happened, so that you can immediately react:</p>
 
-<figure>
+<figure class="image--medium">
   <img src="/blog/assets/imgs/cd-gitlab-firebase/gitlab-error-mails.png">
 </figure>
 
@@ -616,14 +641,6 @@ deploy-production:
             
             <div class="after-post-tags">
                 <ul class="tags">
-                    
-                    <li>
-                        <a href="/tags/angular">Angular</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/angular-cli">Angular CLI</a>
-                    </li>
                     
                     <li>
                         <a href="/tags/continuous-delivery">continuous delivery</a>
@@ -657,14 +674,15 @@ deploy-production:
             
 
             <div class="col-md-4">
+
 <div class="card">
     
     <div class="card-block">
         <h2 class="card-title">
-            <a href="/blog/2018/02/ng-true-value-directive">Create a ng-true-value &amp; ng-false-value directive for Angular</a>
+            <a href="/blog/2009/03/best-practices-deploying-webapps-contd_20">Best practices: Deploying webapps (contd.)</a>
         </h2>
         <h4 class="card-text">
-            Remember the ng-true-value that existed in AngularJS (v1.x)? Let&#39;s create one for Angular and learn how to hook into Angular&#39;s form API
+            
             
         </h4>
         <div class="metafooter">
@@ -678,93 +696,21 @@ deploy-production:
                         </span>
                         <span class="author-meta">
                             <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Feb 1, 2018</span><span class="dot"></span><span
-                                class="post-read">5 min read</span>
+                            <span class="post-date">Mar 20, 2009</span><span class="dot"></span><span
+                                class="post-read">3 min read</span>
                         </span>
                     </div>
                     <div class="col-2">
                         
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2018/01/ng-app-runtime-config">Compile-time vs. Runtime configuration of your Angular App</a>
-        </h2>
-        <h4 class="card-text">
-            Learn how to setup compile time as well as runtime configuration for your Angular application
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Jan 22, 2018</span><span class="dot"></span><span
-                                class="post-read">6 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
                         
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2017/12/egghead-three-ng-courses">Three new Angular Courses to celebrate end of the Year 2017</a>
-        </h2>
-        <h4 class="card-text">
-            Angular HTTP, Dynamic Components, Dynamic Forms
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
+                        
+                        <span class="post-category-icon">
+                            
+                            
+                                <img src="/assets/images/categories/asp_net.svg" />
+                            
                         </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Dec 27, 2017</span><span class="dot"></span><span
-                                class="post-read">4 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
+                        
                         
                     </div>
                 </div>
@@ -840,7 +786,7 @@ deploy-production:
 
 
 
-<script type="text/javascript" src="https://juristr.com/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
+<script type="text/javascript" src="/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
 
 
 <script src="/js/jquery.fluidbox.min.js"></script>

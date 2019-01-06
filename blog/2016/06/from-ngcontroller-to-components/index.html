@@ -4,16 +4,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Hugo 0.53" />
 	
+	<link rel="shortcut icon" href="/assets/images/sitelogo.jpeg">
+	
 	<title>From ng-controller to components with Angular 1.5 | juri.strumpflohner</title>
 	
 	
 
+	
+	<meta name="author" content="Juri Strumpflohner">
+	<link rel="me" href="https://profiles.google.com/104904743888756261987" />
+	<link rel="publisher" href='https://plus.google.com/104904743888756261987' />
+	<meta property="twitter:account_id" content="14407063" />
+
+
+	
+	<meta name="google-site-verification" content="0_vyoIaeMG1kXR0h-48gy3OaGl8xoiSJsFDxxCTIBMs" />
+	<meta name="google-site-verification" content="AvmssSjl_nchNXIqBW8Agb_UjGqvvLP7HXSxBZ9d0cg" />
+
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@juristr" />
+	<meta name="twitter:title" content="From ng-controller to components with Angular 1.5" />
+	
+	<meta name="twitter:description" content="Driving your Angular frontend architecture to a new level" />
+	
+
+	
+	<meta name="twitter:image:src" content="https://juristr.com/blog/assets/imgs/ngctrl-to-component-postimg.png" />
+	
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Juri Strumpflohner" href="//feeds.feedburner.com/juristrumpflohner">
+	
 
 	
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<link href='//fonts.googleapis.com/css?family=Righteous|Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
 	 rel='stylesheet' type='text/css'>
 	
@@ -23,7 +51,7 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/main.min.fd753432185db38bfbc183a977ed14f8e3ed314f4f938904d908bcfea775813a.css" integrity="sha256-/XU0Mhhds4v7wYOpd&#43;0U&#43;OPtMU9Pk4kE2Qi8/qd1gTo=" media="screen">
+	<link rel="stylesheet" href="/scss/main.min.788d84de2ded58913e22cf1f7e9d98fdc99ae669c17cd186aa46fa3ba6378fbe.css" integrity="sha256-eI2E3i3tWJE&#43;Is8ffp2Y/cma5mnBfNGGqkb6O6Y3j74=" media="screen">
 
 	
 
@@ -31,7 +59,7 @@
 
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/article.min.5023ef17f0d1b321f33a6554cd0526640c24a5a17cb68af2a8dfd9debd02e2ee.css" integrity="sha256-UCPvF/DRsyHzOmVUzQUmZAwkpaF8toryqN/Z3r0C4u4=" media="screen">
+	<link rel="stylesheet" href="/scss/article.min.39d2631fa244d3442d50500346a96e007f4d6ad56aaebadc6c4e5371731d6a0e.css" integrity="sha256-OdJjH6JE00QtUFADRqluAH9NatVqrrrcbE5TcXMdag4=" media="screen">
 	
 
 	
@@ -42,7 +70,7 @@
         
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -62,7 +90,7 @@
                 
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -73,11 +101,8 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                
+                <div id="bs4navbar" class="navbar-collapse">
                     
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         
@@ -316,12 +341,25 @@ So let&rsquo;s change that and stick them together. How? By writing a directive 
 
 <p>Angular 1.5+ is the best Angular ever so far. Since <a href="https://docs.angularjs.org/guide/component">v1.5 they introduced the new <code>component</code> syntax</a> which makes creating components super easy. Check out Todd Motto&rsquo;s article on the topic:</p>
 
-<p>{% include article-link.html
-    url=&ldquo;<a href="https://toddmotto.com/exploring-the-angular-1-5-component-method/&quot;">https://toddmotto.com/exploring-the-angular-1-5-component-method/&quot;</a>
-    title=&ldquo;Exploring the Angular 1.5 .component() method&rdquo;
-    text=&ldquo;Angular 1.5 introduced the .component() helper method, which is much simpler than the .directive() definition and advocates best practices and common default behaviours.&rdquo;
-    imageurl=&ldquo;/blog/assets/imgs/linkpics/toddmotto.png&rdquo;
-%}</p>
+<div class="article-link card">
+    <div class="row">
+        <div class="col-2 share-link">
+            <a href="https://toddmotto.com/exploring-the-angular-1-5-component-method/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 mr-4 icon-external-window">
+                    <path class="primary" d="M12 8a1 1 0 0 1-1 1H5v10h10v-6a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9c0-1.1.9-2 2-2h6a1 1 0 0 1 1 1z"></path>
+                    <path class="secondary" d="M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="col-10">
+            <div class="title"><a href="https://toddmotto.com/exploring-the-angular-1-5-component-method/" target="_blank">Exploring the Angular 1.5 .component() method</a></div>
+            <div class="description">Angular 1.5 introduced the .component() helper method, which is much simpler than the .directive() definition and advocates best practices and common default behaviours.</div>
+            <div class="link">
+                https://toddmotto.com/exploring-the-angular-1-5-component-method/
+            </div>
+        </div>
+    </div>
+</div>
 
 <p>So what does that mean for our app? Let&rsquo;s see.</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="p">{</span><span class="o">%</span><span class="nx">raw</span><span class="o">%</span><span class="p">}</span>
@@ -407,12 +445,25 @@ So let&rsquo;s change that and stick them together. How? By writing a directive 
 <span class="p">}</span>
 <span class="p">...</span>
 </code></pre></div>
-<p>{% include article-link.html
-    url=&ldquo;<a href="https://toddmotto.com/one-way-data-binding-in-angular-1-5/&quot;">https://toddmotto.com/one-way-data-binding-in-angular-1-5/&quot;</a>
-    title=&ldquo;One-way data-binding in Angular 1.5&rdquo;
-    text=&ldquo;Angular is known for it’s powerful two-way data-binding, but with the new release of Angular 1.5, we’ve got one-way data binding (one-directional) binding capabilities inside our Components and Directives.&rdquo;
-    imageurl=&ldquo;/blog/assets/imgs/linkpics/toddmotto.png&rdquo;
-%}</p>
+<div class="article-link card">
+    <div class="row">
+        <div class="col-2 share-link">
+            <a href="https://toddmotto.com/one-way-data-binding-in-angular-1-5/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 mr-4 icon-external-window">
+                    <path class="primary" d="M12 8a1 1 0 0 1-1 1H5v10h10v-6a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9c0-1.1.9-2 2-2h6a1 1 0 0 1 1 1z"></path>
+                    <path class="secondary" d="M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="col-10">
+            <div class="title"><a href="https://toddmotto.com/one-way-data-binding-in-angular-1-5/" target="_blank">One-way data-binding in Angular 1.5</a></div>
+            <div class="description">Angular is known for it’s powerful two-way data-binding, but with the new release of Angular 1.5, we’ve got one-way data binding (one-directional) binding capabilities inside our Components and Directives.</div>
+            <div class="link">
+                https://toddmotto.com/one-way-data-binding-in-angular-1-5/
+            </div>
+        </div>
+    </div>
+</div>
 
 <h4 id="lifecycle-hooks">Lifecycle hooks</h4>
 
@@ -449,12 +500,25 @@ So let&rsquo;s change that and stick them together. How? By writing a directive 
 </code></pre></div>
 <p>There are other hooks, like <code>$onChange</code>, <code>$onDestroy</code> and so on. Rather than going into those details by myself, check out Todd Motto&rsquo;s awesome article on the matter:</p>
 
-<p>{% include article-link.html
-    url=&ldquo;<a href="https://toddmotto.com/angular-1-5-lifecycle-hooks&quot;">https://toddmotto.com/angular-1-5-lifecycle-hooks&quot;</a>
-    title=&ldquo;Comprehensive dive into Angular 1.5 lifecycle hooks&rdquo;
-    text=&ldquo;Lifecycle hooks are simply functions that get called at specific points of a component’s life in our Angular apps. They landed in Angular 1.5 and are to be used alongside the .component() method, and have slowly evolved over the last few versions to include some more powerful (and Angular 2 inspired) hooks&hellip;&rdquo;
-    imageurl=&ldquo;/blog/assets/imgs/linkpics/toddmotto.png&rdquo;
-%}</p>
+<div class="article-link card">
+    <div class="row">
+        <div class="col-2 share-link">
+            <a href="https://toddmotto.com/angular-1-5-lifecycle-hooks" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 mr-4 icon-external-window">
+                    <path class="primary" d="M12 8a1 1 0 0 1-1 1H5v10h10v-6a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9c0-1.1.9-2 2-2h6a1 1 0 0 1 1 1z"></path>
+                    <path class="secondary" d="M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="col-10">
+            <div class="title"><a href="https://toddmotto.com/angular-1-5-lifecycle-hooks" target="_blank">Comprehensive dive into Angular 1.5 lifecycle hooks</a></div>
+            <div class="description">Lifecycle hooks are simply functions that get called at specific points of a component’s life in our Angular apps. They landed in Angular 1.5 and are to be used alongside the .component() method, and have slowly evolved over the last few versions to include some more powerful (and Angular 2 inspired) hooks...</div>
+            <div class="link">
+                https://toddmotto.com/angular-1-5-lifecycle-hooks
+            </div>
+        </div>
+    </div>
+</div>
 
 <h2 id="component-architecture">Component architecture</h2>
 
@@ -469,7 +533,7 @@ So let&rsquo;s change that and stick them together. How? By writing a directive 
 
 <p>What you end with, is a so-called <strong>component tree</strong>, a set of nested components, starting from a top-level app component or root component.</p>
 
-<figure>
+<figure class="image--medium">
     <a href="/blog/assets/imgs/meetup-intro-angular2/component-tree.png" class="image--zoom">
         <img src="/blog/assets/imgs/meetup-intro-angular2/component-tree.png"/>
     </a>
@@ -496,36 +560,91 @@ So let&rsquo;s change that and stick them together. How? By writing a directive 
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">message</span> <span class="na">from</span><span class="o">=</span><span class="s">&#34;&#39;Home&#39;&#34;</span> <span class="na">msg</span><span class="o">=</span><span class="s">&#34;$ctrl.message&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">message</span><span class="p">&gt;</span></code></pre></div>
 <iframe src="https://embed.plnkr.co/u9BaCzaM0xLqn6wIHqzw/" width="100%" height="400px"> </iframe>
 
-<p>{% include article-link.html
-    url=&ldquo;<a href="https://github.com/toddmotto/angular-styleguide&quot;">https://github.com/toddmotto/angular-styleguide&quot;</a>
-    title=&ldquo;Angular styleguide for teams&rdquo;
-    imageurl=&ldquo;/blog/assets/imgs/githublogo.svg&rdquo;
-%}</p>
+<div class="article-link card">
+    <div class="row">
+        <div class="col-2 share-link">
+            <a href="https://github.com/toddmotto/angular-styleguide" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 mr-4 icon-external-window">
+                    <path class="primary" d="M12 8a1 1 0 0 1-1 1H5v10h10v-6a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9c0-1.1.9-2 2-2h6a1 1 0 0 1 1 1z"></path>
+                    <path class="secondary" d="M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="col-10">
+            <div class="title"><a href="https://github.com/toddmotto/angular-styleguide" target="_blank">Angular styleguide for teams</a></div>
+            <div class="description"></div>
+            <div class="link">
+                https://github.com/toddmotto/angular-styleguide
+            </div>
+        </div>
+    </div>
+</div>
 
-<p>{% include article-link.html
-    url=&ldquo;<a href="http://teropa.info/blog/2016/02/22/dumb-components-and-visual-feedback-in-angular-apps.html&quot;">http://teropa.info/blog/2016/02/22/dumb-components-and-visual-feedback-in-angular-apps.html&quot;</a>
-    title=&ldquo;Dumb Components and Visual Feedback in Angular Apps&rdquo;
-%}</p>
+<div class="article-link card">
+    <div class="row">
+        <div class="col-2 share-link">
+            <a href="http://teropa.info/blog/2016/02/22/dumb-components-and-visual-feedback-in-angular-apps.html" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 mr-4 icon-external-window">
+                    <path class="primary" d="M12 8a1 1 0 0 1-1 1H5v10h10v-6a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9c0-1.1.9-2 2-2h6a1 1 0 0 1 1 1z"></path>
+                    <path class="secondary" d="M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="col-10">
+            <div class="title"><a href="http://teropa.info/blog/2016/02/22/dumb-components-and-visual-feedback-in-angular-apps.html" target="_blank">Dumb Components and Visual Feedback in Angular Apps</a></div>
+            <div class="description"></div>
+            <div class="link">
+                http://teropa.info/blog/2016/02/22/dumb-components-and-visual-feedback-in-angular-apps.html
+            </div>
+        </div>
+    </div>
+</div>
 
 <h2 id="interested-what-role-components-play-in-angular-2">Interested what role components play in Angular 2?</h2>
 
 <p>Then check out my video course with PacktPub which focuses on &ldquo;Learning Angular components&rdquo;.</p>
 
-<p>{% include article-link.html
-    url=&ldquo;/blog/2017/01/video-course-learning-ng-cmps/&rdquo;
-    title=&ldquo;Learning Angular components (2nd ed)&rdquo;
-    text=&ldquo;The 2nd edition of my video course on Learning Angular Components&rdquo;
-    imageurl=&ldquo;/blog/assets/imgs/learning-ng-cmps-cover.png&rdquo;
-%}</p>
+<div class="article-link card">
+    <div class="row">
+        <div class="col-2 share-link">
+            <a href="/blog/2017/01/video-course-learning-ng-cmps/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 mr-4 icon-external-window">
+                    <path class="primary" d="M12 8a1 1 0 0 1-1 1H5v10h10v-6a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9c0-1.1.9-2 2-2h6a1 1 0 0 1 1 1z"></path>
+                    <path class="secondary" d="M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="col-10">
+            <div class="title"><a href="/blog/2017/01/video-course-learning-ng-cmps/" target="_blank">Learning Angular components (2nd ed)</a></div>
+            <div class="description">The 2nd edition of my video course on Learning Angular Components</div>
+            <div class="link">
+                /blog/2017/01/video-course-learning-ng-cmps/
+            </div>
+        </div>
+    </div>
+</div>
 
 <p>Also, for a quick, 20 minute intro to Angular 2+ (especially for beginners), you may want to check out my other article:</p>
 
-<p>{% include article-link.html
-    url=&ldquo;/blog/2016/06/ng2-getting-started-for-beginners/&rdquo;
-    title=&ldquo;Angular 2 - A Getting Started Guide for Beginners&rdquo;
-    text=&ldquo;Since about half a year, I&rsquo;m organizing a local Meetup group around Software Craftsmanship. I recently also published a video course on Learning Angular 2 directives and given Angular 2 finally released RC1, I decided to organize a Meetup session to introduce Angular 2 to our members.&rdquo;
-    imageurl=&ldquo;/blog/assets/imgs/meetup-intro-angular2/slide-deck.png&rdquo;
-%}</p>
+<div class="article-link card">
+    <div class="row">
+        <div class="col-2 share-link">
+            <a href="/blog/2016/06/ng2-getting-started-for-beginners/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 mr-4 icon-external-window">
+                    <path class="primary" d="M12 8a1 1 0 0 1-1 1H5v10h10v-6a1 1 0 0 1 2 0v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9c0-1.1.9-2 2-2h6a1 1 0 0 1 1 1z"></path>
+                    <path class="secondary" d="M19 6.41L8.7 16.71a1 1 0 1 1-1.4-1.42L17.58 5H14a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 0 1-2 0V6.41z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="col-10">
+            <div class="title"><a href="/blog/2016/06/ng2-getting-started-for-beginners/" target="_blank">Angular 2 - A Getting Started Guide for Beginners</a></div>
+            <div class="description">Since about half a year, I&#39;m organizing a local Meetup group around Software Craftsmanship. I recently also published a video course on Learning Angular 2 directives and given Angular 2 finally released RC1, I decided to organize a Meetup session to introduce Angular 2 to our members.</div>
+            <div class="link">
+                /blog/2016/06/ng2-getting-started-for-beginners/
+            </div>
+        </div>
+    </div>
+</div>
 
 <h2 id="conclusion">Conclusion</h2>
 
@@ -549,14 +668,6 @@ So let&rsquo;s change that and stick them together. How? By writing a directive 
             
             <div class="after-post-tags">
                 <ul class="tags">
-                    
-                    <li>
-                        <a href="/tags/javascript">JavaScript</a>
-                    </li>
-                    
-                    <li>
-                        <a href="/tags/angular.js">Angular.js</a>
-                    </li>
                     
                 </ul>
             </div>
@@ -582,131 +693,6 @@ So let&rsquo;s change that and stick them together. How? By writing a directive 
 <div class="related-container">
     <div class="container">
         <div class="row listrecent listrelated">
-            
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2016/06/ng2-getting-started-for-beginners">Angular 2&#43; - A Getting Started Guide for Beginners</a>
-        </h2>
-        <h4 class="card-text">
-            A gentle introduction to a local Meetup group
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Jun 6, 2016</span><span class="dot"></span><span
-                                class="post-read">23 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2016/04/learning-angular2-directives-course">Learning Angular 2 Directives</a>
-        </h2>
-        <h4 class="card-text">
-            Learn how to build efficient Angular 2 directives with this fast and interactive video course
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Apr 27, 2016</span><span class="dot"></span><span
-                                class="post-read">1 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
-
-            <div class="col-md-4">
-<div class="card">
-    
-    <div class="card-block">
-        <h2 class="card-title">
-            <a href="/blog/2015/12/perf-startup-ng1">Improve your Angular 1.x startup time</a>
-        </h2>
-        <h4 class="card-text">
-            A neat and simple trick to give your app some boost
-            
-        </h4>
-        <div class="metafooter">
-            <div class="wrapfooter">
-                <div class="row">
-                    <div class="col-10">
-                        <span class="meta-footer-thumb">
-                            <a href="author.html">
-                                <img class="author-thumb" src="https://www.gravatar.com/avatar/64537dfe80f44978663e378d375c7138?s=150&amp;d=identicon&amp;r=PG" alt="Juri Strumpflohner">
-                            </a>
-                        </span>
-                        <span class="author-meta">
-                            <span class="post-name"><a href="author.html">Juri Strumpflohner</a></span><br />
-                            <span class="post-date">Dec 14, 2015</span><span class="dot"></span><span
-                                class="post-read">2 min read</span>
-                        </span>
-                    </div>
-                    <div class="col-2">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    
-</div>
-
-            </div>
-
-            
             
 
         </div>
@@ -769,7 +755,7 @@ So let&rsquo;s change that and stick them together. How? By writing a directive 
 
 
 
-<script type="text/javascript" src="https://juristr.com/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
+<script type="text/javascript" src="/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
 
 
 <script src="/js/jquery.fluidbox.min.js"></script>

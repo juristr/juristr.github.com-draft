@@ -4,16 +4,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="generator" content="Hugo 0.53" />
 	
+	<link rel="shortcut icon" href="/assets/images/sitelogo.jpeg">
+	
 	<title>Learning by understanding and reusing code, not by copying!! | juri.strumpflohner</title>
 	
 	
 
+	
+	<meta name="author" content="Juri Strumpflohner">
+	<link rel="me" href="https://profiles.google.com/104904743888756261987" />
+	<link rel="publisher" href='https://plus.google.com/104904743888756261987' />
+	<meta property="twitter:account_id" content="14407063" />
+
+
+	
+	<meta name="google-site-verification" content="0_vyoIaeMG1kXR0h-48gy3OaGl8xoiSJsFDxxCTIBMs" />
+	<meta name="google-site-verification" content="AvmssSjl_nchNXIqBW8Agb_UjGqvvLP7HXSxBZ9d0cg" />
+
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@juristr" />
+	<meta name="twitter:title" content="Learning by understanding and reusing code, not by copying!!" />
+	
+
+	
+
+	
+	<link rel="alternate" type="application/rss+xml" title="Juri Strumpflohner" href="//feeds.feedburner.com/juristrumpflohner">
+	
 
 	
 	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
 	<link href='//fonts.googleapis.com/css?family=Righteous|Roboto:400,700,900|Source+Code+Pro|Lora:400,700,400italic|Material+Icons'
 	 rel='stylesheet' type='text/css'>
 	
@@ -23,7 +47,7 @@
 	
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/main.min.fd753432185db38bfbc183a977ed14f8e3ed314f4f938904d908bcfea775813a.css" integrity="sha256-/XU0Mhhds4v7wYOpd&#43;0U&#43;OPtMU9Pk4kE2Qi8/qd1gTo=" media="screen">
+	<link rel="stylesheet" href="/scss/main.min.788d84de2ded58913e22cf1f7e9d98fdc99ae669c17cd186aa46fa3ba6378fbe.css" integrity="sha256-eI2E3i3tWJE&#43;Is8ffp2Y/cma5mnBfNGGqkb6O6Y3j74=" media="screen">
 
 	
 
@@ -31,7 +55,7 @@
 
 	
 	
-	<link rel="stylesheet" href="https://juristr.com/scss/article.min.5023ef17f0d1b321f33a6554cd0526640c24a5a17cb68af2a8dfd9debd02e2ee.css" integrity="sha256-UCPvF/DRsyHzOmVUzQUmZAwkpaF8toryqN/Z3r0C4u4=" media="screen">
+	<link rel="stylesheet" href="/scss/article.min.39d2631fa244d3442d50500346a96e007f4d6ad56aaebadc6c4e5371731d6a0e.css" integrity="sha256-OdJjH6JE00QtUFADRqluAH9NatVqrrrcbE5TcXMdag4=" media="screen">
 	
 
 	
@@ -42,7 +66,7 @@
         
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -62,7 +86,7 @@
                 
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -73,11 +97,8 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                    data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                
+                <div id="bs4navbar" class="navbar-collapse">
                     
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         
@@ -193,8 +214,66 @@
             
             <div class="article-post">
                 
-Time ago - as you may have already read on this blog here - I started to experiment with the GME API. The result of my experiments was <a href="http://newsmapper.googlemashups.com/">News Mapper</a> (more <a href="http://juri-strumpflohner.blogspot.com/2007/10/now-in-two-weeks-after-my-successful.html">here</a>). Today, when scrolling over the <a href="http://gallery.googlemashups.com/">Google Mashup Gallery</a>, I found "<a href="http://india-news.googlemashups.com/">India News</a>". It does basically the same as News Mapper, with the difference that it displays just news from India.<br />However just by looking at the page without touching it, one can see the similarity with my News Mapper project. With similarity I'm not referring to the conceptual part. Taking a look at the code approved my suspicion... Most of the code is completely identical to my code I've used for News Mapper. Lets look at some examples. The screenshot below shows for instance that<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_tF6XjsUy87k/R2Kl5GNH0jI/AAAAAAAAAxw/d_uDy71wn6I/s1600-h/indiaNews1.jpg"><img style="margin: 0pt 0pt 10px 10px; float: right; cursor: pointer;" src="http://4.bp.blogspot.com/_tF6XjsUy87k/R2Kl5GNH0jI/AAAAAAAAAxw/d_uDy71wn6I/s400/indiaNews1.jpg" alt="" id="BLOGGER_PHOTO_ID_5143856124747305522" border="0" /></a> the author is using the same mechanism for laying out the different categories of the news feed. To realize this he uses the same CSS stylesheet class "category" with the same a:hover entry and the <span style="font-weight: bold;">same </span>color. His site is basically a slightly modified copy of my source code (even the comments of the JavaScript methods are the same :D )!<br />Moreover I don't think he has really understood my code since he calls for instance on each load <span style="font-weight: bold;">my</span> method called "cleanRSSEntries()" although it is completely useless for his situation. I've just needed it to cut out all HTML code that was inside Reuters RSS feeds because it lead to problems in displaying the information on the map. His feed provider however doesn't include HTML tags in the RSS feed at all.<br />The same author - with the name "Karthik" - also published another mashup <a href="http://cnntop.googlemashups.com/">http://cnntop.googlemashups.com/</a> where the copying of my source code is even more visible. You can compare the source codes if you want, however I don't think you have to. The similarities are too evident. Anyway:<br /><ul><li>News Mapper source code (my project): <a href="http://newsmapper.googlemashups.com/index.gml">http://newsmapper.googlemashups.com/index.gml</a><br /></li><li>India News: <a href="http://india-news.googlemashups.com/index.gml">http://india-news.googlemashups.com/index.gml</a><br /></li><li>CNN News: <a href="http://cnntop.googlemashups.com/index.gml">http://cnntop.googlemashups.com/index.gml<br /></a></li></ul><span style="font-weight: bold;font-size:130%;" >Copyright violation</span><br />News Mapper is licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a> license.<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_tF6XjsUy87k/R2L622NH0kI/AAAAAAAAAx4/y_d4FqhaROw/s1600-h/newsmapperCopyright.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://3.bp.blogspot.com/_tF6XjsUy87k/R2L622NH0kI/AAAAAAAAAx4/y_d4FqhaROw/s400/newsmapperCopyright.jpg" alt="" id="BLOGGER_PHOTO_ID_5143949544580960834" border="0" /></a>Point 4 of the license refers to the redistribution saying the following:<br /><p><b><a name="redistribution"></a></b></p><blockquote><p><b><a name="redistribution">4. Redistribution</a></b>. You may reproduce and distribute copies of the       Work or Derivative Works thereof in any medium, with or without       modifications, and in Source or Object form, provided that You       meet the following conditions: </p><ol type="a"><li>You must give any other recipients of the Work or           Derivative Works a copy of this License; and<br /><br /></li><li>You must cause any modified files to carry prominent notices           stating that You changed the files; and<br /><br /></li><li><span style="font-weight: bold;">You must retain, in the Source form of any Derivative Works           that You distribute, all copyright, patent, trademark, and           attribution notices from the Source form of the Work,           excluding those notices that do not pertain to any part of           the Derivative Works; and</span><br /><br /></li><li>If the Work includes a "NOTICE" text file as part of its           distribution, then any Derivative Works that You distribute must           include a readable copy of the attribution notices contained           within such NOTICE file, excluding those notices that do not           pertain to any part of the Derivative Works, in at least one           of the following places: within a NOTICE text file distributed           as part of the Derivative Works; within the Source form or           documentation, if provided along with the Derivative Works; or,           within a display generated by the Derivative Works, if and           wherever such third-party notices normally appear. The contents           of the NOTICE file are for informational purposes only and           do not modify the License. You may add Your own attribution           notices within Derivative Works that You distribute, alongside           or as an addendum to the NOTICE text from the Work, provided           that such additional attribution notices cannot be construed           as modifying the License.</li></ol>       You may add Your own copyright statement to Your modifications and       may provide additional or different license terms and conditions       for use, reproduction, or distribution of Your modifications, or       for any such Derivative Works as a whole, provided Your use,       reproduction, and distribution of the Work otherwise complies with       the conditions stated in this License.</blockquote>All in all, with this post I <span style="font-weight: bold;">publicly encourage the author of those applications to apply the terms specified in the Apache 2.0 license</span> and to add the appropriate copyright notices, placing a link to my News Mapper.<br /><br />The idea behind Open Source is not to copy and distribute under the own name, but to learn from existing code for exchanging knowledge and eventually contributing to it. It is not a nice way as the author <span jstcache="49" xmlns="" class="gm-control" name="control" jsvalues="$x:google.mashups.App.addControl($this,'gm:text','gmd:author',this);" ref="gmd:author" style="padding-left: 3px;" _ln="82">(Karthik</span>) has done it. :)
-
+Time ago - as you may have already read on this blog here - I started to experiment with the GME API. The result of my
+experiments was <a href="http://newsmapper.googlemashups.com/">News Mapper</a> (more <a href="http://juri-strumpflohner.blogspot.com/2007/10/now-in-two-weeks-after-my-successful.html">here</a>).
+Today, when scrolling over the <a href="http://gallery.googlemashups.com/">Google Mashup Gallery</a>, I found "<a href="http://india-news.googlemashups.com/">India
+    News</a>". It does basically the same as News Mapper, with the difference that it displays just news from India.<br />However
+just by looking at the page without touching it, one can see the similarity with my News Mapper project. With
+similarity I'm not referring to the conceptual part. Taking a look at the code approved my suspicion... Most of the
+code is completely identical to my code I've used for News Mapper. Lets look at some examples. The screenshot below
+shows for instance that<a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_tF6XjsUy87k/R2Kl5GNH0jI/AAAAAAAAAxw/d_uDy71wn6I/s1600-h/indiaNews1.jpg"><img
+        style="margin: 0pt 0pt 10px 10px; float: right; cursor: pointer;" src="http://4.bp.blogspot.com/_tF6XjsUy87k/R2Kl5GNH0jI/AAAAAAAAAxw/d_uDy71wn6I/s400/indiaNews1.jpg"
+        alt="" id="BLOGGER_PHOTO_ID_5143856124747305522" border="0" /></a> the author is using the same mechanism for
+laying out the different categories of the news feed. To realize this he uses the same CSS stylesheet class "category"
+with the same a:hover entry and the <span style="font-weight: bold;">same </span>color. His site is basically a
+slightly modified copy of my source code (even the comments of the JavaScript methods are the same :D )!<br />Moreover
+I don't think he has really understood my code since he calls for instance on each load <span style="font-weight: bold;">my</span>
+method called "cleanRSSEntries()" although it is completely useless for his situation. I've just needed it to cut out
+all HTML code that was inside Reuters RSS feeds because it lead to problems in displaying the information on the map.
+His feed provider however doesn't include HTML tags in the RSS feed at all.<br />The same author - with the name
+"Karthik" - also published another mashup <a href="http://cnntop.googlemashups.com/">http://cnntop.googlemashups.com/</a>
+where the copying of my source code is even more visible. You can compare the source codes if you want, however I don't
+think you have to. The similarities are too evident. Anyway:<br />
+<ul>
+    <li>News Mapper source code (my project): <a href="http://newsmapper.googlemashups.com/index.gml">http://newsmapper.googlemashups.com/index.gml</a><br /></li>
+    <li>India News: <a href="http://india-news.googlemashups.com/index.gml">http://india-news.googlemashups.com/index.gml</a><br /></li>
+    <li>CNN News: <a href="http://cnntop.googlemashups.com/index.gml">http://cnntop.googlemashups.com/index.gml<br /></a></li>
+</ul><span style="font-weight: bold;font-size:130%;">Copyright violation</span><br />News Mapper is licensed under the
+<a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a> license.<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}"
+    href="http://3.bp.blogspot.com/_tF6XjsUy87k/R2L622NH0kI/AAAAAAAAAx4/y_d4FqhaROw/s1600-h/newsmapperCopyright.jpg"><img
+        style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://3.bp.blogspot.com/_tF6XjsUy87k/R2L622NH0kI/AAAAAAAAAx4/y_d4FqhaROw/s400/newsmapperCopyright.jpg"
+        alt="" id="BLOGGER_PHOTO_ID_5143949544580960834" border="0" /></a>Point 4 of the license refers to the
+redistribution saying the following:<br />
+<p><b><a name="redistribution"></a></b></p>
+<blockquote>
+    <p><b><a name="redistribution">4. Redistribution</a></b>. You may reproduce and distribute copies of the Work or
+        Derivative Works thereof in any medium, with or without modifications, and in Source or Object form, provided
+        that You meet the following conditions: </p>
+    <ol type="a">
+        <li>You must give any other recipients of the Work or Derivative Works a copy of this License; and<br /><br /></li>
+        <li>You must cause any modified files to carry prominent notices stating that You changed the files; and<br /><br /></li>
+        <li><span style="font-weight: bold;">You must retain, in the Source form of any Derivative Works that You
+                distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work,
+                excluding those notices that do not pertain to any part of the Derivative Works; and</span><br /><br /></li>
+        <li>If the Work includes a "NOTICE" text file as part of its distribution, then any Derivative Works that You
+            distribute must include a readable copy of the attribution notices contained within such NOTICE file,
+            excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the
+            following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source
+            form or documentation, if provided along with the Derivative Works; or, within a display generated by the
+            Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file
+            are for informational purposes only and do not modify the License. You may add Your own attribution notices
+            within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work,
+            provided that such additional attribution notices cannot be construed as modifying the License.</li>
+    </ol> You may add Your own copyright statement to Your modifications and may provide additional or different
+    license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such
+    Derivative Works as a whole, provided Your use, reproduction, and distribution of the Work otherwise complies with
+    the conditions stated in this License.
+</blockquote>All in all, with this post I <span style="font-weight: bold;">publicly encourage the author of those
+    applications to apply the terms specified in the Apache 2.0 license</span> and to add the appropriate copyright
+notices, placing a link to my News Mapper.<br /><br />The idea behind Open Source is not to copy and distribute under
+the own name, but to learn from existing code for exchanging knowledge and eventually contributing to it. It is not a
+nice way as the author <span jstcache="49" xmlns="" class="gm-control" name="control" jsvalues="$x:google.mashups.App.addControl($this,'gm:text','gmd:author',this);"
+    ref="gmd:author" style="padding-left: 3px;" _ln="82">(Karthik</span>) has done it. :)
             </div>
 
             
@@ -287,7 +366,7 @@ Time ago - as you may have already read on this blog here - I started to experim
 
 
 
-<script type="text/javascript" src="https://juristr.com/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
+<script type="text/javascript" src="/js/bundle.3256dd39e6e86776a4747f7044cf46d1a11abb141f6a3835b677d8a7820f48a88be7adc675e2a984c5a106103ad04cc15ac6e347dd00ecd5149cf0a6bbcfed3d.js" integrity="sha512-MlbdOeboZ3akdH9wRM9G0aEauxQfajg1tnfYp4IPSKiL563GdeKphMWhBhA60EzBWsbjR90A7NUUnPCmu8/tPQ=="></script>
 
 
 <script src="/js/jquery.fluidbox.min.js"></script>
