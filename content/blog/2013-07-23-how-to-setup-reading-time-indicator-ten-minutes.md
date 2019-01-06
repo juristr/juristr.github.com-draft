@@ -6,7 +6,7 @@ coverimage: true
 category: null
 categories:
   - JavaScript
-  - Blogging
+  - The Desk
 reposts:
   - 'http://css.dzone.com/articles/how-add-reading-time-indicator'
 date: 2013-07-23T00:00:00.000Z

@@ -6,7 +6,7 @@ coverimage: true
 category: null
 categories:
   - JavaScript
-  - blogging
+  - The Desk
 date: 2014-12-29T01:00:00.000Z
 comments: true
 url: /blog/2014/12/kudos-for-your-site

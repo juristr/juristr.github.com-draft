@@ -4,7 +4,7 @@ description: ''
 show_img_in_detail: false
 category: null
 categories:
-  - blogging
+  - The Desk
   - tooling
 reposts:
   - 'http://css.dzone.com/articles/blog-hacker-jekyll-and'

@@ -3,8 +3,7 @@ title: 'Lessons Learned: Don''t Expose EF Entities to the Client Directly'
 description: ''
 category: null
 categories:
-  - JavaScript
-  - lessons learned
+  - Software Design
   - 'C#'
   - ".Net"
   - ASP.net MVC

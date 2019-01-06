@@ -4,8 +4,8 @@ subtitle: BDD style testing for your JavaScript code
 description: A step by step introduction on using Jasmine
 category: article
 categories:
+  - Testing
   - JavaScript
-  - Unit Testing
 reposts:
   - 'http://css.dzone.com/articles/jasmine-introduction'
 date: 2012-08-29T00:00:00.000Z

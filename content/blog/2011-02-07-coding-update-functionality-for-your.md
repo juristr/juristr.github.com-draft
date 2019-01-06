@@ -1,9 +1,10 @@
 ---
 title: Coding an Update Functionality for your Android App
 categories:
-  - Java
-  - mobile dev
   - Android
+  - Java
+tags:
+   - mobile dev
 date: 2011-02-07T01:00:00.000Z
 comments: true
 url: /blog/2011/02/coding-update-functionality-for-your

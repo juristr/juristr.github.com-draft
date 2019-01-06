@@ -2,7 +2,7 @@
 title: Easy SSL support for your Jekyll Blog with CloudFlare
 lead: Learn how CloudFlare makes it easy to activate SSL for your blog
 categories:
-  - Blogging
+  - The Desk
 date: 2017-01-04T01:00:00.000Z
 comments: true
 url: /blog/2017/01/enable-ssl-jekyll-blog

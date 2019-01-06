@@ -3,7 +3,7 @@ title: When Windows tray-icons disappear misteriously
 date: 2007-03-16T01:00:00.000Z
 comments: true
 categories:
-  - Windows OS
+  - Windows
 url: /blog/2007/03/when-windows-tray-icons-disappear_16
 type: post
 ---

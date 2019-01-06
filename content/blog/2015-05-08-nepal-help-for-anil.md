@@ -4,7 +4,7 @@ lead: He lost his home during the earthquake
 show_img_in_detail: true
 coverimage: false
 categories:
-  - blogging
+  - The Desk
 tags:
   - charity
 date: 2015-05-08T00:00:00.000Z

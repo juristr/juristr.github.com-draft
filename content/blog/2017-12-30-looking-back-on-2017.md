@@ -2,7 +2,7 @@
 title: Looking back on 2017
 lead: My personal recap of 2017
 categories:
-  - blogging
+  - The Desk
 date: 2017-12-30T01:00:00.000Z
 comments: true
 url: /blog/2017/12/looking-back-on-2017

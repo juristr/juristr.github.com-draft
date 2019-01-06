@@ -5,7 +5,7 @@ show_img_in_detail: true
 coverimage: false
 category: null
 categories:
-  - Windows OS
+  - Windows
 date: 2015-01-18T01:00:00.000Z
 comments: true
 url: /blog/2015/01/backup-windows-to-synology

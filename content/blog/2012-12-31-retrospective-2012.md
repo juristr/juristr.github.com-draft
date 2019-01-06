@@ -4,7 +4,7 @@ description: ''
 category: null
 show_img_in_detail: true
 categories:
-  - Blogging
+  - The Desk
 date: 2012-12-31T01:00:00.000Z
 comments: true
 url: /blog/2012/12/retrospective-2012
