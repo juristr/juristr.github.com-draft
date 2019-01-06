@@ -2,8 +2,6 @@
 title: REST Api Design - Resource Modeling
 lead: A summary from a post on Thoughtworks blog
 category: null
-reposts:
-  - 'https://dzone.com/articles/rest-api-design-resource-modeling-1'
 categories:
   - Software Design
 date: 2015-11-03T01:00:00.000Z
