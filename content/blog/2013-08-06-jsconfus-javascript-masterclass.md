@@ -6,7 +6,6 @@ coverimage: false
 category: null
 categories:
   - JavaScript
-  - Web dev
 date: 2013-08-06T00:00:00.000Z
 comments: true
 url: /blog/2013/08/jsconfus-javascript-masterclass

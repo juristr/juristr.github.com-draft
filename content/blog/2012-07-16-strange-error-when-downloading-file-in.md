@@ -4,7 +4,7 @@ date: 2012-07-16T00:00:00.000Z
 comments: true
 categories:
   - ASP.net MVC
-  - Web dev
+  - .Net
 url: /blog/2012/07/strange-error-when-downloading-file-in
 type: post
 ---

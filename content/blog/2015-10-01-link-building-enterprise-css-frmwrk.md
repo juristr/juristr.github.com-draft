@@ -4,7 +4,9 @@ title: Building an Enterprise CSS Framework
 link: >-
   https://medium.com/salesforce-ux/building-an-enterprise-framework-is-hard-1e8d8b33e082
 categories:
-  - undefined
+  - The Desk
+tags:
+  - Notes
 date: 2015-10-01T00:00:00.000Z
 comments: true
 url: /blog/2015/10/link-building-enterprise-css-frmwrk

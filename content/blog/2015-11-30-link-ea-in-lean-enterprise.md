@@ -3,11 +3,21 @@ type: post
 title: Role of an Enterprise Architect in a Lean Organization
 link: 'http://martinfowler.com/articles/ea-in-lean-enterprise.html'
 categories:
-  - undefined
+  - The Desk
+tags:
+  - Notes
 date: 2015-11-30T01:00:00.000Z
 comments: true
 url: /blog/2015/11/link-ea-in-lean-enterprise
 ---
+
+{{<article-link
+    url="http://martinfowler.com/articles/ea-in-lean-enterprise.html"
+    title="Role of an Enterprise Architect in a Lean Organization"
+>}}
+
+---
+
 - map the current state
 - present vision to key technical leaders and get feedback, they know why certain things are the way they are
 - upon consensus, make current + future state visible to all (not in a Sharepoint folder, or document)

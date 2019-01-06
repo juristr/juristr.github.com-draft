@@ -5,7 +5,6 @@ lead: >-
   mobile apps
 categories:
   - Angular
-  - mobile
 date: 2017-03-23T01:00:00.000Z
 comments: true
 url: /blog/2017/03/talks-web-meets-mobile

@@ -8,7 +8,6 @@ categories:
   - 'C#'
   - ".Net"
   - ASP.net MVC
-  - Web dev
 reposts:
   - 'http://dotnet.dzone.com/articles/lessions-learned-dont-expose'
 date: 2012-10-24T00:00:00.000Z

@@ -3,12 +3,19 @@ type: post
 title: 'Good Tech Lead, Bad Tech Lead'
 link: 'https://medium.com/swlh/good-tech-lead-bad-tech-lead-948b2b806d86#.esc59a3oa'
 categories:
-  - undefined
+  - The Desk
+tags:
+  - Notes
 date: 2015-11-29T01:00:00.000Z
 comments: true
 url: /blog/2015/11/link-good-bad-techleads
 ---
 A very good read and I couldn't agree more on this. Here's a quick summary of the main points from the article.
+
+{{<article-link
+    url="https://medium.com/swlh/good-tech-lead-bad-tech-lead-948b2b806d86#.esc59a3oa"
+    title="Good Tech Lead, Bad Tech Lead"
+>}}
 
 ## Good techleads...
 

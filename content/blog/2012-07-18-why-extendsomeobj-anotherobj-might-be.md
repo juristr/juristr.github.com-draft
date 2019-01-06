@@ -4,7 +4,6 @@ date: 2012-07-18T00:00:00.000Z
 comments: true
 categories:
   - JavaScript
-  - Web dev
 reposts:
   - 'http://www.dzone.com/articles/why-extendsomeobj-anotherobj'
 url: /blog/2012/07/why-extendsomeobj-anotherobj-might-be

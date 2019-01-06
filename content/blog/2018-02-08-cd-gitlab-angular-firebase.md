@@ -5,6 +5,7 @@ lead: >-
   Firebase using Gitlab's integrated CI server
 categories:
   - Angular
+tags:
   - continuous delivery
 lastupdated: '2018-09-01'
 date: 2018-02-08T01:00:00.000Z

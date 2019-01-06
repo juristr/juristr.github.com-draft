@@ -2,8 +2,6 @@
 type: post
 title: 'Ted Talk: The Puzzle of Motivation'
 link: 'https://www.youtube.com/watch?v=rrkrvAUbU9Y'
-categories:
-  - undefined
 date: 2017-02-06T01:00:00.000Z
 comments: true
 url: /blog/2017/02/link-talk-puzzle-of-motivation
