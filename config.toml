@@ -58,6 +58,9 @@ alertbar = false
   client = "eggheadio"
   uid = "url"
 
+[params.category]
+  angular = "My Angular articles"
+
 ## Main Menu
 [[menu.main]]
     name = "Home"

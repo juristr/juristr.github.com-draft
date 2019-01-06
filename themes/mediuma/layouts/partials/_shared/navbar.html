@@ -6,7 +6,7 @@
         <!-- Begin Logo -->
         <div class="row justify-content-center align-items-center brandrow">
 
-            <div class="col-lg-4 col-md-4 col-xs-12 hidden-xs-down customarea">
+            <div class="col-lg-4 col-md-4 col-xs-12 d-none d-md-block hidden-xs customarea">
                 <img src="/assets/images/gde.svg" style="height:23px">
                 <a href="https://developers.google.com/experts/people/juri-strumpflohner" style="
                     padding-left: 5px;
@@ -33,7 +33,7 @@
                 <!-- <a class="navbar-brand" href="https://www.themepush.com/demo-mediumish/">{{.Site.Title}}</a> -->
             </div>
 
-            <div class="col-lg-4 col-md-4  col-xs-12 text-right">
+            <div class="col-lg-4 col-md-4  col-xs-12 text-right d-none d-md-block">
                 <a href="https://twitter.com/juristr" class="twitter-follow-button" data-show-count="true">Follow me!</a>
                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
@@ -44,11 +44,11 @@
         <div class="navarea">
 
             <nav class="navbar navbar-toggleable-sm">
-                <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+                <!-- <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
                     data-target="#bs4navbar" aria-controls="bs4navbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="bs4navbar" class="navbar-collapse collapse">
+                </button> -->
+                <div id="bs4navbar" class="navbar-collapse">
                     {{ $currentPage := . }}
                     <ul id="menu-top-menu" class="navbar-nav col-md-12 justify-content-center">
                         {{ range .Site.Menus.main }}

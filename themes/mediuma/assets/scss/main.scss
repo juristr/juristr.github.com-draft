@@ -11,6 +11,15 @@ body {
     background-color: $neutral_100;
 }
 
+// @media (min-width: 768px)
+.navbar-toggleable-sm .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
 .list-page {
     .svgicon {
         svg {
@@ -86,6 +95,14 @@ body {
 }
 
 .card.featured-card {
+    // min-height: 400px;
+    // height: 400px;
+    height: inherit;
+
+    .card-block {
+        min-height: 350px;
+    }
+
     .card-title {
         font-size: 30px;
     }
