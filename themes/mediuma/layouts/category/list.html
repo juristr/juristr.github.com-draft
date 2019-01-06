@@ -3,7 +3,7 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="container list-page">
+<div class="container list-page categories">
     <!-- {{- partial "_shared/title.html" . -}} -->
     <!-- {{- partial "_shared/featured-posts.html" . -}} -->
 
@@ -34,8 +34,8 @@
             <h2><span>Articles for "{{.Title}}"</span></h2>
             {{ end }}
         </div>
-        <div class="card-columns listrecent">
-            {{ range .Pages }}
+        <div class="listrecent">
+            {{ range .Pages.ByDate.Reverse }}
 
             {{ if and (eq .Kind "taxonomy") (eq .Type "categories") }}
             {{- partial "list-partials/categorybox.html" . -}}

@@ -4,7 +4,6 @@ description: ''
 category: ''
 categories:
   - ".Net"
-  - WPF
 date: 2013-06-26T00:00:00.000Z
 comments: true
 url: /blog/2013/06/setup-wpf-with-prism

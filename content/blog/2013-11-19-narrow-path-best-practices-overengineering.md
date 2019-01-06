@@ -5,8 +5,6 @@ coverimage: true
 category: null
 categories:
   - Software Design
-  - Software Design
-  - Best Practices
 reposts:
   - 'http://java.dzone.com/articles/narrow-path-between-best'
 date: 2013-11-19T01:00:00.000Z

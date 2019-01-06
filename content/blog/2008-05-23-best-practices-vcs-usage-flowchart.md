@@ -3,7 +3,7 @@ title: 'Best practices: VCS usage flowchart'
 date: 2008-05-23T00:00:00.000Z
 comments: true
 categories:
-  - Best Practices
+  - Git
 url: /blog/2008/05/best-practices-vcs-usage-flowchart
 type: post
 ---

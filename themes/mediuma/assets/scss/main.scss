@@ -66,7 +66,7 @@ body {
         .card-title {
             padding: 0;
             margin: 0;
-            font-size: 1.9rem;
+            font-size: 1.7rem;
         }
     }
 }
@@ -106,6 +106,29 @@ body {
 
     .metafooter {
         position: inherit;
+    }
+}
+
+.list-page.categories {
+    .listrecent {
+        display: flex;
+        flex-wrap: wrap;
+
+        .card {
+            width: 350px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+
+            .date-container {
+                display: flex;
+                align-items: center;
+            }
+
+            .post-category-icon {
+                float: none;
+            }
+
+        }
     }
 }
 

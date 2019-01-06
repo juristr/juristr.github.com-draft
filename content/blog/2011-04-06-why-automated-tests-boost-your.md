@@ -3,7 +3,6 @@ title: Why Automated Tests Boost Your Development Speed
 date: 2011-04-06T00:00:00.000Z
 comments: true
 categories:
-  - Best Practices
   - testing
 reposts:
   - >-
